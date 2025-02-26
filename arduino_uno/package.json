@@ -1,0 +1,17 @@
+{
+  "name": "@aily-project/board-arduino_uno",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "libDependencies": {},
+  "boardDependencies": {
+    "@aily-project/compiler/avr-gcc": "7.3.0",
+    "@aily-project/tool/avrdude": "6.3.0",
+    "@aily-project/sdk/avr": "1.8.6"
+  }
+}
