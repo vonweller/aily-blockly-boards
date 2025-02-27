@@ -1,0 +1,19 @@
+{
+  "name": "project_",
+  "version": "1.0.0",
+  "description": "",
+  "board": "Arduino UNO R3",
+  "boardDependencies": {
+    "@aily-project/board-arduino_uno": "^1.0.0"
+  },
+  "libDependencies": {
+    "@aily-project/lib-io": "1.0.0",
+    "@aily-project/lib-logic": "1.0.0",
+    "@aily-project/lib-loop": "1.0.0",
+    "@aily-project/lib-math": "1.0.0",
+    "@aily-project/lib-text": "1.0.0",
+    "@aily-project/lib-serial": "1.0.0",
+    "@aily-project/lib-time": "1.0.0",
+    "@aily-project/lib-variable": "1.0.0"
+  }
+}
