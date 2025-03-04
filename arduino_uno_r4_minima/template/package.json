@@ -4,7 +4,10 @@
   "description": "",
   "board": "Arduino UNO R4 Minima",
   "boardDependencies": {
-    "@aily-project/board-arduino_uno_r4_minima": "^1.0.0"
+    "@aily-project/board-arduino_uno_r4_minima": "^1.0.0",
+    "@aily-project/compiler-arm-none-eabi-gcc": "7.2.1",
+    "@aily-project/tool-bossac": "1.9.1",
+    "@aily-project/sdk-renesas_uno": "1.3.2"
   },
   "dependencies": {
     "@aily-project/lib-core-io": "0.0.1",
