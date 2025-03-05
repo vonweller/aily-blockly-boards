@@ -131,17 +131,17 @@ jobs:
           find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*"
 
           # 创建临时目录用于整理图片
-          mkdir -p ./temp_images
+          mkdir -p ../temp_images
 
           # 遍历所有PNG图片并保持相对路径结构复制到临时目录
           find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
             filename=$(basename "$file")
-            cp "$file" "./temp_images/$filename"
-            echo "复制 $file 到 ./temp_images/$filename"
+            cp "$file" "../temp_images/$filename"
+            echo "复制 $file 到 ../temp_images/$filename"
           done
 
           # 检查是否有找到图片
-          if [ -z "$(ls -A ./temp_images)" ]; then
+          if [ -z "$(ls -A ../temp_images)" ]; then
             echo "没有找到任何PNG图片"
             exit 0
           fi
