@@ -106,33 +106,33 @@ jobs:
           # 发布
           npm publish --access public
   
-  # upload-changes-img:
-  #   needs: detect-changes
-  #   if: ${{ github.event_name == 'push' && needs.detect-changes.outputs.matrix != '{"package":[]}' && github.ref == 'refs/heads/deploy' }}
-  #   runs-on: ubuntu-latest
-  #   strategy:
-  #     matrix: ${{ fromJson(needs.detect-changes.outputs.matrix) }}
-  #     fail-fast: false
-  #   steps:
-
-  
-  upload-all-img:
+  upload-changes-img:
+    needs: detect-changes
+    if: ${{ github.event_name == 'push' && needs.detect-changes.outputs.matrix != '{"package":[]}' && github.ref == 'refs/heads/deploy' }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{ fromJson(needs.detect-changes.outputs.matrix) }}
+      fail-fast: false
     steps:
+      - name: echo matrix
+        run: echo "${{ toJson(matrix) }}"
+      
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GHB_TOKEN }}
       
-      - name: 
-        id: find_images
+      - name: upload
         run: |
+          cd ${{ matrix.package }}
+
+          # 找到所有图片文件
           echo "找到以下PNG图片文件："
           find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*"
-          
+
           # 创建临时目录用于整理图片
           mkdir -p ./temp_images
-          
+
           # 遍历所有PNG图片并保持相对路径结构复制到临时目录
           find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
             filename=$(basename "$file")
@@ -145,18 +145,60 @@ jobs:
             echo "没有找到任何PNG图片"
             exit 0
           fi
-      
+
       - name: 使用SCP上传PNG图片
-        uses: appleboy/scp-action@v0.1.4
-        with:
-          host: ${{ secrets.SERVER }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
-          source: "temp_images/*"
-          target: "${{ secrets.IMG_TARGET }}"
-          strip_components: 1
-          rm: false
+          uses: appleboy/scp-action@v0.1.4
+          with:
+            host: ${{ secrets.SERVER }}
+            username: ${{ secrets.USERNAME }}
+            password: ${{ secrets.PASSWORD }}
+            port: ${{ secrets.PORT }}
+            source: "temp_images/*"
+            target: "${{ secrets.IMG_TARGET }}"
+            strip_components: 1
+            rm: false
+  
+  # upload-all-img:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
+  #       with:
+  #         token: ${{ secrets.GHB_TOKEN }}
+      
+  #     - name: 
+  #       id: find_images
+  #       run: |
+  #         echo "找到以下PNG图片文件："
+  #         find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*"
+          
+  #         # 创建临时目录用于整理图片
+  #         mkdir -p ./temp_images
+          
+  #         # 遍历所有PNG图片并保持相对路径结构复制到临时目录
+  #         find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
+  #           filename=$(basename "$file")
+  #           cp "$file" "./temp_images/$filename"
+  #           echo "复制 $file 到 ./temp_images/$filename"
+  #         done
+
+  #         # 检查是否有找到图片
+  #         if [ -z "$(ls -A ./temp_images)" ]; then
+  #           echo "没有找到任何PNG图片"
+  #           exit 0
+  #         fi
+      
+  #     - name: 使用SCP上传PNG图片
+  #       uses: appleboy/scp-action@v0.1.4
+  #       with:
+  #         host: ${{ secrets.SERVER }}
+  #         username: ${{ secrets.USERNAME }}
+  #         password: ${{ secrets.PASSWORD }}
+  #         port: ${{ secrets.PORT }}
+  #         source: "temp_images/*"
+  #         target: "${{ secrets.IMG_TARGET }}"
+  #         strip_components: 1
+  #         rm: false
 
   genJson-and-upload:
     runs-on: ubuntu-latest
