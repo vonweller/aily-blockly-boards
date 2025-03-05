@@ -105,3 +105,41 @@ jobs:
           
           # 发布
           npm publish --access public
+  genJson-and-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GHB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          registry-url: 'https://registry.openjumper.cn'
+      
+      - name: Generate JSON
+        run: node genjson.js
+      
+      - name: Check if JSON file exists
+        run: |
+          if [ -f "./libraries.json" ]; then
+            echo "File exists"
+            cat ./libraries.json | head -n 10
+          else
+            echo "File does not exist"
+            ls -la
+            exit 1
+          fi
+      
+      - name: 使用 SCP 上传文件
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SERVER }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "board.json"
+          target: "${{ secrets.TARGET }}"
