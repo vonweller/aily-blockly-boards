@@ -77,7 +77,7 @@ async function main() {
 
     // 写入结果到libraries.json
     const librariesJson = JSON.stringify(libraries, null, 2);
-    const outputPath = path.join(currentDir, 'libraries.json');
+    const outputPath = path.join(currentDir, 'boards.json');
     await fs.writeFile(outputPath, librariesJson, 'utf8');
 
     console.log(`成功将${libraries.length}个库的信息写入到${outputPath}`);
