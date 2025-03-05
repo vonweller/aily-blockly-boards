@@ -147,16 +147,16 @@ jobs:
           fi
 
       - name: 使用SCP上传PNG图片
-          uses: appleboy/scp-action@v0.1.4
-          with:
-            host: ${{ secrets.SERVER }}
-            username: ${{ secrets.USERNAME }}
-            password: ${{ secrets.PASSWORD }}
-            port: ${{ secrets.PORT }}
-            source: "temp_images/*"
-            target: "${{ secrets.IMG_TARGET }}"
-            strip_components: 1
-            rm: false
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SERVER }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "temp_images/*"
+          target: "${{ secrets.IMG_TARGET }}"
+          strip_components: 1
+          rm: false
   
   # upload-all-img:
   #   runs-on: ubuntu-latest
