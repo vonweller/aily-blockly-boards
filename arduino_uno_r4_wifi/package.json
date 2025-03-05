@@ -1,8 +1,11 @@
 {
-  "name": "arduino_uno_r4_minima",
+  "name": "@aily-project/board-arduino_uno_r4_wifi",
+  "nickname": "Arduino UNO R4 Wifi",
   "version": "1.3.2",
   "description": "",
   "main": "index.js",
+  "brand":"Arduino",
+  "img": "arduino_uno_r4_minima.png",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "unzip": "unzip -o -d $HOME/.arduino15/packages/arduino/hardware/avr/1.8.5/ $HOME/.arduino15/packages/arduino/hardware/avr/1.8.5/avr/cores/arduino.zip"

@@ -1,5 +1,6 @@
 {
-  "name": "esp32c3",
+  "name": "@aily-project/board-esp32",
+  "nickname": "ESP32 board",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

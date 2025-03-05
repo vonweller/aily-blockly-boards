@@ -1,0 +1,112 @@
+[
+  {
+    "name": "@aily-project/board-arduino_mega",
+    "nickname": "Arduino MEGA",
+    "version": "1.0.0",
+    "description": "Arduino MEGA 是一款基于ATmega2560的开源电子原型平台，包含数字I/O口54个（其中14个支持PWM输出），模拟输入口16个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
+    "author": "",
+    "brand": "Arduino",
+    "url": "",
+    "compatibility": ""
+  },
+  {
+    "name": "@aily-project/board-arduino_uno",
+    "nickname": "Arduino UNO R3",
+    "version": "1.0.1",
+    "description": "Arduino UNO R3 是一款基于ATmega328P的开源电子原型平台，包含数字I/O口14个（其中6个支持PWM输出），模拟输入口6个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
+    "author": "",
+    "brand": "Arduino",
+    "url": "https://arduino.me/s/board?aid=698",
+    "compatibility": ""
+  },
+  {
+    "name": "@aily-project/board-arduino_uno_r4_minima",
+    "nickname": "Arduino UNO R4 Minima",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "brand": "Arduino",
+    "url": "",
+    "compatibility": ""
+  },
+  {
+    "name": "@aily-project/board-arduino_uno_r4_wifi",
+    "nickname": "Arduino UNO R4 Wifi",
+    "version": "1.3.2",
+    "description": "",
+    "author": "",
+    "brand": "Arduino",
+    "url": "",
+    "compatibility": ""
+  },
+  {
+    "name": "@aily-project/board-esp32",
+    "nickname": "ESP32 board",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "brand": "",
+    "url": "",
+    "compatibility": ""
+  },
+  {
+    "name": "@aily-project/board-esp32c3",
+    "nickname": "",
+    "version": "3.1.3",
+    "description": "",
+    "author": "",
+    "brand": "",
+    "url": "",
+    "compatibility": ""
+  },
+  {
+    "name": "@aily-project/board-esp32c3",
+    "nickname": "",
+    "version": "3.1.3",
+    "description": "",
+    "author": "",
+    "brand": "",
+    "url": "",
+    "compatibility": ""
+  },
+  {
+    "name": "@aily-project/board-raspberrypi_pico",
+    "nickname": "Raspberry Pi Pico",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "brand": "",
+    "url": "",
+    "compatibility": ""
+  },
+  {
+    "name": "@aily-project/board-wifiduino32",
+    "nickname": "Wifiduino 32",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "",
+    "compatibility": ""
+  },
+  {
+    "name": "@aily-project/board-xiao_esp32c3",
+    "nickname": "XIAO ESP32C3",
+    "version": "3.1.3",
+    "description": "",
+    "author": "",
+    "brand": "Seeed",
+    "url": "",
+    "compatibility": ""
+  },
+  {
+    "name": "@aily-project/board-xiao_esp32s3",
+    "nickname": "XIAO ESP32S3",
+    "version": "3.1.3",
+    "description": "",
+    "author": "",
+    "brand": "Seeed",
+    "url": "",
+    "compatibility": ""
+  }
+]

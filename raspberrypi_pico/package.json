@@ -1,5 +1,6 @@
 {
-  "name": "raspberrypi_pico",
+  "name": "@aily-project/board-raspberrypi_pico",
+  "nickname": "Raspberry Pi Pico",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

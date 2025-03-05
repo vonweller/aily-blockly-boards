@@ -1,8 +1,11 @@
-{
+    {
   "name": "@aily-project/board-arduino_uno_r4_minima",
+  "nickname": "Arduino UNO R4 Minima",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "brand":"Arduino",
+  "img": "arduino_uno_r4_minima.png",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
