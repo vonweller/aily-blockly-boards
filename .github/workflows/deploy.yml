@@ -106,6 +106,16 @@ jobs:
           # 发布
           npm publish --access public
   
+  # upload-changes-img:
+  #   needs: detect-changes
+  #   if: ${{ github.event_name == 'push' && needs.detect-changes.outputs.matrix != '{"package":[]}' && github.ref == 'refs/heads/deploy' }}
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix: ${{ fromJson(needs.detect-changes.outputs.matrix) }}
+  #     fail-fast: false
+  #   steps:
+
+  
   upload-all-img:
     runs-on: ubuntu-latest
     steps:
@@ -125,11 +135,9 @@ jobs:
           
           # 遍历所有PNG图片并保持相对路径结构复制到临时目录
           find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
-            rel_path=$(echo $file | sed 's/^\.\///')
-            dir_path=$(dirname "$rel_path")
-            mkdir -p "./temp_images/$dir_path"
-            cp "$file" "./temp_images/$rel_path"
-            echo "已复制: $rel_path"
+            filename=$(basename "$file")
+            cp "$file" "./temp_images/$filename"
+            echo "复制 $file 到 ./temp_images/$filename"
           done
 
           # 检查是否有找到图片
