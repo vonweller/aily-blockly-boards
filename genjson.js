@@ -10,7 +10,16 @@ const defaultKeysToExtract = [
   'author',
   'brand',
   'url',
-  'compatibility'
+  'compatibility',
+  'img'
+];
+
+// 自定义目录顺序 - 这里定义你想要的目录顺序
+const directoryOrder = [
+  'arduino_uno',
+  'arduino_mega',
+  'arduino_uno_r4_minima',
+  'arduino_uno_r4_wifi'
 ];
 
 // 根据配置过滤package.json对象
@@ -41,9 +50,33 @@ async function main() {
     const dirents = await fs.readdir(currentDir, { withFileTypes: true });
 
     // 过滤出子目录
-    const subdirs = dirents
+    let subdirs = dirents
       .filter(dirent => dirent.isDirectory())
       .map(dirent => dirent.name);
+
+    // 根据自定义顺序排序子目录
+    subdirs.sort((a, b) => {
+      const indexA = directoryOrder.indexOf(a);
+      const indexB = directoryOrder.indexOf(b);
+
+      // 如果两个目录都在自定义顺序列表中
+      if (indexA >= 0 && indexB >= 0) {
+        return indexA - indexB;
+      }
+
+      // 如果只有a在列表中，a排在前面
+      if (indexA >= 0) {
+        return -1;
+      }
+
+      // 如果只有b在列表中，b排在前面
+      if (indexB >= 0) {
+        return 1;
+      }
+
+      // 如果都不在列表中，按字母顺序排列
+      return a.localeCompare(b);
+    });
 
     // 存储所有package.json的内容
     const libraries = [];
@@ -60,9 +93,6 @@ async function main() {
 
         // 根据配置过滤package.json
         const filteredJson = keysToExtract ? filterPackageJson(packageJson, keysToExtract) : packageJson;
-
-        // 添加目录名称以便识别
-        // filteredJson._directory = subdir;
 
         libraries.push(filteredJson);
         console.log(`成功读取 ${subdir}/package.json`);

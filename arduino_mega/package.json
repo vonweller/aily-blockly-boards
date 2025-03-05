@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "description": "Arduino MEGA 是一款基于ATmega2560的开源电子原型平台，包含数字I/O口54个（其中14个支持PWM输出），模拟输入口16个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
   "main": "index.js",
-  "brand":"Arduino",
+  "brand": "Arduino",
   "img": "arduino_mega.png",
+  "url": "https://arduino.me/s/board?aid=699",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
