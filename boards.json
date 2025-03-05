@@ -1,15 +1,5 @@
 [
   {
-    "name": "@aily-project/board-arduino_mega",
-    "nickname": "Arduino MEGA",
-    "version": "1.0.0",
-    "description": "Arduino MEGA 是一款基于ATmega2560的开源电子原型平台，包含数字I/O口54个（其中14个支持PWM输出），模拟输入口16个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
-    "author": "",
-    "brand": "Arduino",
-    "url": "",
-    "compatibility": ""
-  },
-  {
     "name": "@aily-project/board-arduino_uno",
     "nickname": "Arduino UNO R3",
     "version": "1.0.1",
@@ -17,7 +7,19 @@
     "author": "",
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=698",
-    "compatibility": ""
+    "compatibility": "",
+    "img": "arduino_uno.png"
+  },
+  {
+    "name": "@aily-project/board-arduino_mega",
+    "nickname": "Arduino MEGA",
+    "version": "1.0.0",
+    "description": "Arduino MEGA 是一款基于ATmega2560的开源电子原型平台，包含数字I/O口54个（其中14个支持PWM输出），模拟输入口16个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
+    "author": "",
+    "brand": "Arduino",
+    "url": "https://arduino.me/s/board?aid=699",
+    "compatibility": "",
+    "img": "arduino_mega.png"
   },
   {
     "name": "@aily-project/board-arduino_uno_r4_minima",
@@ -27,17 +29,19 @@
     "author": "",
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=1461",
-    "compatibility": ""
+    "compatibility": "",
+    "img": "arduino_uno_r4_minima.png"
   },
   {
     "name": "@aily-project/board-arduino_uno_r4_wifi",
     "nickname": "Arduino UNO R4 Wifi",
     "version": "1.3.2",
-    "description": "",
+    "description": "Arduino UNO R4 WiFi 将 Renesas 的 RA4M1 微控制器的处理能力和激动人心的新外设与 Espressif 的 ESP32-S3 无线连接能力相结合。此外，UNO R4 WiFi 还提供了一个12x8 LED 矩阵、Qwiic 连接器、VRTC 和 OFF 引脚，满足创客们在下一个项目中可能遇到的所有需求。",
     "author": "",
     "brand": "Arduino",
-    "url": "",
-    "compatibility": ""
+    "url": "https://arduino.me/s/board?aid=1462",
+    "compatibility": "",
+    "img": "arduino_uno_r4_minima.png"
   },
   {
     "name": "@aily-project/board-esp32",
@@ -47,7 +51,8 @@
     "author": "",
     "brand": "",
     "url": "",
-    "compatibility": ""
+    "compatibility": "",
+    "img": ""
   },
   {
     "name": "@aily-project/board-esp32c3",
@@ -57,7 +62,8 @@
     "author": "",
     "brand": "",
     "url": "",
-    "compatibility": ""
+    "compatibility": "",
+    "img": ""
   },
   {
     "name": "@aily-project/board-esp32c3",
@@ -67,7 +73,8 @@
     "author": "",
     "brand": "",
     "url": "",
-    "compatibility": ""
+    "compatibility": "",
+    "img": ""
   },
   {
     "name": "@aily-project/board-raspberrypi_pico",
@@ -77,7 +84,8 @@
     "author": "",
     "brand": "",
     "url": "",
-    "compatibility": ""
+    "compatibility": "",
+    "img": ""
   },
   {
     "name": "@aily-project/board-wifiduino32",
@@ -87,7 +95,8 @@
     "author": "",
     "brand": "OpenJumper",
     "url": "",
-    "compatibility": ""
+    "compatibility": "",
+    "img": "wifiduino32.png"
   },
   {
     "name": "@aily-project/board-xiao_esp32c3",
@@ -97,7 +106,8 @@
     "author": "",
     "brand": "Seeed",
     "url": "",
-    "compatibility": ""
+    "compatibility": "",
+    "img": "xiao_esp32c3.png"
   },
   {
     "name": "@aily-project/board-xiao_esp32s3",
@@ -107,6 +117,7 @@
     "author": "",
     "brand": "Seeed",
     "url": "",
-    "compatibility": ""
+    "compatibility": "",
+    "img": "xiao_esp32s3.png"
   }
 ]
