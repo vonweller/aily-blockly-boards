@@ -125,9 +125,9 @@ jobs:
       
       - name: Check if JSON file exists
         run: |
-          if [ -f "./libraries.json" ]; then
+          if [ -f "./board.json" ]; then
             echo "File exists"
-            cat ./libraries.json | head -n 10
+            cat ./board.json | head -n 10
           else
             echo "File does not exist"
             ls -la
