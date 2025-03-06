@@ -1,12 +1,12 @@
 {
-    "name": "Arduino UNO R4 Wifi",
+    "name": "Arduino MEGA",
     "version":"1.0.0",
-    "description": "Arduino UNO R4 Wifi standard compatible board",
+    "description": "Arduino MEGA standard compatible board",
     "compilerTool": "arduino-cli",
     "core": "arduino:avr@1.8.5",
-    "type": "arduino:avr:uno",
-    "compilerParam": "compile -v -b arduino:avr:uno",
-    "uploadParam": "upload -v -b arduino:avr:uno -p ${serial}",
+    "type": "arduino:avr:mega",
+    "compilerParam": "compile -v -b arduino:avr:mega",
+    "uploadParam": "upload -v -b arduino:avr:mega -p ${serial}",
     "analogPins": [
         [
             "A0",
