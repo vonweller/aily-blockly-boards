@@ -145,6 +145,13 @@ jobs:
             echo "没有找到任何PNG图片"
             exit 0
           fi
+      
+      - name: 判断是否有图片需要上传
+        run: |
+          if [ -z "$(ls -A ../temp_images)" ]; then
+            echo "没有找到任何PNG图片"
+            exit 0
+          fi
 
       - name: 使用SCP上传PNG图片
         uses: appleboy/scp-action@v0.1.4
