@@ -1,12 +1,12 @@
 {
     "name": "Arduino UNO R4 Wifi",
-    "version":"1.0.0",
+    "version":"1.3.2",
     "description": "Arduino UNO R4 Wifi standard compatible board",
     "compilerTool": "arduino-cli",
-    "core": "arduino:avr@1.8.5",
-    "type": "arduino:avr:uno",
-    "compilerParam": "compile -v -b arduino:avr:uno",
-    "uploadParam": "upload -v -b arduino:avr:uno -p ${serial}",
+    "core": "aily:renesas_uno_1.3.2",
+    "type": "aily:renesas_uno_1.3.2",
+    "compilerParam": "compile -v -b aily:renesas_uno_1.3.2:unor4wifi",
+    "uploadParam": "upload -v -b aily:renesas_uno_1.3.2:unor4wifi -p ${serial}",
     "analogPins": [
         [
             "A0",
