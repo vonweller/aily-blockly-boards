@@ -248,3 +248,4 @@ jobs:
           port: ${{ secrets.PORT }}
           source: "boards.json"
           target: "${{ secrets.TARGET }}"
+          timeout: 60s
