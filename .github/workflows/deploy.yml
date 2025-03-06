@@ -38,7 +38,10 @@ jobs:
               echo "No changes in $dir"
             else
               echo "Detected changes in $dir"
-              CHANGED_PACKAGES+=("$dir")
+              # Only add first-level directories (no slashes in the path)
+              if [[ "$dir" != *"/"* ]]; then
+                CHANGED_PACKAGES+=("$dir")
+              fi
             fi
           done
           
