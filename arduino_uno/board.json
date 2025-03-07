@@ -3,10 +3,10 @@
     "version":"1.0.0",
     "description": "Arduino UNO standard compatible board",
     "compilerTool": "arduino-cli",
-    "core": "arduino:avr@1.8.5",
-    "type": "arduino:avr:uno",
-    "compilerParam": "compile -v -b arduino:avr:uno",
-    "uploadParam": "upload -v -b arduino:avr:uno -p ${serial}",
+    "core": "aily:avr_1.8.6",
+    "type": "aily:avr_1.8.6:uno",
+    "compilerParam": "compile -v -b aily:avr_1.8.6r:uno",
+    "uploadParam": "upload -v -b aily:avr_1.8.6:uno -p ${serial}",
     "analogPins": [
         [
             "A0",
