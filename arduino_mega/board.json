@@ -3,10 +3,10 @@
     "version":"1.0.0",
     "description": "Arduino MEGA standard compatible board",
     "compilerTool": "arduino-cli",
-    "core": "arduino:avr@1.8.5",
-    "type": "arduino:avr:mega",
-    "compilerParam": "compile -v -b arduino:avr:mega",
-    "uploadParam": "upload -v -b arduino:avr:mega -p ${serial}",
+    "core": "aily:avr_1.8.5",
+    "type": "aily:avr_1.8.5:mega",
+    "compilerParam": "compile -v -b aily:avr_1.8.5:mega",
+    "uploadParam": "upload -v -b aily:avr_1.8.5:mega -p ${serial}",
     "analogPins": [
         [
             "A0",
