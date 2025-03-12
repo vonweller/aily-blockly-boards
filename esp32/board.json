@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "ESP32C3 compatible board",
     "compilerTool": "arduino-cli",
-    "core": "esp32:esp32@2.0.4",
-    "type": "esp32:esp32:esp32c3",
-    "compilerParam": "compile -v -b esp32:esp32:esp32c3",
-    "uploadParam": "upload -v -b esp32:esp32:esp32c3 -p ${serial}",
+    "core": "aily:esp32_3.1.3",
+    "type": "aily:esp32_3.1.3:esp32c3",
+    "compilerParam": "compile -v -b aily:esp32_3.1.3:esp32c3",
+    "uploadParam": "upload -v -b aily:aily:esp32_3.1.3:esp32c3 -p ${serial}",
     "analogPins": [
         [
             "A0",
