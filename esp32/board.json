@@ -6,7 +6,7 @@
     "core": "aily:esp32_3.1.3",
     "type": "aily:esp32_3.1.3:esp32",
     "compilerParam": "compile -v -b aily:esp32_3.1.3:esp32",
-    "uploadParam": "upload -v -b aily:aily:esp32_3.1.3:esp32 -p ${serial}",
+    "uploadParam": "upload -v -b aily:esp32_3.1.3:esp32 -p ${serial}",
     "analogPins": [
         [
             "A0",
