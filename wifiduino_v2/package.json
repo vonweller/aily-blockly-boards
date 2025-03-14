@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "img": "esp32c3.png",
+  "img": "wifiduino_v2.png",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
