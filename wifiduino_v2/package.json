@@ -1,0 +1,13 @@
+{
+  "name": "@aily-project/board-wifiduino_v2",
+  "nickname": "Wifiduino v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "img": "esp32c3.png",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
