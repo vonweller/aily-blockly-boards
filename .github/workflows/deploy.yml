@@ -42,7 +42,10 @@ jobs:
               echo "No changes in $dir"
             else
               echo "Detected changes in $dir"
-              CHANGED_PACKAGES+=("$dir")
+              # Only add first-level directories (no slashes in the path)
+               if [[ "$dir" != *"/"* ]]; then
+                 CHANGED_PACKAGES+=("$dir")
+               fi
             fi
           done
           
@@ -156,18 +159,28 @@ jobs:
             echo "没有找到任何PNG图片"
             exit 0
           fi
-
-      - name: 使用SCP上传PNG图片
-        uses: appleboy/scp-action@v0.1.4
+      
+      - name: 上传图片
+        uses: Dylan700/sftp-upload-action@latest
         with:
-          host: ${{ secrets.SERVER }}
+          server: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
-          source: "temp_images/*"
-          target: "${{ secrets.IMG_TARGET }}"
-          strip_components: 1
-          rm: false
+          port: 22
+          uploads: |
+            ../temp_images/* => ${{ secrets.IMG_TARGET }}
+
+      # - name: 使用SCP上传PNG图片
+      #   uses: appleboy/scp-action@v0.1.4
+      #   with:
+      #     host: ${{ secrets.SERVER }}
+      #     username: ${{ secrets.USERNAME }}
+      #     password: ${{ secrets.PASSWORD }}
+      #     port: ${{ secrets.PORT }}
+      #     source: "temp_images/*"
+      #     target: "${{ secrets.IMG_TARGET }}"
+      #     strip_components: 1
+      #     rm: false
   
   # upload-all-img:
   #   runs-on: ubuntu-latest
