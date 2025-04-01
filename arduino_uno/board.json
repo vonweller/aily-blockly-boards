@@ -271,14 +271,32 @@
             "13"
         ]
     ],
-    "interrupt": [
+    "interruptPins": [
         [
-            "interrupt0",
+            "2",
             "2"
         ],
         [
-            "interrupt1",
+            "3",
             "3"
+        ]
+    ],
+    "interruptMode": [
+        [
+            "LOW",
+            "LOW"
+        ],
+        [
+            "RISING",
+            "RISING"
+        ],
+        [
+            "FALLING",
+            "FALLING"
+        ],
+        [
+            "CHANGE",
+            "CHANGE"
         ]
     ]
 }
