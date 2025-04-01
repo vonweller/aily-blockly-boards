@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Seeed",
   "license": "ISC",
   "boardDependencies": {
     "@aily-project/compiler-esp-rv32": "13.2.0",
