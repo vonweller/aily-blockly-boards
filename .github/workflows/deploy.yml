@@ -153,46 +153,6 @@ jobs:
             exit 0
           fi
       
-      - name: 上传图片
-        uses: Dylan700/sftp-upload-action@latest
-        with:
-          server: ${{ secrets.SERVER }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: 22
-          uploads: |
-            temp_images/* => ${{ secrets.IMG_TARGET }}
-  
-  upload-all-img:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GHB_TOKEN }}
-      
-      - name: 
-        id: find_images
-        run: |
-          echo "找到以下PNG图片文件："
-          find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*"
-          
-          # 创建临时目录用于整理图片
-          mkdir -p ./temp_images
-          
-          # 遍历所有PNG图片并保持相对路径结构复制到临时目录
-          find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
-            filename=$(basename "$file")
-            cp "$file" "./temp_images/$filename"
-            echo "复制 $file 到 ./temp_images/$filename"
-          done
-
-          # 检查是否有找到图片
-          if [ -z "$(ls -A ./temp_images)" ]; then
-            echo "没有找到任何PNG图片"
-            exit 0
-          fi
-      
       - name: 使用SCP上传PNG图片
         uses: appleboy/scp-action@v0.1.4
         with:
@@ -204,6 +164,48 @@ jobs:
           target: "${{ secrets.IMG_TARGET }}"
           strip_components: 1
           rm: false
+  
+  # upload-all-img:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
+  #       with:
+  #         token: ${{ secrets.GHB_TOKEN }}
+      
+  #     - name: 
+  #       id: find_images
+  #       run: |
+  #         echo "找到以下PNG图片文件："
+  #         find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*"
+          
+  #         # 创建临时目录用于整理图片
+  #         mkdir -p ./temp_images
+          
+  #         # 遍历所有PNG图片并保持相对路径结构复制到临时目录
+  #         find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
+  #           filename=$(basename "$file")
+  #           cp "$file" "./temp_images/$filename"
+  #           echo "复制 $file 到 ./temp_images/$filename"
+  #         done
+
+  #         # 检查是否有找到图片
+  #         if [ -z "$(ls -A ./temp_images)" ]; then
+  #           echo "没有找到任何PNG图片"
+  #           exit 0
+  #         fi
+      
+  #     - name: 使用SCP上传PNG图片
+  #       uses: appleboy/scp-action@v0.1.4
+  #       with:
+  #         host: ${{ secrets.SERVER }}
+  #         username: ${{ secrets.USERNAME }}
+  #         password: ${{ secrets.PASSWORD }}
+  #         port: ${{ secrets.PORT }}
+  #         source: "temp_images/*"
+  #         target: "${{ secrets.IMG_TARGET }}"
+  #         strip_components: 1
+  #         rm: false
 
   genJson-and-upload:
     runs-on: ubuntu-latest
