@@ -11,7 +11,8 @@ const defaultKeysToExtract = [
   'brand',
   'url',
   'compatibility',
-  'img'
+  'img',
+  'disabled'
 ];
 
 // 自定义目录顺序 - 这里定义你想要的目录顺序
@@ -30,7 +31,12 @@ function filterPackageJson(packageJson, keysToExtract) {
     if (packageJson.hasOwnProperty(key)) {
       filteredJson[key] = packageJson[key];
     } else {
-      filteredJson[key] = "";
+      // 对disabled属性进行特殊处理，默认为false
+      if (key === 'disabled') {
+        filteredJson[key] = false;
+      } else {
+        filteredJson[key] = "";
+      }
     }
   });
 

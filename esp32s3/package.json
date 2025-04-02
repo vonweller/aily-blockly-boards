@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "img": "esp32s3.png",
+  "disabled": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
