@@ -111,6 +111,20 @@ async function main() {
       }
     }
 
+    // 将disabled为true的项目放到数组最后
+    libraries.sort((a, b) => {
+      // 如果a是禁用的而b不是，a应该排在后面
+      if (a.disabled === true && b.disabled !== true) {
+        return 1;
+      }
+      // 如果b是禁用的而a不是，b应该排在后面
+      if (b.disabled === true && a.disabled !== true) {
+        return -1;
+      }
+      // 其他情况保持原有顺序
+      return 0;
+    });
+
     // 写入结果到libraries.json
     const librariesJson = JSON.stringify(libraries, null, 2);
     const outputPath = path.join(currentDir, 'boards.json');
