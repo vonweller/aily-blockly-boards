@@ -1,16 +1,14 @@
 {
-  "name": "@aily-project/board-arduino-jnboard",
+  "name": "@aily-project/board-jinniu_board",
   "nickname": "金牛创翼板",
   "version": "0.0.1",
   "description": "金牛创翼板是一款集成多种常用传感器的开发板，包括电机、WS2812灯、LED灯、超声波、DHT11、自锁和按键开关、电位器、无源蜂鸣器和电机驱动",
   "main": "index.js",
   "url": "",
-  "brand":"Arduino",
-  "img": "arduino_jnboard.png",
+  "brand":"OpenJumper",
+  "img": "jinniu_board.png",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "arduino-cli compile -v -b arduino:avr:uno",
-    "upload": "arduino-cli upload -v -b arduino:avr:uno -p ${serial}"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
