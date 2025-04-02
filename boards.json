@@ -48,42 +48,6 @@
     "disabled": false
   },
   {
-    "name": "@aily-project/board-esp32",
-    "nickname": "ESP32 board",
-    "version": "1.0.0",
-    "description": "",
-    "author": "",
-    "brand": "",
-    "url": "",
-    "compatibility": "",
-    "img": "esp32.png",
-    "disabled": true
-  },
-  {
-    "name": "@aily-project/board-esp32c3",
-    "nickname": "ESP32C3 board",
-    "version": "1.0.0",
-    "description": "",
-    "author": "",
-    "brand": "",
-    "url": "",
-    "compatibility": "",
-    "img": "esp32c3.png",
-    "disabled": true
-  },
-  {
-    "name": "@aily-project/board-esp32s3",
-    "nickname": "ESP32S3 board",
-    "version": "1.0.0",
-    "description": "",
-    "author": "",
-    "brand": "",
-    "url": "",
-    "compatibility": "",
-    "img": "esp32s3.png",
-    "disabled": true
-  },
-  {
     "name": "@aily-project/board-raspberrypi_pico",
     "nickname": "Raspberry Pi Pico",
     "version": "1.0.0",
@@ -94,18 +58,6 @@
     "compatibility": "",
     "img": "raspberrypi_pico.png",
     "disabled": false
-  },
-  {
-    "name": "@aily-project/board-unitree_g1",
-    "nickname": "Unitree G1",
-    "version": "1.0.0",
-    "description": "Unitree G1 shield board (测试中)",
-    "author": "奈何col",
-    "brand": "Unitree",
-    "url": "",
-    "compatibility": "",
-    "img": "unitree_g1.png",
-    "disabled": true
   },
   {
     "name": "@aily-project/board-wifiduino_v2",
@@ -154,5 +106,53 @@
     "compatibility": "",
     "img": "xiao_esp32s3.png",
     "disabled": false
+  },
+  {
+    "name": "@aily-project/board-esp32",
+    "nickname": "ESP32 board",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "brand": "",
+    "url": "",
+    "compatibility": "",
+    "img": "esp32.png",
+    "disabled": true
+  },
+  {
+    "name": "@aily-project/board-esp32c3",
+    "nickname": "ESP32C3 board",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "brand": "",
+    "url": "",
+    "compatibility": "",
+    "img": "esp32c3.png",
+    "disabled": true
+  },
+  {
+    "name": "@aily-project/board-esp32s3",
+    "nickname": "ESP32S3 board",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "brand": "",
+    "url": "",
+    "compatibility": "",
+    "img": "esp32s3.png",
+    "disabled": true
+  },
+  {
+    "name": "@aily-project/board-unitree_g1",
+    "nickname": "Unitree G1",
+    "version": "1.0.0",
+    "description": "Unitree G1 shield board (测试中)",
+    "author": "奈何col",
+    "brand": "Unitree",
+    "url": "",
+    "compatibility": "",
+    "img": "unitree_g1.png",
+    "disabled": true
   }
 ]

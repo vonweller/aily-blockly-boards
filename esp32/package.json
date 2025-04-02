@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32",
   "nickname": "ESP32 board",
   "version": "1.0.0",
-  "description": "",
+  "description": "这是用于创建ESP32兼容板的模板文件，不建议普通用户使用，正式发布后会隐藏",
   "main": "index.js",
   "img": "esp32.png",
   "disabled": true,
