@@ -1,8 +1,8 @@
 {
   "name": "@aily-project/board-unitree_g1",
-  "nickname": "Unitree G1",
+  "nickname": "Unitree G1 shield",
   "version": "1.0.0",
-  "description": "Unitree G1 shield board (测试中)",
+  "description": "产品测试用，不建议普通用户使用",
   "main": "index.js",
   "img": "unitree_g1.png",
   "brand": "Unitree",
