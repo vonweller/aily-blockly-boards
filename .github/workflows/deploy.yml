@@ -153,13 +153,6 @@ jobs:
             exit 0
           fi
       
-      - name: 判断是否有图片需要上传
-        run: |
-          if [ -z "$(ls -A ../temp_images)" ]; then
-            echo "没有找到任何PNG图片"
-            exit 0
-          fi
-      
       - name: 上传图片
         uses: Dylan700/sftp-upload-action@latest
         with:
@@ -168,7 +161,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           uploads: |
-            ../temp_images/* => ${{ secrets.IMG_TARGET }}
+            temp_images/* => ${{ secrets.IMG_TARGET }}
 
       # - name: 使用SCP上传PNG图片
       #   uses: appleboy/scp-action@v0.1.4
