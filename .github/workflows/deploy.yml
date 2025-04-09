@@ -76,14 +76,17 @@ jobs:
           fi
 
       - name: echo matrix
+        if: steps.check-update-all.outputs.should_skip != 'true'
         run: echo "${{ toJson(matrix) }}"
 
       - name: Checkout code
+        if: steps.check-update-all.outputs.should_skip != 'true'
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GHB_TOKEN }}
       
       - name: Setup Node.js
+        if: steps.check-update-all.outputs.should_skip != 'true'
         uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -95,11 +98,13 @@ jobs:
       #     npm ci || npm install
       
       - name: Build package
+        if: steps.check-update-all.outputs.should_skip != 'true'
         run: |
           cd ${{ matrix.package }}
           npm run build --if-present
       
       - name: Publish to NPM
+        if: steps.check-update-all.outputs.should_skip != 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
@@ -136,21 +141,20 @@ jobs:
           fi
   
       - name: Checkout code
+        if: steps.check-update-all.outputs.should_run == 'true'
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GHB_TOKEN }}
       
       - name: Setup Node.js
+        if: steps.check-update-all.outputs.should_run == 'true'
         uses: actions/setup-node@v3
         with:
           node-version: '18'
           registry-url: ${{ secrets.REGISTRY_URL }}
       
-      - name: Build package
-        run: |
-          npm run build --if-present
-      
       - name: Publish to NPM
+        if: steps.check-update-all.outputs.should_run == 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
@@ -186,7 +190,7 @@ jobs:
       fail-fast: false
     steps:
       - name: Check UPDATE_ALL_IMG flag
-        id: check-update-all
+        id: check-update-all-img
         run: |
           if [[ "${{ secrets.UPDATE_ALL_IMG }}" == "true" ]]; then
             echo "should_skip=true" >> $GITHUB_OUTPUT
@@ -195,14 +199,17 @@ jobs:
           fi
 
       - name: echo matrix
+        if: steps.check-update-all-img.outputs.should_skip != 'true'
         run: echo "${{ toJson(matrix) }}"
       
       - name: Checkout code
+        if: steps.check-update-all-img.outputs.should_skip != 'true'
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GHB_TOKEN }}
       
       - name: upload
+        if: steps.check-update-all-img.outputs.should_skip != 'true'
         run: |
           cd ${{ matrix.package }}
 
@@ -227,6 +234,7 @@ jobs:
           fi
       
       - name: 使用SCP上传PNG图片
+        if: steps.check-update-all-img.outputs.should_skip != 'true'
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.SERVER }}
@@ -242,7 +250,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check UPDATE_ALL_IMG flag
-        id: check-update-all
+        id: check-update-all-img
         run: |
           if [[ "${{ secrets.UPDATE_ALL_IMG }}" == "true" ]]; then
             echo "should_run=true" >> $GITHUB_OUTPUT
@@ -251,11 +259,13 @@ jobs:
           fi
 
       - name: Checkout code
+        if: steps.check-update-all-img.outputs.should_run == 'true'
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GHB_TOKEN }}
       
-      - name: 
+      - name: upload all img
+        if: steps.check-update-all-img.outputs.should_run == 'true'
         id: find_images
         run: |
           echo "找到以下PNG图片文件："
@@ -278,6 +288,7 @@ jobs:
           fi
       
       - name: 使用SCP上传PNG图片
+        if: steps.check-update-all-img.outputs.should_run == 'true'
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.SERVER }}
