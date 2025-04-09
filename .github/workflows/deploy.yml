@@ -66,6 +66,15 @@ jobs:
       matrix: ${{ fromJson(needs.detect-changes.outputs.matrix) }}
       fail-fast: false
     steps:
+      - name: Check UPDATE_ALL flag
+        id: check-update-all
+        run: |
+          if [[ "${{ secrets.UPDATE_ALL }}" == "true" ]]; then
+            echo "should_skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_skip=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: echo matrix
         run: echo "${{ toJson(matrix) }}"
 
@@ -78,7 +87,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          registry-url: 'https://registry.openjumper.cn'
+          registry-url: ${{ secrets.REGISTRY_URL }}
       
       # - name: Install dependencies
       #   run: |
@@ -113,6 +122,61 @@ jobs:
           # 发布
           npm publish --access public
   
+  build-and-publish-all:
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/deploy' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check UPDATE_ALL flag
+        id: check-update-all
+        run: |
+          if [[ "${{ secrets.UPDATE_ALL }}" == "true" ]]; then
+            echo "should_run=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_run=false" >> $GITHUB_OUTPUT
+          fi
+  
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GHB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          registry-url: ${{ secrets.REGISTRY_URL }}
+      
+      - name: Build package
+        run: |
+          npm run build --if-present
+      
+      - name: Publish to NPM
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          PACKAGE_DIRS=$(find . -name "package.json" -not -path "*/node_modules/*" -not -path "./package.json" -exec dirname {} \; | sed 's/^\.\///')
+          echo "Found packages: $PACKAGE_DIRS"
+          for dir in $PACKAGE_DIRS; do
+            if [ ! -d "$dir" ]; then
+              echo "Directory $dir does not exist, skipping..."
+              continue
+            fi
+            cd $dir
+            echo "Publishing $dir"
+            CURRENT_VERSION=$(node -p "require('./package.json').version")
+            PACKAGE_NAME=$(node -p "require('./package.json').name")
+            echo "Current version: $CURRENT_VERSION"
+            
+            if npm view $PACKAGE_NAME@$CURRENT_VERSION version &> /dev/null; then
+              echo "版本 $CURRENT_VERSION 已存在，尝试取消发布..."
+              npm unpublish $PACKAGE_NAME@$CURRENT_VERSION --force
+            fi
+
+            sleep 5
+            npm publish --access public
+            cd ..
+          done
+  
   upload-changes-img:
     needs: detect-changes
     if: ${{ github.event_name == 'push' && needs.detect-changes.outputs.matrix != '{"package":[]}' && github.ref == 'refs/heads/deploy' }}
@@ -121,6 +185,15 @@ jobs:
       matrix: ${{ fromJson(needs.detect-changes.outputs.matrix) }}
       fail-fast: false
     steps:
+      - name: Check UPDATE_ALL_IMG flag
+        id: check-update-all
+        run: |
+          if [[ "${{ secrets.UPDATE_ALL_IMG }}" == "true" ]]; then
+            echo "should_skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_skip=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: echo matrix
         run: echo "${{ toJson(matrix) }}"
       
@@ -165,47 +238,56 @@ jobs:
           strip_components: 1
           rm: false
   
-  # upload-all-img:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v3
-  #       with:
-  #         token: ${{ secrets.GHB_TOKEN }}
-      
-  #     - name: 
-  #       id: find_images
-  #       run: |
-  #         echo "找到以下PNG图片文件："
-  #         find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*"
-          
-  #         # 创建临时目录用于整理图片
-  #         mkdir -p ./temp_images
-          
-  #         # 遍历所有PNG图片并保持相对路径结构复制到临时目录
-  #         find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
-  #           filename=$(basename "$file")
-  #           cp "$file" "./temp_images/$filename"
-  #           echo "复制 $file 到 ./temp_images/$filename"
-  #         done
+  upload-all-img:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check UPDATE_ALL_IMG flag
+        id: check-update-all
+        run: |
+          if [[ "${{ secrets.UPDATE_ALL_IMG }}" == "true" ]]; then
+            echo "should_run=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_run=false" >> $GITHUB_OUTPUT
+          fi
 
-  #         # 检查是否有找到图片
-  #         if [ -z "$(ls -A ./temp_images)" ]; then
-  #           echo "没有找到任何PNG图片"
-  #           exit 0
-  #         fi
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GHB_TOKEN }}
       
-  #     - name: 使用SCP上传PNG图片
-  #       uses: appleboy/scp-action@v0.1.4
-  #       with:
-  #         host: ${{ secrets.SERVER }}
-  #         username: ${{ secrets.USERNAME }}
-  #         password: ${{ secrets.PASSWORD }}
-  #         port: ${{ secrets.PORT }}
-  #         source: "temp_images/*"
-  #         target: "${{ secrets.IMG_TARGET }}"
-  #         strip_components: 1
-  #         rm: false
+      - name: 
+        id: find_images
+        run: |
+          echo "找到以下PNG图片文件："
+          find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*"
+          
+          # 创建临时目录用于整理图片
+          mkdir -p ./temp_images
+          
+          # 遍历所有PNG图片并保持相对路径结构复制到临时目录
+          find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
+            filename=$(basename "$file")
+            cp "$file" "./temp_images/$filename"
+            echo "复制 $file 到 ./temp_images/$filename"
+          done
+
+          # 检查是否有找到图片
+          if [ -z "$(ls -A ./temp_images)" ]; then
+            echo "没有找到任何PNG图片"
+            exit 0
+          fi
+      
+      - name: 使用SCP上传PNG图片
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SERVER }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "temp_images/*"
+          target: "${{ secrets.IMG_TARGET }}"
+          strip_components: 1
+          rm: false
 
   genJson-and-upload:
     runs-on: ubuntu-latest
@@ -220,7 +302,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          registry-url: 'https://registry.openjumper.cn'
+          registry-url: ${{ secrets.REGISTRY_URL }}
       
       - name: Generate JSON
         run: node genjson.js
