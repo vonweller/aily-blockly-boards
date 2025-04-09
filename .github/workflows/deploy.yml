@@ -160,16 +160,26 @@ jobs:
         run: |
           PACKAGE_DIRS=$(find . -name "package.json" -not -path "*/node_modules/*" -not -path "./package.json" -exec dirname {} \; | sed 's/^\.\///')
           echo "Found packages: $PACKAGE_DIRS"
+          # 仅保留一级目录
+          FIRST_LEVEL_DIRS=()
           for dir in $PACKAGE_DIRS; do
+            if [[ "$dir" != *"/"* ]]; then
+              FIRST_LEVEL_DIRS+=("$dir")
+            fi
+          done
+          
+          echo "要发布的一级目录包: ${FIRST_LEVEL_DIRS[*]}"
+          
+          for dir in "${FIRST_LEVEL_DIRS[@]}"; do
             if [ ! -d "$dir" ]; then
-              echo "Directory $dir does not exist, skipping..."
+              echo "目录 $dir 不存在，跳过..."
               continue
             fi
             cd $dir
-            echo "Publishing $dir"
+            echo "发布 $dir"
             CURRENT_VERSION=$(node -p "require('./package.json').version")
             PACKAGE_NAME=$(node -p "require('./package.json').name")
-            echo "Current version: $CURRENT_VERSION"
+            echo "当前版本: $CURRENT_VERSION"
             
             if npm view $PACKAGE_NAME@$CURRENT_VERSION version &> /dev/null; then
               echo "版本 $CURRENT_VERSION 已存在，尝试取消发布..."
