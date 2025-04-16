@@ -1,0 +1,16 @@
+{
+  "name": "@aily-project/board-grove_beginner_kit",
+  "nickname": "Grove Beginner Kit",
+  "version": "0.0.1",
+  "description": "The Grove Beginner Kit for Arduino® is powered by one Arduino UNO compatible Board (MicrochipATmega328p based Seeeduino Lotus) together with 10 additional Grove Arduino sensors all in one piece of the board.",
+  "main": "index.js",
+  "url": "https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html",
+  "brand": "Seeed",
+  "img": "grove_beginner_kit.png",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seeed",
+  "license": "ISC",
+  "disabled": true
+}

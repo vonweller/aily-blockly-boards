@@ -8,12 +8,8 @@
   "brand":"Arduino",
   "img": "arduino_uno.png",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "arduino-cli compile -v -b arduino:avr:uno",
-    "upload": "arduino-cli upload -v -b arduino:avr:uno -p ${serial}"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-  }
+  "license": "ISC"
 }

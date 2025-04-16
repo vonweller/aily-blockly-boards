@@ -11,7 +11,8 @@ const defaultKeysToExtract = [
   'brand',
   'url',
   'compatibility',
-  'img'
+  'img',
+  'disabled'
 ];
 
 // 自定义目录顺序 - 这里定义你想要的目录顺序
@@ -30,7 +31,12 @@ function filterPackageJson(packageJson, keysToExtract) {
     if (packageJson.hasOwnProperty(key)) {
       filteredJson[key] = packageJson[key];
     } else {
-      filteredJson[key] = "";
+      // 对disabled属性进行特殊处理，默认为false
+      if (key === 'disabled') {
+        filteredJson[key] = false;
+      } else {
+        filteredJson[key] = "";
+      }
     }
   });
 
@@ -104,6 +110,20 @@ async function main() {
         }
       }
     }
+
+    // 将disabled为true的项目放到数组最后
+    libraries.sort((a, b) => {
+      // 如果a是禁用的而b不是，a应该排在后面
+      if (a.disabled === true && b.disabled !== true) {
+        return 1;
+      }
+      // 如果b是禁用的而a不是，b应该排在后面
+      if (b.disabled === true && a.disabled !== true) {
+        return -1;
+      }
+      // 其他情况保持原有顺序
+      return 0;
+    });
 
     // 写入结果到libraries.json
     const librariesJson = JSON.stringify(libraries, null, 2);
