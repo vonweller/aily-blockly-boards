@@ -164,12 +164,12 @@
     "builtinLed": [
         ["BUILTIN_LED", "13"]
     ],
-    "interrupt": [
-        ["interrupt0", "2"],
-        ["interrupt1", "3"],
-        ["interrupt2", "21"],
-        ["interrupt3", "20"],
-        ["interrupt4", "19"],
-        ["interrupt5", "18"]
+    "interruptPins": [
+        ["2", "2"],
+        ["3", "3"],
+        ["21", "21"],
+        ["20", "20"],
+        ["19", "19"],
+        ["18", "18"]
     ]
 }
