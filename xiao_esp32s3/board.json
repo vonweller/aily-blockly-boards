@@ -1,12 +1,12 @@
 {
-    "name": "ESP32C3",
+    "name": "XIAO ESP32S3",
     "version": "1.0.0",
-    "description": "ESP32C3 compatible board",
+    "description": "Seeed ESP32S3 compatible board",
     "compilerTool": "arduino-cli",
-    "core": "esp32:esp32@2.0.4",
-    "type": "esp32:esp32:esp32c3",
-    "compilerParam": "compile -v -b esp32:esp32:esp32c3",
-    "uploadParam": "upload -v -b esp32:esp32:esp32c3 -p ${serial}",
+    "core": "aily:esp32",
+    "type": "aily:esp32:XIAO_ESP32S3",
+    "compilerParam": "compile -v -b esp32:esp32:XIAO_ESP32S3",
+    "uploadParam": "upload -v -b esp32:esp32:XIAO_ESP32S3 -p ${serial}",
     "analogPins": [
         [
             "A0",
@@ -31,88 +31,64 @@
         [
             "A5",
             "A5"
+        ],
+        [
+            "A8",
+            "A8"
+        ],
+        [
+            "A9",
+            "A9"
+        ],
+        [
+            "A10",
+            "A10"
         ]
     ],
     "digitalPins": [
         [
-            "0",
-            "0"
+            "D0",
+            "D0"
         ],
         [
-            "1",
-            "1"
+            "D1",
+            "D1"
         ],
         [
-            "2",
-            "2"
+            "D2",
+            "D2"
         ],
         [
-            "3",
-            "3"
+            "D3",
+            "D3"
         ],
         [
-            "4",
-            "4"
+            "D4",
+            "D4"
         ],
         [
-            "5",
-            "5"
+            "D5",
+            "D5"
         ],
         [
-            "6",
-            "6"
+            "D6",
+            "D6"
         ],
         [
-            "7",
-            "7"
+            "D7",
+            "D7"
         ],
         [
-            "8",
-            "8"
+            "D8",
+            "D8"
         ],
         [
-            "9",
-            "9"
+            "D9",
+            "D9"
         ],
         [
-            "10",
-            "10"
-        ],
-        [
-            "11",
-            "11"
-        ],
-        [
-            "12",
-            "12"
-        ],
-        [
-            "13",
-            "13"
-        ],
-        [
-            "A0",
-            "A0"
-        ],
-        [
-            "A1",
-            "A1"
-        ],
-        [
-            "A2",
-            "A2"
-        ],
-        [
-            "A3",
-            "A3"
-        ],
-        [
-            "A4",
-            "A4"
-        ],
-        [
-            "A5",
-            "A5"
+            "D10",
+            "D10"
         ]
     ],
     "pwmPins": [

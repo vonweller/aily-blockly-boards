@@ -3,10 +3,10 @@
     "version":"1.0.0",
     "description": "金牛创翼板",
     "compilerTool": "arduino-cli",
-    "core": "aily:avr_1.8.6",
-    "type": "aily:avr_1.8.6:uno",
-    "compilerParam": "compile -v -b aily:avr_1.8.6:uno",
-    "uploadParam": "upload -v -b aily:avr_1.8.6:uno -p ${serial}",
+    "core": "aily:avr",
+    "type": "aily:avr:uno",
+    "compilerParam": "compile -v -b aily:avr:uno",
+    "uploadParam": "upload -v -b aily:avr:uno -p ${serial}",
     "analogPins": [
         [
             "A0",
