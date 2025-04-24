@@ -5,8 +5,8 @@
     "compilerTool": "arduino-cli",
     "core": "aily:esp32",
     "type": "aily:esp32:XIAO_ESP32C3",
-    "compilerParam": "compile -v -b esp32:esp32:XIAO_ESP32C3",
-    "uploadParam": "upload -v -b esp32:esp32:XIAO_ESP32C3 -p ${serial}",
+    "compilerParam": "compile -v -b aily:esp32:XIAO_ESP32C3",
+    "uploadParam": "upload -v -b aily:esp32:XIAO_ESP32C3 -p ${serial}",
     "analogPins": [
         [
             "A0",
