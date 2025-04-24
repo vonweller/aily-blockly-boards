@@ -2,7 +2,7 @@
   {
     "name": "@aily-project/board-arduino_uno",
     "nickname": "Arduino UNO R3",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Arduino UNO R3 是一款基于ATmega328P的开源电子原型平台，包含数字I/O口14个（其中6个支持PWM输出），模拟输入口6个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
     "author": "",
     "brand": "Arduino",
@@ -48,12 +48,12 @@
     "disabled": false
   },
   {
-    "name": "@aily-project/board-arduino-jnboard",
+    "name": "@aily-project/board-jinniu_board",
     "nickname": "金牛创翼板",
     "version": "0.0.1",
     "description": "金牛创翼板是一款集成多种常用传感器的开发板，包括电机、WS2812灯、LED灯、超声波、DHT11、自锁和按键开关、电位器、无源蜂鸣器和电机驱动",
     "author": "",
-    "brand": "Arduino",
+    "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
     "img": "jinniu_board.png",
@@ -98,7 +98,7 @@
   {
     "name": "@aily-project/board-xiao_esp32c3",
     "nickname": "XIAO ESP32C3",
-    "version": "3.1.3",
+    "version": "1.0.0",
     "description": "",
     "author": "Seeed",
     "brand": "Seeed",
@@ -110,7 +110,7 @@
   {
     "name": "@aily-project/board-xiao_esp32s3",
     "nickname": "XIAO ESP32S3",
-    "version": "3.1.3",
+    "version": "1.0.0",
     "description": "",
     "author": "Seeed",
     "brand": "Seeed",
@@ -153,6 +153,18 @@
     "url": "",
     "compatibility": "",
     "img": "esp32s3.png",
+    "disabled": true
+  },
+  {
+    "name": "@aily-project/board-grove_beginner_kit",
+    "nickname": "Grove Beginner Kit",
+    "version": "0.0.1",
+    "description": "The Grove Beginner Kit for Arduino® is powered by one Arduino UNO compatible Board (MicrochipATmega328p based Seeeduino Lotus) together with 10 additional Grove Arduino sensors all in one piece of the board.",
+    "author": "Seeed",
+    "brand": "Seeed",
+    "url": "https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html",
+    "compatibility": "",
+    "img": "grove_beginner_kit.png",
     "disabled": true
   },
   {
