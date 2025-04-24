@@ -2,7 +2,7 @@
   "name": "project_",
   "version": "1.0.0",
   "description": "",
-  "board": "ESP32 board",
+  "board": "XIAO ESP32S3",
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "13.2.0",
     "@aily-project/tool-esptool_py": "4.8.1",
@@ -11,7 +11,7 @@
     "@aily-project/tool-ctags": "5.8.0"
   },
   "dependencies": {
-    "@aily-project/board-esp32s3": "1.0.0",
+    "@aily-project/board-xiao_esp32s3": "1.0.0",
     "@aily-project/lib-core-io": "0.0.1",
     "@aily-project/lib-core-logic": "0.0.1",
     "@aily-project/lib-core-loop": "0.0.1",
