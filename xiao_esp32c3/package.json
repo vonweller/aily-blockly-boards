@@ -2,10 +2,11 @@
   "name": "@aily-project/board-xiao_esp32c3",
   "nickname": "XIAO ESP32C3",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the pre-soldered version of Seeed Studio XIAO ESP32C3, which adopts new RISC-V architecture, supporting both Wi-Fi and BLE wireless connectivities. For Internet of Things applications, you will find it is flexible and suitable for all kinds of IoT scenarios.",
   "main": "index.js",
   "img":"xiao_esp32c3.png",
   "brand":"Seeed",
+  "url": "https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
