@@ -1,0 +1,13 @@
+{
+  "name": "@aily-project/board-seekfree-bot",
+  "nickname": "Seekfree-bot",
+  "version": "0.0.1",
+  "description": "Seekfree bot dev",
+  "main": "index.js",
+  "img": "esp32c3.png",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
