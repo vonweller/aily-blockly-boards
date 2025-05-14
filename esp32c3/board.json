@@ -252,7 +252,7 @@
         ]
     ],
     "interruptPins": [
-        [
+         [
             "GPIO0",
             "0"
         ],
@@ -295,6 +295,52 @@
         [
             "GPIO10",
             "10"
+        ],
+        [
+            "GPIO19",
+            "19"
+        ],
+        [
+            "GPIO18",
+            "18"
+        ],
+        [
+            "GPIO21",
+            "21"
+        ],
+        [
+            "GPIO20",
+            "20"
+        ]
+    ],
+    "interruptMode": [
+        [
+            "RISING",
+            "RISING"
+        ],
+        [
+            "FALLING",
+            "FALLING"
+        ],
+        [
+            "CHANGE",
+            "CHANGE"
+        ],
+        [
+            "ONLOW",
+            "ONLOW"
+        ],
+        [
+            "ONHIGH",
+            "ONHIGH"
+        ],
+        [
+            "ONLOW_WE",
+            "ONLOW_WE"
+        ],
+        [
+            "ONHIGH_WE",
+            "ONHIGH_WE"
         ]
     ]
 }
