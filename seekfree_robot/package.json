@@ -1,6 +1,6 @@
 {
   "name": "@aily-project/board-seekfree-bot",
-  "nickname": "Seekfree-bot",
+  "nickname": "Seekfree Robot",
   "version": "0.0.1",
   "description": "Seekfree bot dev",
   "main": "index.js",

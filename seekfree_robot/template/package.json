@@ -2,7 +2,7 @@
   "name": "project_",
   "version": "1.0.0",
   "description": "",
-  "board": "ESP32 board",
+  "board": "Seekfree Robot",
   "boardDependencies": {
     "@aily-project/compiler-esp-rv32": "14.2.0",
     "@aily-project/tool-esptool_py": "4.8.1",
