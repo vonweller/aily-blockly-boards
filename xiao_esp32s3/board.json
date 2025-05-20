@@ -241,12 +241,78 @@
     ],
     "interruptPins": [
         [
-            "2",
-            "2"
+            "D0",
+            "D0"
         ],
         [
-            "3",
-            "3"
+            "D1",
+            "D1"
+        ],
+        [
+            "D2",
+            "D2"
+        ],
+        [
+            "D3",
+            "D3"
+        ],
+        [
+            "D4",
+            "D4"
+        ],
+        [
+            "D5",
+            "D5"
+        ],
+        [
+            "D6",
+            "D6"
+        ],
+        [
+            "D7",
+            "D7"
+        ],
+        [
+            "D8",
+            "D8"
+        ],
+        [
+            "D9",
+            "D9"
+        ],
+        [
+            "D10",
+            "D10"
+        ]
+    ],
+    "interruptMode": [
+        [
+            "RISING",
+            "RISING"
+        ],
+        [
+            "FALLING",
+            "FALLING"
+        ],
+        [
+            "CHANGE",
+            "CHANGE"
+        ],
+        [
+            "ONLOW",
+            "ONLOW"
+        ],
+        [
+            "ONHIGH",
+            "ONHIGH"
+        ],
+        [
+            "ONLOW_WE",
+            "ONLOW_WE"
+        ],
+        [
+            "ONHIGH_WE",
+            "ONHIGH_WE"
         ]
     ]
 }
