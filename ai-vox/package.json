@@ -1,0 +1,14 @@
+{
+  "name": "@aily-project/board-ai-vox",
+  "nickname": "AI-VOX",
+  "version": "1.0.0",
+  "description": "AI小智产品AI-VOX",
+  "main": "index.js",
+  "img": "ai-vox.jpg",
+  "disabled": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
