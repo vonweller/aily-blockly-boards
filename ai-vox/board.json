@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "ESP32S3 compatible board",
     "compilerTool": "arduino-cli",
-    "core": "aily:esp32_3.1.3",
-    "type": "aily:esp32_3.1.3:esp32s3",
+    "core": "aily:esp32",
+    "type": "aily:esp32:esp32s3",
     "compilerParam": "compile -v -b aily:esp32:esp32s3 --build-property build.flash_mode=dio --build-property build.flash_freq=80m --build-property build.flash_size=16MB --build-property build.partitions=app3M_fat9M_16MB --build-property build.PSRAM=opi --build-property upload.maximum_size=3145728",
-    "uploadParam": "upload -v -b aily:esp32_3.1.3:esp32s3 -p ${serial}",
+    "uploadParam": "upload -v -b aily:esp32:esp32s3 -p ${serial}",
     "analogPins": [
         [
             "A0",
