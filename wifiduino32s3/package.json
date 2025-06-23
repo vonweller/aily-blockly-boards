@@ -1,0 +1,14 @@
+{
+  "name": "@aily-project/board-wifiduino32s3",
+  "nickname":"Wifiduino 32S3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "img":"wifiduino32s3.png",
+  "brand":"OpenJumper",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "OpenJumper",
+  "license": "ISC"
+}
