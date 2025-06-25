@@ -30,6 +30,10 @@
         ]
     ],
     "digitalPins": [
+                [
+            "BUILTIN_LED",
+            "BUILTIN_LED"
+        ],
         [
             "D0-44",
             "44"
