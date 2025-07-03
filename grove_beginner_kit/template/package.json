@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "board": "Arduino UNO R3",
-  "boardDependencies": {
-    "@aily-project/compiler-avr-gcc": "7.3.0",
-    "@aily-project/tool-avrdude": "6.3.0",
-    "@aily-project/sdk-avr": "1.8.6",
-    "@aily-project/tool-ctags": "5.8.0"
-  },
   "dependencies": {
     "@aily-project/board-arduino_uno": "^1.0.1",
     "@aily-project/lib-core-io": "1.0.0",

@@ -11,5 +11,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-avr-gcc": "7.3.0",
+    "@aily-project/tool-avrdude": "6.3.0",
+    "@aily-project/sdk-avr": "1.8.6",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
 }

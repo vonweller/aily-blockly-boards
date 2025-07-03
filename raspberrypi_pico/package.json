@@ -9,5 +9,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "7.2.1",
+    "@aily-project/tool-bossac": "1.9.1",
+    "@aily-project/sdk-renesas_uno": "1.3.2",
+    "@aily-project/tool-ctags": "5.8.0",
+    "@aily-project/tool-dfu-util": "0.11.0"
+  }
 }

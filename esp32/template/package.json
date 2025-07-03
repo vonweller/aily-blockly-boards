@@ -3,13 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "board": "ESP32 board",
-  "boardDependencies": {
-    "@aily-project/compiler-esp-x32": "14.2.0",
-    "@aily-project/tool-esptool_py": "4.8.1",
-    "@aily-project/sdk-esp32": "3.2.0",
-    "@aily-project/tool-idf_esp32": "5.4.0",
-    "@aily-project/tool-ctags": "5.8.0"
-  },
   "dependencies": {
     "@aily-project/board-esp32": "1.0.0",
     "@aily-project/lib-core-io": "1.0.0",

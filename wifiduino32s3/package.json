@@ -1,14 +1,21 @@
 {
   "name": "@aily-project/board-wifiduino32s3",
-  "nickname":"Wifiduino 32S3",
+  "nickname": "Wifiduino 32S3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "img":"wifiduino32s3.png",
-  "brand":"OpenJumper",
+  "img": "wifiduino32s3.png",
+  "brand": "OpenJumper",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "OpenJumper",
-  "license": "ISC"
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-esptool_py": "4.8.1",
+    "@aily-project/sdk-esp32": "3.2.0",
+    "@aily-project/tool-idf_esp32s3": "5.4.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
 }
