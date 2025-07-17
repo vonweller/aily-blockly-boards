@@ -1,5 +1,5 @@
 {
-    "name": "ESP32S3",
+    "name": "AI-VOX",
     "version": "1.0.0",
     "description": "ESP32S3 compatible board",
     "compilerTool": "arduino-cli",
