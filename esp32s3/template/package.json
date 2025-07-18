@@ -12,6 +12,6 @@
     "@aily-project/lib-core-text": "0.0.1",
     "@aily-project/lib-core-serial": "0.0.1",
     "@aily-project/lib-core-time": "0.0.1",
-    "@aily-project/lib-core-variables": "0.0.1"
+    "@aily-project/lib-core-variables": "1.0.1"
   }
 }
