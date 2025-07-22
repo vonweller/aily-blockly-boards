@@ -224,14 +224,14 @@ jobs:
           cd ${{ matrix.package }}
 
           # 找到所有图片文件
-          echo "找到以下PNG图片文件："
-          find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*"
+          echo "找到以下PNG和WebP图片文件："
+          find . -type f \( -name "*.png" -o -name "*.webp" \) -not -path "*/node_modules/*" -not -path "*/\.*/*"
 
           # 创建临时目录用于整理图片
           mkdir -p ../temp_images
 
-          # 遍历所有PNG图片并保持相对路径结构复制到临时目录
-          find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
+          # 遍历所有PNG和WebP图片并保持相对路径结构复制到临时目录
+          find . -type f \( -name "*.png" -o -name "*.webp" \) -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
             filename=$(basename "$file")
             cp "$file" "../temp_images/$filename"
             echo "复制 $file 到 ../temp_images/$filename"
@@ -239,11 +239,11 @@ jobs:
 
           # 检查是否有找到图片
           if [ -z "$(ls -A ../temp_images)" ]; then
-            echo "没有找到任何PNG图片"
+            echo "没有找到任何PNG或WebP图片"
             exit 0
           fi
       
-      - name: 使用SCP上传PNG图片
+      - name: 使用SCP上传PNG和WebP图片
         if: steps.check-update-all-img.outputs.should_skip != 'true'
         uses: appleboy/scp-action@v0.1.4
         with:
@@ -278,14 +278,14 @@ jobs:
         if: steps.check-update-all-img.outputs.should_run == 'true'
         id: find_images
         run: |
-          echo "找到以下PNG图片文件："
-          find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*"
+          echo "找到以下PNG和WebP图片文件："
+          find . -type f \( -name "*.png" -o -name "*.webp" \) -not -path "*/node_modules/*" -not -path "*/\.*/*"
           
           # 创建临时目录用于整理图片
           mkdir -p ./temp_images
           
-          # 遍历所有PNG图片并保持相对路径结构复制到临时目录
-          find . -type f -name "*.png" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
+          # 遍历所有PNG和WebP图片并保持相对路径结构复制到临时目录
+          find . -type f \( -name "*.png" -o -name "*.webp" \) -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
             filename=$(basename "$file")
             cp "$file" "./temp_images/$filename"
             echo "复制 $file 到 ./temp_images/$filename"
@@ -293,11 +293,11 @@ jobs:
 
           # 检查是否有找到图片
           if [ -z "$(ls -A ./temp_images)" ]; then
-            echo "没有找到任何PNG图片"
+            echo "没有找到任何PNG或WebP图片"
             exit 0
           fi
       
-      - name: 使用SCP上传PNG图片
+      - name: 使用SCP上传PNG和WebP图片
         if: steps.check-update-all-img.outputs.should_run == 'true'
         uses: appleboy/scp-action@v0.1.4
         with:
