@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "产品测试用，不建议普通用户使用",
   "main": "index.js",
-  "img": "unitree_g1.png",
+  "img": "unitree_g1.webp",
   "brand": "Unitree",
   "author": "奈何col",
   "disabled": true,

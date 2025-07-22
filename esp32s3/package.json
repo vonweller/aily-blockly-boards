@@ -2,9 +2,9 @@
   "name": "@aily-project/board-esp32s3",
   "nickname": "ESP32S3 board",
   "version": "1.0.0",
-  "description": "这是用于创建ESP32S3兼容板的模板文件，不建议普通用户使用，正式发布后会隐藏",
+  "description": "ESP32S3开发板通用配置",
   "main": "index.js",
-  "img": "esp32s3.png",
+  "img": "esp32s3.webp",
   "disabled": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

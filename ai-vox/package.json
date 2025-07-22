@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "AI小智产品AI-VOX",
   "main": "index.js",
-  "img": "ai-vox.png",
+  "img": "ai-vox.webp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

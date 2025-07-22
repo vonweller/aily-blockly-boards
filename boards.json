@@ -8,7 +8,7 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=698",
     "compatibility": "",
-    "img": "arduino_uno.png",
+    "img": "arduino_uno.webp",
     "disabled": false
   },
   {
@@ -20,7 +20,7 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=699",
     "compatibility": "",
-    "img": "arduino_mega.png",
+    "img": "arduino_mega.webp",
     "disabled": false
   },
   {
@@ -32,7 +32,7 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=1461",
     "compatibility": "",
-    "img": "arduino_uno_r4_minima.png",
+    "img": "arduino_uno_r4_minima.webp",
     "disabled": false
   },
   {
@@ -44,7 +44,31 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=1462",
     "compatibility": "",
-    "img": "arduino_uno_r4_wifi.png",
+    "img": "arduino_uno_r4_wifi.webp",
+    "disabled": false
+  },
+  {
+    "name": "@aily-project/board-ai-vox",
+    "nickname": "AI-VOX",
+    "version": "1.0.0",
+    "description": "AI小智产品AI-VOX",
+    "author": "",
+    "brand": "",
+    "url": "",
+    "compatibility": "",
+    "img": "ai-vox.webp",
+    "disabled": false
+  },
+  {
+    "name": "@aily-project/board-grove_beginner_kit",
+    "nickname": "Grove Beginner Kit",
+    "version": "0.0.1",
+    "description": "The Grove Beginner Kit for Arduino® is powered by one Arduino UNO compatible Board (MicrochipATmega328p based Seeeduino Lotus) together with 10 additional Grove Arduino sensors all in one piece of the board.",
+    "author": "Seeed",
+    "brand": "Seeed",
+    "url": "https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html",
+    "compatibility": "",
+    "img": "grove_beginner_kit.webp",
     "disabled": false
   },
   {
@@ -56,7 +80,7 @@
     "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
-    "img": "jinniu_board.png",
+    "img": "jinniu_board.webp",
     "disabled": false
   },
   {
@@ -68,7 +92,19 @@
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "raspberrypi_pico.png",
+    "img": "raspberrypi_pico.webp",
+    "disabled": false
+  },
+  {
+    "name": "@aily-project/board-seekfree-bot",
+    "nickname": "Seekfree Robot",
+    "version": "0.0.1",
+    "description": "Seekfree bot dev",
+    "author": "",
+    "brand": "",
+    "url": "",
+    "compatibility": "",
+    "img": "esp32c3.webp",
     "disabled": false
   },
   {
@@ -80,7 +116,7 @@
     "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
-    "img": "wifiduino_v2.png",
+    "img": "wifiduino_v2.webp",
     "disabled": false
   },
   {
@@ -92,7 +128,19 @@
     "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
-    "img": "wifiduino32.png",
+    "img": "wifiduino32.webp",
+    "disabled": false
+  },
+  {
+    "name": "@aily-project/board-wifiduino32s3",
+    "nickname": "Wifiduino 32S3",
+    "version": "1.0.0",
+    "description": "",
+    "author": "OpenJumper",
+    "brand": "OpenJumper",
+    "url": "",
+    "compatibility": "",
+    "img": "wifiduino32s3.webp",
     "disabled": false
   },
   {
@@ -104,7 +152,7 @@
     "brand": "Seeed",
     "url": "https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html",
     "compatibility": "",
-    "img": "xiao_esp32c3.png",
+    "img": "xiao_esp32c3.webp",
     "disabled": false
   },
   {
@@ -116,55 +164,43 @@
     "brand": "Seeed",
     "url": "https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html",
     "compatibility": "",
-    "img": "xiao_esp32s3.png",
+    "img": "xiao_esp32s3.webp",
     "disabled": false
   },
   {
     "name": "@aily-project/board-esp32",
     "nickname": "ESP32 board",
     "version": "1.0.0",
-    "description": "这是用于创建ESP32兼容板的模板文件，不建议普通用户使用，正式发布后会隐藏",
+    "description": "ESP32开发板通用配置",
     "author": "",
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "esp32.png",
+    "img": "esp32.webp",
     "disabled": true
   },
   {
     "name": "@aily-project/board-esp32c3",
     "nickname": "ESP32C3 board",
     "version": "1.0.0",
-    "description": "这是用于创建ESP32C3兼容板的模板文件，不建议普通用户使用，正式发布后会隐藏",
+    "description": "ESP32C3开发板通用配置",
     "author": "",
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "esp32c3.png",
+    "img": "esp32c3.webp",
     "disabled": true
   },
   {
     "name": "@aily-project/board-esp32s3",
     "nickname": "ESP32S3 board",
     "version": "1.0.0",
-    "description": "这是用于创建ESP32S3兼容板的模板文件，不建议普通用户使用，正式发布后会隐藏",
+    "description": "ESP32S3开发板通用配置",
     "author": "",
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "esp32s3.png",
-    "disabled": true
-  },
-  {
-    "name": "@aily-project/board-grove_beginner_kit",
-    "nickname": "Grove Beginner Kit",
-    "version": "0.0.1",
-    "description": "The Grove Beginner Kit for Arduino® is powered by one Arduino UNO compatible Board (MicrochipATmega328p based Seeeduino Lotus) together with 10 additional Grove Arduino sensors all in one piece of the board.",
-    "author": "Seeed",
-    "brand": "Seeed",
-    "url": "https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html",
-    "compatibility": "",
-    "img": "grove_beginner_kit.png",
+    "img": "esp32s3.webp",
     "disabled": true
   },
   {
@@ -176,7 +212,7 @@
     "brand": "Unitree",
     "url": "",
     "compatibility": "",
-    "img": "unitree_g1.png",
+    "img": "unitree_g1.webp",
     "disabled": true
   }
 ]
