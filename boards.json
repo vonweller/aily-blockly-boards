@@ -8,7 +8,7 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=698",
     "compatibility": "",
-    "img": "arduino_uno.png",
+    "img": "arduino_uno.webp",
     "disabled": false
   },
   {
@@ -20,7 +20,7 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=699",
     "compatibility": "",
-    "img": "arduino_mega.png",
+    "img": "arduino_mega.webp",
     "disabled": false
   },
   {
@@ -32,7 +32,7 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=1461",
     "compatibility": "",
-    "img": "arduino_uno_r4_minima.png",
+    "img": "arduino_uno_r4_minima.webp",
     "disabled": false
   },
   {
@@ -44,7 +44,7 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=1462",
     "compatibility": "",
-    "img": "arduino_uno_r4_wifi.png",
+    "img": "arduino_uno_r4_wifi.webp",
     "disabled": false
   },
   {
@@ -56,7 +56,7 @@
     "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
-    "img": "jinniu_board.png",
+    "img": "jinniu_board.webp",
     "disabled": false
   },
   {
@@ -68,7 +68,7 @@
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "raspberrypi_pico.png",
+    "img": "raspberrypi_pico.webp",
     "disabled": false
   },
   {
@@ -80,7 +80,7 @@
     "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
-    "img": "wifiduino_v2.png",
+    "img": "wifiduino_v2.webp",
     "disabled": false
   },
   {
@@ -92,7 +92,7 @@
     "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
-    "img": "wifiduino32.png",
+    "img": "wifiduino32.webp",
     "disabled": false
   },
   {
@@ -104,7 +104,7 @@
     "brand": "Seeed",
     "url": "https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html",
     "compatibility": "",
-    "img": "xiao_esp32c3.png",
+    "img": "xiao_esp32c3.webp",
     "disabled": false
   },
   {
@@ -116,7 +116,7 @@
     "brand": "Seeed",
     "url": "https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html",
     "compatibility": "",
-    "img": "xiao_esp32s3.png",
+    "img": "xiao_esp32s3.webp",
     "disabled": false
   },
   {
@@ -128,7 +128,7 @@
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "esp32.png",
+    "img": "esp32.webp",
     "disabled": true
   },
   {
@@ -140,7 +140,7 @@
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "esp32c3.png",
+    "img": "esp32c3.webp",
     "disabled": true
   },
   {
@@ -152,7 +152,7 @@
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "esp32s3.png",
+    "img": "esp32s3.webp",
     "disabled": true
   },
   {
@@ -164,7 +164,7 @@
     "brand": "Seeed",
     "url": "https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html",
     "compatibility": "",
-    "img": "grove_beginner_kit.png",
+    "img": "grove_beginner_kit.webp",
     "disabled": true
   },
   {
@@ -176,7 +176,7 @@
     "brand": "Unitree",
     "url": "",
     "compatibility": "",
-    "img": "unitree_g1.png",
+    "img": "unitree_g1.webp",
     "disabled": true
   }
 ]

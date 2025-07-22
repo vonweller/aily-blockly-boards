@@ -6,7 +6,7 @@
   "main": "index.js",
   "url": "https://arduino.me/s/board?aid=698",
   "brand": "Arduino",
-  "img": "arduino_uno.png",
+  "img": "arduino_uno.webp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

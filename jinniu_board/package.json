@@ -6,7 +6,7 @@
   "main": "index.js",
   "url": "",
   "brand": "OpenJumper",
-  "img": "jinniu_board.png",
+  "img": "jinniu_board.webp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "这是用于创建ESP32S3兼容板的模板文件，不建议普通用户使用，正式发布后会隐藏",
   "main": "index.js",
-  "img": "esp32s3.png",
+  "img": "esp32s3.webp",
   "disabled": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
