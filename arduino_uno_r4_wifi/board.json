@@ -1,6 +1,6 @@
 {
     "name": "Arduino UNO R4 Wifi",
-    "version":"1.3.2",
+    "version": "1.3.2",
     "description": "Arduino UNO R4 Wifi standard compatible board",
     "compilerTool": "arduino-cli",
     "core": "aily:renesas_uno",
@@ -357,6 +357,24 @@
         [
             "3",
             "3"
+        ]
+    ],
+    "interruptMode": [
+        [
+            "LOW",
+            "LOW"
+        ],
+        [
+            "RISING",
+            "RISING"
+        ],
+        [
+            "FALLING",
+            "FALLING"
+        ],
+        [
+            "CHANGE",
+            "CHANGE"
         ]
     ]
 }
