@@ -1,6 +1,6 @@
 {
     "name": "Arduino UNO R4 Minima",
-    "version":"1.0.0",
+    "version": "1.0.0",
     "description": "Arduino UNO R4 Minima standard compatible board",
     "compilerTool": "arduino-cli",
     "core": "aily:renesas_uno",
@@ -357,6 +357,24 @@
         [
             "2",
             "3"
+        ]
+    ],
+    "interruptMode": [
+        [
+            "LOW",
+            "LOW"
+        ],
+        [
+            "RISING",
+            "RISING"
+        ],
+        [
+            "FALLING",
+            "FALLING"
+        ],
+        [
+            "CHANGE",
+            "CHANGE"
         ]
     ]
 }
