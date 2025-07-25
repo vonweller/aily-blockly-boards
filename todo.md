@@ -6,6 +6,7 @@
 - [arduino_due](./arduino_due)
 - [arduino_nano](./arduino_nano)
 - [arduino_nano_esp32](./arduino_nano_esp32)
+- [ch552](./ch552)
 - [ci1303](./ci1303)
 - [esp32c6](./esp32c6)
 - [esp32h2](./esp32h2)
