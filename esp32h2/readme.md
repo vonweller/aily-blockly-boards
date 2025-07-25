@@ -1,0 +1,1 @@
+开发板文档：https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32h2/esp32-h2-devkitm-1/index.html
