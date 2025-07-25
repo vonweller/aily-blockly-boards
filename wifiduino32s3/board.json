@@ -32,7 +32,7 @@
     "digitalPins": [
         [
             "LED_BUILTIN",
-            "LED_BUILTIN"
+            "48"
         ],
         [
             "D0-44",
