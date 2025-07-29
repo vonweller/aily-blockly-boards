@@ -1,7 +1,7 @@
 {
-    "name": "unihiker_K10",
+    "name": "Unihiker K10",
     "version":"1.0.0",
-    "description": "unihiker_K10",
+    "description": "行空板K10是一款专为信息科技课程中的编程学习、物联网及AI项目教学需求而开发的学习板。它集摄像头、LCD彩屏、麦克风、扬声器、WiFi蓝牙模块、RGB指示灯及多种传感器和扩展接口于一体，无需额外设备即可实现传感器控制、物联网应用、图像检测、语音识别、语音合成等AI项目。",
     "compilerTool": "arduino-cli",
     "core": "aily:esp32",
     "type": "aily:esp32:esp32s3",
