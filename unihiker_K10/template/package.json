@@ -4,7 +4,7 @@
   "description": "",
   "board": "unihiker_K10",
   "dependencies": {
-    "@aily-project/board-wifiduino32s3": "1.0.0",
+    "@aily-project/board-unihiker_K10": "1.0.0",
     "@aily-project/lib-core-io": "1.0.0",
     "@aily-project/lib-core-logic": "0.0.1",
     "@aily-project/lib-core-loop": "0.0.1",
