@@ -1,6 +1,6 @@
 {
   "name": "@aily-project/board-unihiker_K10",
-  "nickname": "ESP32S3 board",
+  "nickname": "行空板K10",
   "version": "1.0.0",
   "description": "行空板K10",
   "main": "index.js",

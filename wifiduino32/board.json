@@ -358,5 +358,35 @@
             "3",
             "3"
         ]
+    ],
+    "interruptMode": [
+        [
+            "RISING",
+            "RISING"
+        ],
+        [
+            "FALLING",
+            "FALLING"
+        ],
+        [
+            "CHANGE",
+            "CHANGE"
+        ],
+        [
+            "ONLOW",
+            "ONLOW"
+        ],
+        [
+            "ONHIGH",
+            "ONHIGH"
+        ],
+        [
+            "ONLOW_WE",
+            "ONLOW_WE"
+        ],
+        [
+            "ONHIGH_WE",
+            "ONHIGH_WE"
+        ]
     ]
 }
