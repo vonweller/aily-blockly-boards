@@ -1,12 +1,12 @@
 {
-    "name": "Seeed Studio XIAO RA4M1",
+    "name": "XIAO RA4M1",
     "version": "1.0.0",
     "description": "Seeed Studio XIAO RA4M1 based on Renesas RA4M1 microcontroller",
     "compilerTool": "arduino-cli",
-    "core": "aily:renesas@1.2.0",
-    "type": "aily:renesas:XIAO_RA4M1",
-    "compilerParam": "compile -v -b aily:renesas:XIAO_RA4M1",
-    "uploadParam": "upload -v -b aily:renesas:XIAO_RA4M1 -p ${serial}",
+    "core": "aily:renesas_uno",
+    "type": "aily:renesas_uno:minima",
+    "compilerParam": "compile -v -b aily:renesas_uno:minima",
+    "uploadParam": "upload -v -b aily:renesas_uno:minima -p ${serial}",
     "analogPins": [
         ["A0", "A0"],
         ["A1", "A1"],

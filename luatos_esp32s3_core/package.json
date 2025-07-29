@@ -1,8 +1,8 @@
 {
     "name": "@aily-project/board-luatos-esp32s3-core",
-    "nickname": "LuatOS ESP32S3 Core",
+    "nickname": "ESP32S3 Core",
     "version": "1.0.0",
-    "description": "LuatOS ESP32S3 Core开发板配置 - 合宙OpenLuat出品",
+    "description": "LuatOS ESP32S3 Core开发板配置",
     "main": "index.js",
     "img": "luatos_esp32s3_core.webp",
     "disabled": true,

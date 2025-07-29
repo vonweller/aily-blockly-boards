@@ -14,7 +14,6 @@
 - [esp32s2](./esp32s2)
 - [raspberrypi_pico](./raspberrypi_pico)
 - [raspberrypi_pico2](./raspberrypi_pico2)
-- [xiao_RA4M1](./xiao_RA4M1)
 - [xiao_esp32c6](./xiao_esp32c6)
 - [xiao_rp2040](./xiao_rp2040)
 - [xiao_rp2350](./xiao_rp2350)
