@@ -1,0 +1,32 @@
+{
+    "name": "@aily-project/board-luatos-esp32s3-core",
+    "nickname": "LuatOS ESP32S3 Core",
+    "version": "1.0.0",
+    "description": "LuatOS ESP32S3 Core开发板配置 - 合宙OpenLuat出品",
+    "main": "index.js",
+    "img": "luatos_esp32s3_core.webp",
+    "disabled": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "LuatOS",
+        "ESP32S3",
+        "合宙",
+        "OpenLuat",
+        "Xtensa",
+        "WiFi",
+        "Bluetooth",
+        "8MB PSRAM",
+        "16MB Flash"
+    ],
+    "author": "OpenLuat",
+    "license": "MIT",
+    "boardDependencies": {
+        "@aily-project/compiler-esp-x32": "14.2.0",
+        "@aily-project/tool-esptool_py": "4.8.1",
+        "@aily-project/sdk-esp32": "3.2.0",
+        "@aily-project/tool-idf_esp32s3": "5.4.0",
+        "@aily-project/tool-ctags": "5.8.0"
+    }
+}
