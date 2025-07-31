@@ -12,6 +12,7 @@ const defaultKeysToExtract = [
   'url',
   'compatibility',
   'img',
+  'pinmap',
   'disabled'
 ];
 
@@ -24,7 +25,7 @@ const directoryOrder = [
 ];
 
 // 根据配置过滤package.json对象
-function filterPackageJson(packageJson, keysToExtract) {
+function filterPackageJson(packageJson, keysToExtract, subdir) {
   const filteredJson = {};
 
   keysToExtract.forEach(key => {
@@ -37,6 +38,13 @@ function filterPackageJson(packageJson, keysToExtract) {
       } else {
         filteredJson[key] = "";
       }
+    }
+    
+    // 对img和pinmap属性进行特殊处理，使用目录路径
+    if (key === 'img') {
+      filteredJson[key] = `${subdir}/board.webp`;
+    } else if (key === 'pinmap') {
+      filteredJson[key] = `${subdir}/pinmap.webp`;
     }
   });
 
@@ -98,7 +106,7 @@ async function main() {
         const packageJson = JSON.parse(data);
 
         // 根据配置过滤package.json
-        const filteredJson = keysToExtract ? filterPackageJson(packageJson, keysToExtract) : packageJson;
+        const filteredJson = keysToExtract ? filterPackageJson(packageJson, keysToExtract, subdir) : packageJson;
 
         libraries.push(filteredJson);
         console.log(`成功读取 ${subdir}/package.json`);
