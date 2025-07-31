@@ -4,7 +4,6 @@
     "version": "1.0.0",
     "description": "LuatOS ESP32C3 Core开发板配置",
     "main": "index.js",
-    "img": "luatos_esp32c3_core.webp",
     "disabled": true,
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

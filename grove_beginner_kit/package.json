@@ -6,7 +6,6 @@
   "main": "index.js",
   "url": "https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html",
   "brand": "Seeed",
-  "img": "grove_beginner_kit.webp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -8,7 +8,8 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=698",
     "compatibility": "",
-    "img": "arduino_uno.webp",
+    "img": "arduino_uno/board.webp",
+    "pinmap": "arduino_uno/pinmap.webp",
     "disabled": false
   },
   {
@@ -20,7 +21,8 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=699",
     "compatibility": "",
-    "img": "arduino_mega.webp",
+    "img": "arduino_mega/board.webp",
+    "pinmap": "arduino_mega/pinmap.webp",
     "disabled": false
   },
   {
@@ -32,7 +34,8 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=1461",
     "compatibility": "",
-    "img": "arduino_uno_r4_minima.webp",
+    "img": "arduino_uno_r4_minima/board.webp",
+    "pinmap": "arduino_uno_r4_minima/pinmap.webp",
     "disabled": false
   },
   {
@@ -44,7 +47,8 @@
     "brand": "Arduino",
     "url": "https://arduino.me/s/board?aid=1462",
     "compatibility": "",
-    "img": "arduino_uno_r4_wifi.webp",
+    "img": "arduino_uno_r4_wifi/board.webp",
+    "pinmap": "arduino_uno_r4_wifi/pinmap.webp",
     "disabled": false
   },
   {
@@ -56,19 +60,34 @@
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "ai-vox.webp",
+    "img": "ai-vox/board.webp",
+    "pinmap": "ai-vox/pinmap.webp",
+    "disabled": false
+  },
+  {
+    "name": "@aily-project/board-arduino_nano",
+    "nickname": "Arduino Nano",
+    "version": "1.0.2",
+    "description": "Arduino Nano 是一款基于ATmega328P的开源电子原型平台，包含数字I/O口14个（其中6个支持PWM输出），模拟输入口6个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
+    "author": "",
+    "brand": "Arduino",
+    "url": "https://arduino.me/s/board?aid=698",
+    "compatibility": "",
+    "img": "arduino_nano/board.webp",
+    "pinmap": "arduino_nano/pinmap.webp",
     "disabled": false
   },
   {
     "name": "@aily-project/board-grove_beginner_kit",
     "nickname": "Grove Beginner Kit",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "The Grove Beginner Kit for Arduino® is powered by one Arduino UNO compatible Board (MicrochipATmega328p based Seeeduino Lotus) together with 10 additional Grove Arduino sensors all in one piece of the board.",
     "author": "Seeed",
     "brand": "Seeed",
     "url": "https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html",
     "compatibility": "",
-    "img": "grove_beginner_kit.webp",
+    "img": "grove_beginner_kit/board.webp",
+    "pinmap": "grove_beginner_kit/pinmap.webp",
     "disabled": false
   },
   {
@@ -80,7 +99,8 @@
     "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
-    "img": "jinniu_board.webp",
+    "img": "jinniu_board/board.webp",
+    "pinmap": "jinniu_board/pinmap.webp",
     "disabled": false
   },
   {
@@ -92,7 +112,8 @@
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "esp32c3.webp",
+    "img": "seekfree_robot/board.webp",
+    "pinmap": "seekfree_robot/pinmap.webp",
     "disabled": false
   },
   {
@@ -104,7 +125,8 @@
     "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
-    "img": "wifiduino_v2.webp",
+    "img": "wifiduino_v2/board.webp",
+    "pinmap": "wifiduino_v2/pinmap.webp",
     "disabled": false
   },
   {
@@ -116,7 +138,8 @@
     "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
-    "img": "wifiduino32.webp",
+    "img": "wifiduino32/board.webp",
+    "pinmap": "wifiduino32/pinmap.webp",
     "disabled": false
   },
   {
@@ -128,7 +151,8 @@
     "brand": "OpenJumper",
     "url": "",
     "compatibility": "",
-    "img": "wifiduino32s3.webp",
+    "img": "wifiduino32s3/board.webp",
+    "pinmap": "wifiduino32s3/pinmap.webp",
     "disabled": false
   },
   {
@@ -140,7 +164,8 @@
     "brand": "Seeed",
     "url": "https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html",
     "compatibility": "",
-    "img": "xiao_esp32c3.webp",
+    "img": "xiao_esp32c3/board.webp",
+    "pinmap": "xiao_esp32c3/pinmap.webp",
     "disabled": false
   },
   {
@@ -152,8 +177,22 @@
     "brand": "Seeed",
     "url": "https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html",
     "compatibility": "",
-    "img": "xiao_esp32s3.webp",
+    "img": "xiao_esp32s3/board.webp",
+    "pinmap": "xiao_esp32s3/pinmap.webp",
     "disabled": false
+  },
+  {
+    "name": "@aily-project/board-arduino_nano_esp32",
+    "nickname": "Arduino Nano ESP32",
+    "version": "1.0.0",
+    "description": "The new member to our iconic Nano family, the Nano ESP32. This board brings all the power of the well-known ESP32-S3 with the full support of the Arduino ecosystem, allowing makers to explore the world of Arduino and MicroPython without any blocker. Just unleash your creativity and start building for the next IoT project.",
+    "author": "",
+    "brand": "",
+    "url": "",
+    "compatibility": "",
+    "img": "arduino_nano_esp32/board.webp",
+    "pinmap": "arduino_nano_esp32/pinmap.webp",
+    "disabled": true
   },
   {
     "name": "@aily-project/board-esp32",
@@ -164,7 +203,8 @@
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "esp32.webp",
+    "img": "esp32/board.webp",
+    "pinmap": "esp32/pinmap.webp",
     "disabled": true
   },
   {
@@ -176,7 +216,8 @@
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "esp32c3.webp",
+    "img": "esp32c3/board.webp",
+    "pinmap": "esp32c3/pinmap.webp",
     "disabled": true
   },
   {
@@ -188,7 +229,47 @@
     "brand": "",
     "url": "",
     "compatibility": "",
-    "img": "esp32s3.webp",
+    "img": "esp32s3/board.webp",
+    "pinmap": "esp32s3/pinmap.webp",
+    "disabled": true
+  },
+  {
+    "name": "@aily-project/board-luatos-esp32c3-core",
+    "nickname": "ESP32C3 Core",
+    "version": "1.0.0",
+    "description": "LuatOS ESP32C3 Core开发板配置",
+    "author": "OpenLuat",
+    "brand": "",
+    "url": "",
+    "compatibility": "",
+    "img": "luatos_esp32c3_core/board.webp",
+    "pinmap": "luatos_esp32c3_core/pinmap.webp",
+    "disabled": true
+  },
+  {
+    "name": "@aily-project/board-luatos-esp32s3-core",
+    "nickname": "ESP32S3 Core",
+    "version": "1.0.0",
+    "description": "LuatOS ESP32S3 Core开发板配置",
+    "author": "OpenLuat",
+    "brand": "",
+    "url": "",
+    "compatibility": "",
+    "img": "luatos_esp32s3_core/board.webp",
+    "pinmap": "luatos_esp32s3_core/pinmap.webp",
+    "disabled": true
+  },
+  {
+    "name": "@aily-project/board-unihiker_K10",
+    "nickname": "行空板K10",
+    "version": "1.0.0",
+    "description": "行空板K10",
+    "author": "",
+    "brand": "DFRobot",
+    "url": "",
+    "compatibility": "",
+    "img": "unihiker_K10/board.webp",
+    "pinmap": "unihiker_K10/pinmap.webp",
     "disabled": true
   },
   {
@@ -200,7 +281,21 @@
     "brand": "Unitree",
     "url": "",
     "compatibility": "",
-    "img": "unitree_g1.webp",
+    "img": "unitree_g1/board.webp",
+    "pinmap": "unitree_g1/pinmap.webp",
+    "disabled": true
+  },
+  {
+    "name": "@aily-project/board-xiao_ra4m1",
+    "nickname": "XIAO RA4M1",
+    "version": "1.0.0",
+    "description": "Seeed Studio XIAO RA4M1采用瑞萨RA4M1微控制器(32位ARM Cortex-M4，最高48MHz)，提供256KB Flash、32KB SRAM、8KB EEPROM。具有19个GPIO引脚(14个模拟，19个数字)、内置RGB LED、低功耗设计(深度睡眠最低45μA)、硬件加密和电池管理功能。",
+    "author": "Seeed Studio",
+    "brand": "Seeed Studio",
+    "url": "https://www.seeedstudio.com/Seeed-XIAO-RA4M1-p-5943.html",
+    "compatibility": "",
+    "img": "xiao_RA4M1/board.webp",
+    "pinmap": "xiao_RA4M1/pinmap.webp",
     "disabled": true
   }
 ]

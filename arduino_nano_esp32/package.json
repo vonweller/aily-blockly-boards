@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "description": "The new member to our iconic Nano family, the Nano ESP32. This board brings all the power of the well-known ESP32-S3 with the full support of the Arduino ecosystem, allowing makers to explore the world of Arduino and MicroPython without any blocker. Just unleash your creativity and start building for the next IoT project.",
   "main": "index.js",
-  "img": "arduino_nano_esp32.webp",
   "disabled": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
