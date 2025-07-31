@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "description": "行空板K10",
   "main": "index.js",
-  "img": "unihiker_k10.webp",
   "brand": "DFRobot",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
