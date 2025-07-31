@@ -223,27 +223,30 @@ jobs:
         run: |
           cd ${{ matrix.package }}
 
-          # 找到所有图片文件
-          echo "找到以下PNG和WebP图片文件："
-          find . -type f \( -name "*.png" -o -name "*.webp" \) -not -path "*/node_modules/*" -not -path "*/\.*/*"
+          # 找到所有WebP图片文件
+          echo "找到以下WebP图片文件："
+          find . -type f -name "*.webp" -not -path "*/node_modules/*" -not -path "*/\.*/*"
 
-          # 创建临时目录用于整理图片
-          mkdir -p ../temp_images
+          # 创建临时目录用于整理图片，保留父目录结构
+          mkdir -p ../temp_images/${{ matrix.package }}
 
-          # 遍历所有PNG和WebP图片并保持相对路径结构复制到临时目录
-          find . -type f \( -name "*.png" -o -name "*.webp" \) -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
-            filename=$(basename "$file")
-            cp "$file" "../temp_images/$filename"
-            echo "复制 $file 到 ../temp_images/$filename"
+          # 遍历所有WebP图片并保持相对路径结构复制到临时目录
+          find . -type f -name "*.webp" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
+            # 保持相对路径结构
+            relative_path="${file#./}"
+            target_dir="../temp_images/${{ matrix.package }}/$(dirname "$relative_path")"
+            mkdir -p "$target_dir"
+            cp "$file" "$target_dir/"
+            echo "复制 $file 到 $target_dir/$(basename "$file")"
           done
 
           # 检查是否有找到图片
-          if [ -z "$(ls -A ../temp_images)" ]; then
-            echo "没有找到任何PNG或WebP图片"
+          if [ -z "$(find ../temp_images/${{ matrix.package }} -name "*.webp" 2>/dev/null)" ]; then
+            echo "没有找到任何WebP图片"
             exit 0
           fi
       
-      - name: 使用SCP上传PNG和WebP图片
+      - name: 使用SCP上传WebP图片
         if: steps.check-update-all-img.outputs.should_skip != 'true'
         uses: appleboy/scp-action@v0.1.4
         with:
@@ -251,7 +254,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: "temp_images/*"
+          source: "temp_images/${{ matrix.package }}/*"
           target: "${{ secrets.IMG_TARGET }}"
           strip_components: 1
           rm: false
@@ -278,26 +281,29 @@ jobs:
         if: steps.check-update-all-img.outputs.should_run == 'true'
         id: find_images
         run: |
-          echo "找到以下PNG和WebP图片文件："
-          find . -type f \( -name "*.png" -o -name "*.webp" \) -not -path "*/node_modules/*" -not -path "*/\.*/*"
+          echo "找到以下WebP图片文件："
+          find . -type f -name "*.webp" -not -path "*/node_modules/*" -not -path "*/\.*/*"
           
           # 创建临时目录用于整理图片
           mkdir -p ./temp_images
           
-          # 遍历所有PNG和WebP图片并保持相对路径结构复制到临时目录
-          find . -type f \( -name "*.png" -o -name "*.webp" \) -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
-            filename=$(basename "$file")
-            cp "$file" "./temp_images/$filename"
-            echo "复制 $file 到 ./temp_images/$filename"
+          # 遍历所有WebP图片并保持相对路径结构复制到临时目录
+          find . -type f -name "*.webp" -not -path "*/node_modules/*" -not -path "*/\.*/*" | while read file; do
+            # 保持相对路径结构，包括父目录
+            relative_path="${file#./}"
+            target_dir="./temp_images/$(dirname "$relative_path")"
+            mkdir -p "$target_dir"
+            cp "$file" "$target_dir/"
+            echo "复制 $file 到 $target_dir/$(basename "$file")"
           done
 
           # 检查是否有找到图片
-          if [ -z "$(ls -A ./temp_images)" ]; then
-            echo "没有找到任何PNG或WebP图片"
+          if [ -z "$(find ./temp_images -name "*.webp" 2>/dev/null)" ]; then
+            echo "没有找到任何WebP图片"
             exit 0
           fi
       
-      - name: 使用SCP上传PNG和WebP图片
+      - name: 使用SCP上传WebP图片
         if: steps.check-update-all-img.outputs.should_run == 'true'
         uses: appleboy/scp-action@v0.1.4
         with:
