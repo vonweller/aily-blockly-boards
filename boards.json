@@ -299,16 +299,16 @@
     "disabled": true
   },
   {
-    "name": "@aily-project/board-zhangkong_board",
-    "nickname": "掌控板",
+    "name": "@aily-project/board-掌控板2.0",
+    "nickname": "掌控板2.0",
     "version": "1.0.0",
-    "description": "掌控板是一款基于ESP32的教育开发板，集成OLED显示屏、蜂鸣器、光线传感器、加速度计、WiFi/蓝牙等功能，专为编程教育设计。",
+    "description": "掌控板2.0是一款基于ESP32的教育开发板，集成OLED显示屏、蜂鸣器、光线传感器、加速度计、WiFi/蓝牙等功能，专为编程教育设计。",
     "author": "Vonweller",
-    "brand": "掌控板",
+    "brand": "掌控板2.0",
     "url": "",
     "compatibility": "",
-    "img": "zhangkong_board/board.webp",
-    "pinmap": "zhangkong_board/pinmap.webp",
+    "img": "zhangkongban_2.0/board.webp",
+    "pinmap": "zhangkongban_2.0/pinmap.webp",
     "disabled": false
   }
 ]

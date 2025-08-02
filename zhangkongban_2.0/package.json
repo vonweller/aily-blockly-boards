@@ -1,10 +1,10 @@
 {
-  "name": "@aily-project/board-zhangkong_board",
-  "nickname": "掌控板",
+  "name": "@aily-project/board-掌控板2.0",
+  "nickname": "掌控板2.0",
   "version": "1.0.0",
-  "description": "掌控板 - 基于ESP32的教育开发板，集成OLED显示屏、蜂鸣器、光线传感器、加速度计等功能",
+  "description": "掌控板2.0 - 基于ESP32的教育开发板，集成OLED显示屏、蜂鸣器、光线传感器、加速度计等功能",
   "main": "index.js",
-  "brand": "掌控板",
+  "brand": "掌控板2.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
