@@ -1,0 +1,20 @@
+{
+  "name": "@aily-project/board-zhangkong_board",
+  "nickname": "掌控板",
+  "version": "1.0.0",
+  "description": "掌控板 - 基于ESP32的教育开发板，集成OLED显示屏、蜂鸣器、光线传感器、加速度计等功能",
+  "main": "index.js",
+  "brand": "掌控板",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vonweller",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-esptool_py": "4.8.1",
+    "@aily-project/sdk-esp32": "3.2.0",
+    "@aily-project/tool-idf_esp32": "5.4.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
