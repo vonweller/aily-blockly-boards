@@ -359,19 +359,17 @@ jobs:
             exit 1
           fi
       
-      - name: SFTP upload
-        uses: Dylan700/sftp-upload-action@v1.2.3
+      - name: SCP upload boards JSON files
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.SERVER }}
+          host: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          port: 22
-          uploads: |
-            ./ => ${{ secrets.TARGET }}
-          ignore: |
-            !boards.json
-            !boards-ai.json
-      
+          port: ${{ secrets.PORT }}
+          source: "boards.json,boards-ai.json"
+          target: ${{ secrets.TARGET }}
+          timeout: 120s
+          command_timeout: 60s
 
       # 添加此步骤作为工作流的最后一步
       - name: Update last deploy tag
