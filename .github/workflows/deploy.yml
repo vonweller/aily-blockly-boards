@@ -334,6 +334,9 @@ jobs:
       - name: Generate JSON
         run: node genjson.js
       
+      - name: Generate AI JSON
+        run: node genjson-ai.js
+      
       - name: Check if JSON file exists
         run: |
           if [ -f "./boards.json" ]; then
@@ -356,6 +359,7 @@ jobs:
             ./ => ${{ secrets.TARGET }}
           ignore: |
             !boards.json
+            !boards-ai.json
       
       # 添加此步骤作为工作流的最后一步
       - name: Update last deploy tag
