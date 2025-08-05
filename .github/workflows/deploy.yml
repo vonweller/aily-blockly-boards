@@ -367,9 +367,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           uploads: |
-            ./ => ${{ secrets.TARGET }}
-          ignore: |
-            !boards.json !boards-ai.json
+            ./boards.json => ${{ secrets.TARGET }}/boards.json
+            ./boards-ai.json => ${{ secrets.TARGET }}/boards-ai.json
       
       # 添加此步骤作为工作流的最后一步
       - name: Update last deploy tag
