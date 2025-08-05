@@ -5,15 +5,10 @@ const path = require('path');
 const defaultKeysToExtract = [
   'name',
   'nickname',
-  'version',
   'description',
-  'author',
   'brand',
   'url',
   'compatibility',
-  'img',
-  'pinmap',
-  'disabled'
 ];
 
 // 自定义目录顺序 - 这里定义你想要的目录顺序
@@ -133,9 +128,9 @@ async function main() {
       return 0;
     });
 
-    // 写入结果到boards.json
-    const librariesJson = JSON.stringify(libraries, null, 2);
-    const outputPath = path.join(currentDir, 'boards.json');
+    // 写入结果到boards-ai.json
+    const librariesJson = JSON.stringify(libraries, null);
+    const outputPath = path.join(currentDir, 'boards-ai.json');
     await fs.writeFile(outputPath, librariesJson, 'utf8');
 
     console.log(`成功将${libraries.length}个库的信息写入到${outputPath}`);
