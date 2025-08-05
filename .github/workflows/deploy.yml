@@ -369,8 +369,7 @@ jobs:
           uploads: |
             ./ => ${{ secrets.TARGET }}
           ignore: |
-            !boards.json
-            !boards-ai.json
+            !boards.json !boards-ai.json
       
       # 添加此步骤作为工作流的最后一步
       - name: Update last deploy tag
