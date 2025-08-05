@@ -347,6 +347,17 @@ jobs:
             ls -la
             exit 1
           fi
+        
+      - name: Check if AI JSON file exists
+        run: |
+          if [ -f "./boards-ai.json" ]; then
+            echo "AI JSON file exists"
+            cat ./boards-ai.json | head -n 10
+          else
+            echo "AI JSON file does not exist"
+            ls -la
+            exit 1
+          fi
       
       - name: SFTP upload
         uses: Dylan700/sftp-upload-action@latest
