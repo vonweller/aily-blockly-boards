@@ -5,7 +5,7 @@
     "compilerTool": "arduino-cli",
     "core": "aily:esp32",
     "type": "aily:esp32:esp32s3",
-    "compilerParam": "compile -v -b aily:esp32:esp32s3",
+    "compilerParam": "compile -v -b aily:esp32:esp32s3:UploadSpeed=921600,CDCOnBoot=default,CPUFreq=240,FlashFreq=80,FlashMode=dio,FlashSize=16M,PartitionScheme=no_ota,DebugLevel=none,EraseFlash=none,PSRAM=enabled",
     "uploadParam": "upload -v -b aily:esp32:esp32s3 -p ${serial}",
     "analogPins": [
         [
