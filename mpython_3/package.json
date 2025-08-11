@@ -1,0 +1,33 @@
+{
+  "name": "@aily-project/board-mpython3",
+  "nickname": "掌控板3.0",
+  "version": "1.0.0",
+  "description": "掌控板3.0开发板配置 - 基于ESP32S3的教育开发板",
+  "main": "index.js",
+  "disabled": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aily",
+    "blockly",
+    "board",
+    "掌控板",
+    "esp32s3",
+    "education",
+    "Xtensa",
+    "WiFi",
+    "Bluetooth",
+    "8MB PSRAM",
+    "16MB Flash"
+  ],
+  "author": "Vonweller",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-esptool_py": "4.8.1",
+    "@aily-project/sdk-esp32": "3.2.0",
+    "@aily-project/tool-idf_esp32s3": "5.4.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
