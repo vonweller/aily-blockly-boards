@@ -1,8 +1,8 @@
 {
-  "name": "@aily-project/board-mpython-3",
+  "name": "@aily-project/board-mpython3",
   "nickname": "掌控板3.0",
   "version": "1.0.0",
-  "description": "掌控板3.0开发板配置 - 基于ESP32-S3的Python编程开发板",
+  "description": "掌控板3.0开发板配置 - 基于ESP32S3的教育开发板",
   "main": "index.js",
   "disabled": false,
   "scripts": {
