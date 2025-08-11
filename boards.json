@@ -117,6 +117,19 @@
     "disabled": false
   },
   {
+    "name": "@aily-project/board-mpython-3",
+    "nickname": "掌控板3.0",
+    "version": "1.0.0",
+    "description": "掌控板3.0 - 基于ESP32-S3的Python编程开发板，集成1.3寸TFT显示屏、6轴运动传感器、3轴磁场传感器、光线传感器、音频编解码、RGB LED等丰富功能",
+    "author": "Aily Project",
+    "brand": "掌控板",
+    "url": "",
+    "compatibility": "",
+    "img": "mpython_3/board.webp",
+    "pinmap": "mpython_3/pinmap.webp",
+    "disabled": false
+  },
+  {
     "name": "@aily-project/board-seekfree-bot",
     "nickname": "Seekfree Robot",
     "version": "0.0.1",
