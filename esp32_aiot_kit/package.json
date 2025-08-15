@@ -1,6 +1,6 @@
 {
-  "name": "@aily-project/board-esp32aiot",
-  "nickname": "ESP32AIOT board",
+  "name": "@aily-project/board-esp32_aiot_kit",
+  "nickname": "ESP32 AIOT Kit",
   "version": "1.0.0",
   "description": "ESP32AIOT开发板通用配置",
   "main": "index.js",
@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "OpenJumper",
   "license": "ISC",
   "boardDependencies":{
       "@aily-project/compiler-esp-x32": "14.2.0",
