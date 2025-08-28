@@ -2,7 +2,7 @@
   "name": "@aily-project/board-wifiduino32s3",
   "nickname": "Wifiduino 32S3",
   "version": "1.0.0",
-  "description": "WiFiduino32采用乐鑫ESP32-WROOM-32E模组，主频240MHz，SRAM内存520KB，Flash容量4M，WIFI支持802.11 b/g/n 2.4GHz，蓝牙支持Bluetooth 4.2 BR/EDR + BLE，数字模拟I/O多达22个，12路ADC精度达到12位，支持2路8位DAC，通信接口包含UART/SPI/I2C/USB/CAN/SDIO，具备深度睡眠/超低功耗协处理器，工作电压3.3V，外部输入电压推荐7~12V，I/O输出能力12mA，主板尺寸68.6*53.4mm，主要应用在复杂IoT设备、多任务处理、高速需求，可接入blinker物联网平台及小智AI平台，快速上手各种AIOT项目",
+  "description": "Wifiduino32S3采用乐鑫ESP32-S3-N16R8模组，主频可达240M、SRAM内存512KB、Flash容量16M、WIFI支持802.11 b/g/n 2.4GHz + Wi-Fi 6（部分特性）、蓝牙支持Bluetooth 5.2 LE + Mesh、数字模拟I/O多达24个、20路ADC精度达到12位，支持多通道并行采样、支持2路12位DAC、通信接口包含了UART/SPI/I2C/USB/CAN/SDIO/Ethernet（需外置PHY）、具备深度睡眠/超低功耗协处理器 + RTC独立运行模式工作电压在3.3V、外部输入电压推荐7~12VI/O输出能力40mA主板尺寸在68.6*53.4 mm板卡定位为旗舰型号，适合AIoT、工业自动化等高复杂度项目。同时，可针对于低成本接入blinker物联网平台，以及小智AI平台，快速上手各种AIOT项目。",
   "main": "index.js",
   "brand": "OpenJumper",
   "url": "http://openjumper.com/doc/wifiduino32s3",
