@@ -3,10 +3,10 @@
     "version":"1.0.0",
     "description": "Arduino Nano R4 standard compatible board",
     "compilerTool": "arduino-cli",
-    "core": "arduino:renesas_uno",
-    "type": "arduino:renesas_uno:nanor4",
-    "compilerParam": "compile -v -b arduino:renesas_uno:nanor4",
-    "uploadParam": "upload -v -b arduino:renesas_uno:nanor4 -p ${serial}",
+    "core": "aily:renesas_uno",
+    "type": "aily:renesas_uno:nanor4",
+    "compilerParam": "compile -v -b aily:renesas_uno:nanor4",
+    "uploadParam": "upload -v -b aily:renesas_uno:nanor4 -p ${serial}",
     "analogPins": [
         [
             "A0",
