@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-arduino_nano_r4",
   "nickname": "Arduino Nano R4",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Arduino Nano R4 将32位Arm® Cortex-M4® 处理器的强大功能带入深受喜爱的Nano系列板外形尺寸。它基于瑞萨电子RA4M1微控制器，具有256kB闪存、32kB SRAM和8kB EEPROM，均以48MHz运行，内置实时时钟（RTC）、14位ADC和12位DAC。",
   "main": "index.js",
   "url": "https://arduino.me/s/board?aid=698",
@@ -12,9 +12,10 @@
   "author": "",
   "license": "ISC",
   "boardDependencies": {
-    "@aily-project/compiler-avr-gcc": "7.3.0",
-    "@aily-project/tool-avrdude": "6.3.0",
-    "@aily-project/sdk-avr": "1.8.6",
-    "@aily-project/tool-ctags": "5.8.0"
+    "@aily-project/compiler-arm-none-eabi-gcc": "7.2.1",
+    "@aily-project/tool-bossac": "1.9.1",
+    "@aily-project/sdk-renesas_uno": "1.5.1",
+    "@aily-project/tool-ctags": "5.8.0",
+    "@aily-project/tool-dfu-util": "0.11.0"
   }
 }
