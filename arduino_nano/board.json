@@ -3,7 +3,7 @@
     "version":"1.0.0",
     "description": "Arduino Nano standard compatible board",
     "compilerTool": "arduino-cli",
-    "core": "aily:avr",
+    "core": "aily:renesas_uno",
     "type": "aily:avr:nano",
     "compilerParam": "compile -v -b aily:avr:nano",
     "uploadParam": "upload -v -b aily:avr:nano -p ${serial}",
