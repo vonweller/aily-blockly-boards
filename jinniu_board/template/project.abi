@@ -7,14 +7,14 @@
         "id": "arduino_setup_id0",
         "x": 30,
         "y": 30,
-        "deletable": false 
+        "deletable": false
       },
       {
         "type": "arduino_loop",
         "id": "arduino_loop_id0",
         "x": 30,
         "y": 290,
-        "deletable": false 
+        "deletable": false
       }
     ]
   }
