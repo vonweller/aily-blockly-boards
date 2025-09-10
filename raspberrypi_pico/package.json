@@ -1,0 +1,25 @@
+{
+    "name": "@aily-project/board-raspberrypi_pico",
+    "nickname": "Raspberry Pi Pico",
+    "version": "1.0.0",
+    "description": "Raspberry Pi Pico",
+    "main": "index.js",
+    "disabled": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "树莓派",
+        "WiFi",
+        "Bluetooth"
+    ],
+    "author": "RaspberryPi",
+    "license": "MIT",
+    "boardDependencies": {
+        "@aily-project/compiler-esp-x32": "14.2.0",
+        "@aily-project/tool-esptool_py": "4.8.1",
+        "@aily-project/sdk-esp32": "3.2.0",
+        "@aily-project/tool-idf_esp32s3": "5.4.0",
+        "@aily-project/tool-ctags": "5.8.0"
+    }
+}
