@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "ESP32S3AIOT compatible board",
     "compilerTool": "aily-builder",
-    "core": "arduino:esp32",
-    "type": "arduino:esp32:esp32s3",
-    "compilerParam": "compile -v -b arduino:esp32:esp32s3",
+    "core": "esp32:esp32",
+    "type": "esp32:esp32:esp32s3",
+    "compilerParam": "compile -v -b esp32:esp32:esp32s3",
     "uploadParam": "esptool --chip esp32s3",
     "analogPins": [
         [

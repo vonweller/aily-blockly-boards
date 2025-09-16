@@ -3,9 +3,9 @@
     "version": "1.0.1",
     "description": "掌控板3.0 - 基于ESP32-S3的Python编程开发板",
     "compilerTool": "aily-builder",
-    "core": "arduino:esp32",
-    "type": "arduino:esp32:esp32s3",
-    "compilerParam": "compile -v -b arduino:esp32:esp32s3 --build-property build.cdc_on_boot=1 --build-property build.flash_size=16MB --build-property build.partitions=ffat --build-property build.psram_type=opi",
+    "core": "esp32:esp32",
+    "type": "esp32:esp32:esp32s3",
+    "compilerParam": "compile -v -b esp32:esp32:esp32s3 --build-property build.cdc_on_boot=1 --build-property build.flash_size=16MB --build-property build.partitions=ffat --build-property build.psram_type=opi",
     "uploadParam": "esptool --chip esp32s3",
     "analogPins": [
         [

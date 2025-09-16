@@ -3,9 +3,9 @@
     "version": "1.0.1",
     "description": "LuatOS ESP32C3 Core development board by OpenLuat",
     "compilerTool": "aily-builder",
-    "core": "arduino:esp32",
-    "type": "arduino:esp32:esp32c3",
-    "compilerParam": "compile -v -b arduino:esp32:esp32c3:UploadSpeed=921600,CDCOnBoot=default,CPUFreq=160,FlashFreq=80,FlashMode=dio,FlashSize=4M,PartitionScheme=no_ota,DebugLevel=none,EraseFlash=none",
+    "core": "esp32:esp32",
+    "type": "esp32:esp32:esp32c3",
+    "compilerParam": "compile -v -b esp32:esp32:esp32c3:UploadSpeed=921600,CDCOnBoot=default,CPUFreq=160,FlashFreq=80,FlashMode=dio,FlashSize=4M,PartitionScheme=no_ota,DebugLevel=none,EraseFlash=none",
     "uploadParam": "esptool --chip esp32c3",
     "analogPins": [
         [

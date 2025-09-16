@@ -3,9 +3,9 @@
     "version": "1.0.1",
     "description": "ESP32 compatible board",
     "compilerTool": "aily-builder",
-    "core": "arduino:esp32",
-    "type": "arduino:esp32:esp32",
-    "compilerParam": "compile -v -b arduino:esp32:esp32",
+    "core": "esp32:esp32",
+    "type": "esp32:esp32:esp32",
+    "compilerParam": "compile -v -b esp32:esp32:esp32",
     "uploadParam": "esptool --chip esp32",
     "analogPins": [
         ["36", "36"],

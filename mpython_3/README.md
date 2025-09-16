@@ -42,10 +42,10 @@
 
 使用ESP32-S3工具链进行编译：
 - 编译器: arduino-cli
-- 核心: arduino:esp32
-- 类型: arduino:esp32:esp32s3
-- 编译参数: `compile -v -b arduino:esp32:esp32s3`
-- 上传参数: `upload -v -b arduino:esp32:esp32s3 -p ${serial}`
+- 核心: esp32:esp32
+- 类型: esp32:esp32:esp32s3
+- 编译参数: `compile -v -b esp32:esp32:esp32s3`
+- 上传参数: `upload -v -b esp32:esp32:esp32s3 -p ${serial}`
 
 ## 依赖库
 

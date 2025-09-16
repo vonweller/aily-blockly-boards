@@ -3,9 +3,9 @@
     "version":"1.0.1",
     "description": "WiFiduino32",
     "compilerTool": "aily-builder",
-    "core": "arduino:esp32",
-    "type": "arduino:esp32:wifiduino32",
-    "compilerParam": "compile -v -b arduino:esp32:wifiduino32",
+    "core": "esp32:esp32",
+    "type": "esp32:esp32:wifiduino32",
+    "compilerParam": "compile -v -b esp32:esp32:wifiduino32",
     "uploadParam": "esptool --chip esp32",
     "analogPins": [
         [
