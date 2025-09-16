@@ -1,12 +1,12 @@
 {
     "name": "Arduino UNO R4 Minima",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Arduino UNO R4 Minima standard compatible board",
-    "compilerTool": "arduino-cli",
-    "core": "aily:renesas_uno",
-    "type": "aily:renesas_uno:minima",
-    "compilerParam": "compile -v -b aily:renesas_uno:minima",
-    "uploadParam": "upload -v -b aily:renesas_uno:minima -p ${serial}",
+    "compilerTool": "aily-builder",
+    "core": "arduino:renesas_uno",
+    "type": "arduino:renesas_uno:minima",
+    "compilerParam": "compile -v -b arduino:renesas_uno:minima",
+    "uploadParam": "dfu-util",
     "analogPins": [
         [
             "A0",

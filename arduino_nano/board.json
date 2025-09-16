@@ -1,12 +1,12 @@
 {
     "name": "Arduino Nano",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "description": "Arduino Nano standard compatible board",
-    "compilerTool": "arduino-cli",
-    "core": "aily:avr",
-    "type": "aily:avr:nano",
-    "compilerParam": "compile -v -b aily:avr:nano",
-    "uploadParam": "upload -v -b aily:avr:nano -p ${serial}",
+    "compilerTool": "aily-builder",
+    "core": "arduino:avr",
+    "type": "arduino:avr:nano",
+    "compilerParam": "compile -v -b arduino:avr:nano",
+    "uploadParam": "avrdude -Cavrdude.conf -v -V -patmega328p -carduino",
     "analogPins": [
         [
             "A0",

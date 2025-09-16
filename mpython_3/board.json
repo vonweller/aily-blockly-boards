@@ -1,12 +1,12 @@
 {
     "name": "掌控板3.0",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "掌控板3.0 - 基于ESP32-S3的Python编程开发板",
-    "compilerTool": "arduino-cli",
-    "core": "aily:esp32",
-    "type": "aily:esp32:esp32s3",
-    "compilerParam": "compile -v -b aily:esp32:esp32s3:USBMode=hwcdc,CDCOnBoot=cdc,MSCOnBoot=default,DFUOnBoot=default,UploadMode=default,CPUFreq=240,FlashMode=qio,FlashSize=16M,PartitionScheme=default,DebugLevel=none,PSRAM=opi,LoopCore=1,EventsCore=1,EraseFlash=none",
-    "uploadParam": "upload -v -b aily:esp32:esp32s3:USBMode=hwcdc,CDCOnBoot=cdc -p ${serial}",
+    "compilerTool": "aily-builder",
+    "core": "arduino:esp32",
+    "type": "arduino:esp32:esp32s3",
+    "compilerParam": "compile -v -b arduino:esp32:esp32s3 --build-property build.cdc_on_boot=1 --build-property build.flash_size=16MB --build-property build.partitions=ffat --build-property build.psram_type=opi",
+    "uploadParam": "esptool --chip esp32s3",
     "analogPins": [
         [
             "P0",

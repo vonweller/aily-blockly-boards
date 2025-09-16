@@ -1,12 +1,12 @@
 {
     "name": "WiFiduino32s3",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "description": "WiFiduino32s3",
-    "compilerTool": "arduino-cli",
-    "core": "aily:esp32",
-    "type": "aily:esp32:wifiduino32s3",
-    "compilerParam": "compile -v -b aily:esp32:wifiduino32s3",
-    "uploadParam": "upload -v -b aily:esp32:wifiduino32s3 -p ${serial}",
+    "compilerTool": "aily-builder",
+    "core": "arduino:esp32",
+    "type": "arduino:esp32:wifiduino32s3",
+    "compilerParam": "compile -v -b arduino:esp32:wifiduino32s3",
+    "uploadParam": "esptool --chip esp32s3",
     "analogPins": [
         [
             "A1-1",

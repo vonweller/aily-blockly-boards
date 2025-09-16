@@ -1,12 +1,12 @@
 {
     "name": "Arduino MEGA",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "description": "Arduino MEGA 2560 board",
-    "compilerTool": "arduino-cli",
-    "core": "aily:avr",
-    "type": "aily:avr:mega",
-    "compilerParam": "compile -v -b aily:avr:mega",
-    "uploadParam": "upload -v -b aily:avr:mega -p ${serial}",
+    "compilerTool": "aily-builder",
+    "core": "arduino:avr",
+    "type": "arduino:avr:mega",
+    "compilerParam": "compile -v -b arduino:avr:mega",
+    "uploadParam": "avrdude -Cavrdude.conf -v -V -patmega2560p -carduino",
     "analogPins": [
         ["A0", "A0"],
         ["A1", "A1"],

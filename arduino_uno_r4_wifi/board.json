@@ -1,12 +1,12 @@
 {
     "name": "Arduino UNO R4 Wifi",
-    "version": "1.3.2",
+    "version": "1.3.3",
     "description": "Arduino UNO R4 Wifi standard compatible board",
-    "compilerTool": "arduino-cli",
-    "core": "aily:renesas_uno",
-    "type": "aily:renesas_uno:unor4wifi",
-    "compilerParam": "compile -v -b aily:renesas_uno:unor4wifi",
-    "uploadParam": "upload -v -b aily:renesas_uno:unor4wifi -p ${serial}",
+    "compilerTool": "aily-builder",
+    "core": "arduino:renesas_uno",
+    "type": "arduino:renesas_uno:unor4wifi",
+    "compilerParam": "compile -v -b arduino:renesas_uno:unor4wifi",
+    "uploadParam": "bossac --use_1200bps_touch",
     "analogPins": [
         [
             "A0",
