@@ -16,10 +16,12 @@
     "author": "RaspberryPi",
     "license": "MIT",
     "boardDependencies": {
-        "@aily-project/compiler-esp-x32": "14.2.0",
-        "@aily-project/tool-esptool_py": "4.8.1",
-        "@aily-project/sdk-esp32": "3.2.0",
-        "@aily-project/tool-idf_esp32s3": "5.4.0",
+        "@aily-project/compiler-pqt-gcc": "4.1.0",
+        "@aily-project/tool-pqt-mklittlefs": "4.1.0",
+        "@aily-project/sdk-rpi_pico": "5.0.0",
+        "@aily-project/tool-pqt-picotool": "4.1.0",
+        "@aily-project/tool-pqt-pioasm": "4.1.0",
+        "@aily-project/tool-pqt-python3": "1.0.1",
         "@aily-project/tool-ctags": "5.8.0"
     }
 }
