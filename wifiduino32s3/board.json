@@ -6,7 +6,7 @@
     "core": "esp32:esp32",
     "type": "esp32:esp32:wifiduino32s3",
     "compilerParam": "compile -v -b esp32:esp32:wifiduino32s3",
-    "uploadParam": "esptool --chip esp32s3 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x0 ${bootloader} 0x8000 ${partitions} 0xe000 ${boot_app0} 0x10000 ${'*.merged.bin'}",
+    "uploadParam": "esptool --chip esp32s3 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x0 ${bootloader} 0x8000 ${partitions} 0xe000 ${boot_app0} 0x10000 ${'*.bin'}",
     "analogPins": [
         [
             "A1-1",
