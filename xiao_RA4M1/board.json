@@ -6,7 +6,7 @@
     "core": "arduino:renesas_uno",
     "type": "arduino:renesas_uno:minima",
     "compilerParam": "compile -v -b arduino:renesas_uno:minima",
-    "uploadParam": "dfu-util --device 0x2341:0x0069,:0x0369 -D ${file} -a0 -Q",
+    "uploadParam": "dfu-util --device 0x2341:0x0069,:0x0369 -D ${'*.bin} -a0 -Q",
     "analogPins": [
         ["A0", "A0"],
         ["A1", "A1"],

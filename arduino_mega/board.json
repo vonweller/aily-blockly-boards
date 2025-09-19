@@ -6,7 +6,7 @@
     "core": "arduino:avr",
     "type": "arduino:avr:mega",
     "compilerParam": "compile -v -b arduino:avr:mega",
-    "uploadParam": "avrdude -C${'avrdude.conf'} -v -V -patmega2560p -carduino -P${serial} -b${baud} -D -Uflash:w:${file}:i;",
+    "uploadParam": "avrdude -C${'avrdude.conf'} -v -V -patmega2560p -carduino -P${serial} -b${baud} -D -Uflash:w:${'*.hex'}:i;",
     "analogPins": [
         ["A0", "A0"],
         ["A1", "A1"],
