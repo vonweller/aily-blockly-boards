@@ -6,7 +6,7 @@
     "core": "arduino:avr",
     "type": "arduino:avr:uno",
     "compilerParam": "compile -v -b arduino:avr:uno",
-    "uploadParam": "avrdude -Cavrdude.conf -v -V -patmega328p -carduino -P${serial} -b${baud} -D -Uflash:w:${file}:i",
+    "uploadParam": "avrdude -C${'avrdude.conf'} -v -V -patmega328p -carduino -P${serial} -b${baud} -D -Uflash:w:${file}:i",
     "analogPins": [
         [
             "A0",
