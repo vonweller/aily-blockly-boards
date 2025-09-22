@@ -1,7 +1,7 @@
 {
     "name": "@aily-project/board-raspberrypi_pico2_w",
     "nickname": "Raspberry Pi Pico2 W",
-    "version": "1.0.0",
+    "version": "5.1.0",
     "description": "Raspberry Pi Pico2 W",
     "main": "index.js",
     "disabled": true,
@@ -17,8 +17,7 @@
     "license": "MIT",
     "boardDependencies": {
         "@aily-project/compiler-pqt-gcc": "4.1.0",
-        "@aily-project/tool-pqt-mklittlefs": "4.1.0",
-        "@aily-project/sdk-rpi_pico": "5.0.0",
+        "@aily-project/sdk-rp2040": "5.1.0",
         "@aily-project/tool-pqt-picotool": "4.1.0",
         "@aily-project/tool-pqt-pioasm": "4.1.0",
         "@aily-project/tool-pqt-python3": "1.0.1",
