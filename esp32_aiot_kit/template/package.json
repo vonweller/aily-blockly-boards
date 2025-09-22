@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "@aily-project/board-esp32_aiot_kit": "1.0.0",
+    "@aily-project/board-esp32_aiot_kit": "3.3.1",
     "@aily-project/lib-adafruit_ina219": "^0.0.1",
     "@aily-project/lib-adafruit-gfx": "^1.0.2",
     "@aily-project/lib-adafruit-vl53l0x": "^1.0.0",

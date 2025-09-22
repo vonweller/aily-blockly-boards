@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-mpython2",
   "nickname": "掌控板2.0",
-  "version": "1.0.0",
+  "version": "3.3.1",
   "description": "掌控板2.0 - 基于ESP32的教育开发板，集成OLED显示屏、蜂鸣器、光线传感器、加速度计等功能",
   "main": "index.js",
   "brand": "掌控板2.0",
@@ -12,9 +12,9 @@
   "license": "ISC",
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
-    "@aily-project/tool-esptool_py": "4.8.1",
-    "@aily-project/sdk-esp32": "3.2.0",
-    "@aily-project/tool-idf_esp32": "5.4.0",
+    "@aily-project/tool-esptool_py": "5.1.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32": "5.5.0",
     "@aily-project/tool-ctags": "5.8.0"
   }
 }
