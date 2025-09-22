@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-esp32s3",
   "nickname": "ESP32S3 board",
-  "version": "1.0.0",
+  "version": "3.3.1",
   "description": "ESP32S3开发板通用配置",
   "main": "index.js",
   "disabled": true,
