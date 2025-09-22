@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-esp32",
   "nickname": "ESP32 board",
-  "version": "1.0.0",
+  "version": "3.3.1",
   "description": "ESP32开发板通用配置",
   "main": "index.js",
   "disabled": true,
@@ -12,9 +12,9 @@
   "license": "ISC",
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
-    "@aily-project/tool-esptool_py": "4.8.1",
-    "@aily-project/sdk-esp32": "3.2.0",
-    "@aily-project/tool-idf_esp32": "5.4.0",
+    "@aily-project/tool-esptool_py": "5.1.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32": "5.5.0",
     "@aily-project/tool-ctags": "5.8.0"
   }
 }

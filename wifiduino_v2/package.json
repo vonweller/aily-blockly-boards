@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-wifiduino_v2",
   "nickname": "Wifiduino v2",
-  "version": "1.0.0",
+  "version": "3.3.1",
   "description": "WIFIduinoV2采用乐鑫ESP32-C3芯片主频160MHzSRAM内存400KB、Flash容量4M、WIFI支持802.11 b/g/n 2.4GHz 、蓝牙支持Bluetooth 5.0 LE数字模拟I/O多达18个、6路ADC精度达到12位、通信接口包含了UART/SPI/I2C/USB、具备深度睡眠/超低功耗协处理器 、工作电压在3.3V、外部输入电压推荐7~12VI/O输出能力12mA主板尺寸在68.6*53.4 mm主要应用在适合中端低功耗场景。可针对于低成本接入blinker物联网平台，以及小智AI平台，快速上手各种AIOT项",
   "main": "index.js",
   "brand": "OpenJumper",
@@ -13,9 +13,9 @@
   "license": "ISC",
   "boardDependencies": {
     "@aily-project/compiler-esp-rv32": "14.2.0",
-    "@aily-project/tool-esptool_py": "4.8.1",
-    "@aily-project/sdk-esp32": "3.2.0",
-    "@aily-project/tool-idf_esp32c3": "5.4.0",
+    "@aily-project/tool-esptool_py": "5.1.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32c3": "5.5.0",
     "@aily-project/tool-ctags": "5.8.0"
   }
 }

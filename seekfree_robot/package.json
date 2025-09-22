@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-seekfree-bot",
   "nickname": "Seekfree Robot",
-  "version": "0.0.1",
+  "version": "3.3.1",
   "description": "Seekfree bot dev",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,9 @@
   "license": "ISC",
   "boardDependencies": {
     "@aily-project/compiler-esp-rv32": "14.2.0",
-    "@aily-project/tool-esptool_py": "4.8.1",
-    "@aily-project/sdk-esp32": "3.2.0",
-    "@aily-project/tool-idf_esp32c3": "5.4.0",
+    "@aily-project/tool-esptool_py": "5.1.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32c3": "5.5.0",
     "@aily-project/tool-ctags": "5.8.0"
   }
 }

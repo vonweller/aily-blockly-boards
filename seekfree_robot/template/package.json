@@ -4,7 +4,7 @@
   "description": "",
   "board": "Seekfree Robot",
   "dependencies": {
-    "@aily-project/board-seekfree-bot": "0.0.1",
+    "@aily-project/board-seekfree-bot": "3.3.1",
     "@aily-project/lib-core-io": "1.0.0",
     "@aily-project/lib-core-logic": "0.0.1",
     "@aily-project/lib-core-loop": "0.0.1",
