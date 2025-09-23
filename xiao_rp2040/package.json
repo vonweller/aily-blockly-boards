@@ -1,0 +1,27 @@
+{
+  "name": "@aily-project/board-xiao_rp2040",
+  "nickname": "Xiao RP2040",
+  "version": "5.1.0",
+  "description": "Xiao RP2040",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "树莓派",
+    "Seeed",
+    "WiFi",
+    "Bluetooth"
+  ],
+  "author": "Seeed",
+  "brand": "Seeed",
+  "license": "MIT",
+  "boardDependencies": {
+    "@aily-project/compiler-pqt-gcc": "4.1.0",
+    "@aily-project/sdk-rp2040": "5.1.0",
+    "@aily-project/tool-pqt-picotool": "4.1.0",
+    "@aily-project/tool-pqt-pioasm": "4.1.0",
+    "@aily-project/tool-pqt-python3": "1.0.1",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
