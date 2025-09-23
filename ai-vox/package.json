@@ -9,6 +9,7 @@
   },
   "author": "",
   "license": "ISC",
+  "brand": "NullLab",
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
     "@aily-project/tool-esptool_py": "5.1.0",
