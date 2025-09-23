@@ -14,6 +14,7 @@
         "Bluetooth"
     ],
     "author": "RaspberryPi",
+    "brand": "RaspberryPi",
     "license": "MIT",
     "boardDependencies": {
         "@aily-project/compiler-pqt-gcc": "4.1.0",

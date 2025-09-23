@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
+  "brand": "Arduino",
   "license": "ISC",
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
