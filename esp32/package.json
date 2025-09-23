@@ -4,7 +4,6 @@
   "version": "3.3.1",
   "description": "ESP32开发板通用配置",
   "main": "index.js",
-  "disabled": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

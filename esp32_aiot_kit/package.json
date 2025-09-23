@@ -4,7 +4,6 @@
   "version": "3.3.1",
   "description": "ESP32S3AIOT套件是一款基于esp32S3模组专为AIOT学习的集主板和传感器多合一综合套件，板中集成了27个子模块(共21种模块和1个主控集成板)同时还匹配了丰富的教学例程及学习资料，可以满足大多数AI和物联网的学习及使用场景。产品特点27个模块+主控扩展单元 ALL IN ONEAI应用模块与主板接线板载通路，无需复杂接线可开发AI应用，兼容小智AI应用插针与grove扩展接口，可适应更多硬件接入需求支持外部供电，可为电机驱动以及其他物联网项目提供电力可支持软件arduinoIDE、ESP-idf、Ailyblockly硬件参数传感器个数及种类：模拟摇杆x1、DHT11温湿度传感器X1BMI270六轴传感器x1、光敏二极管模块x2、蜂鸣器x1、LED模块x3、INA219功率检测x1、TB6612电机驱动模块x1、1.3寸IPS LCD、0.96OLED（ssd1306）x1、热敏测温模块（B值3950阻值10K）x1、旋转编码器x1、VL53L0X激光测距模块x1、SD卡模块x1、人体红外x1、轻触按键（默认上拉）x2、轻触按键（默认下拉）x2、PCM数字麦克风x1、MAX98357功放模块x1、0V2640摄像头模块主控板（兼容）：esp32s3核心板、wifiduino32S3接口类型：排针+grove接口模块工作电压：3.3V外部供电电压：6~12VPCB尺寸：250*175mm固定孔尺寸：244*169mm",
   "main": "index.js",
-  "disabled": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -4,7 +4,6 @@
     "version": "5.1.0",
     "description": "Raspberry Pi Pico2",
     "main": "index.js",
-    "disabled": true,
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
