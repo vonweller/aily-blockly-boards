@@ -11,7 +11,7 @@
 - [esp32h2](./esp32h2)
 - [esp32p4](./esp32p4)
 - [esp32s2](./esp32s2)
-- [nRF52840 DK](./nRF52840 DK)
+- [nRF52840_DK](./nRF52840_DK)
 - [xiao_esp32c6](./xiao_esp32c6)
 - [xiao_rp2040](./xiao_rp2040)
 - [xiao_rp2350](./xiao_rp2350)
