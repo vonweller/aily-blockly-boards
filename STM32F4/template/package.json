@@ -1,0 +1,30 @@
+{
+  "name": "project_",
+  "version": "1.0.0",
+  "description": "",
+  "board": "STM32F4 Series",
+  "dependencies": {
+    "@aily-project/board-stm32f4": "2.11.0",
+    "@aily-project/lib-core-io": "1.0.0",
+    "@aily-project/lib-core-logic": "0.0.1",
+    "@aily-project/lib-core-loop": "0.0.1",
+    "@aily-project/lib-core-math":"0.0.1",
+    "@aily-project/lib-core-text": "0.0.1",
+    "@aily-project/lib-core-serial": "0.0.1",
+    "@aily-project/lib-core-time": "0.0.1",
+    "@aily-project/lib-core-variables": "1.0.1"
+  },
+  "projectConfig": {
+    "pnum": {
+      "build": {
+        "board": "GENERIC_F401CBUX",
+        "product_line": "STM32F401xC",
+        "variant": "STM32F4xx/F401CC(F-U-Y)_F401C(B-D-E)(U-Y)"
+      },
+      "upload": {
+        "maximum_size": "131072",
+        "maximum_data_size": "65536"
+      }
+    }
+  }
+}

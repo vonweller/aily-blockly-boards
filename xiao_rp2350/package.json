@@ -4,6 +4,7 @@
   "version": "5.1.0",
   "description": "Xiao RP2350",
   "main": "index.js",
+  "url": "https://wiki.seeedstudio.com/cn/xiao_rp2350_arduino/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

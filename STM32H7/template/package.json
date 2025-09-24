@@ -1,0 +1,30 @@
+{
+  "name": "project_",
+  "version": "1.0.0",
+  "description": "",
+  "board": "STM32H7 Series",
+  "dependencies": {
+    "@aily-project/board-stm32h7": "2.11.0",
+    "@aily-project/lib-core-io": "1.0.0",
+    "@aily-project/lib-core-logic": "0.0.1",
+    "@aily-project/lib-core-loop": "0.0.1",
+    "@aily-project/lib-core-math":"0.0.1",
+    "@aily-project/lib-core-text": "0.0.1",
+    "@aily-project/lib-core-serial": "0.0.1",
+    "@aily-project/lib-core-time": "0.0.1",
+    "@aily-project/lib-core-variables": "1.0.1"
+  },
+  "projectConfig": {
+    "pnum": {
+      "build": {
+        "board": "GENERIC_H723ZETX",
+        "product_line": "STM32H723xx",
+        "variant": "STM32H7xx/H723Z(E-G)T_H730ZBT_H733ZGT"
+      },
+      "upload": {
+        "maximum_size": "524288",
+        "maximum_data_size": "327680"
+      }
+    }
+  }
+}

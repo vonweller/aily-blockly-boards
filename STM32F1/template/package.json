@@ -1,0 +1,30 @@
+{
+  "name": "project_",
+  "version": "1.0.0",
+  "description": "",
+  "board": "STM32F1 Series",
+  "dependencies": {
+    "@aily-project/board-stm32f1": "2.11.0",
+    "@aily-project/lib-core-io": "1.0.0",
+    "@aily-project/lib-core-logic": "0.0.1",
+    "@aily-project/lib-core-loop": "0.0.1",
+    "@aily-project/lib-core-math":"0.0.1",
+    "@aily-project/lib-core-text": "0.0.1",
+    "@aily-project/lib-core-serial": "0.0.1",
+    "@aily-project/lib-core-time": "0.0.1",
+    "@aily-project/lib-core-variables": "1.0.1"
+  },
+  "projectConfig": {
+    "pnum": {
+      "build": {
+        "board": "GENERIC_F100C4TX",
+        "product_line": "STM32F100xB",
+        "variant": "STM32F1xx/F100C(4-6)T"
+      },
+      "upload": {
+        "maximum_size": "16384",
+        "maximum_data_size": "4096"
+      }
+    }
+  }
+}

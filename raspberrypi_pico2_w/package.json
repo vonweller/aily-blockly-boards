@@ -4,6 +4,7 @@
     "version": "5.1.0",
     "description": "Raspberry Pi Pico2 W",
     "main": "index.js",
+    "url": "https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },

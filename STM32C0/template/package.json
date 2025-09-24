@@ -1,0 +1,30 @@
+{
+  "name": "project_",
+  "version": "1.0.0",
+  "description": "",
+  "board": "STM32C0 Series",
+  "dependencies": {
+    "@aily-project/board-stm32c0": "2.11.0",
+    "@aily-project/lib-core-io": "1.0.0",
+    "@aily-project/lib-core-logic": "0.0.1",
+    "@aily-project/lib-core-loop": "0.0.1",
+    "@aily-project/lib-core-math":"0.0.1",
+    "@aily-project/lib-core-text": "0.0.1",
+    "@aily-project/lib-core-serial": "0.0.1",
+    "@aily-project/lib-core-time": "0.0.1",
+    "@aily-project/lib-core-variables": "1.0.1"
+  },
+  "projectConfig": {
+    "pnum": {
+      "build": {
+        "board": "GENERIC_C011D6YX",
+        "product_line": "STM32C011xx",
+        "variant": "STM32C0xx/C011D6Y_C011F(4-6)(P-U)"
+      },
+      "upload": {
+        "maximum_size": "32768",
+        "maximum_data_size": "6144"
+      }
+    }
+  }
+}

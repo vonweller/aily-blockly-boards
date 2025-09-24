@@ -4,6 +4,7 @@
     "version": "5.1.0",
     "description": "Raspberry Pi Pico",
     "main": "index.js",
+    "url": "https://projects.raspberrypi.org/en/projects/get-started-pico",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
