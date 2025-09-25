@@ -15,16 +15,6 @@
     "@aily-project/lib-core-variables": "1.0.1"
   },
   "projectConfig": {
-    "pnum": {
-      "build": {
-        "board": "GENERIC_C011D6YX",
-        "product_line": "STM32C011xx",
-        "variant": "STM32C0xx/C011D6Y_C011F(4-6)(P-U)"
-      },
-      "upload": {
-        "maximum_size": "32768",
-        "maximum_data_size": "6144"
-      }
-    }
+    "pnum": "GENERIC_C011D6YX"
   }
 }

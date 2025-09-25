@@ -15,16 +15,6 @@
     "@aily-project/lib-core-variables": "1.0.1"
   },
   "projectConfig": {
-    "pnum": {
-      "build": {
-        "board": "GENERIC_F100C4TX",
-        "product_line": "STM32F100xB",
-        "variant": "STM32F1xx/F100C(4-6)T"
-      },
-      "upload": {
-        "maximum_size": "16384",
-        "maximum_data_size": "4096"
-      }
-    }
+    "pnum": "GENERIC_F100C4TX"
   }
 }

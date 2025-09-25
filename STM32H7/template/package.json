@@ -15,16 +15,6 @@
     "@aily-project/lib-core-variables": "1.0.1"
   },
   "projectConfig": {
-    "pnum": {
-      "build": {
-        "board": "GENERIC_H723ZETX",
-        "product_line": "STM32H723xx",
-        "variant": "STM32H7xx/H723Z(E-G)T_H730ZBT_H733ZGT"
-      },
-      "upload": {
-        "maximum_size": "524288",
-        "maximum_data_size": "327680"
-      }
-    }
+    "pnum": "GENERIC_H723ZETX"
   }
 }
