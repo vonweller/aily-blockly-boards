@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-unitree_g1",
   "nickname": "Unitree G1 shield",
-  "version": "3.3.1",
+  "version": "3.3.0",
   "description": "产品测试用，不建议普通用户使用",
   "main": "index.js",
   "brand": "Unitree",
@@ -15,7 +15,7 @@
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
     "@aily-project/tool-esptool_py": "5.1.0",
-    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/sdk-esp32": "3.3.0",
     "@aily-project/tool-idf_esp32s3": "5.5.0",
     "@aily-project/tool-ctags": "5.8.0"
   }

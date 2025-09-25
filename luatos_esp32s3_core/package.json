@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-luatos-esp32s3-core",
   "nickname": "ESP32S3 Core",
-  "version": "3.3.1",
+  "version": "3.3.0",
   "description": "LuatOS ESP32S3 Core开发板配置",
   "main": "index.js",
   "disabled": true,
@@ -24,7 +24,7 @@
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
     "@aily-project/tool-esptool_py": "5.1.0",
-    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/sdk-esp32": "3.3.0",
     "@aily-project/tool-idf_esp32s3": "5.5.0",
     "@aily-project/tool-ctags": "5.8.0"
   }
