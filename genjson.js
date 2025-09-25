@@ -13,7 +13,7 @@ const defaultKeysToExtract = [
   'compatibility',
   'img',
   'pinmap',
-  'disabled'
+  'state'
 ];
 
 // 自定义目录顺序 - 这里定义你想要的目录顺序

@@ -15,6 +15,7 @@
     ],
     "author": "RaspberryPi",
     "brand": "RaspberryPi",
+    "state": "alpha",
     "license": "MIT",
     "boardDependencies": {
         "@aily-project/compiler-pqt-gcc": "4.1.0",

@@ -10,6 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "state": "alpha",
   "license": "ISC",
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",

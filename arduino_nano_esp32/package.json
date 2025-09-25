@@ -10,6 +10,7 @@
   },
   "author": "",
   "brand": "Arduino",
+  "state": "alpha",
   "license": "ISC",
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
