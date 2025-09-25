@@ -4,7 +4,7 @@
     "version": "5.1.0",
     "description": "Raspberry Pi Pico",
     "main": "index.js",
-    "url": "https://projects.raspberrypi.org/zh-CN/projects/getting-started-with-the-pico/1",
+    "url": "https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico-1-family",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
