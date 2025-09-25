@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-arduino_nano_esp32",
   "nickname": "Arduino Nano ESP32",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "The new member to our iconic Nano family, the Nano ESP32. This board brings all the power of the well-known ESP32-S3 with the full support of the Arduino ecosystem, allowing makers to explore the world of Arduino and MicroPython without any blocker. Just unleash your creativity and start building for the next IoT project.",
   "main": "index.js",
   "disabled": true,
@@ -15,8 +15,8 @@
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
     "@aily-project/tool-esptool_py": "5.1.0",
-    "@aily-project/sdk-esp32": "3.3.0",
-    "@aily-project/tool-idf_esp32s3": "5.5.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32s3": "5.5.1",
     "@aily-project/tool-ctags": "5.8.0"
   }
 }
