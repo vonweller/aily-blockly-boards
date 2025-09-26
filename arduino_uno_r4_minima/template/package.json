@@ -2,7 +2,6 @@
   "name": "project_",
   "version": "1.0.0",
   "description": "",
-  "board": "Arduino UNO R4 Minima",
   "dependencies": {
     "@aily-project/board-arduino_uno_r4_minima": "^1.5.1",
     "@aily-project/lib-core-io": "1.0.0",

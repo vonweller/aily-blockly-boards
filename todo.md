@@ -1,8 +1,5 @@
 # Todo List
 
-- [STM32C011](./STM32C011)
-- [STM32F103](./STM32F103)
-- [STM32F407](./STM32F407)
 - [arduino_due](./arduino_due)
 - [arduino_leonardo](./arduino_leonardo)
 - [ch552](./ch552)
@@ -16,5 +13,3 @@
 - [gd32f307](./gd32f307)
 - [nRF52840_DK](./nRF52840_DK)
 - [xiao_esp32c6](./xiao_esp32c6)
-- [xiao_rp2040](./xiao_rp2040)
-- [xiao_rp2350](./xiao_rp2350)
