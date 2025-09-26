@@ -1,17 +1,5 @@
 # Todo List
 
-- [STM32F0](./STM32F0)
-- [STM32F2](./STM32F2)
-- [STM32F3](./STM32F3)
-- [STM32F7](./STM32F7)
-- [STM32G0](./STM32G0)
-- [STM32G4](./STM32G4)
-- [STM32H5](./STM32H5)
-- [STM32L0](./STM32L0)
-- [STM32L1](./STM32L1)
-- [STM32L4](./STM32L4)
-- [STM32L5](./STM32L5)
-- [STM32WB](./STM32WB)
 - [arduino_due](./arduino_due)
 - [arduino_leonardo](./arduino_leonardo)
 - [ch552](./ch552)
