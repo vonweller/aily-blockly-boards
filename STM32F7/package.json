@@ -1,0 +1,28 @@
+{
+    "name": "@aily-project/board-stm32f7",
+    "nickname": "stm32f7 Series",
+    "version": "2.11.0",
+    "description": "STM32F7系列开发板，主频216MHz，64KB-2MB Flash，256-512KB RAM，丰富的外设接口，适合各种嵌入式应用。",
+    "main": "index.js",
+    "brand": "STMicroelectronics",
+    "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32f7-series.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "STM32",
+        "Cortex-M3",
+        "ARM"
+    ],
+    "author": "STMicroelectronics",
+    "state": "alpha",
+    "license": "ISC",
+    "boardDependencies": {
+        "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
+        "@aily-project/tool-STM32Tools": "2.3.1",
+        "@aily-project/sdk-stm32": "2.11.0",
+        "@aily-project/tool-STM32_SVD": "1.18.1",
+        "@aily-project/tool-CMSIS": "5.9.0",
+        "@aily-project/tool-ctags": "5.8.0"
+    }
+}
