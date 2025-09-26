@@ -1,206 +1,234 @@
 {
-    "name": "ESP32C3",
-    "version": "1.0.1",
-    "description": "ESP32C3 compatible board",
+    "name": "Arduino UNO R3 Pro",
+    "version":"1.0.1",
+    "description": "Arduino UNO R3 Pro standard compatible board",
     "compilerTool": "aily-builder",
-    "core": "esp32:esp32",
-    "type": "esp32:esp32:esp32c3",
-    "compilerParam": "compile -v -b esp32:esp32:esp32c3",
-    "uploadParam": "esptool --chip esp32c3 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x0 ${'*.merged.bin'}",
+    "core": "arduino:avr",
+    "type": "arduino:avr:uno",
+    "compilerParam": "compile -v -b arduino:avr:uno",
+    "uploadParam": "avrdude -C${'avrdude.conf'} -v -V -patmega328p -carduino -P${serial} -b${baud} -D -Uflash:w:${'*.hex'}:i",
     "analogPins": [
         [
-            "GPIO0",
-            "0"
+            "A0",
+            "A0"
         ],
         [
-            "GPIO1",
-            "1"
+            "A1",
+            "A1"
         ],
         [
-            "GPIO2",
-            "2"
+            "A2",
+            "A2"
+        ],
+        [
+            "A3",
+            "A3"
+        ],
+        [
+            "A4",
+            "A4"
+        ],
+        [
+            "A5",
+            "A5"
+        ],
+        [
+            "A6",
+            "A6"
+        ],
+        [
+            "A7",
+            "A7"
         ]
     ],
     "digitalPins": [
         [
-            "GPIO0",
+            "0",
             "0"
         ],
         [
-            "GPIO1",
+            "1",
             "1"
         ],
         [
-            "GPIO2",
+            "2",
             "2"
         ],
         [
-            "GPIO3",
+            "3",
             "3"
         ],
         [
-            "GPIO4",
+            "4",
             "4"
         ],
         [
-            "GPIO5",
+            "5",
             "5"
         ],
         [
-            "GPIO6",
+            "6",
             "6"
         ],
         [
-            "GPIO7",
+            "7",
             "7"
         ],
         [
-            "GPIO8",
+            "8",
             "8"
         ],
         [
-            "GPIO9",
+            "9",
             "9"
         ],
         [
-            "GPIO10",
+            "10",
             "10"
         ],
         [
-            "GPIO11",
+            "11",
             "11"
         ],
         [
-            "GPIO12",
+            "12",
             "12"
         ],
         [
-            "GPIO13",
+            "13",
             "13"
         ],
         [
-            "GPIO19",
-            "19"
+            "A0",
+            "A0"
         ],
         [
-            "GPIO18",
-            "18"
+            "A1",
+            "A1"
         ],
         [
-            "GPIO21",
-            "21"
+            "A2",
+            "A2"
         ],
         [
-            "GPIO20",
-            "20"
+            "A3",
+            "A3"
+        ],
+        [
+            "A4",
+            "A4"
+        ],
+        [
+            "A5",
+            "A5"
         ]
     ],
     "pwmPins": [
         [
-            "GPIO0",
-            "0"
-        ],
-        [
-            "GPIO1",
-            "1"
-        ],
-        [
-            "GPIO2",
-            "2"
-        ],
-        [
-            "GPIO3",
+            "3",
             "3"
         ],
         [
-            "GPIO4",
-            "4"
-        ],
-        [
-            "GPIO5",
+            "5",
             "5"
         ],
         [
-            "GPIO6",
+            "6",
             "6"
         ],
         [
-            "GPIO7",
-            "7"
-        ],
-        [
-            "GPIO8",
-            "8"
-        ],
-        [
-            "GPIO9",
+            "9",
             "9"
         ],
         [
-            "GPIO10",
+            "10",
             "10"
+        ],
+        [
+            "11",
+            "11"
         ]
     ],
     "servoPins": [
         [
-            "GPIO0",
+            "0",
             "0"
         ],
         [
-            "GPIO1",
+            "1",
             "1"
         ],
         [
-            "GPIO2",
+            "2",
             "2"
         ],
         [
-            "GPIO3",
+            "3",
             "3"
         ],
         [
-            "GPIO4",
+            "4",
             "4"
         ],
         [
-            "GPIO5",
+            "5",
             "5"
         ],
         [
-            "GPIO6",
+            "6",
             "6"
         ],
         [
-            "GPIO7",
+            "7",
             "7"
         ],
         [
-            "GPIO8",
+            "8",
             "8"
         ],
         [
-            "GPIO9",
+            "9",
             "9"
         ],
         [
-            "GPIO10",
+            "10",
             "10"
         ],
         [
-            "GPIO18",
-            "18"
+            "11",
+            "11"
         ],
         [
-            "GPIO19",
-            "19"
+            "12",
+            "12"
         ],
         [
-            "GPIO20",
-            "20"
+            "13",
+            "13"
         ],
         [
-            "GPIO21",
-            "21"
+            "A0",
+            "A0"
+        ],
+        [
+            "A1",
+            "A1"
+        ],
+        [
+            "A2",
+            "A2"
+        ],
+        [
+            "A3",
+            "A3"
+        ],
+        [
+            "A4",
+            "A4"
+        ],
+        [
+            "A5",
+            "A5"
         ]
     ],
     "serialPort": [
@@ -249,15 +277,15 @@
         "SPI": [
             [
                 "MOSI",
-                6
+                11
             ],
             [
                 "MISO",
-                5
+                12
             ],
             [
                 "SCK",
-                4
+                13
             ]
         ]
     },
@@ -301,11 +329,11 @@
         "Wire": [
             [
                 "SDA",
-                "7"
+                "A4"
             ],
             [
                 "SCL",
-                "8"
+                "A5"
             ]
         ]
     },
@@ -322,72 +350,24 @@
     "builtinLed": [
         [
             "BUILTIN_LED",
-            "8"
+            "13"
         ]
     ],
     "interruptPins": [
         [
-            "GPIO0",
-            "0"
-        ],
-        [
-            "GPIO1",
-            "1"
-        ],
-        [
-            "GPIO2",
+            "2",
             "2"
         ],
         [
-            "GPIO3",
+            "3",
             "3"
-        ],
-        [
-            "GPIO4",
-            "4"
-        ],
-        [
-            "GPIO5",
-            "5"
-        ],
-        [
-            "GPIO6",
-            "6"
-        ],
-        [
-            "GPIO7",
-            "7"
-        ],
-        [
-            "GPIO8",
-            "8"
-        ],
-        [
-            "GPIO9",
-            "9"
-        ],
-        [
-            "GPIO10",
-            "10"
-        ],
-        [
-            "GPIO19",
-            "19"
-        ],
-        [
-            "GPIO18",
-            "18"
-        ],
-        [
-            "GPIO21",
-            "21"
-        ],
-        [
-            "GPIO20",
-            "20"
         ]
     ],
     "interruptMode": [
+        [
+            "LOW",
+            "LOW"
+        ],
         [
             "RISING",
             "RISING"
@@ -399,22 +379,6 @@
         [
             "CHANGE",
             "CHANGE"
-        ],
-        [
-            "ONLOW",
-            "ONLOW"
-        ],
-        [
-            "ONHIGH",
-            "ONHIGH"
-        ],
-        [
-            "ONLOW_WE",
-            "ONLOW_WE"
-        ],
-        [
-            "ONHIGH_WE",
-            "ONHIGH_WE"
         ]
     ]
 }

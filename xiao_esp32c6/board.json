@@ -1,206 +1,162 @@
 {
-    "name": "ESP32C3",
+    "name": "XIAO ESP32C6",
     "version": "1.0.1",
-    "description": "ESP32C3 compatible board",
+    "description": "Seeed ESP32C6 compatible board",
     "compilerTool": "aily-builder",
     "core": "esp32:esp32",
-    "type": "esp32:esp32:esp32c3",
-    "compilerParam": "compile -v -b esp32:esp32:esp32c3",
-    "uploadParam": "esptool --chip esp32c3 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x0 ${'*.merged.bin'}",
+    "type": "esp32:esp32:XIAO_ESP32C6",
+    "compilerParam": "compile -v -b esp32:esp32:XIAO_ESP32C6",
+    "uploadParam": "esptool --chip esp32c6 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x0 ${'*.merged.bin'}",
     "analogPins": [
         [
-            "GPIO0",
-            "0"
+            "A0",
+            "A0"
         ],
         [
-            "GPIO1",
-            "1"
+            "A1",
+            "A1"
         ],
         [
-            "GPIO2",
-            "2"
+            "A2",
+            "A2"
         ]
     ],
     "digitalPins": [
         [
-            "GPIO0",
-            "0"
+            "D0",
+            "D0"
         ],
         [
-            "GPIO1",
-            "1"
+            "D1",
+            "D1"
         ],
         [
-            "GPIO2",
-            "2"
+            "D2",
+            "D2"
         ],
         [
-            "GPIO3",
-            "3"
+            "D3",
+            "D3"
         ],
         [
-            "GPIO4",
-            "4"
+            "D4",
+            "D4"
         ],
         [
-            "GPIO5",
-            "5"
+            "D5",
+            "D5"
         ],
         [
-            "GPIO6",
-            "6"
+            "D6",
+            "D6"
         ],
         [
-            "GPIO7",
-            "7"
+            "D7",
+            "D7"
         ],
         [
-            "GPIO8",
-            "8"
+            "D8",
+            "D8"
         ],
         [
-            "GPIO9",
-            "9"
+            "D9",
+            "D9"
         ],
         [
-            "GPIO10",
-            "10"
-        ],
-        [
-            "GPIO11",
-            "11"
-        ],
-        [
-            "GPIO12",
-            "12"
-        ],
-        [
-            "GPIO13",
-            "13"
-        ],
-        [
-            "GPIO19",
-            "19"
-        ],
-        [
-            "GPIO18",
-            "18"
-        ],
-        [
-            "GPIO21",
-            "21"
-        ],
-        [
-            "GPIO20",
-            "20"
+            "D10",
+            "D10"
         ]
     ],
     "pwmPins": [
         [
-            "GPIO0",
-            "0"
+            "D0",
+            "D0"
         ],
         [
-            "GPIO1",
-            "1"
+            "D1",
+            "D1"
         ],
         [
-            "GPIO2",
-            "2"
+            "D2",
+            "D2"
         ],
         [
-            "GPIO3",
-            "3"
+            "D3",
+            "D3"
         ],
         [
-            "GPIO4",
-            "4"
+            "D4",
+            "D4"
         ],
         [
-            "GPIO5",
-            "5"
+            "D5",
+            "D5"
         ],
         [
-            "GPIO6",
-            "6"
+            "D6",
+            "D6"
         ],
         [
-            "GPIO7",
-            "7"
+            "D7",
+            "D7"
         ],
         [
-            "GPIO8",
-            "8"
+            "D8",
+            "D8"
         ],
         [
-            "GPIO9",
-            "9"
+            "D9",
+            "D9"
         ],
         [
-            "GPIO10",
-            "10"
+            "D10",
+            "D10"
         ]
     ],
     "servoPins": [
         [
-            "GPIO0",
-            "0"
+            "D0",
+            "D0"
         ],
         [
-            "GPIO1",
-            "1"
+            "D1",
+            "D1"
         ],
         [
-            "GPIO2",
-            "2"
+            "D2",
+            "D2"
         ],
         [
-            "GPIO3",
-            "3"
+            "D3",
+            "D3"
         ],
         [
-            "GPIO4",
-            "4"
+            "D4",
+            "D4"
         ],
         [
-            "GPIO5",
-            "5"
+            "D5",
+            "D5"
         ],
         [
-            "GPIO6",
-            "6"
+            "D6",
+            "D6"
         ],
         [
-            "GPIO7",
-            "7"
+            "D7",
+            "D7"
         ],
         [
-            "GPIO8",
-            "8"
+            "D8",
+            "D8"
         ],
         [
-            "GPIO9",
-            "9"
+            "D9",
+            "D9"
         ],
         [
-            "GPIO10",
-            "10"
-        ],
-        [
-            "GPIO18",
-            "18"
-        ],
-        [
-            "GPIO19",
-            "19"
-        ],
-        [
-            "GPIO20",
-            "20"
-        ],
-        [
-            "GPIO21",
-            "21"
+            "D10",
+            "D10"
         ]
     ],
     "serialPort": [
@@ -249,15 +205,19 @@
         "SPI": [
             [
                 "MOSI",
-                6
+                18
             ],
             [
                 "MISO",
-                5
+                20
             ],
             [
                 "SCK",
-                4
+                19
+            ],
+            [
+                "SS",
+                21
             ]
         ]
     },
@@ -301,11 +261,11 @@
         "Wire": [
             [
                 "SDA",
-                "7"
+                "22"
             ],
             [
                 "SCL",
-                "8"
+                "23"
             ]
         ]
     },
@@ -322,69 +282,53 @@
     "builtinLed": [
         [
             "BUILTIN_LED",
-            "8"
+            "BUILTIN_LED"
         ]
     ],
     "interruptPins": [
         [
-            "GPIO0",
-            "0"
+            "D0",
+            "D0"
         ],
         [
-            "GPIO1",
-            "1"
+            "D1",
+            "D1"
         ],
         [
-            "GPIO2",
-            "2"
+            "D2",
+            "D2"
         ],
         [
-            "GPIO3",
-            "3"
+            "D3",
+            "D3"
         ],
         [
-            "GPIO4",
-            "4"
+            "D4",
+            "D4"
         ],
         [
-            "GPIO5",
-            "5"
+            "D5",
+            "D5"
         ],
         [
-            "GPIO6",
-            "6"
+            "D6",
+            "D6"
         ],
         [
-            "GPIO7",
-            "7"
+            "D7",
+            "D7"
         ],
         [
-            "GPIO8",
-            "8"
+            "D8",
+            "D8"
         ],
         [
-            "GPIO9",
-            "9"
+            "D9",
+            "D9"
         ],
         [
-            "GPIO10",
-            "10"
-        ],
-        [
-            "GPIO19",
-            "19"
-        ],
-        [
-            "GPIO18",
-            "18"
-        ],
-        [
-            "GPIO21",
-            "21"
-        ],
-        [
-            "GPIO20",
-            "20"
+            "D10",
+            "D10"
         ]
     ],
     "interruptMode": [
