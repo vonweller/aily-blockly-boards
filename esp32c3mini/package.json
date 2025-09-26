@@ -1,0 +1,20 @@
+{
+  "name": "@aily-project/board-esp32c3mini",
+  "nickname": "ESP32C3Mini board",
+  "version": "3.3.1",
+  "description": "ESP32C3Mini开发板通用配置",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "brand": "Espressif",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-rv32": "14.2.0",
+    "@aily-project/tool-esptool_py": "5.1.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32c3": "5.5.1",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

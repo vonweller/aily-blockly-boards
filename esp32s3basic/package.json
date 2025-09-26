@@ -1,0 +1,20 @@
+{
+  "name": "@aily-project/board-esp32_aiot_kitbasic",
+  "nickname": "ESP32 AIOT BASIC",
+  "version": "3.3.1",
+  "description": "ESP32S3AIOT Basic套件是一款基于esp32S3模组专为AIOT学习的集主板和传感器多合一综合套件，板中集成了9个子模块(按键、蜂鸣器、LED、光敏传感器、LCD、数字麦克风、SD卡、音频功放模块、摄像头)同时还匹配了丰富的教学例程及学习资料，可以满足大多数AI和物联网的学习及使用场景。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "brand": "Espressif",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-esptool_py": "5.1.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32s3": "5.5.1",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
