@@ -1,17 +1,13 @@
 {
-    "name": "ESP32C3",
+    "name": "ESP32S2",
     "version": "1.0.1",
-    "description": "ESP32C3 compatible board",
+    "description": "ESP32S2 compatible board",
     "compilerTool": "aily-builder",
     "core": "esp32:esp32",
-    "type": "esp32:esp32:esp32c3",
-    "compilerParam": "compile -v -b esp32:esp32:esp32c3",
-    "uploadParam": "esptool --chip esp32c3 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x0 ${'*.merged.bin'}",
+    "type": "esp32:esp32:esp32s2",
+    "compilerParam": "compile -v -b esp32:esp32:esp32s2 --build-property build.flash_mode=dio --build-property build.flash_freq=80m --build-property build.flash_size=4MB",
+    "uploadParam": "esptool --chip esp32s2 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x0 ${'*.merged.bin'}",
     "analogPins": [
-        [
-            "GPIO0",
-            "0"
-        ],
         [
             "GPIO1",
             "1"
@@ -19,6 +15,78 @@
         [
             "GPIO2",
             "2"
+        ],
+        [
+            "GPIO3",
+            "3"
+        ],
+        [
+            "GPIO4",
+            "4"
+        ],
+        [
+            "GPIO5",
+            "5"
+        ],
+        [
+            "GPIO6",
+            "6"
+        ],
+        [
+            "GPIO7",
+            "7"
+        ],
+        [
+            "GPIO8",
+            "8"
+        ],
+        [
+            "GPIO9",
+            "9"
+        ],
+        [
+            "GPIO10",
+            "10"
+        ],
+        [
+            "GPIO11",
+            "11"
+        ],
+        [
+            "GPIO12",
+            "12"
+        ],
+        [
+            "GPIO13",
+            "13"
+        ],
+        [
+            "GPIO14",
+            "14"
+        ],
+        [
+            "GPIO15",
+            "15"
+        ],
+        [
+            "GPIO16",
+            "16"
+        ],
+        [
+            "GPIO17",
+            "17"
+        ],
+        [
+            "GPIO18",
+            "18"
+        ],
+        [
+            "GPIO19",
+            "19"
+        ],
+        [
+            "GPIO20",
+            "20"
         ]
     ],
     "digitalPins": [
@@ -79,20 +147,88 @@
             "13"
         ],
         [
-            "GPIO19",
-            "19"
+            "GPIO14",
+            "14"
+        ],
+        [
+            "GPIO15",
+            "15"
+        ],
+        [
+            "GPIO16",
+            "16"
+        ],
+        [
+            "GPIO17",
+            "17"
         ],
         [
             "GPIO18",
             "18"
         ],
         [
-            "GPIO21",
-            "21"
+            "GPIO19",
+            "19"
         ],
         [
             "GPIO20",
             "20"
+        ],
+        [
+            "GPIO21",
+            "21"
+        ],
+        [
+            "GPIO33",
+            "33"
+        ],
+        [
+            "GPIO34",
+            "34"
+        ],
+        [
+            "GPIO35",
+            "35"
+        ],
+        [
+            "GPIO36",
+            "36"
+        ],
+        [
+            "GPIO37",
+            "37"
+        ],
+        [
+            "GPIO38",
+            "38"
+        ],
+        [
+            "GPIO39",
+            "39"
+        ],
+        [
+            "GPIO40",
+            "40"
+        ],
+        [
+            "GPIO41",
+            "41"
+        ],
+        [
+            "GPIO42",
+            "42"
+        ],
+        [
+            "GPIO43",
+            "43"
+        ],
+        [
+            "GPIO44",
+            "44"
+        ],
+        [
+            "GPIO45",
+            "45"
         ]
     ],
     "pwmPins": [
@@ -139,6 +275,102 @@
         [
             "GPIO10",
             "10"
+        ],
+        [
+            "GPIO11",
+            "11"
+        ],
+        [
+            "GPIO12",
+            "12"
+        ],
+        [
+            "GPIO13",
+            "13"
+        ],
+        [
+            "GPIO14",
+            "14"
+        ],
+        [
+            "GPIO15",
+            "15"
+        ],
+        [
+            "GPIO16",
+            "16"
+        ],
+        [
+            "GPIO17",
+            "17"
+        ],
+        [
+            "GPIO18",
+            "18"
+        ],
+        [
+            "GPIO19",
+            "19"
+        ],
+        [
+            "GPIO20",
+            "20"
+        ],
+        [
+            "GPIO21",
+            "21"
+        ],
+        [
+            "GPIO33",
+            "33"
+        ],
+        [
+            "GPIO34",
+            "34"
+        ],
+        [
+            "GPIO35",
+            "35"
+        ],
+        [
+            "GPIO36",
+            "36"
+        ],
+        [
+            "GPIO37",
+            "37"
+        ],
+        [
+            "GPIO38",
+            "38"
+        ],
+        [
+            "GPIO39",
+            "39"
+        ],
+        [
+            "GPIO40",
+            "40"
+        ],
+        [
+            "GPIO41",
+            "41"
+        ],
+        [
+            "GPIO42",
+            "42"
+        ],
+        [
+            "GPIO43",
+            "43"
+        ],
+        [
+            "GPIO44",
+            "44"
+        ],
+        [
+            "GPIO45",
+            "45"
         ]
     ],
     "servoPins": [
@@ -187,6 +419,34 @@
             "10"
         ],
         [
+            "GPIO11",
+            "11"
+        ],
+        [
+            "GPIO12",
+            "12"
+        ],
+        [
+            "GPIO13",
+            "13"
+        ],
+        [
+            "GPIO14",
+            "14"
+        ],
+        [
+            "GPIO15",
+            "15"
+        ],
+        [
+            "GPIO16",
+            "16"
+        ],
+        [
+            "GPIO17",
+            "17"
+        ],
+        [
             "GPIO18",
             "18"
         ],
@@ -201,6 +461,58 @@
         [
             "GPIO21",
             "21"
+        ],
+        [
+            "GPIO33",
+            "33"
+        ],
+        [
+            "GPIO34",
+            "34"
+        ],
+        [
+            "GPIO35",
+            "35"
+        ],
+        [
+            "GPIO36",
+            "36"
+        ],
+        [
+            "GPIO37",
+            "37"
+        ],
+        [
+            "GPIO38",
+            "38"
+        ],
+        [
+            "GPIO39",
+            "39"
+        ],
+        [
+            "GPIO40",
+            "40"
+        ],
+        [
+            "GPIO41",
+            "41"
+        ],
+        [
+            "GPIO42",
+            "42"
+        ],
+        [
+            "GPIO43",
+            "43"
+        ],
+        [
+            "GPIO44",
+            "44"
+        ],
+        [
+            "GPIO45",
+            "45"
         ]
     ],
     "serialPort": [
@@ -249,15 +561,19 @@
         "SPI": [
             [
                 "MOSI",
-                6
+                35
             ],
             [
                 "MISO",
-                5
+                37
             ],
             [
                 "SCK",
-                4
+                36
+            ],
+            [
+                "SS",
+                34
             ]
         ]
     },
@@ -301,11 +617,11 @@
         "Wire": [
             [
                 "SDA",
-                "7"
+                "8"
             ],
             [
                 "SCL",
-                "8"
+                "9"
             ]
         ]
     },
@@ -322,7 +638,7 @@
     "builtinLed": [
         [
             "BUILTIN_LED",
-            "8"
+            "LED_BUILTIN"
         ]
     ],
     "interruptPins": [
