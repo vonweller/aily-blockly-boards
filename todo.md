@@ -12,4 +12,6 @@
 - [gd32f303](./gd32f303)
 - [gd32f307](./gd32f307)
 - [nRF52840_DK](./nRF52840_DK)
+- [teensy40](./teensy40)
+- [teensy41](./teensy41)
 - [xiao_esp32c6](./xiao_esp32c6)
