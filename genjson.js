@@ -13,7 +13,8 @@ const defaultKeysToExtract = [
   'compatibility',
   'img',
   'pinmap',
-  'state'
+  'state',
+  'type'
 ];
 
 // 自定义目录顺序 - 这里定义你想要的目录顺序
@@ -25,10 +26,10 @@ const directoryOrder = [
 ];
 
 // 根据配置过滤package.json对象
-function filterPackageJson(packageJson, keysToExtract, subdir) {
+async function filterPackageJson(packageJson, keysToExtract, subdir) {
   const filteredJson = {};
 
-  keysToExtract.forEach(key => {
+  for (const key of keysToExtract) {
     if (packageJson.hasOwnProperty(key)) {
       filteredJson[key] = packageJson[key];
     } else {
@@ -46,7 +47,23 @@ function filterPackageJson(packageJson, keysToExtract, subdir) {
     } else if (key === 'pinmap') {
       filteredJson[key] = `${subdir}/pinmap.webp`;
     }
-  });
+    
+    // 对type属性进行特殊处理，从board.json中提取
+    if (key === 'type') {
+      try {
+        const boardJsonPath = path.join(__dirname, subdir, 'board.json');
+        await fs.access(boardJsonPath, fs.constants.F_OK);
+        const boardData = await fs.readFile(boardJsonPath, 'utf8');
+        const boardJson = JSON.parse(boardData);
+        if (boardJson.hasOwnProperty('type')) {
+          filteredJson[key] = boardJson.type;
+        }
+      } catch (error) {
+        // 如果无法读取board.json或没有type字段，保持原有逻辑
+        console.log(`无法从${subdir}/board.json中提取type字段:`, error.message);
+      }
+    }
+  }
 
   return filteredJson;
 }
@@ -106,7 +123,7 @@ async function main() {
         const packageJson = JSON.parse(data);
 
         // 根据配置过滤package.json
-        const filteredJson = keysToExtract ? filterPackageJson(packageJson, keysToExtract, subdir) : packageJson;
+        const filteredJson = keysToExtract ? await filterPackageJson(packageJson, keysToExtract, subdir) : packageJson;
 
         libraries.push(filteredJson);
         console.log(`成功读取 ${subdir}/package.json`);
