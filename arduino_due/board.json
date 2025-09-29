@@ -6,7 +6,7 @@
     "core": "arduino:sam",
     "type": "arduino:sam:arduino_due_x",
     "compilerParam": "compile -v -b arduino:sam:arduino_due_x",
-    "uploadParam": "[--use_1200bps_touch,--wait_for_upload_port,--wait_for_upload] bossac -d --port=${serial} -U true -e -w ${'*.bin'} -R",
+    "uploadParam": "[--use_1200bps_touch,--wait_for_upload_port,--wait_for_upload] bossac -i -d --port=${serial} -U true -e -w -b ${'*.bin'} -R",
     "analogPins": [
         [
             "A0",
