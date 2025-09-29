@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32s3",
   "nickname": "ESP32S3 board",
   "version": "3.2.1",
-  "description": "ESP32S3开发板通用配置",
+  "description": "ESP32S3开发板通用配置，集成 2.4 GHz Wi-Fi 和 Bluetooth 5 (LE) 的 MCU 芯片，支持远距离模式 (Long Range)。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

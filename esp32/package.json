@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32",
   "nickname": "ESP32 board",
   "version": "3.3.1",
-  "description": "ESP32开发板通用配置",
+  "description": "ESP32开发板通用配置，为双核Xtensa LX6 MCU，集成2.4GHzWi-Fi和蓝牙双模通信，支持802.11 b/g/n协议与蓝牙v4.2 BR/EDR/BLE标准。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
