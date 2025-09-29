@@ -1,0 +1,17 @@
+{
+  "name": "project_",
+  "version": "1.0.0",
+  "description": "",
+  "board": "Arduino Leonardo",
+  "dependencies": {
+    "@aily-project/board-arduino_leonardo": "1.8.6",
+    "@aily-project/lib-core-io": "0.0.1",
+    "@aily-project/lib-core-logic": "0.0.1",
+    "@aily-project/lib-core-loop": "0.0.1",
+    "@aily-project/lib-core-math":"0.0.1",
+    "@aily-project/lib-core-text": "0.0.1",
+    "@aily-project/lib-core-serial": "0.0.1",
+    "@aily-project/lib-core-time": "0.0.1",
+    "@aily-project/lib-core-variables": "1.0.1"
+  }
+}

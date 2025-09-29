@@ -1,0 +1,21 @@
+{
+  "name": "@aily-project/board-arduino_due_dbg",
+  "nickname": "Arduino DUE",
+  "version": "1.6.12",
+  "description": "Arduino DUE开发板",
+  "main": "index.js",
+  "url": "https://docs.arduino.cc/hardware/due/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "brand": "Arduino",
+  "state": "alpha",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "4.8.3",
+    "@aily-project/tool-bossac": "1.9.1",
+    "@aily-project/sdk-sam": "1.6.12",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
