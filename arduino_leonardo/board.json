@@ -6,7 +6,7 @@
     "core": "arduino:avr",
     "type": "arduino:avr:leonardo",
     "compilerParam": "compile -v -b arduino:avr:leonardo",
-    "uploadParam": "avrdude -C${'avrdude.conf'} -v -V -patmega32u4 -cavr109 -P${serial} -b${baud} -D -Uflash:w:${'*.hex'}:i",
+    "uploadParam": "[--use_1200bps_touch,--wait_for_upload_port,--wait_for_upload] avrdude -C${'avrdude.conf'} -v -V -patmega32u4 -cavr109 -P${serial} -b${baud} -D -Uflash:w:${'*.hex'}:i",
     "analogPins": [
         [
             "A0",
