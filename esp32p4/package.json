@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32p4",
   "nickname": "ESP32P4 board",
   "version": "3.3.1",
-  "description": "ESP32P4开发板通用配置",
+  "description": "ESP32P4开发板通用配置，支持USB 2.0、MIPI-CSI、MIPI-DSI等外设接口，适用于IPC、HMI、AIoT类产品的原型开发。",
   "main": "index.js",
   "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32p4/esp32-p4-function-ev-board/index.html",
   "scripts": {
