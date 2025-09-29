@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32c6",
   "nickname": "ESP32C6 board",
   "version": "3.3.1",
-  "description": "ESP32C6开发板通用配置",
+  "description": "ESP32C6开发板通用配置，支持 2.4 GHz Wi-Fi 6、蓝牙 5 及 IEEE 802.15.4（Zigbee 3.0 和 Thread 1.3）。",
   "main": "index.js",
   "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32c6/esp32-c6-devkitc-1/index.html",
   "scripts": {

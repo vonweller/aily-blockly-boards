@@ -1,8 +1,8 @@
 {
   "name": "@aily-project/board-arduino_due_dbg",
-  "nickname": "Arduino DUE(Programming Port)",
+  "nickname": "Arduino DUE(dbg)",
   "version": "1.6.12",
-  "description": "Arduino DUE开发板，使用编程端口进行烧录",
+  "description": "Arduino DUE开发板(Programming Port)，使用编程端口进行烧录",
   "main": "index.js",
   "url": "https://docs.arduino.cc/hardware/due/",
   "scripts": {
