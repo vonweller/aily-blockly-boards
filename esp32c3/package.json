@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32c3",
   "nickname": "ESP32C3 board",
   "version": "3.3.1",
-  "description": "ESP32C3开发板通用配置",
+  "description": "ESP32C3开发板通用配置，搭载 RISC-V 32 位单核处理器，支持 2.4 GHz Wi-Fi 和 Bluetooth 5 (LE)，为物联网产品提供行业领先的射频性能、完善的安全机制和丰富的内存资源。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
