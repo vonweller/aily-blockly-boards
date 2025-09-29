@@ -14,7 +14,7 @@
   "state": "alpha",
   "boardDependencies": {
     "@aily-project/compiler-arm-none-eabi-gcc": "4.8.3",
-    "@aily-project/tool-bossac": "1.9.1",
+    "@aily-project/tool-bossac": "1.6.1",
     "@aily-project/sdk-sam": "1.6.12",
     "@aily-project/tool-ctags": "5.8.0"
   }
