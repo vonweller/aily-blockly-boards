@@ -2,7 +2,7 @@
     "name": "@aily-project/board-stm32l4",
     "nickname": "STM32L4 Series",
     "version": "2.11.0",
-    "description": "128-1024KB Flash，40-320KB RAM，丰富的外设接口，适合各种嵌入式应用。",
+    "description": "STM32L4系列开发板，主频80MHz，128-1024KB Flash，40-320KB RAM，丰富的外设接口，适合各种嵌入式应用。",
     "main": "index.js",
     "brand": "STMicroelectronics",
     "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32l4-series.html",

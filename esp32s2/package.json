@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32s2",
   "nickname": "ESP32S2 board",
   "version": "3.3.1",
-  "description": "ESP32S2开发板通用配置",
+  "description": "ESP32S2开发板通用配置，是一款高度集成、高性价比、低功耗、主打安全的单核 Wi-Fi SoC，具备强大的功能和丰富的 IO 接口。",
   "main": "index.js",
   "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32s2/esp32-s2-devkitc-1/index.html",
   "scripts": {
