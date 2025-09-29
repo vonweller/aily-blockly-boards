@@ -1,6 +1,6 @@
 {
     "name": "@aily-project/board-stm32f7",
-    "nickname": "stm32f7 Series",
+    "nickname": "STM32F7 Series",
     "version": "2.11.0",
     "description": "STM32F7系列开发板，主频216MHz，64KB-2MB Flash，256-512KB RAM，丰富的外设接口，适合各种嵌入式应用。",
     "main": "index.js",
