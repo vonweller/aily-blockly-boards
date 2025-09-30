@@ -11,7 +11,10 @@
     "img": "arduino_uno/board.webp",
     "pinmap": "arduino_uno/pinmap.webp",
     "state": "",
-    "type": "arduino:avr:uno"
+    "type": "arduino:avr:uno",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-arduino_mega",
@@ -25,7 +28,10 @@
     "img": "arduino_mega/board.webp",
     "pinmap": "arduino_mega/pinmap.webp",
     "state": "",
-    "type": "arduino:avr:mega"
+    "type": "arduino:avr:mega",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-arduino_uno_r4_minima",
@@ -39,7 +45,10 @@
     "img": "arduino_uno_r4_minima/board.webp",
     "pinmap": "arduino_uno_r4_minima/pinmap.webp",
     "state": "",
-    "type": "arduino:renesas_uno:minima"
+    "type": "arduino:renesas_uno:minima",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-arduino_uno_r4_wifi",
@@ -53,7 +62,10 @@
     "img": "arduino_uno_r4_wifi/board.webp",
     "pinmap": "arduino_uno_r4_wifi/pinmap.webp",
     "state": "",
-    "type": "arduino:renesas_uno:unor4wifi"
+    "type": "arduino:renesas_uno:unor4wifi",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-ai-vox",
@@ -67,7 +79,61 @@
     "img": "ai-vox/board.webp",
     "pinmap": "ai-vox/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32s3"
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-arduino_due",
+    "nickname": "Arduino DUE",
+    "version": "1.6.12",
+    "description": "Arduino DUE开发板(Native USB Port)，使用原生USB口进行烧录",
+    "author": "",
+    "brand": "Arduino",
+    "url": "https://docs.arduino.cc/hardware/due/",
+    "compatibility": "",
+    "img": "arduino_due/board.webp",
+    "pinmap": "arduino_due/pinmap.webp",
+    "state": "alpha",
+    "type": "arduino:sam:arduino_due_x",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-arduino_due_dbg",
+    "nickname": "Arduino DUE(dbg)",
+    "version": "1.6.12",
+    "description": "Arduino DUE开发板(Programming Port)，使用编程端口进行烧录",
+    "author": "",
+    "brand": "Arduino",
+    "url": "https://docs.arduino.cc/hardware/due/",
+    "compatibility": "",
+    "img": "arduino_due_dbg/board.webp",
+    "pinmap": "arduino_due_dbg/pinmap.webp",
+    "state": "alpha",
+    "type": "arduino:sam:arduino_due_x_dbg",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-arduino_leonardo",
+    "nickname": "Arduino Leonardo",
+    "version": "1.8.6",
+    "description": "Arduino Leonardo开发板",
+    "author": "",
+    "brand": "Arduino",
+    "url": "https://docs.arduino.cc/hardware/leonardo/",
+    "compatibility": "",
+    "img": "arduino_leonardo/board.webp",
+    "pinmap": "arduino_leonardo/pinmap.webp",
+    "state": "alpha",
+    "type": "arduino:avr:leonardo",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-arduino_mega_pro",
@@ -81,7 +147,10 @@
     "img": "arduino_mega_pro/board.webp",
     "pinmap": "arduino_mega_pro/pinmap.webp",
     "state": "",
-    "type": "arduino:avr:mega"
+    "type": "arduino:avr:mega",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-arduino_nano",
@@ -95,7 +164,10 @@
     "img": "arduino_nano/board.webp",
     "pinmap": "arduino_nano/pinmap.webp",
     "state": "",
-    "type": "arduino:avr:nano"
+    "type": "arduino:avr:nano",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-arduino_nano_esp32",
@@ -109,7 +181,10 @@
     "img": "arduino_nano_esp32/board.webp",
     "pinmap": "arduino_nano_esp32/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:esp32s3"
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-arduino_nano_r4",
@@ -123,7 +198,10 @@
     "img": "arduino_nano_r4/board.webp",
     "pinmap": "arduino_nano_r4/pinmap.webp",
     "state": "",
-    "type": "arduino:renesas_uno:nanor4"
+    "type": "arduino:renesas_uno:nanor4",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-arduino_uno_r3_pro",
@@ -137,7 +215,10 @@
     "img": "arduino_uno_r3_pro/board.webp",
     "pinmap": "arduino_uno_r3_pro/pinmap.webp",
     "state": "",
-    "type": "arduino:avr:uno"
+    "type": "arduino:avr:uno",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-arduino_uno_r4_pro",
@@ -151,13 +232,16 @@
     "img": "arduino_uno_r4_pro/board.webp",
     "pinmap": "arduino_uno_r4_pro/pinmap.webp",
     "state": "",
-    "type": "arduino:renesas_uno:minima"
+    "type": "arduino:renesas_uno:minima",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32",
     "nickname": "ESP32 board",
     "version": "3.3.1",
-    "description": "ESP32开发板通用配置",
+    "description": "ESP32开发板通用配置，为双核Xtensa LX6 MCU，集成2.4GHzWi-Fi和蓝牙双模通信，支持802.11 b/g/n协议与蓝牙v4.2 BR/EDR/BLE标准。",
     "author": "",
     "brand": "Espressif",
     "url": "",
@@ -165,7 +249,10 @@
     "img": "esp32/board.webp",
     "pinmap": "esp32/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32"
+    "type": "esp32:esp32:esp32",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32_aiot_kit",
@@ -179,13 +266,16 @@
     "img": "esp32_aiot_kit/board.webp",
     "pinmap": "esp32_aiot_kit/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32s3"
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32c3",
     "nickname": "ESP32C3 board",
     "version": "3.3.1",
-    "description": "ESP32C3开发板通用配置",
+    "description": "ESP32C3开发板通用配置，搭载 RISC-V 32 位单核处理器，支持 2.4 GHz Wi-Fi 和 Bluetooth 5 (LE)，为物联网产品提供行业领先的射频性能、完善的安全机制和丰富的内存资源。",
     "author": "",
     "brand": "Espressif",
     "url": "",
@@ -193,7 +283,10 @@
     "img": "esp32c3/board.webp",
     "pinmap": "esp32c3/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32c3"
+    "type": "esp32:esp32:esp32c3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32c3mini",
@@ -207,13 +300,16 @@
     "img": "esp32c3mini/board.webp",
     "pinmap": "esp32c3mini/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32c3"
+    "type": "esp32:esp32:esp32c3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32c6",
     "nickname": "ESP32C6 board",
     "version": "3.3.1",
-    "description": "ESP32C6开发板通用配置",
+    "description": "ESP32C6开发板通用配置，支持 2.4 GHz Wi-Fi 6、蓝牙 5 及 IEEE 802.15.4（Zigbee 3.0 和 Thread 1.3）。",
     "author": "",
     "brand": "Espressif",
     "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32c6/esp32-c6-devkitc-1/index.html",
@@ -221,7 +317,10 @@
     "img": "esp32c6/board.webp",
     "pinmap": "esp32c6/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:esp32c6"
+    "type": "esp32:esp32:esp32c6",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32dev",
@@ -235,13 +334,16 @@
     "img": "esp32dev/board.webp",
     "pinmap": "esp32dev/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32"
+    "type": "esp32:esp32:esp32",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32h2",
     "nickname": "ESP32H2 board",
     "version": "3.3.1",
-    "description": "ESP32H2开发板通用配置",
+    "description": "ESP32H2开发板通用配置，集成 2.4 GHz 接收器兼容低功耗蓝牙和 IEEE 802.15.4 技术，支持 Bluetooth 5（LE）, Bluetooth mesh, Zigbee, Thread 和 Matter 等协议，适用于多种低功耗物联网应用场景。",
     "author": "",
     "brand": "Espressif",
     "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32h2/esp32-h2-devkitm-1/index.html",
@@ -249,13 +351,16 @@
     "img": "esp32h2/board.webp",
     "pinmap": "esp32h2/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:esp32h2"
+    "type": "esp32:esp32:esp32h2",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32p4",
     "nickname": "ESP32P4 board",
     "version": "3.3.1",
-    "description": "ESP32P4开发板通用配置",
+    "description": "ESP32P4开发板通用配置，支持USB 2.0、MIPI-CSI、MIPI-DSI等外设接口，适用于IPC、HMI、AIoT类产品的原型开发。",
     "author": "",
     "brand": "Espressif",
     "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32p4/esp32-p4-function-ev-board/index.html",
@@ -263,13 +368,16 @@
     "img": "esp32p4/board.webp",
     "pinmap": "esp32p4/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:esp32p4"
+    "type": "esp32:esp32:esp32p4",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32s2",
     "nickname": "ESP32S2 board",
     "version": "3.3.1",
-    "description": "ESP32S2开发板通用配置",
+    "description": "ESP32S2开发板通用配置，是一款高度集成、高性价比、低功耗、主打安全的单核 Wi-Fi SoC，具备强大的功能和丰富的 IO 接口。",
     "author": "",
     "brand": "Espressif",
     "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32s2/esp32-s2-devkitc-1/index.html",
@@ -277,13 +385,16 @@
     "img": "esp32s2/board.webp",
     "pinmap": "esp32s2/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:esp32s2"
+    "type": "esp32:esp32:esp32s2",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32s3",
     "nickname": "ESP32S3 board",
     "version": "3.2.1",
-    "description": "ESP32S3开发板通用配置",
+    "description": "ESP32S3开发板通用配置，集成 2.4 GHz Wi-Fi 和 Bluetooth 5 (LE) 的 MCU 芯片，支持远距离模式 (Long Range)。",
     "author": "",
     "brand": "Espressif",
     "url": "",
@@ -291,7 +402,10 @@
     "img": "esp32s3/board.webp",
     "pinmap": "esp32s3/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32s3"
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32_aiot_basic",
@@ -305,7 +419,10 @@
     "img": "esp32s3basic/board.webp",
     "pinmap": "esp32s3basic/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32s3"
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-esp32s3dev",
@@ -319,7 +436,10 @@
     "img": "esp32s3dev/board.webp",
     "pinmap": "esp32s3dev/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32s3"
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-grove_beginner_kit",
@@ -333,7 +453,10 @@
     "img": "grove_beginner_kit/board.webp",
     "pinmap": "grove_beginner_kit/pinmap.webp",
     "state": "",
-    "type": "arduino:avr:uno"
+    "type": "arduino:avr:uno",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-jinniu_board",
@@ -347,7 +470,10 @@
     "img": "jinniu_board/board.webp",
     "pinmap": "jinniu_board/pinmap.webp",
     "state": "",
-    "type": "arduino:avr:uno"
+    "type": "arduino:avr:uno",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-luatos-esp32c3-core",
@@ -361,7 +487,10 @@
     "img": "luatos_esp32c3_core/board.webp",
     "pinmap": "luatos_esp32c3_core/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32c3"
+    "type": "esp32:esp32:esp32c3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-luatos-esp32s3-core",
@@ -375,7 +504,10 @@
     "img": "luatos_esp32s3_core/board.webp",
     "pinmap": "luatos_esp32s3_core/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32s3"
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-mpython2",
@@ -389,7 +521,11 @@
     "img": "mpython_2/board.webp",
     "pinmap": "mpython_2/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32"
+    "type": "esp32:esp32:esp32",
+    "mode": [
+      "arduino",
+      "micropython"
+    ]
   },
   {
     "name": "@aily-project/board-mpython3",
@@ -403,7 +539,11 @@
     "img": "mpython_3/board.webp",
     "pinmap": "mpython_3/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:esp32s3"
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino",
+      "micropython"
+    ]
   },
   {
     "name": "@aily-project/board-raspberrypi_pico",
@@ -417,7 +557,10 @@
     "img": "raspberrypi_pico/board.webp",
     "pinmap": "raspberrypi_pico/pinmap.webp",
     "state": "alpha",
-    "type": "rp2040:rp2040:rpipico"
+    "type": "rp2040:rp2040:rpipico",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-raspberrypi_pico_w",
@@ -431,7 +574,10 @@
     "img": "raspberrypi_pico_w/board.webp",
     "pinmap": "raspberrypi_pico_w/pinmap.webp",
     "state": "alpha",
-    "type": "rp2040:rp2040:rpipicow"
+    "type": "rp2040:rp2040:rpipicow",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-raspberrypi_pico2",
@@ -445,7 +591,10 @@
     "img": "raspberrypi_pico2/board.webp",
     "pinmap": "raspberrypi_pico2/pinmap.webp",
     "state": "alpha",
-    "type": "rp2040:rp2040:rpipico2"
+    "type": "rp2040:rp2040:rpipico2",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-raspberrypi_pico2_w",
@@ -459,7 +608,10 @@
     "img": "raspberrypi_pico2_w/board.webp",
     "pinmap": "raspberrypi_pico2_w/pinmap.webp",
     "state": "alpha",
-    "type": "rp2040:rp2040:rpipico2w"
+    "type": "rp2040:rp2040:rpipico2w",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-seekfree-bot",
@@ -473,7 +625,10 @@
     "img": "seekfree_robot/board.webp",
     "pinmap": "seekfree_robot/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:esp32c3"
+    "type": "esp32:esp32:esp32c3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32c0",
@@ -487,7 +642,10 @@
     "img": "STM32C0/board.webp",
     "pinmap": "STM32C0/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenC0"
+    "type": "STMicroelectronics:stm32:GenC0",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32f0",
@@ -501,7 +659,10 @@
     "img": "STM32F0/board.webp",
     "pinmap": "STM32F0/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenF0"
+    "type": "STMicroelectronics:stm32:GenF0",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32f1",
@@ -515,7 +676,10 @@
     "img": "STM32F1/board.webp",
     "pinmap": "STM32F1/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenF1"
+    "type": "STMicroelectronics:stm32:GenF1",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32f2",
@@ -529,7 +693,10 @@
     "img": "STM32F2/board.webp",
     "pinmap": "STM32F2/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenF2"
+    "type": "STMicroelectronics:stm32:GenF2",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32f3",
@@ -543,7 +710,10 @@
     "img": "STM32F3/board.webp",
     "pinmap": "STM32F3/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenF3"
+    "type": "STMicroelectronics:stm32:GenF3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32f4",
@@ -557,11 +727,14 @@
     "img": "STM32F4/board.webp",
     "pinmap": "STM32F4/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenF4"
+    "type": "STMicroelectronics:stm32:GenF4",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32f7",
-    "nickname": "stm32f7 Series",
+    "nickname": "STM32F7 Series",
     "version": "2.11.0",
     "description": "STM32F7系列开发板，主频216MHz，64KB-2MB Flash，256-512KB RAM，丰富的外设接口，适合各种嵌入式应用。",
     "author": "STMicroelectronics",
@@ -571,7 +744,10 @@
     "img": "STM32F7/board.webp",
     "pinmap": "STM32F7/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenF7"
+    "type": "STMicroelectronics:stm32:GenF7",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32g0",
@@ -585,7 +761,10 @@
     "img": "STM32G0/board.webp",
     "pinmap": "STM32G0/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenG0"
+    "type": "STMicroelectronics:stm32:GenG0",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32g4",
@@ -599,7 +778,10 @@
     "img": "STM32G4/board.webp",
     "pinmap": "STM32G4/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenG4"
+    "type": "STMicroelectronics:stm32:GenG4",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32h5",
@@ -613,7 +795,10 @@
     "img": "STM32H5/board.webp",
     "pinmap": "STM32H5/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenH5"
+    "type": "STMicroelectronics:stm32:GenH5",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32h7",
@@ -627,7 +812,10 @@
     "img": "STM32H7/board.webp",
     "pinmap": "STM32H7/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenH7"
+    "type": "STMicroelectronics:stm32:GenH7",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32l0",
@@ -641,7 +829,10 @@
     "img": "STM32L0/board.webp",
     "pinmap": "STM32L0/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenL0"
+    "type": "STMicroelectronics:stm32:GenL0",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32l1",
@@ -655,13 +846,16 @@
     "img": "STM32L1/board.webp",
     "pinmap": "STM32L1/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenL1"
+    "type": "STMicroelectronics:stm32:GenL1",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32l4",
     "nickname": "STM32L4 Series",
     "version": "2.11.0",
-    "description": "128-1024KB Flash，40-320KB RAM，丰富的外设接口，适合各种嵌入式应用。",
+    "description": "STM32L4系列开发板，主频80MHz，128-1024KB Flash，40-320KB RAM，丰富的外设接口，适合各种嵌入式应用。",
     "author": "STMicroelectronics",
     "brand": "STMicroelectronics",
     "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32l4-series.html",
@@ -669,7 +863,10 @@
     "img": "STM32L4/board.webp",
     "pinmap": "STM32L4/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenL4"
+    "type": "STMicroelectronics:stm32:GenL4",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32l5",
@@ -683,7 +880,10 @@
     "img": "STM32L5/board.webp",
     "pinmap": "STM32L5/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenL5"
+    "type": "STMicroelectronics:stm32:GenL5",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-stm32wb",
@@ -697,7 +897,10 @@
     "img": "STM32WB/board.webp",
     "pinmap": "STM32WB/pinmap.webp",
     "state": "alpha",
-    "type": "STMicroelectronics:stm32:GenWB"
+    "type": "STMicroelectronics:stm32:GenWB",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-unihiker_K10",
@@ -711,7 +914,10 @@
     "img": "unihiker_K10/board.webp",
     "pinmap": "unihiker_K10/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:esp32s3"
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-unitree_g1",
@@ -725,7 +931,10 @@
     "img": "unitree_g1/board.webp",
     "pinmap": "unitree_g1/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:esp32s3"
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-wifiduino_v2",
@@ -739,7 +948,10 @@
     "img": "wifiduino_v2/board.webp",
     "pinmap": "wifiduino_v2/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:wifiduino32c3"
+    "type": "esp32:esp32:wifiduino32c3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-wifiduino32",
@@ -753,7 +965,10 @@
     "img": "wifiduino32/board.webp",
     "pinmap": "wifiduino32/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:wifiduino32"
+    "type": "esp32:esp32:wifiduino32",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-wifiduino32s3",
@@ -767,7 +982,11 @@
     "img": "wifiduino32s3/board.webp",
     "pinmap": "wifiduino32s3/pinmap.webp",
     "state": "",
-    "type": "esp32:esp32:wifiduino32s3"
+    "type": "esp32:esp32:wifiduino32s3",
+    "mode": [
+      "arduino",
+      "micropython"
+    ]
   },
   {
     "name": "@aily-project/board-xiao_esp32c3",
@@ -781,7 +1000,10 @@
     "img": "xiao_esp32c3/board.webp",
     "pinmap": "xiao_esp32c3/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:XIAO_ESP32C3"
+    "type": "esp32:esp32:XIAO_ESP32C3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-xiao_esp32c6",
@@ -795,7 +1017,10 @@
     "img": "xiao_esp32c6/board.webp",
     "pinmap": "xiao_esp32c6/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:XIAO_ESP32C6"
+    "type": "esp32:esp32:XIAO_ESP32C6",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-xiao_esp32s3",
@@ -809,7 +1034,10 @@
     "img": "xiao_esp32s3/board.webp",
     "pinmap": "xiao_esp32s3/pinmap.webp",
     "state": "alpha",
-    "type": "esp32:esp32:XIAO_ESP32S3"
+    "type": "esp32:esp32:XIAO_ESP32S3",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-xiao_ra4m1",
@@ -823,7 +1051,10 @@
     "img": "xiao_RA4M1/board.webp",
     "pinmap": "xiao_RA4M1/pinmap.webp",
     "state": "alpha",
-    "type": "arduino:renesas_uno:minima"
+    "type": "arduino:renesas_uno:minima",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-xiao_rp2040",
@@ -837,7 +1068,10 @@
     "img": "xiao_rp2040/board.webp",
     "pinmap": "xiao_rp2040/pinmap.webp",
     "state": "alpha",
-    "type": "rp2040:rp2040:seeed_xiao_rp2040"
+    "type": "rp2040:rp2040:seeed_xiao_rp2040",
+    "mode": [
+      "arduino"
+    ]
   },
   {
     "name": "@aily-project/board-xiao_rp2350",
@@ -851,6 +1085,9 @@
     "img": "xiao_rp2350/board.webp",
     "pinmap": "xiao_rp2350/pinmap.webp",
     "state": "alpha",
-    "type": "rp2040:rp2040:seeed_xiao_rp2350"
+    "type": "rp2040:rp2040:seeed_xiao_rp2350",
+    "mode": [
+      "arduino"
+    ]
   }
 ]

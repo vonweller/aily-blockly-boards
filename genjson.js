@@ -14,7 +14,8 @@ const defaultKeysToExtract = [
   'img',
   'pinmap',
   'state',
-  'type'
+  'type',
+  'mode'
 ];
 
 // 自定义目录顺序 - 这里定义你想要的目录顺序
@@ -29,7 +30,47 @@ const directoryOrder = [
 async function filterPackageJson(packageJson, keysToExtract, subdir) {
   const filteredJson = {};
 
+  let boardJsonCache = null;
+  let boardJsonLoaded = false;
+
+  const loadBoardJson = async () => {
+    if (boardJsonLoaded) {
+      return boardJsonCache;
+    }
+
+    boardJsonLoaded = true;
+
+    try {
+      const boardJsonPath = path.join(__dirname, subdir, 'board.json');
+      await fs.access(boardJsonPath, fs.constants.F_OK);
+      const boardData = await fs.readFile(boardJsonPath, 'utf8');
+      boardJsonCache = JSON.parse(boardData);
+    } catch (error) {
+      console.log(`无法读取${subdir}/board.json:`, error.message);
+      boardJsonCache = null;
+    }
+
+    return boardJsonCache;
+  };
+
   for (const key of keysToExtract) {
+    if (key === 'mode') {
+      let modeValue = ['arduino'];
+      const boardJson = await loadBoardJson();
+      if (boardJson && Object.prototype.hasOwnProperty.call(boardJson, 'mode')) {
+        if (Array.isArray(boardJson.mode)) {
+          modeValue = boardJson.mode;
+        } else if (typeof boardJson.mode === 'string') {
+          modeValue = [boardJson.mode];
+        } else if (boardJson.mode != null) {
+          modeValue = boardJson.mode;
+        }
+      }
+
+      filteredJson[key] = modeValue;
+      continue;
+    }
+
     if (packageJson.hasOwnProperty(key)) {
       filteredJson[key] = packageJson[key];
     } else {
@@ -40,27 +81,19 @@ async function filterPackageJson(packageJson, keysToExtract, subdir) {
         filteredJson[key] = "";
       }
     }
-    
+
     // 对img和pinmap属性进行特殊处理，使用目录路径
     if (key === 'img') {
       filteredJson[key] = `${subdir}/board.webp`;
     } else if (key === 'pinmap') {
       filteredJson[key] = `${subdir}/pinmap.webp`;
     }
-    
+
     // 对type属性进行特殊处理，从board.json中提取
     if (key === 'type') {
-      try {
-        const boardJsonPath = path.join(__dirname, subdir, 'board.json');
-        await fs.access(boardJsonPath, fs.constants.F_OK);
-        const boardData = await fs.readFile(boardJsonPath, 'utf8');
-        const boardJson = JSON.parse(boardData);
-        if (boardJson.hasOwnProperty('type')) {
-          filteredJson[key] = boardJson.type;
-        }
-      } catch (error) {
-        // 如果无法读取board.json或没有type字段，保持原有逻辑
-        console.log(`无法从${subdir}/board.json中提取type字段:`, error.message);
+      const boardJson = await loadBoardJson();
+      if (boardJson && Object.prototype.hasOwnProperty.call(boardJson, 'type')) {
+        filteredJson[key] = boardJson.type;
       }
     }
   }

@@ -5,6 +5,7 @@
     "compilerTool": "aily-builder",
     "core": "esp32:esp32",
     "type": "esp32:esp32:esp32s3",
+    "mode": ["arduino", "micropython"],
     "compilerParam": "compile -v -b esp32:esp32:esp32s3 --build-property build.cdc_on_boot=1 --build-property build.flash_size=16MB --build-property build.partitions=ffat --build-property build.psram_type=opi",
     "uploadParam": "esptool --chip esp32s3 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x0 ${'*.merged.bin'}",
     "analogPins": [
@@ -87,7 +88,7 @@
             "7"
         ],
         [
-        "P7(RGB_LED)",
+            "P7(RGB_LED)",
             "8"
         ],
         [
@@ -125,33 +126,27 @@
         [
             "P16",
             "47"
-        ]
-        ,
+        ],
         [
             "P23(触摸P)",
             "9"
-        ]
-        ,
+        ],
         [
             "P24(触摸Y)",
             "10"
-        ]
-        ,
+        ],
         [
             "P25(触摸T)",
             "11"
-        ]
-                ,
+        ],
         [
             "P26(触摸H)",
             "12"
-        ]
-                ,
+        ],
         [
             "P27(触摸O)",
             "13"
-        ]
-                ,
+        ],
         [
             "P28(触摸N)",
             "14"
@@ -576,7 +571,7 @@
     "specialPins": {
         "display": {
             "sda": "35",
-            "sck": "36", 
+            "sck": "36",
             "cs": "34",
             "rs": "33"
         },
