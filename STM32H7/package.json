@@ -22,6 +22,7 @@
         "@aily-project/tool-STM32Tools": "2.3.1",
         "@aily-project/sdk-stm32": "2.11.0",
         "@aily-project/tool-STM32_SVD": "1.18.1",
+        "@aily-project/tool-stm32flash": "0.7.0",
         "@aily-project/tool-CMSIS": "5.9.0",
         "@aily-project/tool-ctags": "5.8.0"
     }

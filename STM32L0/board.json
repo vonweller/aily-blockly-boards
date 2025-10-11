@@ -6,7 +6,7 @@
   "core": "STMicroelectronics:stm32",
   "type": "STMicroelectronics:stm32:GenL0",
   "compilerParam": "compile -v -b STMicroelectronics:stm32:GenL0",
-  "uploadParam": "todo",
+  "uploadParam": "stm32flash.exe -w ${'*.bin'} -v -g 0x0 ${serial}",
   "analogPins": [
     [
       "PIN_A0",
