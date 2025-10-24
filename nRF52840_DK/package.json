@@ -1,0 +1,23 @@
+{
+  "name": "@aily-project/board-nrf52840_dk",
+  "nickname": "nRF52840DevKit",
+  "version": "1.7.0",
+  "description": "nRF52840开发板配置 - 基于nRF52840的教育开发板",
+  "main": "index.js",
+  "brand": "Nordic Semiconductor",
+  "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF52840-DK",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aily-project",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "9.0.0",
+    "@aily-project/tool-nrfjprog": "9.4.0",
+    "@aily-project/tool-adafruit-nrfutil": "1.7.0",
+    "@aily-project/sdk-nrf52": "1.7.0",
+    "@aily-project/tool-CMSIS": "5.7.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
