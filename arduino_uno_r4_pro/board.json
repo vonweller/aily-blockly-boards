@@ -6,7 +6,7 @@
     "core": "arduino:renesas_uno",
     "type": "arduino:renesas_uno:unor4wifi",
     "compilerParam": "compile -v -b arduino:renesas_uno:unor4wifi",
-    "uploadParam": "dfu-util --device 0x2341:0x0069,:0x0369 -D ${'*.bin'} -a0 -Q",
+    "uploadParam": "[--use_1200bps_touch] bossac -d --port=${serial} -a -U -e -w ${'*.bin'} -R",
     "analogPins": [
         [
             "A0",
