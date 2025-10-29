@@ -1,8 +1,8 @@
 {
   "name": "@aily-project/board-nrf52840_dk",
-  "nickname": "nRF52840DevKit",
+  "nickname": "nRF52840 DK",
   "version": "1.7.0",
-  "description": "nRF52840开发板配置 - 基于nRF52840的教育开发板",
+  "description": "nRF52840 DK是一款多功能单板开发套件，适用于 nRF52840 SoC 上的低功耗蓝牙、蓝牙mesh、Thread、Zigbee、802.15.4、ANT 和 2.4 GHz 私有应用。它是亚马逊 Sidewalk 推荐的 Nordic 开发套件。",
   "main": "index.js",
   "brand": "Nordic Semiconductor",
   "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF52840-DK",
