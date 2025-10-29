@@ -4,8 +4,8 @@
     "description": "Arduino UNO R4 Pro standard compatible board",
     "compilerTool": "aily-builder",
     "core": "arduino:renesas_uno",
-    "type": "arduino:renesas_uno:minima",
-    "compilerParam": "compile -v -b arduino:renesas_uno:minima",
+    "type": "arduino:renesas_uno:unor4wifi",
+    "compilerParam": "compile -v -b arduino:renesas_uno:unor4wifi",
     "uploadParam": "dfu-util --device 0x2341:0x0069,:0x0369 -D ${'*.bin'} -a0 -Q",
     "analogPins": [
         [
