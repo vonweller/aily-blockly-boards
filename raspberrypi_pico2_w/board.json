@@ -6,7 +6,7 @@
     "core": "rp2040:rp2040",
     "type": "rp2040:rp2040:rpipico2w",
     "compilerParam": "compile -v -b rp2040:rp2040:rpipico2w",
-    "uploadParam": "pqt-python3",
+    "uploadParam": "python3 -I ${'uf2conv.py'} --serial ${serial} --family RP2040 --deploy ${'*.uf2'}",
     "analogPins": [
         ["A0", "26"],
         ["A1", "27"],
