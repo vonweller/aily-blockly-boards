@@ -5,7 +5,7 @@
     "compilerTool": "aily-builder",
     "core": "adafruit:nrf52",
     "type": "adafruit:nrf52:pca10056",
-    "mode": ["arduino", "micropython"],
+    "mode": ["arduino"],
     "compilerParam": "compile -v -b adafruit:nrf52:pca10056",
     "uploadParam": "adafruit-nrfutil --verbose dfu serial -pkg ${'*.bin.zip'} -p ${serial} -b 115200 --singlebank",
     "analogPins": [
