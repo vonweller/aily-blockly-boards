@@ -231,6 +231,10 @@
         [
             "Serial",
             "Serial"
+        ],
+        [
+            "Serial1",
+            "Serial1"
         ]
     ],
     "serialSpeed": [
