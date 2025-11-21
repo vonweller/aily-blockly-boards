@@ -1,0 +1,12 @@
+{
+    "name": "@aily-project/board-dfrobot_firebeetle2_esp32s3",
+    "version": "1.0.0",
+    "description": "DFRobot FireBeetle 2 ESP32-S3 Board Support",
+    "boardDependencies": {
+        "@aily-project/compiler-esp-x32": "14.2.0",
+        "@aily-project/tool-esptool_py": "5.1.0",
+        "@aily-project/sdk-esp32": "3.3.1",
+        "@aily-project/tool-idf_esp32s3": "5.5.0",
+        "@aily-project/tool-ctags": "5.8.0"
+    }
+}
