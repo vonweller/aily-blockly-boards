@@ -1,9 +1,9 @@
 {
-    "name": "DFRobot FireBeetle 2 ESP32-S3",
+    "name": "FireBeetle2 ESP32-S3",
     "version": "1.0.0",
-    "description": "DFRobot FireBeetle 2 ESP32-S3 Board",
+    "description": "DFRobot FireBeetle2 ESP32-S3 Board",
     "compilerTool": "aily-builder",
-    "core": "esp32:esp32@3.0.7",
+    "core": "esp32:esp32",
     "type": "esp32:esp32:dfrobot_firebeetle2_esp32s3",
     "mode": [
         "arduino"
