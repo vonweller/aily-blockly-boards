@@ -1,5 +1,5 @@
 {
-    "name": "ESP32S3 CAM",
+    "name": "NL-ESP32S3-CAM",
     "version": "1.0.0",
     "description": "ESP32S3 Camera Board",
     "compilerTool": "aily-builder",

@@ -1,6 +1,6 @@
 {
-  "name": "@aily-project/board-nulllab_esp32s3_cam",
-  "nickname": "ESP32S3 CAM board",
+  "name": "@aily-project/board-nl-esp32s3-cam",
+  "nickname": "NL-ESP32S3-CAM",
   "version": "1.0.0",
   "description": "ESP32S3 Camera Board configuration.",
   "main": "index.js",
