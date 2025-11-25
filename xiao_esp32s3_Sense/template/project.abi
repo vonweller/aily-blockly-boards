@@ -5,17 +5,827 @@
       {
         "type": "arduino_setup",
         "id": "arduino_setup_id0",
-        "x": 30,
+        "x": 10,
         "y": 30,
-        "deletable": false 
+        "deletable": false,
+        "icons": {
+          "ailyIcon": "fa-regular fa-arrows-repeat"
+        },
+        "inputs": {
+          "ARDUINO_SETUP": {
+            "block": {
+              "type": "serial_begin",
+              "id": "DdG7XmjmAWYHgc+@`nft",
+              "icons": {
+                "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+              },
+              "fields": {
+                "SERIAL": "Serial",
+                "SPEED": "1200"
+              },
+              "next": {
+                "block": {
+                  "type": "sscma_core_video_capture_begin",
+                  "id": "gT*eFT3=..]SvgLw{A~3",
+                  "fields": {
+                    "VAR": {
+                      "id": "zm72IZx0nCExf7[?.HBt"
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "sscma_core_begin",
+                      "id": ")g%@RMz#K7i|c1roAk^=",
+                      "fields": {
+                        "VAR": {
+                          "id": "$_*QtmIJP9]8|{lPZe$u"
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "serial_println",
+                          "id": "lU]9BvhrIErkjp(86_Ub",
+                          "icons": {
+                            "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                          },
+                          "fields": {
+                            "SERIAL": "Serial"
+                          },
+                          "inputs": {
+                            "VAR": {
+                              "shadow": {
+                                "type": "text",
+                                "id": "f^]#MxfeTx~VdonRd0F/",
+                                "fields": {
+                                  "TEXT": "Init done"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       },
       {
         "type": "arduino_loop",
         "id": "arduino_loop_id0",
-        "x": 30,
-        "y": 290,
-        "deletable": false 
+        "x": 10,
+        "y": 250,
+        "deletable": false,
+        "icons": {
+          "ailyIcon": "fa-regular fa-arrows-repeat"
+        },
+        "inputs": {
+          "ARDUINO_LOOP": {
+            "block": {
+              "type": "sscma_core_invoke",
+              "id": "(i(jNR804+[ikE]1tbL,",
+              "fields": {
+                "VAR": {
+                  "id": "$_*QtmIJP9]8|{lPZe$u"
+                }
+              },
+              "inputs": {
+                "FRAME": {
+                  "shadow": {
+                    "type": "sscma_core_get_managed_frame",
+                    "id": "DmeJtWV?#0q=;QkXw4(4",
+                    "fields": {
+                      "VAR": {
+                        "id": "zm72IZx0nCExf7[?.HBt",
+                        "name": "camera",
+                        "type": "VideoCapture"
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "sscma_core_get_boxes",
+                  "id": ":J$Y%GmW%1siE2R(S/BD",
+                  "fields": {
+                    "VAR": {
+                      "id": "$_*QtmIJP9]8|{lPZe$u"
+                    }
+                  },
+                  "inputs": {
+                    "HANDLER": {
+                      "block": {
+                        "type": "serial_print",
+                        "id": "uiqW)u1G=+^H*:tI_F[_",
+                        "icons": {
+                          "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                        },
+                        "fields": {
+                          "SERIAL": "Serial"
+                        },
+                        "inputs": {
+                          "VAR": {
+                            "shadow": {
+                              "type": "text",
+                              "id": "PP$0}iKTo_AewBQ?ov)t",
+                              "fields": {
+                                "TEXT": "Box: score= "
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "serial_print",
+                            "id": "5+-SryyU8_G[Z2f;xii,",
+                            "icons": {
+                              "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                            },
+                            "fields": {
+                              "SERIAL": "Serial"
+                            },
+                            "inputs": {
+                              "VAR": {
+                                "shadow": {
+                                  "type": "text",
+                                  "id": ";x#YFBPV.WAMO$g[gk|e",
+                                  "fields": {
+                                    "TEXT": ""
+                                  }
+                                },
+                                "block": {
+                                  "type": "sscma_core_get_boxes_info",
+                                  "id": "~4_*Il~TAh^Bm[~2LU(?",
+                                  "fields": {
+                                    "PROPERTY": "score"
+                                  }
+                                }
+                              }
+                            },
+                            "next": {
+                              "block": {
+                                "type": "serial_print",
+                                "id": "%.F[7H-5Vg)(o=eL$;Ym",
+                                "icons": {
+                                  "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                },
+                                "fields": {
+                                  "SERIAL": "Serial"
+                                },
+                                "inputs": {
+                                  "VAR": {
+                                    "shadow": {
+                                      "type": "text",
+                                      "id": "BX.3@SfbX4b;u@1lYGJ1",
+                                      "fields": {
+                                        "TEXT": ", target= "
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "serial_println",
+                                    "id": "#cen4*KG7,=eX-TMOoLd",
+                                    "icons": {
+                                      "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                    },
+                                    "fields": {
+                                      "SERIAL": "Serial"
+                                    },
+                                    "inputs": {
+                                      "VAR": {
+                                        "shadow": {
+                                          "type": "text",
+                                          "id": ":|Fd6*)g,Mgv@Nm+Qmda",
+                                          "fields": {
+                                            "TEXT": "Init done"
+                                          }
+                                        },
+                                        "block": {
+                                          "type": "sscma_core_get_boxes_info",
+                                          "id": "NznhC#{wkGmU|As$!M{I",
+                                          "fields": {
+                                            "PROPERTY": "target"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "sscma_core_get_classes",
+                      "id": "w|iIa/bJ=huXXu|k1)va",
+                      "fields": {
+                        "VAR": {
+                          "id": "$_*QtmIJP9]8|{lPZe$u"
+                        }
+                      },
+                      "inputs": {
+                        "HANDLER": {
+                          "block": {
+                            "type": "serial_print",
+                            "id": "=bWB/ZM8%:7dSThmN@37",
+                            "icons": {
+                              "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                            },
+                            "fields": {
+                              "SERIAL": "Serial"
+                            },
+                            "inputs": {
+                              "VAR": {
+                                "shadow": {
+                                  "type": "text",
+                                  "id": "Xp5;M|G|a5d]d67X{pix",
+                                  "fields": {
+                                    "TEXT": "Class: score= "
+                                  }
+                                }
+                              }
+                            },
+                            "next": {
+                              "block": {
+                                "type": "serial_print",
+                                "id": "qg2h|yJ^,;-]2qEc8UX@",
+                                "icons": {
+                                  "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                },
+                                "fields": {
+                                  "SERIAL": "Serial"
+                                },
+                                "inputs": {
+                                  "VAR": {
+                                    "shadow": {
+                                      "type": "text",
+                                      "id": ";x#YFBPV.WAMO$g[gk|e",
+                                      "fields": {
+                                        "TEXT": ""
+                                      }
+                                    },
+                                    "block": {
+                                      "type": "sscma_core_get_classes_info",
+                                      "id": "1BNPA%Rw7,4:G(?hI3X~",
+                                      "fields": {
+                                        "PROPERTY": "score"
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "serial_print",
+                                    "id": "QOLDI}5P]Q47.3|T9dJ-",
+                                    "icons": {
+                                      "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                    },
+                                    "fields": {
+                                      "SERIAL": "Serial"
+                                    },
+                                    "inputs": {
+                                      "VAR": {
+                                        "shadow": {
+                                          "type": "text",
+                                          "id": "z48EPl6vU`vUHl3m+!vu",
+                                          "fields": {
+                                            "TEXT": ", target= "
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "serial_println",
+                                        "id": "1=NVU[sM8jLC^nOKvq-M",
+                                        "icons": {
+                                          "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                        },
+                                        "fields": {
+                                          "SERIAL": "Serial"
+                                        },
+                                        "inputs": {
+                                          "VAR": {
+                                            "shadow": {
+                                              "type": "text",
+                                              "id": ":|Fd6*)g,Mgv@Nm+Qmda",
+                                              "fields": {
+                                                "TEXT": "Init done"
+                                              }
+                                            },
+                                            "block": {
+                                              "type": "sscma_core_get_classes_info",
+                                              "id": "1OT2nt2[D!x8-abd9?6Q",
+                                              "fields": {
+                                                "PROPERTY": "target"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "sscma_core_get_keypoints",
+                          "id": "5PIEUU,p|b^vf9cDVb+{",
+                          "fields": {
+                            "VAR": {
+                              "id": "$_*QtmIJP9]8|{lPZe$u"
+                            }
+                          },
+                          "inputs": {
+                            "HANDLER": {
+                              "block": {
+                                "type": "serial_print",
+                                "id": "~AKHjc{biMjLauNTV[DP",
+                                "icons": {
+                                  "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                },
+                                "fields": {
+                                  "SERIAL": "Serial"
+                                },
+                                "inputs": {
+                                  "VAR": {
+                                    "shadow": {
+                                      "type": "text",
+                                      "id": "G^cV.MB7F;TGx8bG/v2M",
+                                      "fields": {
+                                        "TEXT": "Keypoints: score= "
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "serial_print",
+                                    "id": "^1m0cNq:Gz|WY+rL8*Rg",
+                                    "icons": {
+                                      "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                    },
+                                    "fields": {
+                                      "SERIAL": "Serial"
+                                    },
+                                    "inputs": {
+                                      "VAR": {
+                                        "shadow": {
+                                          "type": "text",
+                                          "id": ";x#YFBPV.WAMO$g[gk|e",
+                                          "fields": {
+                                            "TEXT": ""
+                                          }
+                                        },
+                                        "block": {
+                                          "type": "sscma_core_get_keypoints_info",
+                                          "id": "[6O}~HP)(;Dax,7DD%4`",
+                                          "fields": {
+                                            "PROPERTY": "score"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "serial_print",
+                                        "id": "H=]$pezf=hyefsXAb9!+",
+                                        "icons": {
+                                          "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                        },
+                                        "fields": {
+                                          "SERIAL": "Serial"
+                                        },
+                                        "inputs": {
+                                          "VAR": {
+                                            "shadow": {
+                                              "type": "text",
+                                              "id": "k#Q$*D,f/6_s(r7T0wUh",
+                                              "fields": {
+                                                "TEXT": ", target= "
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "serial_println",
+                                            "id": "0=90dyhCO[Jag4EjSiW0",
+                                            "icons": {
+                                              "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                            },
+                                            "fields": {
+                                              "SERIAL": "Serial"
+                                            },
+                                            "inputs": {
+                                              "VAR": {
+                                                "shadow": {
+                                                  "type": "text",
+                                                  "id": ":|Fd6*)g,Mgv@Nm+Qmda",
+                                                  "fields": {
+                                                    "TEXT": "Init done"
+                                                  }
+                                                },
+                                                "block": {
+                                                  "type": "sscma_core_get_keypoints_info",
+                                                  "id": "vyj.G*Q`wAJCi=nvSQ~Z",
+                                                  "fields": {
+                                                    "PROPERTY": "target"
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "type": "sscma_core_get_keypoints_points",
+                                                "id": "|On32kJg*VF0eO79{*wt",
+                                                "inputs": {
+                                                  "HANDLER": {
+                                                    "block": {
+                                                      "type": "serial_print",
+                                                      "id": "c#7Xv8W}3Sd0^)$7hDE}",
+                                                      "icons": {
+                                                        "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                                      },
+                                                      "fields": {
+                                                        "SERIAL": "Serial"
+                                                      },
+                                                      "inputs": {
+                                                        "VAR": {
+                                                          "shadow": {
+                                                            "type": "text",
+                                                            "id": "dTws_+Ijwb*{U3Cec#MO",
+                                                            "fields": {
+                                                              "TEXT": "Keypoint: score= "
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "next": {
+                                                        "block": {
+                                                          "type": "serial_print",
+                                                          "id": "5Ftb~)j8G!qihXa|?%Gd",
+                                                          "icons": {
+                                                            "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                                          },
+                                                          "fields": {
+                                                            "SERIAL": "Serial"
+                                                          },
+                                                          "inputs": {
+                                                            "VAR": {
+                                                              "shadow": {
+                                                                "type": "text",
+                                                                "id": ";x#YFBPV.WAMO$g[gk|e",
+                                                                "fields": {
+                                                                  "TEXT": ""
+                                                                }
+                                                              },
+                                                              "block": {
+                                                                "type": "sscma_core_get_keypoints_points_info",
+                                                                "id": "Rx8x(+y{!DU%/N~`8;=p",
+                                                                "fields": {
+                                                                  "PROPERTY": "x"
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "next": {
+                                                            "block": {
+                                                              "type": "serial_print",
+                                                              "id": "cmQk?/!g$RLWd%H%?;?*",
+                                                              "icons": {
+                                                                "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                                              },
+                                                              "fields": {
+                                                                "SERIAL": "Serial"
+                                                              },
+                                                              "inputs": {
+                                                                "VAR": {
+                                                                  "shadow": {
+                                                                    "type": "text",
+                                                                    "id": "Q$=lrm{ri)xLc81fwu~E",
+                                                                    "fields": {
+                                                                      "TEXT": ", target= "
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "next": {
+                                                                "block": {
+                                                                  "type": "serial_println",
+                                                                  "id": "HN19#.7NK05h[+t1c`8}",
+                                                                  "icons": {
+                                                                    "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                                                  },
+                                                                  "fields": {
+                                                                    "SERIAL": "Serial"
+                                                                  },
+                                                                  "inputs": {
+                                                                    "VAR": {
+                                                                      "shadow": {
+                                                                        "type": "text",
+                                                                        "id": ":|Fd6*)g,Mgv@Nm+Qmda",
+                                                                        "fields": {
+                                                                          "TEXT": "Init done"
+                                                                        }
+                                                                      },
+                                                                      "block": {
+                                                                        "type": "sscma_core_get_keypoints_points_info",
+                                                                        "id": "WCiHs4wfC4aw.{hs%VNG",
+                                                                        "fields": {
+                                                                          "PROPERTY": "x"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "type": "sscma_core_get_perf",
+                              "id": "K,6AT,P4cetKPmPupVV@",
+                              "fields": {
+                                "VAR": {
+                                  "id": "$_*QtmIJP9]8|{lPZe$u"
+                                },
+                                "PERF_VAR": "perf"
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "serial_print",
+                                  "id": "ir1z^NxB;*Ns^4L=%A)8",
+                                  "icons": {
+                                    "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                  },
+                                  "fields": {
+                                    "SERIAL": "Serial"
+                                  },
+                                  "inputs": {
+                                    "VAR": {
+                                      "shadow": {
+                                        "type": "text",
+                                        "id": "!l?$t8]$^$Rd1TQQapL`",
+                                        "fields": {
+                                          "TEXT": "Perf: preprocess= "
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "type": "serial_print",
+                                      "id": "y*Wv)f_i]M5mp$[4v;xL",
+                                      "icons": {
+                                        "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                      },
+                                      "fields": {
+                                        "SERIAL": "Serial"
+                                      },
+                                      "inputs": {
+                                        "VAR": {
+                                          "shadow": {
+                                            "type": "text",
+                                            "id": ";x#YFBPV.WAMO$g[gk|e",
+                                            "fields": {
+                                              "TEXT": ""
+                                            }
+                                          },
+                                          "block": {
+                                            "type": "sscma_core_get_perf_info",
+                                            "id": "O_$z84#nxJ(V^kN.|q;)",
+                                            "fields": {
+                                              "PERF_VAR": {
+                                                "id": "LMuzXp(VVz~D:OKuacu-"
+                                              },
+                                              "PROPERTY": "preprocess"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "serial_print",
+                                          "id": "72ew{RUK/`guD!8mQt|1",
+                                          "icons": {
+                                            "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                          },
+                                          "fields": {
+                                            "SERIAL": "Serial"
+                                          },
+                                          "inputs": {
+                                            "VAR": {
+                                              "shadow": {
+                                                "type": "text",
+                                                "id": "ZrYj[KbInF[%}g@D;EoT",
+                                                "fields": {
+                                                  "TEXT": "ms, inference= "
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "next": {
+                                            "block": {
+                                              "type": "serial_print",
+                                              "id": "}H*Yd*$b%r(JZhPUxv5R",
+                                              "icons": {
+                                                "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                              },
+                                              "fields": {
+                                                "SERIAL": "Serial"
+                                              },
+                                              "inputs": {
+                                                "VAR": {
+                                                  "shadow": {
+                                                    "type": "text",
+                                                    "id": "o9sL-`Ww~UYII1CB572n",
+                                                    "fields": {
+                                                      "TEXT": "ms, inference= "
+                                                    }
+                                                  },
+                                                  "block": {
+                                                    "type": "sscma_core_get_perf_info",
+                                                    "id": "5Lv,|.D(gKI`?_[MMqcO",
+                                                    "fields": {
+                                                      "PERF_VAR": {
+                                                        "id": "LMuzXp(VVz~D:OKuacu-"
+                                                      },
+                                                      "PROPERTY": "inference"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "next": {
+                                                "block": {
+                                                  "type": "serial_print",
+                                                  "id": "j6U2,$HO+~V9:K*{W3B$",
+                                                  "icons": {
+                                                    "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                                  },
+                                                  "fields": {
+                                                    "SERIAL": "Serial"
+                                                  },
+                                                  "inputs": {
+                                                    "VAR": {
+                                                      "shadow": {
+                                                        "type": "text",
+                                                        "id": "AgTm}4Ztt}AbQvQ`)Vfc",
+                                                        "fields": {
+                                                          "TEXT": "ms, postprocess= "
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "next": {
+                                                    "block": {
+                                                      "type": "serial_println",
+                                                      "id": "?HDf,|l${F]/)H/0YQhU",
+                                                      "icons": {
+                                                        "ailyIcon": "fa-light fa-arrow-right-arrow-left"
+                                                      },
+                                                      "fields": {
+                                                        "SERIAL": "Serial"
+                                                      },
+                                                      "inputs": {
+                                                        "VAR": {
+                                                          "shadow": {
+                                                            "type": "text",
+                                                            "id": ":|Fd6*)g,Mgv@Nm+Qmda",
+                                                            "fields": {
+                                                              "TEXT": "Init done"
+                                                            }
+                                                          },
+                                                          "block": {
+                                                            "type": "sscma_core_get_perf_info",
+                                                            "id": "t*u*UXo#~$g$h1Nj+0kx",
+                                                            "fields": {
+                                                              "PERF_VAR": {
+                                                                "id": "LMuzXp(VVz~D:OKuacu-"
+                                                              },
+                                                              "PROPERTY": "postprocess"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "sscma_core_create",
+        "id": "QM_5Ucwryxc-9D(*,sOe",
+        "x": 10,
+        "y": -130,
+        "icons": {
+          "ailyIcon": "fa-light fa-brain-circuit"
+        },
+        "fields": {
+          "VAR": "ai"
+        },
+        "next": {
+          "block": {
+            "type": "sscma_core_create_video_capture",
+            "id": "d/J@pAl)B,}:BKKylVoC",
+            "fields": {
+              "VAR": "camera"
+            },
+            "next": {
+              "block": {
+                "type": "sscma_core_set_loop_task_stack_size",
+                "id": "zgm6A+.p*4=$jqiGJ}J!",
+                "inputs": {
+                  "SIZE": {
+                    "shadow": {
+                      "type": "math_number",
+                      "id": "^H1w%nl+/kU@EXD1-;/s",
+                      "fields": {
+                        "NUM": 40960
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     ]
-  }
+  },
+  "variables": [
+    {
+      "name": "ai",
+      "id": "$_*QtmIJP9]8|{lPZe$u",
+      "type": "SSCMAMicroCore"
+    },
+    {
+      "name": "camera",
+      "id": "zm72IZx0nCExf7[?.HBt",
+      "type": "VideoCapture"
+    },
+    {
+      "name": "classes",
+      "id": "x:U479=@PX)v~#Xm?.;I",
+      "type": "SSCMAClasses"
+    },
+    {
+      "name": "ai",
+      "id": "?UG7qVX[Pcy{Yp9%:Mbf",
+      "type": "SSCMA"
+    },
+    {
+      "name": "perf",
+      "id": "LMuzXp(VVz~D:OKuacu-",
+      "type": "Perf"
+    }
+  ]
 }
