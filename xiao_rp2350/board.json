@@ -1,7 +1,7 @@
 {
-  "name": "Xiao RP2350",
+  "name": "XIAO RP2350",
   "version": "1.0.0",
-  "description": "Xiao RP2350 board",
+  "description": "XIAO RP2350 board",
   "core": "rp2040:rp2040",
   "type": "rp2040:rp2040:seeed_xiao_rp2350",
   "compilerParam": "compile -v -b rp2040:rp2040:seeed_xiao_rp2350",

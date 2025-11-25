@@ -1,0 +1,22 @@
+{
+  "name": "@aily-project/board-xiao_esp32s3_sense",
+  "nickname": "XIAO ESP32S3 Sense",
+  "version": "3.3.1",
+  "description": "Seeed Studio XIAO ESP32S3 leverages dual-core ESP32S3 chip, supporting both Wi-Fi and BLE wireless connectivities, which allows battery charge. It integrates built-in camera sensor, digital microphone. It offers 8MB PSRAM, 8MB FLASH, and external SD card slot. All of these make it suitable for embedded ML, like intelligent voice and vision AI.",
+  "main": "index.js",
+  "brand": "SeeedStudio",
+  "url": "https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seeed",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-esptool_py": "5.1.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32s3": "5.5.1",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
