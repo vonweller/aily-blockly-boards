@@ -2,7 +2,7 @@
   "name": "project_",
   "version": "1.0.0",
   "description": "",
-  "board": "Xiao RP2350",
+  "board": "XIAO RP2350",
   "dependencies": {
     "@aily-project/board-xiao_rp2350": "5.1.0",
     "@aily-project/lib-core-io": "1.0.0",
