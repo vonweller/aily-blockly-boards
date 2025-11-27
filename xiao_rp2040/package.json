@@ -1,8 +1,8 @@
 {
   "name": "@aily-project/board-xiao_rp2040",
-  "nickname": "Xiao RP2040",
+  "nickname": "XIAO RP2040",
   "version": "5.1.0",
-  "description": "Xiao RP2040",
+  "description": "XIAO RP2040",
   "main": "index.js",
   "url": "https://wiki.seeedstudio.com/cn/XIAO-RP2040/",
   "scripts": {
