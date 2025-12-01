@@ -42,6 +42,7 @@
         ["D19","D19"]
     ],
     "pwmPins": [
+        ["LED_BUILTIN","LED_BUILTIN"],
         ["D0","D0"],
         ["D1","D1"],
         ["D2","D2"],
@@ -110,15 +111,15 @@
     ],
     "spiPins": {
         "SPI": [
-            ["MOSI",9],
-            ["MISO",8],
-            ["SCK",7],
-            ["SS",44]
+            ["MOSI","D10"],
+            ["MISO","D8"],
+            ["SCK","D9"],
+            ["SS","D7"]
         ],
         "SPI1": [
-            ["MOSI1",11],
-            ["MISO1",12],
-            ["SCK1",13]
+            ["MOSI1","D19"],
+            ["MISO1","D18"],
+            ["SCK1","D17"]
         ]
     },
     "spiClockDivide": [
@@ -135,8 +136,8 @@
     ],
     "i2cPins": {
         "Wire": [
-            ["SDA","5"],
-            ["SCL","6"]
+            ["SDA","D4"],
+            ["SCL","D5"]
         ]
     },
     "i2cSpeed": [

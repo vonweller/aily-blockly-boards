@@ -19,6 +19,7 @@
         ["A10","A10"]
     ],
     "digitalPins": [
+        ["LED_BUILTIN","LED_BUILTIN"],
         ["D0","D0"],
         ["D1","D1"],
         ["D2","D2"],
@@ -81,10 +82,10 @@
     ],
     "spiPins": {
         "SPI": [
-            ["MOSI",9],
-            ["MISO",8],
-            ["SCK",7],
-            ["SS",44]
+            ["MOSI","D10"],
+            ["MISO","D8"],
+            ["SCK","D9"],
+            ["SS","D7"]
         ]
     },
     "spiClockDivide": [
@@ -100,7 +101,9 @@
         ["I2C","Wire"]
     ],
     "i2cPins": {
-        "Wire": [[    "SDA",    "5"    ],[    "SCL",    "6"    ]
+        "Wire": [
+            ["SDA","D4"],
+            ["SCL","D5"]
         ]
     },
     "i2cSpeed": [

@@ -75,10 +75,10 @@
     ],
     "spiPins": {
         "SPI": [
-            ["MOSI",10],
-            ["MISO",9],
-            ["SCK",8],
-            ["SS",20]
+            ["MOSI","D10"],
+            ["MISO","D9"],
+            ["SCK","D8"],
+            ["SS","D7"]
         ]
     },
     "spiClockDivide": [
@@ -95,8 +95,8 @@
     ],
     "i2cPins": {
         "Wire": [
-            ["SDA", 6],
-            ["SCL", 7]
+            ["SDA", "D4"],
+            ["SCL", "D5"]
         ]
     },
     "i2cSpeed": [
