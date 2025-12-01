@@ -4,9 +4,9 @@
     "description": "Seeed Studio XIAO RA4M1 based on Renesas RA4M1 microcontroller",
     "compilerTool": "aily-builder",
     "core": "arduino:renesas_uno",
-    "type": "arduino:renesas_uno:minima",
-    "compilerParam": "compile -v -b arduino:renesas_uno:minima",
-    "uploadParam": "dfu-util --device 0x2341:0x0069,:0x0369 -D ${'*.bin} -a0 -Q",
+    "type": "arduino:renesas_uno:XIAO_RA4M1",
+    "compilerParam": "compile -v -b arduino:renesas_uno:XIAO_RA4M1",
+    "uploadParam": "dfu-util --device 0x2886:0x0049,:0x8049 -D ${'*.bin} -a0 -Q",
     "analogPins": [
         ["A0", "A0"],
         ["A1", "A1"],
@@ -25,7 +25,6 @@
     ],
     "digitalPins": [
         ["LED_BUILTIN", "LED_BUILTIN"],
-        ["RGB_BUILTIN", "RGB_BUILTIN"],
         ["D0", "D0"],
         ["D1", "D1"],
         ["D2", "D2"],

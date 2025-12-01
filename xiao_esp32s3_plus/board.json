@@ -1,16 +1,23 @@
 {
-    "name": "XIAO ESP32C3",
+    "name": "XIAO ESP32S3 Plus",
     "version": "1.0.1",
-    "description": "ESP32C3 compatible board",
+    "description": "Seeed ESP32S3 compatible board",
     "compilerTool": "aily-builder",
     "core": "esp32:esp32",
-    "type": "esp32:esp32:XIAO_ESP32C3",
-    "compilerParam": "compile -v -b esp32:esp32:XIAO_ESP32C3",
-    "uploadParam": "esptool --chip esp32c3 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x0 ${bootloader} 0x8000 ${partitions} 0xe000 ${boot_app0} 0x10000 ${'*.bin'}",
+    "type": "esp32:esp32:XIAO_ESP32S3_PLUS",
+    "compilerParam": "compile -v -b esp32:esp32:XIAO_ESP32S3_PLUS",
+    "uploadParam": "esptool --chip esp32s3 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x0 ${bootloader} 0x8000 ${partitions} 0xe000 ${boot_app0} 0x10000 ${'*.bin'}",
     "analogPins": [
         ["A0","A0"],
         ["A1","A1"],
-        ["A2","A2"]
+        ["A2","A2"],
+        ["A3","A3"],
+        ["A4","A4"],
+        ["A5","A5"],
+        ["A8","A8"],
+        ["A9","A9"],
+        ["A10","A10"],
+        ["ADC_BAT","ADC_BAT"]
     ],
     "digitalPins": [
         ["D0","D0"],
@@ -23,7 +30,16 @@
         ["D7","D7"],
         ["D8","D8"],
         ["D9","D9"],
-        ["D10","D10"]
+        ["D10","D10"],
+        ["D11","D11"],
+        ["D12","D12"],
+        ["D13","D13"],
+        ["D14","D14"],
+        ["D15","D15"],
+        ["D16","D16"],
+        ["D17","D17"],
+        ["D18","D18"],
+        ["D19","D19"]
     ],
     "pwmPins": [
         ["D0","D0"],
@@ -36,7 +52,16 @@
         ["D7","D7"],
         ["D8","D8"],
         ["D9","D9"],
-        ["D10","D10"]
+        ["D10","D10"],
+        ["D11","D11"],
+        ["D12","D12"],
+        ["D13","D13"],
+        ["D14","D14"],
+        ["D15","D15"],
+        ["D16","D16"],
+        ["D17","D17"],
+        ["D18","D18"],
+        ["D19","D19"]
     ],
     "servoPins": [
         ["D0","D0"],
@@ -49,7 +74,16 @@
         ["D7","D7"],
         ["D8","D8"],
         ["D9","D9"],
-        ["D10","D10"]
+        ["D10","D10"],
+        ["D11","D11"],
+        ["D12","D12"],
+        ["D13","D13"],
+        ["D14","D14"],
+        ["D15","D15"],
+        ["D16","D16"],
+        ["D17","D17"],
+        ["D18","D18"],
+        ["D19","D19"]
     ],
     "serialPort": [
         ["Serial","Serial"]
@@ -71,14 +105,20 @@
         ["2000000","2000000"]
     ],
     "spi": [
-        ["SPI","SPI"]
+        ["SPI","SPI"],
+        ["SPI1","SPI1"]
     ],
     "spiPins": {
         "SPI": [
-            ["MOSI",10],
-            ["MISO",9],
-            ["SCK",8],
-            ["SS",20]
+            ["MOSI",9],
+            ["MISO",8],
+            ["SCK",7],
+            ["SS",44]
+        ],
+        "SPI1": [
+            ["MOSI1",11],
+            ["MISO1",12],
+            ["SCK1",13]
         ]
     },
     "spiClockDivide": [
@@ -95,8 +135,8 @@
     ],
     "i2cPins": {
         "Wire": [
-            ["SDA", 6],
-            ["SCL", 7]
+            ["SDA","5"],
+            ["SCL","6"]
         ]
     },
     "i2cSpeed": [
@@ -117,7 +157,16 @@
         ["D7","D7"],
         ["D8","D8"],
         ["D9","D9"],
-        ["D10","D10"]
+        ["D10","D10"],
+        ["D11","D11"],
+        ["D12","D12"],
+        ["D13","D13"],
+        ["D14","D14"],
+        ["D15","D15"],
+        ["D16","D16"],
+        ["D17","D17"],
+        ["D18","D18"],
+        ["D19","D19"]
     ],
     "interruptMode": [
         ["RISING","RISING"],
