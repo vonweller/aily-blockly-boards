@@ -1,11 +1,11 @@
 {
-  "name": "@aily-project/board-xiao_esp32s3",
-  "nickname": "XIAO ESP32S3",
+  "name": "@aily-project/board-xiao_esp32s3_plus",
+  "nickname": "XIAO ESP32S3 Plus",
   "version": "3.3.1",
-  "description": "Seeed Studio XIAO ESP32S3 leverages 240MHz Xtensa 32-bit LX7 dual-core processor, supporting both WiFi and BLE 5.0 wireless connectivities, a 2.4GHz Rod antenna, allows for deep sleep mode with power consumption as low as 14μA while supporting lithium battery charging management. Ideal for the Internet of Things, Smart Homes, Wireless wearable devices, Robotics, etc. ",
+  "description": "Seeed Studio XIAO ESP32S3 Plus, powered by ESP32-S3's 240MHz Xtensa 32-bit LX7 dual-core processor, brings more SMD pins to the tiny versatile XIAO ESP32S3. While maintaining all the powerful features including WiFi and BLE 5.0 wireless connectivities, 2.4GHz Rod antenna, and ultra-low power consumption of 14μA in deep sleep mode with lithium battery charging management, the Plus variant features redesigned castellations and pad layout on the back, offering 9 additional GPIOs specifically for advanced Bluetooth projects requiring expanded I/Os via SMD board-to-board soldering. It's ideal for advanced IoT projects, Smart Homes, and professional wireless devices requiring extra I/O connectivity.",
   "main": "index.js",
   "brand": "SeeedStudio",
-  "url": "https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html",
+  "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Plus-p-6361.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
