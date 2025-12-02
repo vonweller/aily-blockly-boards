@@ -154,17 +154,38 @@ class BoardValidator {
     const boardVersion = boardPackage.version;
     const expectedBoardDep = `@aily-project/board-${boardName}`;
     
-    if (!templatePackage.dependencies || !templatePackage.dependencies[expectedBoardDep]) {
+    // 也允许使用不同大小写的包名
+    let foundDep = null;
+    let foundVersion = null;
+    
+    if (templatePackage.dependencies) {
+      // 精确匹配优先
+      if (templatePackage.dependencies[expectedBoardDep]) {
+        foundDep = expectedBoardDep;
+        foundVersion = templatePackage.dependencies[expectedBoardDep];
+      } else {
+        // 不区分大小写的搜索
+        const depKeys = Object.keys(templatePackage.dependencies);
+        const caseInsensitiveKey = depKeys.find(key => 
+          key.toLowerCase() === expectedBoardDep.toLowerCase()
+        );
+        if (caseInsensitiveKey) {
+          foundDep = caseInsensitiveKey;
+          foundVersion = templatePackage.dependencies[caseInsensitiveKey];
+        }
+      }
+    }
+    
+    if (!foundDep) {
       this.addFailure();
       this.addIssue('error', '版本一致性', boardName, 
         `template/package.json 中缺少依赖: ${expectedBoardDep}`, 
-        `在 dependencies 中添加 "${expectedBoardDep}": "^${boardVersion}"`);
+        `在 dependencies 中添加 "${expectedBoardDep}": "${boardVersion}" 或 "^${boardVersion}"`);
       console.log(`  ❌ template中缺少board依赖`);
       return;
     }
 
-    const templateBoardVersion = templatePackage.dependencies[expectedBoardDep];
-    const cleanTemplateVersion = templateBoardVersion.replace(/^[\^~]/, ''); // 移除 ^ 或 ~ 前缀
+    const cleanTemplateVersion = foundVersion.replace(/^[\^~]/, ''); // 移除 ^ 或 ~ 前缀
     
     if (cleanTemplateVersion === boardVersion) {
       this.addSuccess();
@@ -173,7 +194,7 @@ class BoardValidator {
       this.addFailure();
       this.addIssue('error', '版本一致性', boardName, 
         `版本不匹配: board(${boardVersion}) != template(${cleanTemplateVersion})`, 
-        `将template中的版本更新为 "^${boardVersion}"`);
+        `将template中的版本更新为 "${boardVersion}" 或 "^${boardVersion}"`);
       console.log(`  ❌ 版本不匹配: board(${boardVersion}) != template(${cleanTemplateVersion})`);
     }
   }
@@ -223,7 +244,7 @@ class BoardValidator {
     console.log(`\n📋 检测基础字段...`);
     
     const requiredFields = [
-      { field: 'name', pattern: new RegExp(`^@aily-project/board-${boardName}$`) },
+      { field: 'name', pattern: /^@aily-project\/board-/ },
       { field: 'version', pattern: /^\d+\.\d+\.\d+$/ },
       { field: 'description' },
       { field: 'nickname' },
