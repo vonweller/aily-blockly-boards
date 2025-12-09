@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "url": "https://github.com/Aily-Project/Aily-Blockly-Boards/tree/main/NL-ESP32S3-CAM",
+  "url": "https://emakefun.github.io/emakefun-docsify/#/zh-cn/esp32/esp32s3-cam/README_zh",
   "author": "",
   "license": "ISC",
   "brand": "Espressif",
