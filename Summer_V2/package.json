@@ -1,6 +1,6 @@
 {
-  "name": "@aily-project/board-summer-V2",
-  "nickname": "Summer_V2",
+  "name": "@aily-project/board-summer-v2",
+  "nickname": "summer_v2",
   "version": "3.3.1",
   "description": "Summer_V2开发板支持编码电机、TT马达、舵机、超声波传感器、Sentry2避障、红外遥控、蜂鸣器、OLED显示和步进电机控制，适用于多种智能硬件和机器人应用。",
   "main": "index.js",
