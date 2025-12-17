@@ -1,7 +1,7 @@
 {
     "name": "XIAO ESP32S3",
     "version": "1.0.1",
-    "description": "Seeed ESP32S3 compatible board",
+    "description": "Seeed ESP32S3 compatible board ",
     "compilerTool": "aily-builder",
     "core": "esp32:esp32",
     "type": "esp32:esp32:XIAO_ESP32S3",
