@@ -4,9 +4,12 @@
  * 开发板配置规范检测脚本
  * 
  * 检测范围: 
- * 1. xxx/package.json 与 xxx/template/package.json 版本一致性
- * 2. template中dependencies的版本与board package.json版本一致性
- * 3. boardDependencies中SDK版本与board版本一致性
+ * 1. template/package.json中board依赖必须唯一
+ * 2. board依赖名称必须与开发板package.json的name完全一致（小写）
+ * 3. board依赖版本必须与开发板package.json的version一致
+ * 4. template/package.json的board字段必须与开发板package.json的nickname字段相同
+ * 5. boardDependencies中SDK版本与board版本一致性
+ * 6. 基础字段完整性检测
  * 
  * 使用方法:
  *   node validate-boards-compliance.js [board名]
@@ -125,16 +128,13 @@ class BoardValidator {
       console.log(`  版本: ${boardPackage.version}`);
       console.log(`  昵称: ${boardPackage.nickname || 'N/A'}`);
 
-      // 1. 检测版本一致性
-      await this.checkVersionConsistency(boardName, boardPackage, templatePackage);
-
-      // 2. 检测SDK版本一致性
+      // 1. 检测SDK版本一致性
       await this.checkSDKVersionConsistency(boardName, boardPackage);
 
-      // 3. 检测基础字段完整性
+      // 2. 检测基础字段完整性
       await this.checkBasicFields(boardName, boardPackage);
 
-      // 4. 检测template中的dependencies
+      // 3. 检测template中的dependencies（包括版本一致性检测）
       await this.checkTemplateDependencies(boardName, boardPackage, templatePackage);
 
     } catch (error) {
@@ -147,59 +147,7 @@ class BoardValidator {
     return { boardName, issues: this.issues.filter(i => i.board === boardName) };
   }
 
-  // 1. 检测版本一致性
-  async checkVersionConsistency(boardName, boardPackage, templatePackage) {
-    console.log(`\n🔄 检测版本一致性...`);
-    
-    const boardVersion = boardPackage.version;
-    const expectedBoardDep = `@aily-project/board-${boardName}`;
-    
-    // 也允许使用不同大小写的包名
-    let foundDep = null;
-    let foundVersion = null;
-    
-    if (templatePackage.dependencies) {
-      // 精确匹配优先
-      if (templatePackage.dependencies[expectedBoardDep]) {
-        foundDep = expectedBoardDep;
-        foundVersion = templatePackage.dependencies[expectedBoardDep];
-      } else {
-        // 不区分大小写的搜索
-        const depKeys = Object.keys(templatePackage.dependencies);
-        const caseInsensitiveKey = depKeys.find(key => 
-          key.toLowerCase() === expectedBoardDep.toLowerCase()
-        );
-        if (caseInsensitiveKey) {
-          foundDep = caseInsensitiveKey;
-          foundVersion = templatePackage.dependencies[caseInsensitiveKey];
-        }
-      }
-    }
-    
-    if (!foundDep) {
-      this.addFailure();
-      this.addIssue('error', '版本一致性', boardName, 
-        `template/package.json 中缺少依赖: ${expectedBoardDep}`, 
-        `在 dependencies 中添加 "${expectedBoardDep}": "${boardVersion}" 或 "^${boardVersion}"`);
-      console.log(`  ❌ template中缺少board依赖`);
-      return;
-    }
-
-    const cleanTemplateVersion = foundVersion.replace(/^[\^~]/, ''); // 移除 ^ 或 ~ 前缀
-    
-    if (cleanTemplateVersion === boardVersion) {
-      this.addSuccess();
-      console.log(`  ✅ 版本一致: ${boardVersion}`);
-    } else {
-      this.addFailure();
-      this.addIssue('error', '版本一致性', boardName, 
-        `版本不匹配: board(${boardVersion}) != template(${cleanTemplateVersion})`, 
-        `将template中的版本更新为 "${boardVersion}" 或 "^${boardVersion}"`);
-      console.log(`  ❌ 版本不匹配: board(${boardVersion}) != template(${cleanTemplateVersion})`);
-    }
-  }
-
-  // 2. 检测SDK版本一致性
+  // 1. 检测SDK版本一致性
   async checkSDKVersionConsistency(boardName, boardPackage) {
     console.log(`\n🛠️  检测SDK版本一致性...`);
     
@@ -281,6 +229,65 @@ class BoardValidator {
     }
 
     const deps = templatePackage.dependencies;
+    
+    // 检测board依赖的数量和正确性
+    const boardDeps = Object.keys(deps).filter(dep => dep.startsWith('@aily-project/board-'));
+    const expectedBoardDep = boardPackage.name; // 开发板package.json中的name
+    const expectedVersion = boardPackage.version;
+    
+    // 检查1: board依赖只能有一项
+    if (boardDeps.length === 0) {
+      this.addFailure();
+      this.addIssue('error', 'Template依赖', boardName, 
+        `template/package.json中缺少board依赖`, 
+        `在dependencies中添加 "${expectedBoardDep}": "${expectedVersion}"`);
+      console.log(`  ❌ 缺少board依赖`);
+    } else if (boardDeps.length > 1) {
+      this.addFailure();
+      this.addIssue('error', 'Template依赖', boardName, 
+        `template/package.json中有多个board依赖: ${boardDeps.join(', ')}`, 
+        `只保留 "${expectedBoardDep}": "${expectedVersion}"，删除其他board依赖`);
+      console.log(`  ❌ board依赖数量错误: 发现 ${boardDeps.length} 个，应该只有 1 个`);
+    } else {
+      // 有且仅有一个board依赖，检查其正确性
+      const actualBoardDep = boardDeps[0];
+      const actualVersion = deps[actualBoardDep];
+      
+      // 检查2: board依赖名称必须与开发板package.json的name相同（且必须为小写）
+      if (actualBoardDep !== expectedBoardDep) {
+        this.addFailure();
+        
+        // 检查是否是大小写问题
+        if (actualBoardDep.toLowerCase() === expectedBoardDep.toLowerCase()) {
+          this.addIssue('error', 'Template依赖', boardName, 
+            `board依赖名称大小写不正确: "${actualBoardDep}" 应为 "${expectedBoardDep}" (必须小写)`, 
+            `将 "${actualBoardDep}" 改为 "${expectedBoardDep}"`);
+          console.log(`  ❌ board依赖名称大小写错误`);
+        } else {
+          this.addIssue('error', 'Template依赖', boardName, 
+            `board依赖名称不匹配: "${actualBoardDep}" 应为 "${expectedBoardDep}"`, 
+            `将 "${actualBoardDep}" 改为 "${expectedBoardDep}"`);
+          console.log(`  ❌ board依赖名称不匹配`);
+        }
+      } else {
+        this.addSuccess();
+        console.log(`  ✅ board依赖名称正确: ${actualBoardDep}`);
+      }
+      
+      // 检查3: 版本号必须与开发板package.json的version相同
+      const cleanActualVersion = actualVersion.replace(/^[\^~]/, ''); // 移除 ^ 或 ~ 前缀
+      if (cleanActualVersion !== expectedVersion) {
+        this.addFailure();
+        this.addIssue('error', 'Template依赖', boardName, 
+          `board依赖版本不匹配: "${actualBoardDep}"的版本 ${actualVersion} 应为 "${expectedVersion}"`, 
+          `将版本更新为 "${expectedVersion}"`);
+        console.log(`  ❌ board依赖版本不匹配: ${actualVersion} != ${expectedVersion}`);
+      } else {
+        this.addSuccess();
+        console.log(`  ✅ board依赖版本正确: ${expectedVersion}`);
+      }
+    }
+    
     const coreLibs = Object.keys(deps).filter(dep => dep.startsWith('@aily-project/lib-core-'));
     
     if (coreLibs.length > 0) {
@@ -292,22 +299,28 @@ class BoardValidator {
       console.log(`  ⚠️  缺少核心库依赖`);
     }
 
-    // 检测board字段
-    if (templatePackage.board) {
-      if (templatePackage.board === boardPackage.nickname || templatePackage.board === boardPackage.name) {
-        this.addSuccess();
-        console.log(`  ✅ board字段正确: ${templatePackage.board}`);
-      } else {
-        this.addFailure();
-        this.addIssue('warning', 'Template依赖', boardName, 
-          `board字段不匹配: "${templatePackage.board}" 应为 "${boardPackage.nickname}"`, 
-          `更新board字段为 "${boardPackage.nickname}"`);
-        console.log(`  ⚠️  board字段不匹配`);
-      }
-    } else {
+    // 检测board字段与nickname字段一致性
+    if (!boardPackage.nickname) {
       this.addFailure();
-      this.addIssue('warning', 'Template依赖', boardName, '缺少board字段', `添加 "board": "${boardPackage.nickname}"`);
-      console.log(`  ⚠️  缺少board字段`);
+      this.addIssue('error', 'Template依赖', boardName, 
+        '开发板package.json缺少nickname字段', 
+        '添加nickname字段');
+      console.log(`  ❌ 开发板缺少nickname字段`);
+    } else if (!templatePackage.board) {
+      this.addFailure();
+      this.addIssue('error', 'Template依赖', boardName, 
+        'template/package.json缺少board字段', 
+        `添加 "board": "${boardPackage.nickname}"`);
+      console.log(`  ❌ template缺少board字段`);
+    } else if (templatePackage.board !== boardPackage.nickname) {
+      this.addFailure();
+      this.addIssue('error', 'Template依赖', boardName, 
+        `template的board字段必须与开发板的nickname字段相同: "${templatePackage.board}" 应为 "${boardPackage.nickname}"`, 
+        `将template/package.json中的board字段更新为 "${boardPackage.nickname}"`);
+      console.log(`  ❌ board字段不匹配: "${templatePackage.board}" != "${boardPackage.nickname}"`);
+    } else {
+      this.addSuccess();
+      console.log(`  ✅ board字段与nickname一致: ${templatePackage.board}`);
     }
   }
 
@@ -440,7 +453,10 @@ async function main() {
   node validate-boards-compliance.js --help        显示帮助
 
 检测范围:
-  ✅ 版本一致性检测
+  ✅ Board依赖唯一性和正确性
+  ✅ Board依赖名称匹配（必须小写）
+  ✅ Board依赖版本一致性
+  ✅ Board字段与nickname字段一致性
   ✅ SDK版本匹配检测
   ✅ 基础字段完整性
   ✅ Template依赖配置
