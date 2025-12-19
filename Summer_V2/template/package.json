@@ -4,14 +4,23 @@
   "description": "",
   "board": "Summer_V2",
   "dependencies": {
-    "@aily-project/board-Summer_V2": "3.3.1",
+    "@aily-project/board-summer-v2": "file:..",
+    "@aily-project/lib-ai-assistant": "^0.0.7",
     "@aily-project/lib-core-io": "1.0.0",
     "@aily-project/lib-core-logic": "0.0.1",
     "@aily-project/lib-core-loop": "0.0.1",
-    "@aily-project/lib-core-math":"0.0.1",
-    "@aily-project/lib-core-text": "0.0.1",
+    "@aily-project/lib-core-math": "0.0.1",
     "@aily-project/lib-core-serial": "0.0.1",
+    "@aily-project/lib-core-text": "0.0.1",
     "@aily-project/lib-core-time": "0.0.1",
-    "@aily-project/lib-core-variables": "1.0.1"
+    "@aily-project/lib-core-tone": "^0.0.2",
+    "@aily-project/lib-core-variables": "1.0.1",
+    "@aily-project/lib-esp32_encoder": "^0.0.1",
+    "@aily-project/lib-fastled": "^1.0.2",
+    "@aily-project/lib-irremote": "^0.0.3",
+    "@aily-project/lib-linefollower-8": "^1.0.0",
+    "@aily-project/lib-ps3controller": "^1.0.0",
+    "@aily-project/lib-summer-stm-driver": "^1.0.0",
+    "@aily-project/lib-ultrasonic": "^0.0.1"
   }
 }
