@@ -1,5 +1,5 @@
 {
-    "name": "@aily-project/board-esp32-s3_ai_cam",
+    "name": "@aily-project/board-df_esp32s3_aicam",
     "nickname": "ESP32-S3 AI CAM",
     "version": "3.3.1",
     "description": "DFRobot ESP32-S3 AI CAM Board",
