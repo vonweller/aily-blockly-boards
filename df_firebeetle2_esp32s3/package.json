@@ -1,5 +1,5 @@
 {
-    "name": "@aily-project/board-dfrobot_firebeetle2_esp32s3",
+    "name": "@aily-project/board-df_firebeetle2_esp32s3",
     "nickname": "FireBeetle 2 ESP32-S3",
     "version": "3.3.1",
     "description": "DFRobot FireBeetle 2 ESP32-S3 Board Support",

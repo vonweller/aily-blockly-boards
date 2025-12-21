@@ -2,7 +2,7 @@
   {
     "name": "@aily-project/board-arduino_uno",
     "nickname": "Arduino UNO R3",
-    "version": "1.0.2",
+    "version": "1.8.6",
     "description": "Arduino UNO R3 是一款基于ATmega328P的开源电子原型平台，包含数字I/O口14个（其中6个支持PWM输出），模拟输入口6个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
     "author": "",
     "brand": "Arduino",
@@ -19,7 +19,7 @@
   {
     "name": "@aily-project/board-arduino_mega",
     "nickname": "Arduino MEGA",
-    "version": "1.0.0",
+    "version": "1.8.6",
     "description": "Arduino MEGA 是一款基于ATmega2560的开源电子原型平台，包含数字I/O口54个（其中14个支持PWM输出），模拟输入口16个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
     "author": "",
     "brand": "Arduino",
@@ -137,7 +137,7 @@
   },
   {
     "name": "@aily-project/board-arduino_mega_pro",
-    "nickname": "Arduino MEGA 增强版",
+    "nickname": "MEGA 2560增强版",
     "version": "1.8.6",
     "description": "Arduino MEGA 增强版是基于ATmega2560的开源电子原型平台，包含数字I/O口54个（其中14个支持PWM输出），模拟输入口16个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
     "author": "",
@@ -155,7 +155,7 @@
   {
     "name": "@aily-project/board-arduino_nano",
     "nickname": "Arduino Nano",
-    "version": "1.0.2",
+    "version": "1.8.6",
     "description": "Arduino Nano 是一款基于ATmega328P的开源电子原型平台，包含数字I/O口14个（其中6个支持PWM输出），模拟输入口6个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
     "author": "",
     "brand": "Arduino",
@@ -205,7 +205,7 @@
   },
   {
     "name": "@aily-project/board-arduino_uno_r3_pro",
-    "nickname": "Arduino UNO R3 增强版",
+    "nickname": "UNO R3 增强版",
     "version": "1.8.6",
     "description": "Arduino UNO R3 增强版是基于ATmega328P的开源电子原型平台，包含数字I/O口14个（其中6个支持PWM输出），模拟输入口6个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
     "author": "",
@@ -222,7 +222,7 @@
   },
   {
     "name": "@aily-project/board-arduino_uno_r4_pro",
-    "nickname": "Arduino UNO R4 增强版",
+    "nickname": "UNO R4 WIFI 增强版",
     "version": "1.5.1",
     "description": "改进升级的Arduino UNO R4 增强版采用了来自瑞萨的强大32位微控制器。预备迎接增加的处理能力、扩展的内存和全新的板载外设。最棒的是，与现有的扩展板和配件兼容性不受影响，无需对标准形式或5V工作电压进行任何更改。",
     "author": "",
@@ -232,7 +232,58 @@
     "img": "arduino_uno_r4_pro/board.webp",
     "pinmap": "arduino_uno_r4_pro/pinmap.webp",
     "state": "",
-    "type": "arduino:renesas_uno:minima",
+    "type": "arduino:renesas_uno:unor4wifi",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-df_esp32s3_aicam",
+    "nickname": "ESP32-S3 AI CAM",
+    "version": "3.3.1",
+    "description": "DFRobot ESP32-S3 AI CAM Board",
+    "author": "vonweller",
+    "brand": "DFRobot",
+    "url": "",
+    "compatibility": "",
+    "img": "df_esp32s3_aicam/board.webp",
+    "pinmap": "df_esp32s3_aicam/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-df_firebeetle2_esp32s3",
+    "nickname": "FireBeetle 2 ESP32-S3",
+    "version": "3.3.1",
+    "description": "DFRobot FireBeetle 2 ESP32-S3 Board Support",
+    "author": "",
+    "brand": "DFRobot",
+    "url": "",
+    "compatibility": "",
+    "img": "df_firebeetle2_esp32s3/board.webp",
+    "pinmap": "df_firebeetle2_esp32s3/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:dfrobot_firebeetle2_esp32s3",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-df_unihiker_k10",
+    "nickname": "行空板K10",
+    "version": "3.2.1",
+    "description": "行空板K10",
+    "author": "",
+    "brand": "DFRobot",
+    "url": "",
+    "compatibility": "",
+    "img": "df_unihiker_k10/board.webp",
+    "pinmap": "df_unihiker_k10/pinmap.webp",
+    "state": "alpha",
+    "type": "esp32:esp32:esp32s3",
     "mode": [
       "arduino"
     ]
@@ -408,7 +459,7 @@
     ]
   },
   {
-    "name": "@aily-project/board-esp32_aiot_basic",
+    "name": "@aily-project/board-esp32s3basic",
     "nickname": "ESP32 AIOT BASIC",
     "version": "3.2.1",
     "description": "ESP32S3AIOT Basic套件是一款基于esp32S3模组专为AIOT学习的集主板和传感器多合一综合套件，板中集成了9个子模块(按键、蜂鸣器、LED、光敏传感器、LCD、数字麦克风、SD卡、音频功放模块、摄像头)同时还匹配了丰富的教学例程及学习资料，可以满足大多数AI和物联网的学习及使用场景。",
@@ -445,7 +496,7 @@
     "name": "@aily-project/board-grove_beginner_kit",
     "nickname": "Grove Beginner Kit",
     "version": "1.0.0",
-    "description": "The Grove Beginner Kit for Arduino® is powered by one Arduino UNO compatible Board (MicrochipATmega328p based Seeeduino Lotus) together with 10 additional Grove Arduino sensors all in one piece of the board.",
+    "description": "适用于 Arduino 的 Grove 初学者套件是最适合初学者的 Arduino 初学者套件之一。与大多数套件不同，Arduino的Grove初学者套件是一个一体化套件，没有面包板，没有焊接，甚至不需要布线。我们省去了所有这些烦琐，旨在为您提供最佳体验，您只需要专注于编码和 Arduino 学习。该套件由一块 Arduino 兼容板 （Seeeduino Lotus） 以及 10 个额外的 Grove Arduino 传感器供电，所有这些都集成在一块板中。当然，您也可以将模块取出并使用 Grove 电缆连接模块。您可以使用此 Grove Beginner Kit for Arduino 构建任何您喜欢的 Arduino 项目。",
     "author": "Seeed",
     "brand": "SeeedStudio",
     "url": "https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html",
@@ -461,7 +512,7 @@
   {
     "name": "@aily-project/board-jinniu_board",
     "nickname": "金牛创翼板",
-    "version": "0.0.1",
+    "version": "1.8.6",
     "description": "金牛创翼板是一款K12信息技术细数学应用开发板，该开发板基于Arduin0设计，并将多种传感器硬件集成在了一张板卡中，包含了LED红灯x1:用于指示电源状态或用于项目中的灯效演示。2812RGB灯x4:可编程的RGB灯，能够创造丰富的灯光效果和色彩变化。按钮x1:用于输入控制或触发事件。旋钮电位器x1:方便用户调节并输入模教值。DHT1温湿度传感器x1:用于实时监测环境的温度与湿度。光线传感器x1:感应环境光照强度，适用于光敏项目。。板载电机1:用于驱动或演示多种机械动作。灰度传感器x2:检测黑白程度，适合简单的跟随或避障项目。(仅限V1版本)。TS语音播报模1:用于语音合成及播报。(仅限V2版本)声音传感器1:检测模报音量大小。(仅限V2版本)。超声波传感器x1:用于测距和避障，广泛用于机器人项目。蜂鸣器x1:用于发出声音提示或音乐效果。(仅限V1版本)。自锁开关x1:用于电源控制或系统重启。电机接口x2:连接外部电机，扩展功能。能机接口x2:连接能机，实现精准的角度控制。串口接口x1:方便与其他设备进行数据传输。IC接口x2:用于扩展其他IC兼容的传感器或模块。",
     "author": "",
     "brand": "OpenJumper",
@@ -543,6 +594,40 @@
     "mode": [
       "arduino",
       "micropython"
+    ]
+  },
+  {
+    "name": "@aily-project/board-nl_esp32s3_cam",
+    "nickname": "NL-ESP32S3-CAM",
+    "version": "3.2.1",
+    "description": "ESP32S3 Camera Board configuration.",
+    "author": "",
+    "brand": "NullLab",
+    "url": "https://emakefun.github.io/emakefun-docsify/#/zh-cn/esp32/esp32s3-cam/README_zh",
+    "compatibility": "",
+    "img": "nl_esp32s3_cam/board.webp",
+    "pinmap": "nl_esp32s3_cam/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-nrf52840_dk",
+    "nickname": "nRF52840 DK",
+    "version": "1.7.0",
+    "description": "nRF52840 DK是一款多功能单板开发套件，适用于 nRF52840 SoC 上的低功耗蓝牙、蓝牙mesh、Thread、Zigbee、802.15.4、ANT 和 2.4 GHz 私有应用。它是亚马逊 Sidewalk 推荐的 Nordic 开发套件。",
+    "author": "aily-project",
+    "brand": "Nordic Semiconductor",
+    "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF52840-DK",
+    "compatibility": "",
+    "img": "nRF52840_DK/board.webp",
+    "pinmap": "nRF52840_DK/pinmap.webp",
+    "state": "alpha",
+    "type": "adafruit:nrf52:pca10056",
+    "mode": [
+      "arduino"
     ]
   },
   {
@@ -903,23 +988,6 @@
     ]
   },
   {
-    "name": "@aily-project/board-unihiker_K10",
-    "nickname": "行空板K10",
-    "version": "3.2.1",
-    "description": "行空板K10",
-    "author": "",
-    "brand": "DFRobot",
-    "url": "",
-    "compatibility": "",
-    "img": "unihiker_K10/board.webp",
-    "pinmap": "unihiker_K10/pinmap.webp",
-    "state": "alpha",
-    "type": "esp32:esp32:esp32s3",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
     "name": "@aily-project/board-unitree_g1",
     "nickname": "Unitree G1 shield",
     "version": "3.2.1",
@@ -1040,9 +1108,43 @@
     ]
   },
   {
+    "name": "@aily-project/board-xiao_esp32s3_plus",
+    "nickname": "XIAO ESP32S3 Plus",
+    "version": "3.3.1",
+    "description": "Seeed Studio XIAO ESP32S3 Plus leverages 240MHz Xtensa 32-bit LX7 dual-core processor, supporting both WiFi and BLE 5.0 wireless connectivities, a 2.4GHz Rod antenna, allows for deep sleep mode with power consumption as low as 14μA while supporting lithium battery charging management. Ideal for the Internet of Things, Smart Homes, Wireless wearable devices, Robotics, etc. ",
+    "author": "Seeed",
+    "brand": "SeeedStudio",
+    "url": "https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Plus-p-6361.html",
+    "compatibility": "",
+    "img": "xiao_esp32s3_plus/board.webp",
+    "pinmap": "xiao_esp32s3_plus/pinmap.webp",
+    "state": "alpha",
+    "type": "esp32:esp32:XIAO_ESP32S3_PLUS",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-xiao_esp32s3_sense",
+    "nickname": "XIAO ESP32S3 Sense",
+    "version": "3.3.1",
+    "description": "Seeed Studio XIAO ESP32S3 leverages dual-core ESP32S3 chip, supporting both Wi-Fi and BLE wireless connectivities, which allows battery charge. It integrates built-in camera sensor, digital microphone. It offers 8MB PSRAM, 8MB FLASH, and external SD card slot. All of these make it suitable for embedded ML, like intelligent voice and vision AI. With sscma_micro_core, it can achieve AI vision detection and other functions.",
+    "author": "Seeed",
+    "brand": "SeeedStudio",
+    "url": "https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html",
+    "compatibility": "",
+    "img": "xiao_esp32s3_Sense/board.webp",
+    "pinmap": "xiao_esp32s3_Sense/pinmap.webp",
+    "state": "alpha",
+    "type": "esp32:esp32:XIAO_ESP32S3",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
     "name": "@aily-project/board-xiao_ra4m1",
     "nickname": "XIAO RA4M1",
-    "version": "1.0.0",
+    "version": "1.5.1",
     "description": "Seeed Studio XIAO RA4M1采用瑞萨RA4M1微控制器(32位ARM Cortex-M4，最高48MHz)，提供256KB Flash、32KB SRAM、8KB EEPROM。具有19个GPIO引脚(14个模拟，19个数字)、内置RGB LED、低功耗设计(深度睡眠最低45μA)、硬件加密和电池管理功能。",
     "author": "Seeed Studio",
     "brand": "SeeedStudio",
@@ -1051,16 +1153,16 @@
     "img": "xiao_RA4M1/board.webp",
     "pinmap": "xiao_RA4M1/pinmap.webp",
     "state": "alpha",
-    "type": "arduino:renesas_uno:minima",
+    "type": "arduino:renesas_uno:XIAO_RA4M1",
     "mode": [
       "arduino"
     ]
   },
   {
     "name": "@aily-project/board-xiao_rp2040",
-    "nickname": "Xiao RP2040",
+    "nickname": "XIAO RP2040",
     "version": "5.1.0",
-    "description": "Xiao RP2040",
+    "description": "XIAO RP2040",
     "author": "Seeed",
     "brand": "SeeedStudio",
     "url": "https://wiki.seeedstudio.com/cn/XIAO-RP2040/",
@@ -1075,9 +1177,9 @@
   },
   {
     "name": "@aily-project/board-xiao_rp2350",
-    "nickname": "Xiao RP2350",
+    "nickname": "XIAO RP2350",
     "version": "5.1.0",
-    "description": "Xiao RP2350",
+    "description": "XIAO RP2350",
     "author": "Seeed",
     "brand": "SeeedStudio",
     "url": "https://wiki.seeedstudio.com/cn/xiao_rp2350_arduino/",
