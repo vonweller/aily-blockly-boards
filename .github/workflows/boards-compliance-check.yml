@@ -1,0 +1,177 @@
+name: Boards Compliance Check
+
+on:
+  pull_request:
+    branches: [ main, deploy, develop ]
+    paths:
+      - '*/package.json'
+      - '*/template/package.json'
+      - '*/board.json'
+      - '*/readme.md'
+  push:
+    branches: [ main, deploy, develop ]
+    paths:
+      - '*/package.json'
+      - '*/template/package.json'
+      - '*/board.json'
+      - '*/readme.md'
+
+# GitHub Actions权限配置
+permissions:
+  contents: read            # 读取仓库内容和代码
+  pull-requests: write      # 写入PR评论和状态
+  issues: write            # 写入issue评论（PR也是特殊的issue）
+  actions: read            # 读取workflow运行状态
+  checks: read             # 读取检查状态
+  statuses: read           # 读取状态检查
+
+jobs:
+  validate-boards:
+    runs-on: ubuntu-latest
+    name: 验证开发板配置规范
+    
+    # 在job级别也明确权限（可选，但更安全）
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+      actions: read
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # 完整历史记录，用于比较分支差异
+
+    - name: 设置 Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: 验证变更的开发板
+      id: validation
+      run: |
+        echo "🔍 开始检测变更的开发板..."
+        
+        # 执行检测脚本
+        if ! node validate-boards-compliance.js --changed; then
+          echo "validation_passed=false" >> $GITHUB_OUTPUT
+          echo "💥 开发板规范检测失败，请查看详细报告并修复问题"
+          exit 1
+        else
+          echo "validation_passed=true" >> $GITHUB_OUTPUT
+          echo "🎉 所有开发板均通过规范检测！"
+        fi
+
+    - name: 在 PR 中评论检测结果
+      if: github.event_name == 'pull_request' && always()
+      uses: actions/github-script@v7
+      with:
+        github-token: ${{ github.token }}
+        retries: 3
+        retry-exempt-status-codes: 400,401,403,404,422
+        script: |
+          console.log('🔍 开始PR评论操作...');
+          
+          try {
+            // 检查是否已有检测机器人评论
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            
+            // 查找现有的检测评论
+            const botComment = comments.find(comment => 
+              comment.user.login === 'github-actions[bot]' && 
+              comment.body.includes('🤖 开发板规范检测')
+            );
+            
+            // 获取检测结果状态
+            const validationPassed = '${{ steps.validation.outputs.validation_passed }}' === 'true';
+            const statusIcon = validationPassed ? '✅' : '❌';
+            const statusText = validationPassed ? '通过检测' : '检测失败';
+            
+            // 构建评论内容
+            let comment = '## 🤖 开发板规范检测 ' + statusText + ' ' + statusIcon + '\n\n';
+            comment += '📦 **检测模式**: 自动检测 PR 中变更的开发板\n\n';
+            comment += '📊 **详细报告**: 查看上方的 [Actions Summary](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) 获取完整结果\n\n';
+            
+            if (validationPassed) {
+              comment += '🎉 **恭喜！** 所有变更开发板均符合规范要求！\n\n';
+              comment += '✨ **主要检测项**:\n';
+              comment += '- 📦 Board依赖唯一性和正确性 ✅\n';
+              comment += '- 🏷️ Board依赖名称匹配（必须小写）✅\n';
+              comment += '- 🔢 Board依赖版本一致性 ✅\n';
+              comment += '- 🎯 Board字段与nickname字段一致性 ✅\n';
+              comment += '- 🛠️ SDK版本匹配检测 ✅\n';
+              comment += '- 📋 基础字段完整性 ✅\n';
+            } else {
+              comment += '⚠️ **需要修复** 部分开发板不符合规范要求\n\n';
+              comment += '🔧 **修复步骤**:\n';
+              comment += '1. 查看上方 Actions Summary 的详细错误信息\n';
+              comment += '2. 参考下方规范文档进行修复\n';
+              comment += '3. 重新提交代码触发检测\n';
+            }
+            
+            comment += '\n💡 **本地检测**: \n';
+            comment += '```bash\n';
+            comment += '# 检测变更的开发板\n';
+            comment += 'node validate-boards-compliance.js --changed\n\n';
+            comment += '# 检测指定开发板\n';
+            comment += 'node validate-boards-compliance.js <开发板名>\n\n';
+            comment += '# 检测所有开发板\n';
+            comment += 'node validate-boards-compliance.js --all\n';
+            comment += '```\n\n';
+            comment += '📖 **规范文档**: \n';
+            comment += '- [开发板规范](https://github.com/${{ github.repository }}/blob/main/开发板规范.md)\n';
+            comment += '- [开发板适配](https://github.com/${{ github.repository }}/blob/main/开发板适配.md)\n\n';
+            comment += '---\n';
+            comment += '*检测由 [开发板规范检测系统](https://github.com/${{ github.repository }}/blob/main/validate-boards-compliance.js) 自动完成 | 运行ID: ${{ github.run_id }}*';
+            
+            if (botComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: comment
+              });
+              console.log('✅ 已更新现有检测评论');
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: comment
+              });
+              console.log('✅ 已添加新的检测评论');
+            }
+          } catch (error) {
+            console.error('❌ 评论操作失败:', error.message);
+            console.log('💡 检测结果已保存在 Actions Summary 中');
+          }
+
+    # 备用通知方案 - 使用简单的echo输出
+    - name: 备用通知机制
+      if: failure() && github.event_name == 'pull_request'
+      run: |
+        echo "🔔 备用通知机制:"
+        echo "由于权限限制，无法直接在PR中评论"
+        echo "请访问Actions页面查看详细的开发板规范检测结果"
+        echo "链接: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+    # 为主分支生成统计报告
+    - name: 生成统计报告
+      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/deploy')
+      run: |
+        echo "📊 生成开发板统计报告..."
+        node validate-boards-compliance.js --all > boards-report.txt || true
+        cat boards-report.txt
+        
+    - name: 上传报告
+      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/deploy')
+      uses: actions/upload-artifact@v4
+      with:
+        name: boards-compliance-report
+        path: boards-report.txt
+        retention-days: 30

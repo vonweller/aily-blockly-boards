@@ -5,7 +5,10 @@
 ## 🚀 功能特性
 
 ### 检测范围
-- ✅ **版本一致性检测**: 确保 `xxx/package.json` 版本与 `xxx/template/package.json` 中对应依赖版本一致
+- ✅ **Board依赖唯一性和正确性**: template/package.json 中只能有一个 board 依赖
+- ✅ **Board依赖名称匹配**: 依赖名称必须与开发板 package.json 的 name 字段完全一致（必须小写）
+- ✅ **Board依赖版本一致性**: 依赖版本必须与开发板 package.json 的 version 字段相同
+- ✅ **Board与Nickname字段一致性**: template/package.json 的 board 字段必须与开发板 package.json 的 nickname 字段相同
 - ✅ **SDK版本匹配检测**: 确保 `boardDependencies` 中的SDK版本与开发板版本一致  
 - ✅ **基础字段完整性**: 检查必需字段 (`name`, `version`, `description`, `nickname`, `brand`) 
 - ✅ **Template依赖配置**: 检查template中的依赖配置和board字段
@@ -14,6 +17,7 @@
 - 🤖 **GitHub Actions集成**: PR和Push时自动触发检测
 - 💬 **智能PR评论**: 自动在PR中添加检测结果和修复建议
 - 🔄 **增量检测**: 只检测变更的开发板，提高效率
+- 📊 **详细报告**: 生成完整的检测报告和统计信息
 
 ## 📋 使用方法
 
@@ -49,39 +53,62 @@ node validate-boards-compliance.js --help
 当你提交包含以下文件变更的PR或Push时，会自动触发检测：
 - `*/package.json` 
 - `*/template/package.json`
+- `*/board.json`
+- `*/readme.md`
 
 检测结果会：
 - 显示在Actions页面的Summary中
 - 自动添加评论到PR（如果是PR触发）
 - 设置相应的检查状态
+- 生成详细的统计报告（主分支）
 
-## 🔍 检测示例
+配置文件：
+- Workflow：`.github/workflows/boards-compliance-check.yml`
+- 配置：`.github/boards-compliance-config.yml`
+
+## 🔍 检测规则详解
+
+### 1. Board 依赖检测
+
+template/package.json 中的 dependencies 必须：
+- **唯一性**：只能有一个以 `@aily-project/board-` 开头的依赖
+- **名称匹配**：依赖名称必须与开发板 package.json 的 `name` 字段完全一致（必须小写）
+- **版本一致**：依赖版本必须与开发板 package.json 的 `version` 字段相同
+
+### 2. Board 与 Nickname 字段一致性
+
+template/package.json 的 `board` 字段必须与开发板 package.json 的 `nickname` 字段完全相同。
+
+### 3. SDK 版本一致性
+
+boardDependencies 中的 SDK 版本应与开发板版本一致。
+
+## 📝 检测示例
 
 ### 正确的配置示例
 
-**arduino_uno/package.json**:
+**xiao_rp2350/package.json**:
 ```json
 {
-  "name": "@aily-project/board-arduino_uno", 
-  "version": "1.8.6",
-  "nickname": "Arduino UNO R3",
-  "description": "Arduino UNO R3开发板",
-  "brand": "Arduino",
+  "name": "@aily-project/board-xiao_rp2350",
+  "version": "5.1.0",
+  "nickname": "XIAO RP2350",
+  "description": "XIAO RP2350",
+  "brand": "SeeedStudio",
   "boardDependencies": {
-    "@aily-project/compiler-avr-gcc": "7.3.0",
-    "@aily-project/sdk-avr": "1.8.6"  // 与board版本一致
+    "@aily-project/sdk-rp2040": "5.1.0"  // ✅ 与board版本一致
   }
 }
 ```
 
-**arduino_uno/template/package.json**:
+**xiao_rp2350/template/package.json**:
 ```json
 {
   "name": "project_",
-  "version": "1.0.0", 
-  "board": "Arduino UNO R3",  // 匹配nickname
+  "version": "1.0.0",
+  "board": "XIAO RP2350",  // ✅ 匹配nickname
   "dependencies": {
-    "@aily-project/board-arduino_uno": "^1.8.6",  // 匹配board版本
+    "@aily-project/board-xiao_rp2350": "5.1.0",  // ✅ 匹配board的name和version
     "@aily-project/lib-core-io": "1.0.0"
   }
 }
@@ -89,10 +116,28 @@ node validate-boards-compliance.js --help
 
 ### 常见错误和修复
 
-#### 1. 版本不匹配
+#### 1. Board 依赖版本不匹配
 ```
-❌ 错误: 版本不匹配: board(1.8.6) != template(1.8.5)
-💡 修复: 将template中的版本更新为 "^1.8.6"
+❌ 错误: board依赖版本不匹配: "@aily-project/board-xxx"的版本 1.0.0 应为 "1.0.1"
+💡 修复: 将template中的版本更新为 "1.0.1"
+```
+
+#### 2. Board 字段与 nickname 不一致
+```
+❌ 错误: board字段不匹配: "Board Name" != "Correct Board Name"
+💡 修复: 更新template/package.json中的board字段为 "Correct Board Name"
+```
+
+#### 3. 多个 Board 依赖
+```
+❌ 错误: board依赖数量错误: 发现 2 个，应该只有 1 个
+💡 修复: 删除多余的board依赖，只保留当前开发板的依赖
+```
+
+#### 4. Board 依赖名称不匹配
+```
+❌ 错误: board依赖名称不匹配: "@aily-project/board-Wrong_Name" 应为 "@aily-project/board-correct_name"
+💡 修复: 确保board依赖名称与开发板package.json的name字段完全一致（注意大小写）
 ```
 
 #### 2. SDK版本不一致

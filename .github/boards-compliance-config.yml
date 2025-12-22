@@ -1,0 +1,50 @@
+---
+# 开发板规范检测配置文件
+# 用于自定义检测行为和规则
+
+# 检测规则配置
+compliance:
+  # 评分权重（总分100）
+  scoring:
+    board_dependency: 20      # Board依赖检测
+    version_consistency: 20   # 版本一致性
+    sdk_version: 15          # SDK版本检测
+    basic_fields: 20         # 基础字段
+    template_deps: 15        # Template依赖
+    board_nickname: 10       # Board与nickname一致性
+
+  # 严格程度配置
+  strictness:
+    missing_template: 'error'           # 缺少template目录
+    version_mismatch: 'error'           # 版本不匹配
+    sdk_version_mismatch: 'warning'     # SDK版本不匹配
+    missing_basic_fields: 'warning'     # 缺少基础字段
+    board_nickname_mismatch: 'error'    # board与nickname不匹配
+    multiple_board_deps: 'error'        # 多个board依赖
+
+# GitHub Actions配置
+github:
+  pull_request:
+    minimum_score: 80          # PR通过的最低分数
+    block_merge: true          # 检测失败时阻止合并
+    auto_comment: true         # 自动在PR中评论结果
+    
+  push:
+    generate_report: true      # 推送到主分支时生成报告
+    notify_on_failure: true    # 检测失败时通知
+
+# 检测排除列表
+exclude:
+  boards:
+    # - 'example_board'       # 排除特定开发板
+    # - 'test_*'              # 支持通配符
+  
+  paths:
+    - 'node_modules'
+    - '.*'                    # 隐藏文件/目录
+    - '参考'
+
+# 自定义检测规则（预留扩展）
+custom_rules:
+  enabled: false
+  rules: []
