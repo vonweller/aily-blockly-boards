@@ -45,50 +45,114 @@ class BoardValidator {
     this.maxScore += points;
   }
 
-  // 获取变更的开发板（Git模式）
-  getChangedBoards() {
+  // 获取 git 变更的文件列表
+  getChangedFiles() {
     try {
       let changedFiles;
       
       // 检测是否在GitHub Actions环境中
       if (process.env.GITHUB_EVENT_NAME === 'pull_request') {
-        // PR模式：比较PR分支与目标分支
-        const baseSha = process.env.GITHUB_BASE_REF ? `origin/${process.env.GITHUB_BASE_REF}` : 'HEAD~1';
-        changedFiles = execSync(`git diff --name-only ${baseSha} HEAD`, { encoding: 'utf8' });
+        // PR模式：比较PR分支与目标分支（使用三点语法获取差异）
+        console.log('🔍 检测模式: GitHub PR');
+        try {
+          changedFiles = execSync('git diff --name-only origin/main...HEAD', { encoding: 'utf8' });
+        } catch (e) {
+          // 如果没有 origin/main，尝试与本地 main 比较
+          try {
+            changedFiles = execSync('git diff --name-only main...HEAD', { encoding: 'utf8' });
+          } catch (e2) {
+            // 回退到基础分支
+            const baseSha = process.env.GITHUB_BASE_REF ? `origin/${process.env.GITHUB_BASE_REF}` : 'HEAD~1';
+            changedFiles = execSync(`git diff --name-only ${baseSha} HEAD`, { encoding: 'utf8' });
+          }
+        }
       } else if (process.env.GITHUB_EVENT_NAME === 'push') {
         // Push模式：比较当前提交与上一个提交
+        console.log('🔍 检测模式: GitHub Push');
         changedFiles = execSync('git diff --name-only HEAD~1 HEAD', { encoding: 'utf8' });
       } else {
-        // 本地模式：比较工作区与最后提交
-        changedFiles = execSync('git diff --name-only HEAD', { encoding: 'utf8' });
-      }
-      
-      console.log('变更的文件:', changedFiles);
-      
-      // 提取变更的开发板目录
-      const changedBoards = new Set();
-      const lines = changedFiles.trim().split('\n').filter(line => line.length > 0);
-      
-      for (const file of lines) {
-        // 匹配 boardName/package.json 或 boardName/template/package.json
-        const boardMatch = file.match(/^([^\/]+)\/(package\.json|template\/package\.json)$/);
-        if (boardMatch) {
-          const boardName = boardMatch[1];
-          // 排除根目录和特殊目录
-          if (boardName !== 'package.json' && 
-              boardName !== '参考' && 
-              !boardName.startsWith('.') && 
-              boardName !== 'node_modules') {
-            changedBoards.add(boardName);
+        // 本地模式：尝试与 main 分支比较
+        console.log('🔍 检测模式: 本地开发');
+        try {
+          changedFiles = execSync('git diff --name-only origin/main...HEAD', { encoding: 'utf8' });
+        } catch (e) {
+          try {
+            changedFiles = execSync('git diff --name-only main...HEAD', { encoding: 'utf8' });
+          } catch (e2) {
+            // 如果都失败，比较工作区与最后提交
+            changedFiles = execSync('git diff --name-only HEAD', { encoding: 'utf8' });
           }
         }
       }
       
-      return Array.from(changedBoards);
+      return changedFiles.trim().split('\n').filter(f => f);
     } catch (error) {
-      console.error('获取变更文件失败:', error.message);
+      console.error('⚠️  无法获取 git 变更信息:', error.message);
+      console.error('   请确保在 git 仓库中运行此命令');
       return [];
     }
+  }
+
+  // 从变更文件中提取开发板目录
+  extractBoardsFromChangedFiles(changedFiles) {
+    const boards = new Set();
+    
+    for (const file of changedFiles) {
+      // 跳过根目录文件
+      if (!file.includes('/') && !file.includes('\\')) {
+        continue;
+      }
+      
+      // 获取第一级目录名（开发板名）
+      const parts = file.split(/[\/\\]/);
+      const boardName = parts[0];
+      
+      // 排除特殊目录
+      if (boardName.startsWith('.') || 
+          boardName === 'node_modules' || 
+          boardName === '参考' ||
+          boardName === '.github') {
+        continue;
+      }
+      
+      boards.add(boardName);
+    }
+    
+    return Array.from(boards);
+  }
+
+  // 获取变更的开发板（Git模式）
+  getChangedBoards() {
+    console.log('🔍 检测 PR/提交中的变更文件...\n');
+    
+    const changedFiles = this.getChangedFiles();
+    
+    if (changedFiles.length === 0) {
+      console.log('ℹ️  未检测到文件变更');
+      return [];
+    }
+    
+    console.log(`📝 发现 ${changedFiles.length} 个变更文件`);
+    
+    const changedBoards = this.extractBoardsFromChangedFiles(changedFiles);
+    
+    if (changedBoards.length === 0) {
+      console.log('\n✅ 本次变更未涉及开发板目录\n');
+      return [];
+    }
+    
+    // 过滤出真实的开发板目录（含package.json）
+    const validBoards = changedBoards.filter(boardName => {
+      const boardPath = path.resolve(boardName);
+      const packagePath = path.join(boardPath, 'package.json');
+      return fs.existsSync(packagePath);
+    });
+    
+    console.log(`\n📦 本次变更涉及 ${validBoards.length} 个开发板:`);
+    validBoards.forEach(board => console.log(`   - ${board}`));
+    console.log('');
+    
+    return validBoards;
   }
 
   // 检测单个开发板
@@ -473,32 +537,57 @@ async function main() {
     const changedBoards = validator.getChangedBoards();
     
     if (changedBoards.length === 0) {
-      console.log('ℹ️ 未检测到开发板配置文件变更');
-      return;
+      console.log('✅ 未检测到开发板配置文件变更，无需检测\n');
+      return; // 正常退出
     }
 
-    console.log(`🔍 检测到 ${changedBoards.length} 个变更的开发板: ${changedBoards.join(', ')}\n`);
+    console.log(`\n${'='.repeat(60)}`);
+    console.log(`🔍 开始检测 ${changedBoards.length} 个变更的开发板`);
+    console.log('='.repeat(60));
     
+    const results = [];
     let totalErrors = 0;
+    let totalWarnings = 0;
+    
     for (const boardName of changedBoards) {
       const boardPath = path.resolve(boardName);
       
       if (!fs.existsSync(boardPath)) {
-        console.error(`❌ 开发板目录不存在: ${boardPath}`);
+        console.error(`\n❌ 开发板目录不存在: ${boardPath}`);
         success = false;
         continue;
       }
 
       const result = await validator.validateBoard(boardPath);
+      results.push(result);
+      
       const boardSuccess = validator.generateBoardReport(result.boardName, result.issues);
       
       if (!boardSuccess) {
         success = false;
-        totalErrors += result.issues.filter(i => i.type === 'error').length;
       }
+      
+      const errors = result.issues.filter(i => i.type === 'error').length;
+      const warnings = result.issues.filter(i => i.type === 'warning').length;
+      totalErrors += errors;
+      totalWarnings += warnings;
     }
     
-    console.log(`\n🏆 变更检测完成 - ${success ? '✅ 通过' : `❌ 失败 (${totalErrors}个错误)`}`);
+    // 生成汇总报告
+    console.log(`\n${'='.repeat(60)}`);
+    console.log('🏆 变更检测汇总报告');
+    console.log('='.repeat(60));
+    console.log(`📦 共检测开发板: ${results.length} 个`);
+    console.log(`❌ 总错误数: ${totalErrors}`);
+    console.log(`⚠️  总警告数: ${totalWarnings}`);
+    
+    if (success) {
+      console.log(`\n✅ 检测通过！所有变更的开发板均符合规范要求。`);
+    } else {
+      console.log(`\n❌ 检测失败！发现 ${totalErrors} 个错误需要修复。`);
+    }
+    
+    console.log('='.repeat(60));
   } else {
     const boardName = args[0];
     const boardPath = path.resolve(boardName);
