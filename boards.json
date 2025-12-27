@@ -988,6 +988,23 @@
     ]
   },
   {
+    "name": "@aily-project/board-summer-v2",
+    "nickname": "summer_v2",
+    "version": "3.3.1",
+    "description": "Summer_V2开发板支持编码电机、TT马达、舵机、超声波传感器、Sentry2避障、红外遥控、蜂鸣器、OLED显示和步进电机控制，适用于多种智能硬件和机器人应用。",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "",
+    "compatibility": "",
+    "img": "Summer_V2/board.webp",
+    "pinmap": "Summer_V2/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:esp32",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
     "name": "@aily-project/board-unitree_g1",
     "nickname": "Unitree G1 shield",
     "version": "3.2.1",
