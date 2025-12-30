@@ -1,5 +1,5 @@
 {
-    "name": "ESP32 S3 AI Board",
+    "name": "esp32s3_ai_board",
     "version": "3.2.1",
     "description": "ESP32 S3 AI Board compatible board",
     "compilerTool": "aily-builder",
