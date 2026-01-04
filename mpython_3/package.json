@@ -4,7 +4,9 @@
   "version": "3.2.1",
   "description": "掌控板3.0开发板配置 - 基于ESP32S3的教育开发板",
   "main": "index.js",
+  "brand": "掌控板3.0",
   "disabled": false,
+  "url": "https://mpython-esp32s3-doc.readthedocs.io/zh-cn/latest/1_hardware/1_3_IO.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
