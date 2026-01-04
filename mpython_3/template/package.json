@@ -2,6 +2,7 @@
   "name": "project_",
   "version": "1.0.0",
   "description": "",
+  "board": "掌控板3.0",
   "dependencies": {
     "@aily-project/board-mpython3": "3.2.1",
     "@aily-project/lib-core-io": "1.0.0",
