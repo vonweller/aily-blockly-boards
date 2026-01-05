@@ -2,6 +2,7 @@
   "name": "project_",
   "version": "1.0.0",
   "description": "",
+  "board": "掌控板3.0",
   "dependencies": {
     "@aily-project/board-mpython3": "3.2.1",
     "@aily-project/lib-core-io": "1.0.0",
@@ -12,10 +13,7 @@
     "@aily-project/lib-core-serial": "0.0.1",
     "@aily-project/lib-core-time": "0.0.1",
     "@aily-project/lib-core-variables": "1.0.1",
-    "@aily-project/lib-u8g2": "1.0.0",
     "@aily-project/lib-core-tone": "0.0.1",
-    "@aily-project/lib-aily_iic": "0.0.1",
-    "@aily-project/lib-fastled":"1.0.1",
     "@aily-project/lib-imu9dof":"0.0.1",
     "@aily-project/lib-ltr308":"0.0.1"
   }
