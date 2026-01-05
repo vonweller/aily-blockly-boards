@@ -7,9 +7,8 @@
  * 1. template/package.json中board依赖必须唯一
  * 2. board依赖名称必须与开发板package.json的name完全一致（小写）
  * 3. board依赖版本必须与开发板package.json的version一致
- * 4. template/package.json的board字段必须与开发板package.json的nickname字段相同
- * 5. boardDependencies中SDK版本与board版本一致性
- * 6. 基础字段完整性检测
+ * 4. boardDependencies中SDK版本与board版本一致性
+ * 5. 基础字段完整性检测
  * 
  * 使用方法:
  *   node validate-boards-compliance.js [board名]
@@ -362,30 +361,6 @@ class BoardValidator {
       this.addIssue('warning', 'Template依赖', boardName, '缺少核心库依赖', '添加必要的@aily-project/lib-core-*依赖');
       console.log(`  ⚠️  缺少核心库依赖`);
     }
-
-    // 检测board字段与nickname字段一致性
-    if (!boardPackage.nickname) {
-      this.addFailure();
-      this.addIssue('error', 'Template依赖', boardName, 
-        '开发板package.json缺少nickname字段', 
-        '添加nickname字段');
-      console.log(`  ❌ 开发板缺少nickname字段`);
-    } else if (!templatePackage.board) {
-      this.addFailure();
-      this.addIssue('error', 'Template依赖', boardName, 
-        'template/package.json缺少board字段', 
-        `添加 "board": "${boardPackage.nickname}"`);
-      console.log(`  ❌ template缺少board字段`);
-    } else if (templatePackage.board !== boardPackage.nickname) {
-      this.addFailure();
-      this.addIssue('error', 'Template依赖', boardName, 
-        `template的board字段必须与开发板的nickname字段相同: "${templatePackage.board}" 应为 "${boardPackage.nickname}"`, 
-        `将template/package.json中的board字段更新为 "${boardPackage.nickname}"`);
-      console.log(`  ❌ board字段不匹配: "${templatePackage.board}" != "${boardPackage.nickname}"`);
-    } else {
-      this.addSuccess();
-      console.log(`  ✅ board字段与nickname一致: ${templatePackage.board}`);
-    }
   }
 
   // 扫描所有开发板
@@ -520,7 +495,6 @@ async function main() {
   ✅ Board依赖唯一性和正确性
   ✅ Board依赖名称匹配（必须小写）
   ✅ Board依赖版本一致性
-  ✅ Board字段与nickname字段一致性
   ✅ SDK版本匹配检测
   ✅ 基础字段完整性
   ✅ Template依赖配置

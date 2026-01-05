@@ -1,6 +1,6 @@
 {
-  "name": "@aily-project/board-grove_beginner_kit",
-  "nickname": "Grove Beginner Kit",
+  "name": "@aily-project/board-seeed_lotus",
+  "nickname": "Seeeduino Lotus",
   "version": "1.8.6",
   "description": "适用于 Arduino 的 Grove 初学者套件是最适合初学者的 Arduino 初学者套件之一。与大多数套件不同，Arduino的Grove初学者套件是一个一体化套件，没有面包板，没有焊接，甚至不需要布线。我们省去了所有这些烦琐，旨在为您提供最佳体验，您只需要专注于编码和 Arduino 学习。该套件由一块 Arduino 兼容板 （Seeeduino Lotus） 以及 10 个额外的 Grove Arduino 传感器供电，所有这些都集成在一块板中。当然，您也可以将模块取出并使用 Grove 电缆连接模块。您可以使用此 Grove Beginner Kit for Arduino 构建任何您喜欢的 Arduino 项目。",
   "main": "index.js",
