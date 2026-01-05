@@ -1,6 +1,6 @@
 {
   "name": "@aily-project/board-esp32dev",
-  "nickname": "ESP32dev board",
+  "nickname": "ESP32dev",
   "version": "3.3.1",
   "description": "ESP32dev开发板通用配置",
   "main": "index.js",

@@ -1,6 +1,6 @@
 {
   "name": "@aily-project/board-esp32c3mini",
-  "nickname": "ESP32C3Mini board",
+  "nickname": "ESP32C3Mini",
   "version": "3.3.1",
   "description": "ESP32C3Mini开发板通用配置",
   "main": "index.js",

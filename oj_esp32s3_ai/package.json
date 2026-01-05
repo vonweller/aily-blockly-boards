@@ -1,9 +1,8 @@
 {
   "name": "@aily-project/board-esp32s3_ai_board",
-  "nickname": "esp32s3_ai_board",
-  "board": "esp32s3_ai_board",
+  "nickname": "ESP32S3-AI",
   "version": "3.2.1",
-  "description": "ESP32 S3 AI Board是一款基于ESP32-S3的AI开发板，适用于人工智能和物联网应用开发。",
+  "description": "ESP32S3-AI是一款基于ESP32-S3的AI开发板，适用于人工智能和物联网应用开发。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
