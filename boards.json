@@ -136,23 +136,6 @@
     ]
   },
   {
-    "name": "@aily-project/board-arduino_mega_pro",
-    "nickname": "MEGA 2560增强版",
-    "version": "1.8.6",
-    "description": "Arduino MEGA 增强版是基于ATmega2560的开源电子原型平台，包含数字I/O口54个（其中14个支持PWM输出），模拟输入口16个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
-    "author": "",
-    "brand": "OpenJumper",
-    "url": "https://arduino.me/s/board?aid=699",
-    "compatibility": "",
-    "img": "arduino_mega_pro/board.webp",
-    "pinmap": "arduino_mega_pro/pinmap.webp",
-    "state": "",
-    "type": "arduino:avr:mega",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
     "name": "@aily-project/board-arduino_nano",
     "nickname": "Arduino Nano",
     "version": "1.8.6",
@@ -199,40 +182,6 @@
     "pinmap": "arduino_nano_r4/pinmap.webp",
     "state": "",
     "type": "arduino:renesas_uno:nanor4",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
-    "name": "@aily-project/board-arduino_uno_r3_pro",
-    "nickname": "UNO R3 增强版",
-    "version": "1.8.6",
-    "description": "Arduino UNO R3 增强版是基于ATmega328P的开源电子原型平台，包含数字I/O口14个（其中6个支持PWM输出），模拟输入口6个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
-    "author": "",
-    "brand": "OpenJumper",
-    "url": "https://arduino.me/s/board?aid=698",
-    "compatibility": "",
-    "img": "arduino_uno_r3_pro/board.webp",
-    "pinmap": "arduino_uno_r3_pro/pinmap.webp",
-    "state": "",
-    "type": "arduino:avr:uno",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
-    "name": "@aily-project/board-arduino_uno_r4_pro",
-    "nickname": "UNO R4 WIFI 增强版",
-    "version": "1.5.1",
-    "description": "改进升级的Arduino UNO R4 增强版采用了来自瑞萨的强大32位微控制器。预备迎接增加的处理能力、扩展的内存和全新的板载外设。最棒的是，与现有的扩展板和配件兼容性不受影响，无需对标准形式或5V工作电压进行任何更改。",
-    "author": "",
-    "brand": "OpenJumper",
-    "url": "https://arduino.me/s/board?aid=1461",
-    "compatibility": "",
-    "img": "arduino_uno_r4_pro/board.webp",
-    "pinmap": "arduino_uno_r4_pro/pinmap.webp",
-    "state": "",
-    "type": "arduino:renesas_uno:unor4wifi",
     "mode": [
       "arduino"
     ]
@@ -306,23 +255,6 @@
     ]
   },
   {
-    "name": "@aily-project/board-esp32_aiot_kit",
-    "nickname": "ESP32 AIOT Kit",
-    "version": "3.2.1",
-    "description": "ESP32S3AIOT套件是一款基于esp32S3模组专为AIOT学习的集主板和传感器多合一综合套件，板中集成了27个子模块(共21种模块和1个主控集成板)同时还匹配了丰富的教学例程及学习资料，可以满足大多数AI和物联网的学习及使用场景。产品特点27个模块+主控扩展单元 ALL IN ONEAI应用模块与主板接线板载通路，无需复杂接线可开发AI应用，兼容小智AI应用插针与grove扩展接口，可适应更多硬件接入需求支持外部供电，可为电机驱动以及其他物联网项目提供电力可支持软件arduinoIDE、ESP-idf、Ailyblockly硬件参数传感器个数及种类：模拟摇杆x1、DHT11温湿度传感器X1BMI270六轴传感器x1、光敏二极管模块x2、蜂鸣器x1、LED模块x3、INA219功率检测x1、TB6612电机驱动模块x1、1.3寸IPS LCD、0.96OLED（ssd1306）x1、热敏测温模块（B值3950阻值10K）x1、旋转编码器x1、VL53L0X激光测距模块x1、SD卡模块x1、人体红外x1、轻触按键（默认上拉）x2、轻触按键（默认下拉）x2、PCM数字麦克风x1、MAX98357功放模块x1、0V2640摄像头模块主控板（兼容）：esp32s3核心板、wifiduino32S3接口类型：排针+grove接口模块工作电压：3.3V外部供电电压：6~12VPCB尺寸：250*175mm固定孔尺寸：244*169mm",
-    "author": "OpenJumper",
-    "brand": "OpenJumper",
-    "url": "",
-    "compatibility": "",
-    "img": "esp32_aiot_kit/board.webp",
-    "pinmap": "esp32_aiot_kit/pinmap.webp",
-    "state": "",
-    "type": "esp32:esp32:esp32s3",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
     "name": "@aily-project/board-esp32c3",
     "nickname": "ESP32C3 board",
     "version": "3.3.1",
@@ -333,23 +265,6 @@
     "compatibility": "",
     "img": "esp32c3/board.webp",
     "pinmap": "esp32c3/pinmap.webp",
-    "state": "",
-    "type": "esp32:esp32:esp32c3",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
-    "name": "@aily-project/board-esp32c3mini",
-    "nickname": "ESP32C3Mini board",
-    "version": "3.3.1",
-    "description": "ESP32C3Mini开发板通用配置",
-    "author": "",
-    "brand": "OpenJumper",
-    "url": "",
-    "compatibility": "",
-    "img": "esp32c3mini/board.webp",
-    "pinmap": "esp32c3mini/pinmap.webp",
     "state": "",
     "type": "esp32:esp32:esp32c3",
     "mode": [
@@ -369,23 +284,6 @@
     "pinmap": "esp32c6/pinmap.webp",
     "state": "alpha",
     "type": "esp32:esp32:esp32c6",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
-    "name": "@aily-project/board-esp32dev",
-    "nickname": "ESP32dev board",
-    "version": "3.3.1",
-    "description": "ESP32dev开发板通用配置",
-    "author": "",
-    "brand": "OpenJumper",
-    "url": "",
-    "compatibility": "",
-    "img": "esp32dev/board.webp",
-    "pinmap": "esp32dev/pinmap.webp",
-    "state": "",
-    "type": "esp32:esp32:esp32",
     "mode": [
       "arduino"
     ]
@@ -459,23 +357,6 @@
     ]
   },
   {
-    "name": "@aily-project/board-esp32s3basic",
-    "nickname": "ESP32 AIOT BASIC",
-    "version": "3.2.1",
-    "description": "ESP32S3AIOT Basic套件是一款基于esp32S3模组专为AIOT学习的集主板和传感器多合一综合套件，板中集成了9个子模块(按键、蜂鸣器、LED、光敏传感器、LCD、数字麦克风、SD卡、音频功放模块、摄像头)同时还匹配了丰富的教学例程及学习资料，可以满足大多数AI和物联网的学习及使用场景。",
-    "author": "",
-    "brand": "OpenJumper",
-    "url": "",
-    "compatibility": "",
-    "img": "esp32s3basic/board.webp",
-    "pinmap": "esp32s3basic/pinmap.webp",
-    "state": "",
-    "type": "esp32:esp32:esp32s3",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
     "name": "@aily-project/board-esp32s3dev",
     "nickname": "ESP32S3Dev board",
     "version": "3.2.1",
@@ -503,23 +384,6 @@
     "compatibility": "",
     "img": "grove_beginner_kit/board.webp",
     "pinmap": "grove_beginner_kit/pinmap.webp",
-    "state": "",
-    "type": "arduino:avr:uno",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
-    "name": "@aily-project/board-jinniu_board",
-    "nickname": "金牛创翼板",
-    "version": "1.8.6",
-    "description": "金牛创翼板是一款K12信息技术细数学应用开发板，该开发板基于Arduin0设计，并将多种传感器硬件集成在了一张板卡中，包含了LED红灯x1:用于指示电源状态或用于项目中的灯效演示。2812RGB灯x4:可编程的RGB灯，能够创造丰富的灯光效果和色彩变化。按钮x1:用于输入控制或触发事件。旋钮电位器x1:方便用户调节并输入模教值。DHT1温湿度传感器x1:用于实时监测环境的温度与湿度。光线传感器x1:感应环境光照强度，适用于光敏项目。。板载电机1:用于驱动或演示多种机械动作。灰度传感器x2:检测黑白程度，适合简单的跟随或避障项目。(仅限V1版本)。TS语音播报模1:用于语音合成及播报。(仅限V2版本)声音传感器1:检测模报音量大小。(仅限V2版本)。超声波传感器x1:用于测距和避障，广泛用于机器人项目。蜂鸣器x1:用于发出声音提示或音乐效果。(仅限V1版本)。自锁开关x1:用于电源控制或系统重启。电机接口x2:连接外部电机，扩展功能。能机接口x2:连接能机，实现精准的角度控制。串口接口x1:方便与其他设备进行数据传输。IC接口x2:用于扩展其他IC兼容的传感器或模块。",
-    "author": "",
-    "brand": "OpenJumper",
-    "url": "",
-    "compatibility": "",
-    "img": "jinniu_board/board.webp",
-    "pinmap": "jinniu_board/pinmap.webp",
     "state": "",
     "type": "arduino:avr:uno",
     "mode": [
@@ -584,8 +448,8 @@
     "version": "3.2.1",
     "description": "掌控板3.0开发板配置 - 基于ESP32S3的教育开发板",
     "author": "Vonweller",
-    "brand": "",
-    "url": "",
+    "brand": "掌控板3.0",
+    "url": "https://mpython-esp32s3-doc.readthedocs.io/zh-cn/latest/1_hardware/1_3_IO.html",
     "compatibility": "",
     "img": "mpython_3/board.webp",
     "pinmap": "mpython_3/pinmap.webp",
@@ -628,6 +492,228 @@
     "type": "adafruit:nrf52:pca10056",
     "mode": [
       "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-esp32_aiot_kit",
+    "nickname": "ESP32 AIOT Kit",
+    "version": "3.2.1",
+    "description": "ESP32S3AIOT套件是一款基于esp32S3模组专为AIOT学习的集主板和传感器多合一综合套件，板中集成了27个子模块(共21种模块和1个主控集成板)同时还匹配了丰富的教学例程及学习资料，可以满足大多数AI和物联网的学习及使用场景。产品特点27个模块+主控扩展单元 ALL IN ONEAI应用模块与主板接线板载通路，无需复杂接线可开发AI应用，兼容小智AI应用插针与grove扩展接口，可适应更多硬件接入需求支持外部供电，可为电机驱动以及其他物联网项目提供电力可支持软件arduinoIDE、ESP-idf、Ailyblockly硬件参数传感器个数及种类：模拟摇杆x1、DHT11温湿度传感器X1BMI270六轴传感器x1、光敏二极管模块x2、蜂鸣器x1、LED模块x3、INA219功率检测x1、TB6612电机驱动模块x1、1.3寸IPS LCD、0.96OLED（ssd1306）x1、热敏测温模块（B值3950阻值10K）x1、旋转编码器x1、VL53L0X激光测距模块x1、SD卡模块x1、人体红外x1、轻触按键（默认上拉）x2、轻触按键（默认下拉）x2、PCM数字麦克风x1、MAX98357功放模块x1、0V2640摄像头模块主控板（兼容）：esp32s3核心板、wifiduino32S3接口类型：排针+grove接口模块工作电压：3.3V外部供电电压：6~12VPCB尺寸：250*175mm固定孔尺寸：244*169mm",
+    "author": "OpenJumper",
+    "brand": "OpenJumper",
+    "url": "",
+    "compatibility": "",
+    "img": "oj_esp32_aiot_kit/board.webp",
+    "pinmap": "oj_esp32_aiot_kit/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-esp32c3mini",
+    "nickname": "ESP32C3Mini",
+    "version": "3.3.1",
+    "description": "ESP32C3Mini开发板通用配置",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "",
+    "compatibility": "",
+    "img": "oj_esp32c3mini/board.webp",
+    "pinmap": "oj_esp32c3mini/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:esp32c3",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-esp32dev",
+    "nickname": "ESP32dev",
+    "version": "3.3.1",
+    "description": "ESP32dev开发板通用配置",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "",
+    "compatibility": "",
+    "img": "oj_esp32dev/board.webp",
+    "pinmap": "oj_esp32dev/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:esp32",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-esp32s3_ai_board",
+    "nickname": "ESP32S3-AI",
+    "version": "3.2.1",
+    "description": "ESP32S3-AI是一款基于ESP32-S3的AI开发板，适用于人工智能和物联网应用开发。",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "",
+    "compatibility": "",
+    "img": "oj_esp32s3_ai/board.webp",
+    "pinmap": "oj_esp32s3_ai/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-esp32s3basic",
+    "nickname": "ESP32 AIOT BASIC",
+    "version": "3.2.1",
+    "description": "ESP32S3AIOT Basic套件是一款基于esp32S3模组专为AIOT学习的集主板和传感器多合一综合套件，板中集成了9个子模块(按键、蜂鸣器、LED、光敏传感器、LCD、数字麦克风、SD卡、音频功放模块、摄像头)同时还匹配了丰富的教学例程及学习资料，可以满足大多数AI和物联网的学习及使用场景。",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "",
+    "compatibility": "",
+    "img": "oj_esp32s3basic/board.webp",
+    "pinmap": "oj_esp32s3basic/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:esp32s3",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-jinniu_board",
+    "nickname": "金牛创翼板",
+    "version": "1.8.6",
+    "description": "金牛创翼板是一款K12信息技术细数学应用开发板，该开发板基于Arduin0设计，并将多种传感器硬件集成在了一张板卡中，包含了LED红灯x1:用于指示电源状态或用于项目中的灯效演示。2812RGB灯x4:可编程的RGB灯，能够创造丰富的灯光效果和色彩变化。按钮x1:用于输入控制或触发事件。旋钮电位器x1:方便用户调节并输入模教值。DHT1温湿度传感器x1:用于实时监测环境的温度与湿度。光线传感器x1:感应环境光照强度，适用于光敏项目。。板载电机1:用于驱动或演示多种机械动作。灰度传感器x2:检测黑白程度，适合简单的跟随或避障项目。(仅限V1版本)。TS语音播报模1:用于语音合成及播报。(仅限V2版本)声音传感器1:检测模报音量大小。(仅限V2版本)。超声波传感器x1:用于测距和避障，广泛用于机器人项目。蜂鸣器x1:用于发出声音提示或音乐效果。(仅限V1版本)。自锁开关x1:用于电源控制或系统重启。电机接口x2:连接外部电机，扩展功能。能机接口x2:连接能机，实现精准的角度控制。串口接口x1:方便与其他设备进行数据传输。IC接口x2:用于扩展其他IC兼容的传感器或模块。",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "",
+    "compatibility": "",
+    "img": "oj_jinniu_board/board.webp",
+    "pinmap": "oj_jinniu_board/pinmap.webp",
+    "state": "",
+    "type": "arduino:avr:uno",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-arduino_mega_pro",
+    "nickname": "MEGA 2560增强版",
+    "version": "1.8.6",
+    "description": "Arduino MEGA 增强版是基于ATmega2560的开源电子原型平台，包含数字I/O口54个（其中14个支持PWM输出），模拟输入口16个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "https://arduino.me/s/board?aid=699",
+    "compatibility": "",
+    "img": "oj_mega_pro/board.webp",
+    "pinmap": "oj_mega_pro/pinmap.webp",
+    "state": "",
+    "type": "arduino:avr:mega",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-summer-v2",
+    "nickname": "summer_v2",
+    "version": "3.3.1",
+    "description": "Summer_V2开发板支持编码电机、TT马达、舵机、超声波传感器、Sentry2避障、红外遥控、蜂鸣器、OLED显示和步进电机控制，适用于多种智能硬件和机器人应用。",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "",
+    "compatibility": "",
+    "img": "oj_summer_v2/board.webp",
+    "pinmap": "oj_summer_v2/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:esp32",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-arduino_uno_r3_pro",
+    "nickname": "UNO R3 增强版",
+    "version": "1.8.6",
+    "description": "Arduino UNO R3 增强版是基于ATmega328P的开源电子原型平台，包含数字I/O口14个（其中6个支持PWM输出），模拟输入口6个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "https://arduino.me/s/board?aid=698",
+    "compatibility": "",
+    "img": "oj_uno_r3_pro/board.webp",
+    "pinmap": "oj_uno_r3_pro/pinmap.webp",
+    "state": "",
+    "type": "arduino:avr:uno",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-arduino_uno_r4_pro",
+    "nickname": "UNO R4 WIFI 增强版",
+    "version": "1.5.1",
+    "description": "改进升级的Arduino UNO R4 增强版采用了来自瑞萨的强大32位微控制器。预备迎接增加的处理能力、扩展的内存和全新的板载外设。最棒的是，与现有的扩展板和配件兼容性不受影响，无需对标准形式或5V工作电压进行任何更改。",
+    "author": "",
+    "brand": "OpenJumper",
+    "url": "https://arduino.me/s/board?aid=1461",
+    "compatibility": "",
+    "img": "oj_uno_r4_pro/board.webp",
+    "pinmap": "oj_uno_r4_pro/pinmap.webp",
+    "state": "",
+    "type": "arduino:renesas_uno:unor4wifi",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-wifiduino_v2",
+    "nickname": "Wifiduino v2",
+    "version": "3.3.1",
+    "description": "WIFIduinoV2采用乐鑫ESP32-C3芯片主频160MHzSRAM内存400KB、Flash容量4M、WIFI支持802.11 b/g/n 2.4GHz 、蓝牙支持Bluetooth 5.0 LE数字模拟I/O多达18个、6路ADC精度达到12位、通信接口包含了UART/SPI/I2C/USB、具备深度睡眠/超低功耗协处理器 、工作电压在3.3V、外部输入电压推荐7~12VI/O输出能力12mA主板尺寸在68.6*53.4 mm主要应用在适合中端低功耗场景。可针对于低成本接入blinker物联网平台，以及小智AI平台，快速上手各种AIOT项",
+    "author": "OpenJumper",
+    "brand": "OpenJumper",
+    "url": "https://openjumper.com/doc/wifiduino-v2",
+    "compatibility": "",
+    "img": "oj_wifiduino_v2/board.webp",
+    "pinmap": "oj_wifiduino_v2/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:wifiduino32c3",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-wifiduino32",
+    "nickname": "Wifiduino 32",
+    "version": "3.3.1",
+    "description": "WIFIduino32采用乐鑫ESP32-WROOM-32E模组主频240 MHzSRAM内存520KB、Flash容量4M、WIFI支持802.11 b/g/n 2.4GHz 、蓝牙支持Bluetooth 4.2 BR/EDR + BLE数字模拟I/O多达22个、12路ADC精度达到12位、支持2路8位DAC、通信接口包含了UART/SPI/I2C/USB/CAN/SDIO、具备深度睡眠/超低功耗协处理器 、工作电压在3.3V、外部输入电压推荐7~12VI/O输出能力12mA主板尺寸在68.6*53.4 mm主要应用在复杂IoT设备、多任务处理、高速需求可接入blinker物联网平台，以及小智AI平台，快速上手各种AIOT项目。",
+    "author": "OpenJumper",
+    "brand": "OpenJumper",
+    "url": "http://openjumper.com/doc/ojkz24-wifiduino32",
+    "compatibility": "",
+    "img": "oj_wifiduino32/board.webp",
+    "pinmap": "oj_wifiduino32/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:wifiduino32",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-wifiduino32s3",
+    "nickname": "Wifiduino 32S3",
+    "version": "3.3.1",
+    "description": "Wifiduino32S3采用乐鑫ESP32-S3-N16R8模组，主频可达240M、SRAM内存512KB、Flash容量16M、WIFI支持802.11 b/g/n 2.4GHz + Wi-Fi 6（部分特性）、蓝牙支持Bluetooth 5.2 LE + Mesh、数字模拟I/O多达24个、20路ADC精度达到12位，支持多通道并行采样、支持2路12位DAC、通信接口包含了UART/SPI/I2C/USB/CAN/SDIO/Ethernet（需外置PHY）、具备深度睡眠/超低功耗协处理器 + RTC独立运行模式工作电压在3.3V、外部输入电压推荐7~12VI/O输出能力40mA主板尺寸在68.6*53.4 mm板卡定位为旗舰型号，适合AIoT、工业自动化等高复杂度项目。同时，可针对于低成本接入blinker物联网平台，以及小智AI平台，快速上手各种AIOT项目。",
+    "author": "OpenJumper",
+    "brand": "OpenJumper",
+    "url": "http://openjumper.com/doc/wifiduino32s3",
+    "compatibility": "",
+    "img": "oj_wifiduino32s3/board.webp",
+    "pinmap": "oj_wifiduino32s3/pinmap.webp",
+    "state": "",
+    "type": "esp32:esp32:wifiduino32s3",
+    "mode": [
+      "arduino",
+      "micropython"
     ]
   },
   {
@@ -988,23 +1074,6 @@
     ]
   },
   {
-    "name": "@aily-project/board-summer-v2",
-    "nickname": "summer_v2",
-    "version": "3.3.1",
-    "description": "Summer_V2开发板支持编码电机、TT马达、舵机、超声波传感器、Sentry2避障、红外遥控、蜂鸣器、OLED显示和步进电机控制，适用于多种智能硬件和机器人应用。",
-    "author": "",
-    "brand": "OpenJumper",
-    "url": "",
-    "compatibility": "",
-    "img": "Summer_V2/board.webp",
-    "pinmap": "Summer_V2/pinmap.webp",
-    "state": "",
-    "type": "esp32:esp32:esp32",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
     "name": "@aily-project/board-unitree_g1",
     "nickname": "Unitree G1 shield",
     "version": "3.2.1",
@@ -1019,58 +1088,6 @@
     "type": "esp32:esp32:esp32s3",
     "mode": [
       "arduino"
-    ]
-  },
-  {
-    "name": "@aily-project/board-wifiduino_v2",
-    "nickname": "Wifiduino v2",
-    "version": "3.3.1",
-    "description": "WIFIduinoV2采用乐鑫ESP32-C3芯片主频160MHzSRAM内存400KB、Flash容量4M、WIFI支持802.11 b/g/n 2.4GHz 、蓝牙支持Bluetooth 5.0 LE数字模拟I/O多达18个、6路ADC精度达到12位、通信接口包含了UART/SPI/I2C/USB、具备深度睡眠/超低功耗协处理器 、工作电压在3.3V、外部输入电压推荐7~12VI/O输出能力12mA主板尺寸在68.6*53.4 mm主要应用在适合中端低功耗场景。可针对于低成本接入blinker物联网平台，以及小智AI平台，快速上手各种AIOT项",
-    "author": "OpenJumper",
-    "brand": "OpenJumper",
-    "url": "https://openjumper.com/doc/wifiduino-v2",
-    "compatibility": "",
-    "img": "wifiduino_v2/board.webp",
-    "pinmap": "wifiduino_v2/pinmap.webp",
-    "state": "",
-    "type": "esp32:esp32:wifiduino32c3",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
-    "name": "@aily-project/board-wifiduino32",
-    "nickname": "Wifiduino 32",
-    "version": "3.3.1",
-    "description": "WIFIduino32采用乐鑫ESP32-WROOM-32E模组主频240 MHzSRAM内存520KB、Flash容量4M、WIFI支持802.11 b/g/n 2.4GHz 、蓝牙支持Bluetooth 4.2 BR/EDR + BLE数字模拟I/O多达22个、12路ADC精度达到12位、支持2路8位DAC、通信接口包含了UART/SPI/I2C/USB/CAN/SDIO、具备深度睡眠/超低功耗协处理器 、工作电压在3.3V、外部输入电压推荐7~12VI/O输出能力12mA主板尺寸在68.6*53.4 mm主要应用在复杂IoT设备、多任务处理、高速需求可接入blinker物联网平台，以及小智AI平台，快速上手各种AIOT项目。",
-    "author": "OpenJumper",
-    "brand": "OpenJumper",
-    "url": "http://openjumper.com/doc/ojkz24-wifiduino32",
-    "compatibility": "",
-    "img": "wifiduino32/board.webp",
-    "pinmap": "wifiduino32/pinmap.webp",
-    "state": "",
-    "type": "esp32:esp32:wifiduino32",
-    "mode": [
-      "arduino"
-    ]
-  },
-  {
-    "name": "@aily-project/board-wifiduino32s3",
-    "nickname": "Wifiduino 32S3",
-    "version": "3.3.1",
-    "description": "Wifiduino32S3采用乐鑫ESP32-S3-N16R8模组，主频可达240M、SRAM内存512KB、Flash容量16M、WIFI支持802.11 b/g/n 2.4GHz + Wi-Fi 6（部分特性）、蓝牙支持Bluetooth 5.2 LE + Mesh、数字模拟I/O多达24个、20路ADC精度达到12位，支持多通道并行采样、支持2路12位DAC、通信接口包含了UART/SPI/I2C/USB/CAN/SDIO/Ethernet（需外置PHY）、具备深度睡眠/超低功耗协处理器 + RTC独立运行模式工作电压在3.3V、外部输入电压推荐7~12VI/O输出能力40mA主板尺寸在68.6*53.4 mm板卡定位为旗舰型号，适合AIoT、工业自动化等高复杂度项目。同时，可针对于低成本接入blinker物联网平台，以及小智AI平台，快速上手各种AIOT项目。",
-    "author": "OpenJumper",
-    "brand": "OpenJumper",
-    "url": "http://openjumper.com/doc/wifiduino32s3",
-    "compatibility": "",
-    "img": "wifiduino32s3/board.webp",
-    "pinmap": "wifiduino32s3/pinmap.webp",
-    "state": "",
-    "type": "esp32:esp32:wifiduino32s3",
-    "mode": [
-      "arduino",
-      "micropython"
     ]
   },
   {

@@ -1,12 +1,12 @@
 {
-    "name": "Grove Beginner Kit",
-    "version":"1.0.1",
+    "name": "Seeeduino Lotus",
+    "version":"1.1.0",
     "description": "Arduino UNO standard compatible board",
     "compilerTool": "aily-builder",
     "core": "arduino:avr",
     "type": "arduino:avr:uno",
     "compilerParam": "compile -v -b arduino:avr:uno",
-    "uploadParam": "avrdude -C${'avrdude.conf'} -v -V -patmega328p -carduino -P${serial} -b${baud} -D -Uflash:w:${'*.hex'}:i",
+    "uploadParam": "avrdude -C${'avrdude.conf'} -v -V -patmega328p -carduino -P${serial} -b115200 -D -Uflash:w:${'*.hex'}:i",
     "analogPins": [
         [
             "A0",

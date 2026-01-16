@@ -1,17 +1,15 @@
 {
-  "name": "@aily-project/board-unitree_g1",
-  "nickname": "Unitree G1 shield",
+  "name": "@aily-project/board-esp32s3_ai_board",
+  "nickname": "ESP32S3-AI",
   "version": "3.2.1",
-  "description": "产品测试用，不建议普通用户使用",
+  "description": "ESP32S3-AI是一款基于ESP32-S3的AI开发板，适用于人工智能和物联网应用开发。",
   "main": "index.js",
-  "brand": "Unitree",
-  "author": "奈何col",
-  "disabled": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "state": "alpha",
+  "author": "",
   "license": "ISC",
+  "brand": "OpenJumper",
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
     "@aily-project/tool-esptool_py": "5.1.0",

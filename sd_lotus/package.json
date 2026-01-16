@@ -1,0 +1,20 @@
+{
+  "name": "@aily-project/board-seeed_lotus",
+  "nickname": "Seeeduino Lotus",
+  "version": "1.8.6",
+  "description": "Seeeduino Lotus is an ATMEGA328 Microcontroller development board. It is a combination of Seeeduino and Base Shield. Seeeduino Lotus v1.0 uses an Atmel ATMEGA328P-MU and CH340. ATMEGA328P-MU is a high performance, low power AVR 8-Bit Microcontroller. CH340 is a USB bus converter chip that can realize a USB to serial interface. Seeeduino Lotus v1.1 replace CH340 with CP2102N to enable the compatibilty with MAC, there is nothing other change compared to Seeeduino Lotus v1.0. Seeeduino Lotus has 14 digital input/outputs (6 of which can output PWM) and 7 analog input/outputs, a micro USB connection, an ICSP header, 12 Grove connections, a reset button.",
+  "main": "index.js",
+  "url": "https://wiki.seeedstudio.com/Seeeduino_Lotus/",
+  "brand": "SeeedStudio",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seeed",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-avr-gcc": "7.3.0",
+    "@aily-project/tool-avrdude": "6.3.0",
+    "@aily-project/sdk-avr": "1.8.6",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

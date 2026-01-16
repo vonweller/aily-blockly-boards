@@ -1,8 +1,8 @@
 {
-  "name": "@aily-project/board-esp32dev",
-  "nickname": "ESP32dev board",
+  "name": "@aily-project/board-summer-v2",
+  "nickname": "Summer v2",
   "version": "3.3.1",
-  "description": "ESP32dev开发板通用配置",
+  "description": "Summer v2开发板支持编码电机、TT马达、舵机、超声波传感器、Sentry2避障、红外遥控、蜂鸣器、OLED显示和步进电机控制，适用于多种智能硬件和机器人应用。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
