@@ -470,27 +470,30 @@ jobs:
       - name: Generate JSON
         run: node genjson.js
       
-      - name: Generate AI JSON
-        run: node genjson-ai.js
+      - name: Generate info.json for all boards
+        run: node generate-info.js --all
+      
+      - name: Generate boards-index.json
+        run: node generate-boards-index.js
       
       - name: Check if JSON file exists
         run: |
           if [ -f "./boards.json" ]; then
-            echo "File exists"
+            echo "boards.json exists"
             cat ./boards.json | head -n 10
           else
-            echo "File does not exist"
+            echo "boards.json does not exist"
             ls -la
             exit 1
           fi
         
-      - name: Check if AI JSON file exists
+      - name: Check if boards-index.json file exists
         run: |
-          if [ -f "./boards-ai.json" ]; then
-            echo "AI JSON file exists"
-            cat ./boards-ai.json | head -n 10
+          if [ -f "./boards-index.json" ]; then
+            echo "boards-index.json exists"
+            cat ./boards-index.json | head -n 10
           else
-            echo "AI JSON file does not exist"
+            echo "boards-index.json does not exist"
             ls -la
             exit 1
           fi
@@ -502,7 +505,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: "boards.json,boards-ai.json"
+          source: "boards.json,boards-index.json"
           target: ${{ secrets.TARGET }}
           timeout: 120s
           command_timeout: 60s
@@ -511,7 +514,7 @@ jobs:
         run: |
           mkdir -p r2_json
           cp boards.json r2_json/
-          cp boards-ai.json r2_json/
+          cp boards-index.json r2_json/
 
       - name: Upload to R2
         uses: jakejarvis/s3-sync-action@master
