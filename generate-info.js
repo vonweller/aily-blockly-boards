@@ -317,8 +317,8 @@ function generateBoardInfo(dirName, pkg, boardJson) {
     
     const info = {
         $schema: 'board-info-schema',
-        name: dirName,
-        displayName: pkg.nickname || boardJson?.name || dirName,
+        name: pkg.name?.replace('@aily-project/', '') || dirName,
+        displayName: pkg.nickname || pkg.name?.replace('@aily-project/', '') || dirName,
         brand: pkg.brand || '',
         type: 'board',
         mcu: {
