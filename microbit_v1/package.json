@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-microbit",
   "nickname": "micro:bit",
-  "version": "3.3.1",
+  "version": "0.8.0",
   "description": "BBC micro:bit v1",
   "main": "index.js",
   "brand": "BBC",
