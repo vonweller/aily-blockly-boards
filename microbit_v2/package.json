@@ -1,0 +1,19 @@
+{
+  "name": "@aily-project/board-microbit-v2",
+  "nickname": "micro:bit v2",
+  "version": "0.8.0",
+  "description": "BBC micro:bit v2",
+  "main": "index.js",
+  "brand": "BBC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vonweller",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "5.2.0",
+    "@aily-project/sdk-nrf5": "0.8.0",
+    "@aily-project/tool-openocd": "0.10.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

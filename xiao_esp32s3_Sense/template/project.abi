@@ -5,61 +5,36 @@
       {
         "type": "arduino_setup",
         "id": "arduino_setup_id0",
-        "x": 10,
+        "x": 30,
         "y": 30,
         "deletable": false,
-        "icons": {
-          "ailyIcon": "fa-regular fa-arrows-repeat"
-        },
         "inputs": {
           "ARDUINO_SETUP": {
             "block": {
               "type": "serial_begin",
-              "id": "DdG7XmjmAWYHgc+@`nft",
-              "icons": {
-                "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-              },
+              "id": "ZU)9ize3@/:zIRHm#Aw=",
               "fields": {
                 "SERIAL": "Serial",
-                "SPEED": "1200"
+                "SPEED": "115200"
               },
               "next": {
                 "block": {
-                  "type": "sscma_core_video_capture_begin",
-                  "id": "gT*eFT3=..]SvgLw{A~3",
-                  "fields": {
-                    "VAR": {
-                      "id": "zm72IZx0nCExf7[?.HBt"
-                    }
-                  },
+                  "type": "sscma_core_begin",
+                  "id": "Pm7,TL}f69%_A:IM%?/0",
                   "next": {
                     "block": {
-                      "type": "sscma_core_begin",
-                      "id": ")g%@RMz#K7i|c1roAk^=",
+                      "type": "serial_println",
+                      "id": "/85zaoX:|,DR4Nz^+AAn",
                       "fields": {
-                        "VAR": {
-                          "id": "$_*QtmIJP9]8|{lPZe$u"
-                        }
+                        "SERIAL": "Serial"
                       },
-                      "next": {
-                        "block": {
-                          "type": "serial_println",
-                          "id": "lU]9BvhrIErkjp(86_Ub",
-                          "icons": {
-                            "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                          },
-                          "fields": {
-                            "SERIAL": "Serial"
-                          },
-                          "inputs": {
-                            "VAR": {
-                              "shadow": {
-                                "type": "text",
-                                "id": "f^]#MxfeTx~VdonRd0F/",
-                                "fields": {
-                                  "TEXT": "Init done"
-                                }
-                              }
+                      "inputs": {
+                        "VAR": {
+                          "shadow": {
+                            "type": "text",
+                            "id": "vNuk5hCmyn-H057#u?@M",
+                            "fields": {
+                              "TEXT": "SSCMA init done."
                             }
                           }
                         }
@@ -75,34 +50,19 @@
       {
         "type": "arduino_loop",
         "id": "arduino_loop_id0",
-        "x": 10,
-        "y": 250,
+        "x": 30,
+        "y": 230,
         "deletable": false,
-        "icons": {
-          "ailyIcon": "fa-regular fa-arrows-repeat"
-        },
         "inputs": {
           "ARDUINO_LOOP": {
             "block": {
               "type": "sscma_core_invoke",
-              "id": "(i(jNR804+[ikE]1tbL,",
-              "fields": {
-                "VAR": {
-                  "id": "$_*QtmIJP9]8|{lPZe$u"
-                }
-              },
+              "id": "pTjR,;Mn(3=o/^5wPo.h",
               "inputs": {
                 "FRAME": {
                   "shadow": {
                     "type": "sscma_core_get_managed_frame",
-                    "id": "DmeJtWV?#0q=;QkXw4(4",
-                    "fields": {
-                      "VAR": {
-                        "id": "zm72IZx0nCExf7[?.HBt",
-                        "name": "camera",
-                        "type": "VideoCapture"
-                      }
-                    }
+                    "id": "2/+(4m/.yr[#:zP9nTup"
                   }
                 }
               },
@@ -110,19 +70,11 @@
                 "block": {
                   "type": "sscma_core_get_boxes",
                   "id": ":J$Y%GmW%1siE2R(S/BD",
-                  "fields": {
-                    "VAR": {
-                      "id": "$_*QtmIJP9]8|{lPZe$u"
-                    }
-                  },
                   "inputs": {
                     "HANDLER": {
                       "block": {
                         "type": "serial_print",
                         "id": "uiqW)u1G=+^H*:tI_F[_",
-                        "icons": {
-                          "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                        },
                         "fields": {
                           "SERIAL": "Serial"
                         },
@@ -141,9 +93,6 @@
                           "block": {
                             "type": "serial_print",
                             "id": "5+-SryyU8_G[Z2f;xii,",
-                            "icons": {
-                              "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                            },
                             "fields": {
                               "SERIAL": "Serial"
                             },
@@ -169,9 +118,6 @@
                               "block": {
                                 "type": "serial_print",
                                 "id": "%.F[7H-5Vg)(o=eL$;Ym",
-                                "icons": {
-                                  "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                },
                                 "fields": {
                                   "SERIAL": "Serial"
                                 },
@@ -190,9 +136,6 @@
                                   "block": {
                                     "type": "serial_println",
                                     "id": "#cen4*KG7,=eX-TMOoLd",
-                                    "icons": {
-                                      "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                    },
                                     "fields": {
                                       "SERIAL": "Serial"
                                     },
@@ -227,19 +170,11 @@
                     "block": {
                       "type": "sscma_core_get_classes",
                       "id": "w|iIa/bJ=huXXu|k1)va",
-                      "fields": {
-                        "VAR": {
-                          "id": "$_*QtmIJP9]8|{lPZe$u"
-                        }
-                      },
                       "inputs": {
                         "HANDLER": {
                           "block": {
                             "type": "serial_print",
                             "id": "=bWB/ZM8%:7dSThmN@37",
-                            "icons": {
-                              "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                            },
                             "fields": {
                               "SERIAL": "Serial"
                             },
@@ -258,9 +193,6 @@
                               "block": {
                                 "type": "serial_print",
                                 "id": "qg2h|yJ^,;-]2qEc8UX@",
-                                "icons": {
-                                  "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                },
                                 "fields": {
                                   "SERIAL": "Serial"
                                 },
@@ -286,9 +218,6 @@
                                   "block": {
                                     "type": "serial_print",
                                     "id": "QOLDI}5P]Q47.3|T9dJ-",
-                                    "icons": {
-                                      "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                    },
                                     "fields": {
                                       "SERIAL": "Serial"
                                     },
@@ -307,9 +236,6 @@
                                       "block": {
                                         "type": "serial_println",
                                         "id": "1=NVU[sM8jLC^nOKvq-M",
-                                        "icons": {
-                                          "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                        },
                                         "fields": {
                                           "SERIAL": "Serial"
                                         },
@@ -344,19 +270,11 @@
                         "block": {
                           "type": "sscma_core_get_keypoints",
                           "id": "5PIEUU,p|b^vf9cDVb+{",
-                          "fields": {
-                            "VAR": {
-                              "id": "$_*QtmIJP9]8|{lPZe$u"
-                            }
-                          },
                           "inputs": {
                             "HANDLER": {
                               "block": {
                                 "type": "serial_print",
                                 "id": "~AKHjc{biMjLauNTV[DP",
-                                "icons": {
-                                  "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                },
                                 "fields": {
                                   "SERIAL": "Serial"
                                 },
@@ -375,9 +293,6 @@
                                   "block": {
                                     "type": "serial_print",
                                     "id": "^1m0cNq:Gz|WY+rL8*Rg",
-                                    "icons": {
-                                      "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                    },
                                     "fields": {
                                       "SERIAL": "Serial"
                                     },
@@ -403,9 +318,6 @@
                                       "block": {
                                         "type": "serial_print",
                                         "id": "H=]$pezf=hyefsXAb9!+",
-                                        "icons": {
-                                          "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                        },
                                         "fields": {
                                           "SERIAL": "Serial"
                                         },
@@ -424,9 +336,6 @@
                                           "block": {
                                             "type": "serial_println",
                                             "id": "0=90dyhCO[Jag4EjSiW0",
-                                            "icons": {
-                                              "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                            },
                                             "fields": {
                                               "SERIAL": "Serial"
                                             },
@@ -457,9 +366,6 @@
                                                     "block": {
                                                       "type": "serial_print",
                                                       "id": "c#7Xv8W}3Sd0^)$7hDE}",
-                                                      "icons": {
-                                                        "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                                      },
                                                       "fields": {
                                                         "SERIAL": "Serial"
                                                       },
@@ -478,9 +384,6 @@
                                                         "block": {
                                                           "type": "serial_print",
                                                           "id": "5Ftb~)j8G!qihXa|?%Gd",
-                                                          "icons": {
-                                                            "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                                          },
                                                           "fields": {
                                                             "SERIAL": "Serial"
                                                           },
@@ -506,9 +409,6 @@
                                                             "block": {
                                                               "type": "serial_print",
                                                               "id": "cmQk?/!g$RLWd%H%?;?*",
-                                                              "icons": {
-                                                                "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                                              },
                                                               "fields": {
                                                                 "SERIAL": "Serial"
                                                               },
@@ -527,9 +427,6 @@
                                                                 "block": {
                                                                   "type": "serial_println",
                                                                   "id": "HN19#.7NK05h[+t1c`8}",
-                                                                  "icons": {
-                                                                    "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                                                  },
                                                                   "fields": {
                                                                     "SERIAL": "Serial"
                                                                   },
@@ -576,18 +473,12 @@
                               "type": "sscma_core_get_perf",
                               "id": "K,6AT,P4cetKPmPupVV@",
                               "fields": {
-                                "VAR": {
-                                  "id": "$_*QtmIJP9]8|{lPZe$u"
-                                },
-                                "PERF_VAR": "perf"
+                                "VAR": "perf"
                               },
                               "next": {
                                 "block": {
                                   "type": "serial_print",
                                   "id": "ir1z^NxB;*Ns^4L=%A)8",
-                                  "icons": {
-                                    "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                  },
                                   "fields": {
                                     "SERIAL": "Serial"
                                   },
@@ -606,9 +497,6 @@
                                     "block": {
                                       "type": "serial_print",
                                       "id": "y*Wv)f_i]M5mp$[4v;xL",
-                                      "icons": {
-                                        "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                      },
                                       "fields": {
                                         "SERIAL": "Serial"
                                       },
@@ -625,8 +513,8 @@
                                             "type": "sscma_core_get_perf_info",
                                             "id": "O_$z84#nxJ(V^kN.|q;)",
                                             "fields": {
-                                              "PERF_VAR": {
-                                                "id": "LMuzXp(VVz~D:OKuacu-"
+                                              "VAR": {
+                                                "id": "Gj1b@@OIAB%zO}7:EGig"
                                               },
                                               "PROPERTY": "preprocess"
                                             }
@@ -637,9 +525,6 @@
                                         "block": {
                                           "type": "serial_print",
                                           "id": "72ew{RUK/`guD!8mQt|1",
-                                          "icons": {
-                                            "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                          },
                                           "fields": {
                                             "SERIAL": "Serial"
                                           },
@@ -658,9 +543,6 @@
                                             "block": {
                                               "type": "serial_print",
                                               "id": "}H*Yd*$b%r(JZhPUxv5R",
-                                              "icons": {
-                                                "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                              },
                                               "fields": {
                                                 "SERIAL": "Serial"
                                               },
@@ -677,8 +559,8 @@
                                                     "type": "sscma_core_get_perf_info",
                                                     "id": "5Lv,|.D(gKI`?_[MMqcO",
                                                     "fields": {
-                                                      "PERF_VAR": {
-                                                        "id": "LMuzXp(VVz~D:OKuacu-"
+                                                      "VAR": {
+                                                        "id": "Gj1b@@OIAB%zO}7:EGig"
                                                       },
                                                       "PROPERTY": "inference"
                                                     }
@@ -689,9 +571,6 @@
                                                 "block": {
                                                   "type": "serial_print",
                                                   "id": "j6U2,$HO+~V9:K*{W3B$",
-                                                  "icons": {
-                                                    "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                                  },
                                                   "fields": {
                                                     "SERIAL": "Serial"
                                                   },
@@ -710,9 +589,6 @@
                                                     "block": {
                                                       "type": "serial_println",
                                                       "id": "?HDf,|l${F]/)H/0YQhU",
-                                                      "icons": {
-                                                        "ailyIcon": "fa-light fa-arrow-right-arrow-left"
-                                                      },
                                                       "fields": {
                                                         "SERIAL": "Serial"
                                                       },
@@ -729,8 +605,8 @@
                                                             "type": "sscma_core_get_perf_info",
                                                             "id": "t*u*UXo#~$g$h1Nj+0kx",
                                                             "fields": {
-                                                              "PERF_VAR": {
-                                                                "id": "LMuzXp(VVz~D:OKuacu-"
+                                                              "VAR": {
+                                                                "id": "Gj1b@@OIAB%zO}7:EGig"
                                                               },
                                                               "PROPERTY": "postprocess"
                                                             }
@@ -762,38 +638,17 @@
         }
       },
       {
-        "type": "sscma_core_create",
-        "id": "QM_5Ucwryxc-9D(*,sOe",
-        "x": 10,
-        "y": -130,
-        "icons": {
-          "ailyIcon": "fa-light fa-brain-circuit"
-        },
-        "fields": {
-          "VAR": "ai"
-        },
-        "next": {
-          "block": {
-            "type": "sscma_core_create_video_capture",
-            "id": "d/J@pAl)B,}:BKKylVoC",
-            "fields": {
-              "VAR": "camera"
-            },
-            "next": {
-              "block": {
-                "type": "sscma_core_set_loop_task_stack_size",
-                "id": "zgm6A+.p*4=$jqiGJ}J!",
-                "inputs": {
-                  "SIZE": {
-                    "shadow": {
-                      "type": "math_number",
-                      "id": "^H1w%nl+/kU@EXD1-;/s",
-                      "fields": {
-                        "NUM": 40960
-                      }
-                    }
-                  }
-                }
+        "type": "sscma_core_set_loop_task_stack_size",
+        "id": "rWk6,BC?e!w.YU=|J41-",
+        "x": 30,
+        "y": -90,
+        "inputs": {
+          "SIZE": {
+            "shadow": {
+              "type": "math_number",
+              "id": "9%:Zn`D#fS0kbL:s2h4?",
+              "fields": {
+                "NUM": 40960
               }
             }
           }
@@ -803,29 +658,35 @@
   },
   "variables": [
     {
-      "name": "ai",
-      "id": "$_*QtmIJP9]8|{lPZe$u",
-      "type": "SSCMAMicroCore"
+      "name": "nowSerial",
+      "id": "Z+E*NB7YSc%l}mz,BDyu",
+      "type": "ESP_NOW_Serial"
     },
     {
-      "name": "camera",
-      "id": "zm72IZx0nCExf7[?.HBt",
-      "type": "VideoCapture"
+      "name": "i",
+      "id": "VGodK#o{Q}gIxn`?wS%R"
     },
     {
-      "name": "classes",
-      "id": "x:U479=@PX)v~#Xm?.;I",
-      "type": "SSCMAClasses"
+      "name": "j",
+      "id": ":~oZi~IiuKYjk!/7h(P0"
     },
     {
-      "name": "ai",
-      "id": "?UG7qVX[Pcy{Yp9%:Mbf",
-      "type": "SSCMA"
+      "name": "\"Hello world\"",
+      "id": "Tb-pH3Vhng2iDUUYBR(_"
+    },
+    {
+      "name": "k",
+      "id": "LMuzXp(VVz~D:OKuacu-"
     },
     {
       "name": "perf",
-      "id": "LMuzXp(VVz~D:OKuacu-",
+      "id": "Gj1b@@OIAB%zO}7:EGig",
       "type": "Perf"
+    },
+    {
+      "name": "perf",
+      "id": "elU:`^)Sbd7u!GO(O%s0",
+      "type": "SSCMAMicroCore::Perf"
     }
   ]
 }

@@ -11,7 +11,7 @@
     "@aily-project/lib-core-loop": "0.0.1",
     "@aily-project/lib-core-math": "0.0.1",
     "@aily-project/lib-core-serial": "0.0.1",
-    "@aily-project/lib-core-text": "0.0.1",
+    "@aily-project/lib-core-text": "1.0.0",
     "@aily-project/lib-core-time": "0.0.1",
     "@aily-project/lib-core-tone": "^0.0.2",
     "@aily-project/lib-core-variables": "1.0.1",
