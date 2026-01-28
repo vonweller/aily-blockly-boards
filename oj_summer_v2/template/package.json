@@ -5,7 +5,7 @@
   "board": "summer_v2",
   "dependencies": {
     "@aily-project/board-summer-v2": "3.3.1",
-    "@aily-project/lib-ai-assistant": "^0.0.7",
+    "@aily-project/lib-ai-assistant": "^0.0.8",
     "@aily-project/lib-core-io": "1.0.0",
     "@aily-project/lib-core-logic": "0.0.1",
     "@aily-project/lib-core-loop": "0.0.1",
