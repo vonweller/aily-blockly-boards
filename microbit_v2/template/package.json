@@ -2,19 +2,17 @@
   "name": "project_",
   "version": "1.0.0",
   "description": "",
-  "board": "STM32L0 Series",
+  "board": "micro:bit v2",
   "dependencies": {
-    "@aily-project/board-stm32l0": "2.11.0",
+    "@aily-project/board-microbit-v2": "0.8.0",
     "@aily-project/lib-core-io": "1.0.0",
     "@aily-project/lib-core-logic": "0.0.1",
     "@aily-project/lib-core-loop": "0.0.1",
-    "@aily-project/lib-core-math":"0.0.1",
+    "@aily-project/lib-core-math": "0.0.1",
     "@aily-project/lib-core-text": "1.0.0",
     "@aily-project/lib-core-serial": "0.0.1",
     "@aily-project/lib-core-time": "0.0.1",
-    "@aily-project/lib-core-variables": "1.0.1"
-  },
-  "projectConfig": {
-    "pnum": "GENERIC_L010C6TX"
+    "@aily-project/lib-core-variables": "1.0.1",
+    "@aily-project/lib-core-tone": "0.0.1"
   }
 }
