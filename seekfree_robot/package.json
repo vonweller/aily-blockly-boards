@@ -1,8 +1,8 @@
 {
   "name": "@aily-project/board-seekfree-bot",
-  "nickname": "Seekfree Robot",
+  "nickname": "Seekfree Robot B1",
   "version": "3.3.1",
-  "description": "Seekfree bot dev",
+  "description": "Seekfree B1机器人小车",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
