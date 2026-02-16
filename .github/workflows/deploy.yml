@@ -33,11 +33,21 @@ jobs:
           
           echo "Comparing $BASE_SHA...$HEAD_SHA"
           
+          # 查找含 package.json 的目录
           PACKAGE_DIRS=$(find . -name "package.json" -not -path "*/node_modules/*" -not -path "./package.json" -exec dirname {} \; | sed 's/^\.\///')
+          
+          # 查找含 webp 文件但无 package.json 的一级目录
+          WEBP_DIRS=$(find . -maxdepth 2 -name "*.webp" -not -path "*/node_modules/*" -not -path "*/\.*/*" -exec dirname {} \; | sed 's/^\.\///' | sort -u)
+          
+          # 合并去重
+          ALL_DIRS=$(echo -e "$PACKAGE_DIRS\n$WEBP_DIRS" | sort -u)
           
           CHANGED_PACKAGES=()
           
-          for dir in $PACKAGE_DIRS; do
+          for dir in $ALL_DIRS; do
+            if [ -z "$dir" ] || [ "$dir" = "." ]; then
+              continue
+            fi
             if git diff --quiet --diff-filter=ACMRT $BASE_SHA $HEAD_SHA -- "$dir"; then
               echo "No changes in $dir"
             else
@@ -97,14 +107,25 @@ jobs:
       #     cd ${{ matrix.package }}
       #     npm ci || npm install
       
-      - name: Build package
+      - name: Check package.json exists
+        id: check-pkg
         if: steps.check-update-all.outputs.should_skip != 'true'
+        run: |
+          if [ -f "${{ matrix.package }}/package.json" ]; then
+            echo "has_package=true" >> $GITHUB_OUTPUT
+          else
+            echo "No package.json in ${{ matrix.package }}, skipping npm steps"
+            echo "has_package=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build package
+        if: steps.check-update-all.outputs.should_skip != 'true' && steps.check-pkg.outputs.has_package == 'true'
         run: |
           cd ${{ matrix.package }}
           npm run build --if-present
       
       - name: Publish to Registry 2
-        if: steps.check-update-all.outputs.should_skip != 'true'
+        if: steps.check-update-all.outputs.should_skip != 'true' && steps.check-pkg.outputs.has_package == 'true'
         env:
           REGISTRY_2: ${{ secrets.REGISTRY_URL_2 }}
           TOKEN_2: ${{ secrets.NPM_TOKEN_2 }}
@@ -146,7 +167,7 @@ jobs:
           rm .npmrc
 
       - name: Publish to Default Registry
-        if: steps.check-update-all.outputs.should_skip != 'true'
+        if: steps.check-update-all.outputs.should_skip != 'true' && steps.check-pkg.outputs.has_package == 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
