@@ -1,0 +1,1 @@
+https://wiki.seeedstudio.com/cn/Wio-Terminal-Getting-Started/
