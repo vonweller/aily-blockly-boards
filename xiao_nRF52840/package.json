@@ -1,0 +1,23 @@
+{
+  "name": "@aily-project/board-xiao_nrf52840",
+  "nickname": "XIAO nRF52840",
+  "version": "1.0.0",
+  "description": "XIAO nRF52840，搭载强大的Nordic nRF52840 MCU，集成蓝牙5.0连接功能，超小尺寸21x17.8mm，适用于可穿戴设备和物联网项目。",
+  "main": "index.js",
+  "brand": "SeeedStudio",
+  "url": "https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seeed",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "9.0.0",
+    "@aily-project/tool-nrfjprog": "9.4.0",
+    "@aily-project/tool-adafruit-nrfutil": "1.7.0",
+    "@aily-project/sdk-nrf52": "1.7.0",
+    "@aily-project/tool-CMSIS": "5.7.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
