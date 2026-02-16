@@ -1,0 +1,1 @@
+https://wiki.seeedstudio.com/cn/xiao_mg24_getting_started/
