@@ -1,0 +1,1 @@
+https://github.com/CommunityGD32Cores/ArduinoCore-GD32
