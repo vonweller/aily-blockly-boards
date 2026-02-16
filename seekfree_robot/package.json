@@ -7,9 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Seekfree",
   "license": "ISC",
   "state": "alpha",
+  "brand": "Seekfree",
   "boardDependencies": {
     "@aily-project/compiler-esp-rv32": "14.2.0",
     "@aily-project/tool-esptool_py": "5.1.0",

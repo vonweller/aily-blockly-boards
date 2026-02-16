@@ -1,5 +1,5 @@
 {
-  "id": "component_1770614466133",
+  "id": "component_1771212978754",
   "name": "Arduino UNO R4 Minima",
   "width": 416,
   "height": 560,
@@ -502,7 +502,7 @@
         },
         {
           "name": "RSPCKB",
-          "type": "digital",
+          "type": "spi",
           "visible": true,
           "disabled": false
         }
@@ -532,7 +532,7 @@
         },
         {
           "name": "CIPOB ",
-          "type": "digital",
+          "type": "spi",
           "visible": true,
           "disabled": false
         }
@@ -562,7 +562,7 @@
         },
         {
           "name": "COPIB ",
-          "type": "digital",
+          "type": "spi",
           "visible": true,
           "disabled": false
         }
@@ -592,7 +592,7 @@
         },
         {
           "name": "SSLB0 ",
-          "type": "digital",
+          "type": "spi",
           "visible": true,
           "disabled": false
         }
