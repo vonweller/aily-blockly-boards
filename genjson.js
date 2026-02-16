@@ -162,7 +162,30 @@ async function main() {
         console.log(`成功读取 ${subdir}/package.json`);
       } catch (error) {
         if (error.code === 'ENOENT') {
-          console.log(`${subdir}目录下没有找到package.json`);
+          // 没有package.json，检查是否存在board.webp
+          const boardWebpPath = path.join(currentDir, subdir, 'board.webp');
+          try {
+            await fs.access(boardWebpPath, fs.constants.F_OK);
+            const defaultItem = {
+              name: `@aily-project/board-${subdir}`,
+              nickname: subdir,
+              version: '0.0.1',
+              description: 'Support coming soon',
+              author: '',
+              brand: '',
+              url: 'https://aily.rpo',
+              compatibility: '',
+              img: `${subdir}/board.webp`,
+              pinmap: `${subdir}/pinmap.webp`,
+              state: 'todo',
+              type: '',
+              mode: ['arduino']
+            };
+            libraries.push(defaultItem);
+            console.log(`${subdir}目录下没有package.json，但存在board.webp，已生成默认项`);
+          } catch {
+            console.log(`${subdir}目录下没有找到package.json和board.webp，跳过`);
+          }
         } else {
           console.error(`处理${packageJsonPath}时出错:`, error);
         }

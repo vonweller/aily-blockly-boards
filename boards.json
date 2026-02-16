@@ -374,18 +374,69 @@
     ]
   },
   {
-    "name": "@aily-project/board-grove_beginner_kit",
-    "nickname": "Grove Beginner Kit",
-    "version": "1.0.0",
-    "description": "适用于 Arduino 的 Grove 初学者套件是最适合初学者的 Arduino 初学者套件之一。与大多数套件不同，Arduino的Grove初学者套件是一个一体化套件，没有面包板，没有焊接，甚至不需要布线。我们省去了所有这些烦琐，旨在为您提供最佳体验，您只需要专注于编码和 Arduino 学习。该套件由一块 Arduino 兼容板 （Seeeduino Lotus） 以及 10 个额外的 Grove Arduino 传感器供电，所有这些都集成在一块板中。当然，您也可以将模块取出并使用 Grove 电缆连接模块。您可以使用此 Grove Beginner Kit for Arduino 构建任何您喜欢的 Arduino 项目。",
-    "author": "Seeed",
-    "brand": "SeeedStudio",
-    "url": "https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html",
+    "name": "@aily-project/board-gd32f103",
+    "nickname": "gd32f103",
+    "version": "0.0.1",
+    "description": "Support coming soon",
+    "author": "",
+    "brand": "",
+    "url": "https://aily.rpo",
     "compatibility": "",
-    "img": "grove_beginner_kit/board.webp",
-    "pinmap": "grove_beginner_kit/pinmap.webp",
-    "state": "",
-    "type": "arduino:avr:uno",
+    "img": "gd32f103/board.webp",
+    "pinmap": "gd32f103/pinmap.webp",
+    "state": "todo",
+    "type": "",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-gd32f303",
+    "nickname": "gd32f303",
+    "version": "0.0.1",
+    "description": "Support coming soon",
+    "author": "",
+    "brand": "",
+    "url": "https://aily.rpo",
+    "compatibility": "",
+    "img": "gd32f303/board.webp",
+    "pinmap": "gd32f303/pinmap.webp",
+    "state": "todo",
+    "type": "",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-gd32f307",
+    "nickname": "gd32f307",
+    "version": "0.0.1",
+    "description": "Support coming soon",
+    "author": "",
+    "brand": "",
+    "url": "https://aily.rpo",
+    "compatibility": "",
+    "img": "gd32f307/board.webp",
+    "pinmap": "gd32f307/pinmap.webp",
+    "state": "todo",
+    "type": "",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-gd32f407",
+    "nickname": "gd32f407",
+    "version": "0.0.1",
+    "description": "Support coming soon",
+    "author": "",
+    "brand": "",
+    "url": "https://aily.rpo",
+    "compatibility": "",
+    "img": "gd32f407/board.webp",
+    "pinmap": "gd32f407/pinmap.webp",
+    "state": "todo",
+    "type": "",
     "mode": [
       "arduino"
     ]
@@ -422,6 +473,42 @@
     "type": "esp32:esp32:esp32s3",
     "mode": [
       "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-microbit",
+    "nickname": "micro:bit",
+    "version": "0.8.0",
+    "description": "BBC micro:bit v1",
+    "author": "Vonweller",
+    "brand": "BBC",
+    "url": "",
+    "compatibility": "",
+    "img": "microbit_v1/board.webp",
+    "pinmap": "microbit_v1/pinmap.webp",
+    "state": "",
+    "type": "nRF5:nRF5:BBCmicrobit",
+    "mode": [
+      "arduino",
+      "micropython"
+    ]
+  },
+  {
+    "name": "@aily-project/board-microbit-v2",
+    "nickname": "micro:bit v2",
+    "version": "0.8.0",
+    "description": "BBC micro:bit v2",
+    "author": "Vonweller",
+    "brand": "BBC",
+    "url": "",
+    "compatibility": "",
+    "img": "microbit_v2/board.webp",
+    "pinmap": "microbit_v2/pinmap.webp",
+    "state": "",
+    "type": "nRF5:nRF5:BBCmicrobitV2",
+    "mode": [
+      "arduino",
+      "micropython"
     ]
   },
   {
@@ -615,9 +702,9 @@
   },
   {
     "name": "@aily-project/board-summer-v2",
-    "nickname": "summer_v2",
+    "nickname": "Summer v2",
     "version": "3.3.1",
-    "description": "Summer_V2开发板支持编码电机、TT马达、舵机、超声波传感器、Sentry2避障、红外遥控、蜂鸣器、OLED显示和步进电机控制，适用于多种智能硬件和机器人应用。",
+    "description": "Summer v2开发板支持编码电机、TT马达、舵机、超声波传感器、Sentry2避障、红外遥控、蜂鸣器、OLED显示和步进电机控制，适用于多种智能硬件和机器人应用。",
     "author": "",
     "brand": "OpenJumper",
     "url": "",
@@ -785,12 +872,63 @@
     ]
   },
   {
+    "name": "@aily-project/board-grove_beginner_kit",
+    "nickname": "Grove Beginner Kit",
+    "version": "1.8.6",
+    "description": "适用于 Arduino 的 Grove 初学者套件是最适合初学者的 Arduino 初学者套件之一。与大多数套件不同，Arduino的Grove初学者套件是一个一体化套件，没有面包板，没有焊接，甚至不需要布线。我们省去了所有这些烦琐，旨在为您提供最佳体验，您只需要专注于编码和 Arduino 学习。该套件由一块 Arduino 兼容板 （Seeeduino Lotus） 以及 10 个额外的 Grove Arduino 传感器供电，所有这些都集成在一块板中。当然，您也可以将模块取出并使用 Grove 电缆连接模块。您可以使用此 Grove Beginner Kit for Arduino 构建任何您喜欢的 Arduino 项目。",
+    "author": "Seeed",
+    "brand": "SeeedStudio",
+    "url": "https://www.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-p-4549.html",
+    "compatibility": "",
+    "img": "sd_grove_beginner_kit/board.webp",
+    "pinmap": "sd_grove_beginner_kit/pinmap.webp",
+    "state": "",
+    "type": "arduino:avr:uno",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-seeed_lotus",
+    "nickname": "Seeeduino Lotus",
+    "version": "1.8.6",
+    "description": "Seeeduino Lotus is an ATMEGA328 Microcontroller development board. It is a combination of Seeeduino and Base Shield. Seeeduino Lotus v1.0 uses an Atmel ATMEGA328P-MU and CH340. ATMEGA328P-MU is a high performance, low power AVR 8-Bit Microcontroller. CH340 is a USB bus converter chip that can realize a USB to serial interface. Seeeduino Lotus v1.1 replace CH340 with CP2102N to enable the compatibilty with MAC, there is nothing other change compared to Seeeduino Lotus v1.0. Seeeduino Lotus has 14 digital input/outputs (6 of which can output PWM) and 7 analog input/outputs, a micro USB connection, an ICSP header, 12 Grove connections, a reset button.",
+    "author": "Seeed",
+    "brand": "SeeedStudio",
+    "url": "https://wiki.seeedstudio.com/Seeeduino_Lotus/",
+    "compatibility": "",
+    "img": "sd_lotus/board.webp",
+    "pinmap": "sd_lotus/pinmap.webp",
+    "state": "",
+    "type": "arduino:avr:uno",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-sd_wio_terminal",
+    "nickname": "sd_wio_terminal",
+    "version": "0.0.1",
+    "description": "Support coming soon",
+    "author": "",
+    "brand": "",
+    "url": "https://aily.rpo",
+    "compatibility": "",
+    "img": "sd_wio_terminal/board.webp",
+    "pinmap": "sd_wio_terminal/pinmap.webp",
+    "state": "todo",
+    "type": "",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
     "name": "@aily-project/board-seekfree-bot",
     "nickname": "Seekfree Robot",
     "version": "3.3.1",
     "description": "Seekfree bot dev",
-    "author": "",
-    "brand": "",
+    "author": "Seekfree",
+    "brand": "Seekfree",
     "url": "",
     "compatibility": "",
     "img": "seekfree_robot/board.webp",
@@ -1074,18 +1212,35 @@
     ]
   },
   {
-    "name": "@aily-project/board-unitree_g1",
-    "nickname": "Unitree G1 shield",
-    "version": "3.2.1",
-    "description": "产品测试用，不建议普通用户使用",
-    "author": "奈何col",
-    "brand": "Unitree",
-    "url": "",
+    "name": "@aily-project/board-teensy40",
+    "nickname": "teensy40",
+    "version": "0.0.1",
+    "description": "Support coming soon",
+    "author": "",
+    "brand": "",
+    "url": "https://aily.rpo",
     "compatibility": "",
-    "img": "unitree_g1/board.webp",
-    "pinmap": "unitree_g1/pinmap.webp",
-    "state": "alpha",
-    "type": "esp32:esp32:esp32s3",
+    "img": "teensy40/board.webp",
+    "pinmap": "teensy40/pinmap.webp",
+    "state": "todo",
+    "type": "",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-teensy41",
+    "nickname": "teensy41",
+    "version": "0.0.1",
+    "description": "Support coming soon",
+    "author": "",
+    "brand": "",
+    "url": "https://aily.rpo",
+    "compatibility": "",
+    "img": "teensy41/board.webp",
+    "pinmap": "teensy41/pinmap.webp",
+    "state": "todo",
+    "type": "",
     "mode": [
       "arduino"
     ]
@@ -1176,6 +1331,40 @@
     ]
   },
   {
+    "name": "@aily-project/board-xiao_MG24",
+    "nickname": "xiao_MG24",
+    "version": "0.0.1",
+    "description": "Support coming soon",
+    "author": "",
+    "brand": "",
+    "url": "https://aily.rpo",
+    "compatibility": "",
+    "img": "xiao_MG24/board.webp",
+    "pinmap": "xiao_MG24/pinmap.webp",
+    "state": "todo",
+    "type": "",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-xiao_nRF52840",
+    "nickname": "xiao_nRF52840",
+    "version": "0.0.1",
+    "description": "Support coming soon",
+    "author": "",
+    "brand": "",
+    "url": "https://aily.rpo",
+    "compatibility": "",
+    "img": "xiao_nRF52840/board.webp",
+    "pinmap": "xiao_nRF52840/pinmap.webp",
+    "state": "todo",
+    "type": "",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
     "name": "@aily-project/board-xiao_ra4m1",
     "nickname": "XIAO RA4M1",
     "version": "1.5.1",
@@ -1222,6 +1411,23 @@
     "pinmap": "xiao_rp2350/pinmap.webp",
     "state": "alpha",
     "type": "rp2040:rp2040:seeed_xiao_rp2350",
+    "mode": [
+      "arduino"
+    ]
+  },
+  {
+    "name": "@aily-project/board-xiao_SAMD21",
+    "nickname": "xiao_SAMD21",
+    "version": "0.0.1",
+    "description": "Support coming soon",
+    "author": "",
+    "brand": "",
+    "url": "https://aily.rpo",
+    "compatibility": "",
+    "img": "xiao_SAMD21/board.webp",
+    "pinmap": "xiao_SAMD21/pinmap.webp",
+    "state": "todo",
+    "type": "",
     "mode": [
       "arduino"
     ]
