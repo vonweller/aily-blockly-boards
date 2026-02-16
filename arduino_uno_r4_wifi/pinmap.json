@@ -1,5 +1,5 @@
 {
-  "id": "component_1770613324958",
+  "id": "component_1771212987554",
   "name": "Arduino UNO R4 WiFi",
   "width": 416,
   "height": 560,
@@ -521,7 +521,7 @@
         },
         {
           "name": "RSPCKA",
-          "type": "digital",
+          "type": "spi",
           "visible": true,
           "disabled": false
         }
@@ -551,7 +551,7 @@
         },
         {
           "name": "CIPOA ",
-          "type": "digital",
+          "type": "spi",
           "visible": true,
           "disabled": false
         }
@@ -581,7 +581,7 @@
         },
         {
           "name": "COPIA ",
-          "type": "digital",
+          "type": "spi",
           "visible": true,
           "disabled": false
         }
@@ -611,7 +611,7 @@
         },
         {
           "name": "SSLA0 ",
-          "type": "digital",
+          "type": "spi",
           "visible": true,
           "disabled": false
         }
