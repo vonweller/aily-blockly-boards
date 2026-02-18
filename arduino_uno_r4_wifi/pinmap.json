@@ -951,5 +951,6 @@
     }
   ],
   "visible": true,
-  "disabled": false
+  "disabled": false,
+  "board": "@aily-project/board-arduino_uno_r4_wifi"
 }
