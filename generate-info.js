@@ -48,6 +48,7 @@ const ARCHITECTURE_MAP = {
     'STMicroelectronics:stm32:GenL0': 'arm-cortex-m0',
     'STMicroelectronics:stm32:GenL4': 'arm-cortex-m4',
     'STMicroelectronics:stm32:GenC0': 'arm-cortex-m0',
+    'STMicroelectronics:stm32:GenWB': 'arm-cortex-m4',
     
     // RP2040
     'rp2040:rp2040': 'arm-cortex-m0+',
@@ -240,8 +241,9 @@ function getArchitecture(core, boardType) {
  */
 function isSeriesBoard(dirName, pkg) {
     const name = dirName.toUpperCase();
-    // STM32 系列通常目录名是 STM32Fx 格式
+    // STM32 系列通常目录名是 STM32Fx 格式 或者STM32WB
     if (/^STM32[FGHLC]\d$/.test(name)) return true;
+    if (/^STM32WB$/.test(name)) return true;
     return false;
 }
 
@@ -370,7 +372,7 @@ function generateSeriesInfo(dirName, pkg, boardJson) {
     
     const info = {
         $schema: 'board-info-schema',
-        name: dirName.toLowerCase(),
+        name: pkg.name?.replace('@aily-project/', '') || dirName, // dirName.toLowerCase(),
         displayName: pkg.nickname || `${dirName} Series`,
         brand: pkg.brand || '',
         type: 'series',
