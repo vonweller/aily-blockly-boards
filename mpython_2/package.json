@@ -4,7 +4,7 @@
   "version": "3.3.1",
   "description": "掌控板2.0 - 基于ESP32的教育开发板，集成OLED显示屏、蜂鸣器、光线传感器、加速度计等功能",
   "main": "index.js",
-  "brand": "掌控板2.0",
+  "brand": "mpython",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
