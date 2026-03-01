@@ -4,7 +4,6 @@
   "version": "0.8.0",
   "description": "BBC micro:bit v2",
   "main": "index.js",
-  "brand": "BBC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
