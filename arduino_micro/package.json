@@ -1,0 +1,21 @@
+{
+  "name": "@aily-project/board-arduino_micro",
+  "nickname": "Arduino Micro",
+  "version": "1.8.6",
+  "description": "Arduino Micro开发板",
+  "main": "index.js",
+  "url": "https://docs.arduino.cc/hardware/micro/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "brand": "Arduino",
+  "state": "alpha",
+  "boardDependencies": {
+    "@aily-project/compiler-avr-gcc": "7.3.0",
+    "@aily-project/tool-avrdude": "6.3.0",
+    "@aily-project/sdk-avr": "1.8.6",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
