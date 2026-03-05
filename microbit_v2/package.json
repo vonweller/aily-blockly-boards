@@ -9,11 +9,12 @@
   },
   "author": "Vonweller",
   "license": "ISC",
-  "brand":"microbit",
+  "brand": "microbit",
   "boardDependencies": {
     "@aily-project/compiler-arm-none-eabi-gcc": "5.2.0",
     "@aily-project/sdk-nrf5": "0.8.0",
     "@aily-project/tool-openocd": "0.10.0",
     "@aily-project/tool-ctags": "5.8.0"
-  }
+  },
+  "pinmap": false
 }

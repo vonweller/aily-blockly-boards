@@ -1,0 +1,579 @@
+{
+  "id": "component_1772703505381",
+  "name": "WiFiduino32",
+  "width": 300,
+  "height": 340,
+  "images": [
+    {
+      "id": "img_1772703505382",
+      "name": "Image_1772703505382",
+      "width": 300,
+      "height": 340,
+      "x": 0,
+      "y": 0,
+      "aspectRatio": 0.882353,
+      "visible": true,
+      "disabled": false,
+      "locked": true
+    }
+  ],
+  "pins": [
+    {
+      "id": "pin_1",
+      "x": 15,
+      "y": 30,
+      "labelX": -15,
+      "labelY": 23,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "3V3",
+          "type": "power",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_2",
+      "x": 15,
+      "y": 50,
+      "labelX": -15,
+      "labelY": 43,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "5V",
+          "type": "power",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_3",
+      "x": 15,
+      "y": 70,
+      "labelX": -15,
+      "labelY": 63,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "GND",
+          "type": "gnd",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_4",
+      "x": 15,
+      "y": 90,
+      "labelX": -15,
+      "labelY": 83,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "GND",
+          "type": "gnd",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_5",
+      "x": 15,
+      "y": 110,
+      "labelX": -15,
+      "labelY": 103,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "A0",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "A0",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_6",
+      "x": 15,
+      "y": 130,
+      "labelX": -15,
+      "labelY": 123,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "A1",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "A1",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_7",
+      "x": 15,
+      "y": 150,
+      "labelX": -15,
+      "labelY": 143,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "A2",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "A2",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_8",
+      "x": 15,
+      "y": 170,
+      "labelX": -15,
+      "labelY": 163,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "A3",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "A3",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_9",
+      "x": 15,
+      "y": 190,
+      "labelX": -15,
+      "labelY": 183,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "A4",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "A4",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "SDA",
+          "type": "i2c",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_10",
+      "x": 15,
+      "y": 210,
+      "labelX": -15,
+      "labelY": 203,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "A5",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "A5",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "SCL",
+          "type": "i2c",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_11",
+      "x": 15,
+      "y": 230,
+      "labelX": -15,
+      "labelY": 223,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D0",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_12",
+      "x": 15,
+      "y": 250,
+      "labelX": -15,
+      "labelY": 243,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D1",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_13",
+      "x": 15,
+      "y": 270,
+      "labelX": -15,
+      "labelY": 263,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D10",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_14",
+      "x": 15,
+      "y": 290,
+      "labelX": -15,
+      "labelY": 283,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D11",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_15",
+      "x": 285,
+      "y": 30,
+      "labelX": 315,
+      "labelY": 23,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D12",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_16",
+      "x": 285,
+      "y": 50,
+      "labelX": 315,
+      "labelY": 43,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D13",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_17",
+      "x": 285,
+      "y": 70,
+      "labelX": 315,
+      "labelY": 63,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D2",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_18",
+      "x": 285,
+      "y": 90,
+      "labelX": 315,
+      "labelY": 83,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D3",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_19",
+      "x": 285,
+      "y": 110,
+      "labelX": 315,
+      "labelY": 103,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D4",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_20",
+      "x": 285,
+      "y": 130,
+      "labelX": 315,
+      "labelY": 123,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D5",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_21",
+      "x": 285,
+      "y": 150,
+      "labelX": 315,
+      "labelY": 143,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D6",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_22",
+      "x": 285,
+      "y": 170,
+      "labelX": 315,
+      "labelY": 163,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D7",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_23",
+      "x": 285,
+      "y": 190,
+      "labelX": 315,
+      "labelY": 183,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D8",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_24",
+      "x": 285,
+      "y": 210,
+      "labelX": 315,
+      "labelY": 203,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "D9",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    }
+  ],
+  "texts": [],
+  "rects": [],
+  "ellipses": [],
+  "lines": [],
+  "functionTypes": [
+    {
+      "value": "power",
+      "label": "VCC",
+      "color": "#EF4444",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "value": "gnd",
+      "label": "GND",
+      "color": "#000000",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "value": "digital",
+      "label": "Digital",
+      "color": "#3B82F6",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "value": "analog",
+      "label": "Analog",
+      "color": "#10B981",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "value": "uart",
+      "label": "UART",
+      "color": "#F59E0B",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "value": "i2c",
+      "label": "I2C",
+      "color": "#8B5CF6",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "value": "spi",
+      "label": "SPI",
+      "color": "#EC4899",
+      "textColor": "#FFFFFF"
+    },
+    {
+      "value": "pwm",
+      "label": "PWM",
+      "color": "#FCD34D",
+      "textColor": "#000000"
+    },
+    {
+      "value": "other",
+      "label": "Other",
+      "color": "#9CA3AF",
+      "textColor": "#FFFFFF"
+    }
+  ],
+  "visible": true,
+  "disabled": false,
+  "board": "@aily-project/board-wifiduino32"
+}

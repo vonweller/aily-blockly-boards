@@ -17,5 +17,6 @@
     "@aily-project/sdk-renesas_uno": "1.5.1",
     "@aily-project/tool-ctags": "5.8.0",
     "@aily-project/tool-dfu-util": "0.11.0"
-  }
+  },
+  "pinmap": false
 }
