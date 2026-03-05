@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^Get-ChildItem -Path \"d:\\\\Git\\\\aily-project\\\\aily-blockly-boards\" -Directory \\| Where-Object \\{ \\(Test-Path \"\\$\\(\\$_\\.FullName\\)\\\\board\\.json\"\\) -and \\(-not \\(Test-Path \"\\$\\(\\$_\\.FullName\\)\\\\pinmap\\.json\"\\)\\) -and \\(-not \\(Test-Path \"\\$\\(\\$_\\.FullName\\)\\\\pinmap\\.webp\"\\)\\) \\} \\| Select-Object -ExpandProperty Name \\| Sort-Object$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
