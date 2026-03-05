@@ -338,8 +338,8 @@
           "disabled": false
         },
         {
-          "name": "SDA",
-          "type": "i2c",
+          "name": "SS",
+          "type": "spi",
           "visible": true,
           "disabled": false
         },
@@ -369,7 +369,7 @@
           "disabled": false
         },
         {
-          "name": "SCL",
+          "name": "SDA",
           "type": "i2c",
           "visible": true,
           "disabled": false
@@ -396,6 +396,12 @@
         {
           "name": "GPIO9",
           "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "SCL",
+          "type": "i2c",
           "visible": true,
           "disabled": false
         },
