@@ -1,8 +1,8 @@
 {
   "name": "@aily-project/board-raspberrypi_pico2_w",
-  "nickname": "Raspberry Pi Pico2 W",
+  "nickname": "Raspberry Pi Pico 2 W",
   "version": "5.1.0",
-  "description": "Raspberry Pi Pico2 W",
+  "description": "Raspberry Pi Pico 2 W is a wireless-enabled microcontroller board based on the RP2350 chip, featuring dual Arm Cortex-M33 / RISC-V Hazard3 cores running at up to 150 MHz, 520 KB of SRAM, and 4 MB of onboard flash. It includes 2.4 GHz Wi-Fi 4 (802.11n) and Bluetooth 5.2 (BLE) connectivity via the Infineon CYW43439 module. With 26 multifunction GPIO pins, a rich set of peripherals (SPI, I2C, UART, ADC, PWM, PIO), and a compact form factor, the Pico 2 W is ideal for IoT projects, wireless sensing, and connected embedded applications.",
   "main": "index.js",
   "url": "https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html",
   "scripts": {
