@@ -2,7 +2,7 @@
   "name": "@aily-project/board-raspberrypi_pico",
   "nickname": "Raspberry Pi Pico",
   "version": "5.1.0",
-  "description": "Raspberry Pi Pico",
+  "description": "Raspberry Pi Pico is a compact, low-cost microcontroller board built around the RP2040 chip, featuring a dual-core Arm Cortex-M0+ processor running at up to 133 MHz, 264 KB of SRAM, and 2 MB of onboard flash storage. It offers 26 multi-function GPIO pins (including 3 analog inputs), SPI, I2C, UART, and a unique Programmable I/O (PIO) subsystem for custom peripheral support. Designed for embedded projects, physical computing, and rapid prototyping, Pico is programmable in C/C++ and MicroPython, making it an ideal choice for hobbyists, educators, and engineers alike.",
   "main": "index.js",
   "url": "https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico-1-family",
   "scripts": {
@@ -24,6 +24,5 @@
     "@aily-project/tool-pqt-pioasm": "4.1.0",
     "@aily-project/tool-pqt-python3": "1.0.1",
     "@aily-project/tool-ctags": "5.8.0"
-  },
-  "pinmap": false
+  }
 }
