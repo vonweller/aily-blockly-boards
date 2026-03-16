@@ -24,6 +24,5 @@
     "@aily-project/tool-pqt-pioasm": "4.1.0",
     "@aily-project/tool-pqt-python3": "1.0.1",
     "@aily-project/tool-ctags": "5.8.0"
-  },
-  "pinmap": false
+  }
 }
