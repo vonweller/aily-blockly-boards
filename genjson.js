@@ -53,7 +53,11 @@ async function filterPackageJson(packageJson, keysToExtract, subdir) {
     return boardJsonCache;
   };
 
-  for (const key of keysToExtract) {
+  // 动态提取所有 description_* 的多语言键
+  const descriptionKeys = Object.keys(packageJson).filter(k => k.startsWith('description_'));
+  const allKeys = [...keysToExtract, ...descriptionKeys.filter(k => !keysToExtract.includes(k))];
+
+  for (const key of allKeys) {
     if (key === 'mode') {
       let modeValue = ['arduino'];
       const boardJson = await loadBoardJson();
