@@ -1,29 +1,40 @@
 {
-    "name": "@aily-project/board-stm32l0",
-    "nickname": "STM32L0 Series",
-    "version": "2.11.0",
-    "description": "STM32L0 Series development board featuring an ultra-low-power Arm Cortex-M0+ core at up to 32 MHz, 16-192 KB Flash, 2-20 KB RAM, with rich peripheral interfaces suitable for battery-powered and low-power embedded applications.",
-    "main": "index.js",
-    "brand": "STMicroelectronics",
-    "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32l0-series.html",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "STM32",
-        "Cortex-M3",
-        "ARM"
-    ],
-    "author": "STMicroelectronics",
-    "state": "alpha",
-    "license": "ISC",
-    "boardDependencies": {
-        "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
-        "@aily-project/tool-STM32Tools": "2.3.1",
-        "@aily-project/sdk-stm32": "2.11.0",
-        "@aily-project/tool-STM32_SVD": "1.18.1",
-        "@aily-project/tool-stm32flash": "0.7.0",
-        "@aily-project/tool-CMSIS": "5.9.0",
-        "@aily-project/tool-ctags": "5.8.0"
-    }
+  "name": "@aily-project/board-stm32l0",
+  "nickname": "STM32L0 Series",
+  "version": "2.11.0",
+  "description": "STM32L0 Series development board featuring an ultra-low-power Arm Cortex-M0+ core at up to 32 MHz, 16-192 KB Flash, 2-20 KB RAM, with rich peripheral interfaces suitable for battery-powered and low-power embedded applications.",
+  "description_en": "STM32L0 Series development board featuring an ultra-low-power Arm Cortex-M0+ core at up to 32 MHz, 16-192 KB Flash, 2-20 KB RAM, with rich peripheral interfaces suitable for battery-powered and low-power embedded applications.",
+  "description_zh_cn": "STM32L0 系列开发板，搭载超低功耗 Arm Cortex-M0+ 内核，主频高达 32 MHz，16-192 KB Flash，2-20 KB RAM，丰富的外设接口，适用于电池供电和低功耗嵌入式应用。",
+  "description_zh_hk": "STM32L0 系列開發板，搭載超低功耗 Arm Cortex-M0+ 核心，主頻高達 32 MHz，16-192 KB Flash，2-20 KB RAM，豐富的外設介面，適用於電池供電和低功耗嵌入式應用。",
+  "description_ja": "STM32L0シリーズ開発ボード。最大32MHzの超低消費電力Arm Cortex-M0+コア、16-192KB Flash、2-20KB RAM、豊富なペリフェラルインターフェースを備え、バッテリー駆動および低消費電力組込みアプリケーションに適しています。",
+  "description_ko": "STM32L0 시리즈 개발 보드. 최대 32MHz의 초저전력 Arm Cortex-M0+ 코어, 16-192KB Flash, 2-20KB RAM, 풍부한 주변장치 인터페이스를 갖추어 배터리 구동 및 저전력 임베디드 애플리케이션에 적합합니다.",
+  "description_de": "STM32L0-Serie Entwicklungsboard mit einem ultra-stromsparenden Arm Cortex-M0+ Kern bei bis zu 32 MHz, 16-192 KB Flash, 2-20 KB RAM, umfangreichen Peripherieschnittstellen, geeignet für batteriebetriebene und stromsparende eingebettete Anwendungen.",
+  "description_fr": "Carte de développement série STM32L0 dotée d'un cœur Arm Cortex-M0+ ultra basse consommation cadencé jusqu'à 32 MHz, 16-192 Ko de Flash, 2-20 Ko de RAM, avec des interfaces périphériques riches adaptées aux applications embarquées alimentées par batterie et basse consommation.",
+  "description_es": "Placa de desarrollo de la serie STM32L0 con un núcleo Arm Cortex-M0+ de ultra bajo consumo de hasta 32 MHz, 16-192 KB de Flash, 2-20 KB de RAM, con interfaces periféricas ricas adecuadas para aplicaciones embebidas alimentadas por batería y de bajo consumo.",
+  "description_pt": "Placa de desenvolvimento da série STM32L0 com um núcleo Arm Cortex-M0+ de ultra baixo consumo de até 32 MHz, 16-192 KB de Flash, 2-20 KB de RAM, com interfaces periféricas ricas adequadas para aplicações embarcadas alimentadas por bateria e de baixo consumo.",
+  "description_ru": "Плата разработки серии STM32L0 с ультранизким энергопотреблением, ядром Arm Cortex-M0+ до 32 МГц, 16-192 КБ Flash, 2-20 КБ ОЗУ, с богатыми периферийными интерфейсами, подходящая для встроенных приложений с батарейным питанием и низким энергопотреблением.",
+  "description_ar": "لوحة تطوير سلسلة STM32L0 تتميز بنواة Arm Cortex-M0+ منخفضة الطاقة للغاية بتردد يصل إلى 32 ميغاهرتز، و16-192 كيلوبايت فلاش، و2-20 كيلوبايت RAM، مع واجهات طرفية غنية مناسبة للتطبيقات المدمجة التي تعمل بالبطارية ومنخفضة الطاقة.",
+  "main": "index.js",
+  "brand": "STMicroelectronics",
+  "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32l0-series.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "STM32",
+    "Cortex-M3",
+    "ARM"
+  ],
+  "author": "STMicroelectronics",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
+    "@aily-project/tool-STM32Tools": "2.3.1",
+    "@aily-project/sdk-stm32": "2.11.0",
+    "@aily-project/tool-STM32_SVD": "1.18.1",
+    "@aily-project/tool-stm32flash": "0.7.0",
+    "@aily-project/tool-CMSIS": "5.9.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
 }

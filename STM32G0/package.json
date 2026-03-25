@@ -1,29 +1,40 @@
 {
-    "name": "@aily-project/board-stm32g0",
-    "nickname": "STM32G0 Series",
-    "version": "2.11.0",
-    "description": "STM32G0 Series development board featuring an Arm Cortex-M0+ core at up to 64 MHz, 16-512 KB Flash, 8-144 KB RAM, with rich peripheral interfaces suitable for cost-effective embedded applications.",
-    "main": "index.js",
-    "brand": "STMicroelectronics",
-    "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32g0-series.html",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "STM32",
-        "Cortex-M3",
-        "ARM"
-    ],
-    "author": "STMicroelectronics",
-    "state": "alpha",
-    "license": "ISC",
-    "boardDependencies": {
-        "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
-        "@aily-project/tool-STM32Tools": "2.3.1",
-        "@aily-project/sdk-stm32": "2.11.0",
-        "@aily-project/tool-STM32_SVD": "1.18.1",
-        "@aily-project/tool-stm32flash": "0.7.0",
-        "@aily-project/tool-CMSIS": "5.9.0",
-        "@aily-project/tool-ctags": "5.8.0"
-    }
+  "name": "@aily-project/board-stm32g0",
+  "nickname": "STM32G0 Series",
+  "version": "2.11.0",
+  "description": "STM32G0 Series development board featuring an Arm Cortex-M0+ core at up to 64 MHz, 16-512 KB Flash, 8-144 KB RAM, with rich peripheral interfaces suitable for cost-effective embedded applications.",
+  "description_en": "STM32G0 Series development board featuring an Arm Cortex-M0+ core at up to 64 MHz, 16-512 KB Flash, 8-144 KB RAM, with rich peripheral interfaces suitable for cost-effective embedded applications.",
+  "description_zh_cn": "STM32G0 系列开发板，搭载 Arm Cortex-M0+ 内核，主频高达 64 MHz，16-512 KB Flash，8-144 KB RAM，丰富的外设接口，适用于高性价比嵌入式应用。",
+  "description_zh_hk": "STM32G0 系列開發板，搭載 Arm Cortex-M0+ 核心，主頻高達 64 MHz，16-512 KB Flash，8-144 KB RAM，豐富的外設介面，適用於高性價比嵌入式應用。",
+  "description_ja": "STM32G0シリーズ開発ボード。最大64MHzのArm Cortex-M0+コア、16-512KB Flash、8-144KB RAM、豊富なペリフェラルインターフェースを備え、コスト効率の高い組込みアプリケーションに適しています。",
+  "description_ko": "STM32G0 시리즈 개발 보드. 최대 64MHz의 Arm Cortex-M0+ 코어, 16-512KB Flash, 8-144KB RAM, 풍부한 주변장치 인터페이스를 갖추어 비용 효율적인 임베디드 애플리케이션에 적합합니다.",
+  "description_de": "STM32G0-Serie Entwicklungsboard mit einem Arm Cortex-M0+ Kern bei bis zu 64 MHz, 16-512 KB Flash, 8-144 KB RAM, umfangreichen Peripherieschnittstellen, geeignet für kosteneffiziente eingebettete Anwendungen.",
+  "description_fr": "Carte de développement série STM32G0 dotée d'un cœur Arm Cortex-M0+ cadencé jusqu'à 64 MHz, 16-512 Ko de Flash, 8-144 Ko de RAM, avec des interfaces périphériques riches adaptées aux applications embarquées économiques.",
+  "description_es": "Placa de desarrollo de la serie STM32G0 con un núcleo Arm Cortex-M0+ de hasta 64 MHz, 16-512 KB de Flash, 8-144 KB de RAM, con interfaces periféricas ricas adecuadas para aplicaciones embebidas económicas.",
+  "description_pt": "Placa de desenvolvimento da série STM32G0 com um núcleo Arm Cortex-M0+ de até 64 MHz, 16-512 KB de Flash, 8-144 KB de RAM, com interfaces periféricas ricas adequadas para aplicações embarcadas econômicas.",
+  "description_ru": "Плата разработки серии STM32G0 с ядром Arm Cortex-M0+ до 64 МГц, 16-512 КБ Flash, 8-144 КБ ОЗУ, с богатыми периферийными интерфейсами, подходящая для экономичных встроенных приложений.",
+  "description_ar": "لوحة تطوير سلسلة STM32G0 تتميز بنواة Arm Cortex-M0+ بتردد يصل إلى 64 ميغاهرتز، و16-512 كيلوبايت فلاش، و8-144 كيلوبايت RAM، مع واجهات طرفية غنية مناسبة للتطبيقات المدمجة الاقتصادية.",
+  "main": "index.js",
+  "brand": "STMicroelectronics",
+  "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32g0-series.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "STM32",
+    "Cortex-M3",
+    "ARM"
+  ],
+  "author": "STMicroelectronics",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
+    "@aily-project/tool-STM32Tools": "2.3.1",
+    "@aily-project/sdk-stm32": "2.11.0",
+    "@aily-project/tool-STM32_SVD": "1.18.1",
+    "@aily-project/tool-stm32flash": "0.7.0",
+    "@aily-project/tool-CMSIS": "5.9.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
 }

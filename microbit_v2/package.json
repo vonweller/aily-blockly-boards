@@ -3,6 +3,17 @@
   "nickname": "micro:bit v2",
   "version": "0.8.0",
   "description": "The BBC micro:bit v2 is an enhanced pocket-sized educational computer featuring a 64 MHz ARM Cortex-M4 processor (Nordic nRF52833) with FPU, 25 LED matrix display, 2 programmable buttons, built-in speaker and microphone, touch-sensitive logo, accelerometer, compass, and Bluetooth 5.0.",
+  "description_en": "The BBC micro:bit v2 is an enhanced pocket-sized educational computer featuring a 64 MHz ARM Cortex-M4 processor (Nordic nRF52833) with FPU, 25 LED matrix display, 2 programmable buttons, built-in speaker and microphone, touch-sensitive logo, accelerometer, compass, and Bluetooth 5.0.",
+  "description_zh_cn": "BBC micro:bit v2 是一款增强版口袋大小的教育计算机，搭载 64 MHz ARM Cortex-M4 处理器（Nordic nRF52833），带 FPU、25 个 LED 矩阵显示屏、2 个可编程按钮、内置扬声器和麦克风、触摸感应标志、加速度计、指南针和蓝牙 5.0。",
+  "description_zh_hk": "BBC micro:bit v2 是一款增強版口袋大小的教育電腦，搭載 64 MHz ARM Cortex-M4 處理器（Nordic nRF52833），帶 FPU、25 個 LED 矩陣顯示屏、2 個可程式設計按鈕、內建揚聲器和麥克風、觸控感應標誌、加速度計、指南針和藍牙 5.0。",
+  "description_ja": "BBC micro:bit v2は、強化されたポケットサイズの教育用コンピュータで、64MHz ARM Cortex-M4プロセッサ（Nordic nRF52833）FPU付き、25個のLEDマトリクスディスプレイ、2つのプログラマブルボタン、内蔵スピーカーとマイク、タッチセンシティブロゴ、加速度計、コンパス、Bluetooth 5.0を備えています。",
+  "description_ko": "BBC micro:bit v2는 향상된 포켓 크기의 교육용 컴퓨터로, 64MHz ARM Cortex-M4 프로세서(Nordic nRF52833) FPU 포함, 25개 LED 매트릭스 디스플레이, 2개의 프로그래밍 가능한 버튼, 내장 스피커 및 마이크, 터치 감응 로고, 가속도계, 나침반 및 Bluetooth 5.0을 갖추고 있습니다.",
+  "description_de": "Der BBC micro:bit v2 ist ein verbesserter taschenformatiger Bildungscomputer mit einem 64-MHz ARM Cortex-M4 Prozessor (Nordic nRF52833) mit FPU, 25 LED-Matrix-Display, 2 programmierbaren Tasten, integriertem Lautsprecher und Mikrofon, berührungsempfindlichem Logo, Beschleunigungssensor, Kompass und Bluetooth 5.0.",
+  "description_fr": "Le BBC micro:bit v2 est un ordinateur éducatif de poche amélioré doté d'un processeur ARM Cortex-M4 à 64 MHz (Nordic nRF52833) avec FPU, d'un affichage matriciel de 25 LED, de 2 boutons programmables, d'un haut-parleur et microphone intégrés, d'un logo tactile, d'un accéléromètre, d'une boussole et du Bluetooth 5.0.",
+  "description_es": "El BBC micro:bit v2 es un ordenador educativo de bolsillo mejorado con un procesador ARM Cortex-M4 a 64 MHz (Nordic nRF52833) con FPU, pantalla de matriz de 25 LED, 2 botones programables, altavoz y micrófono integrados, logo táctil, acelerómetro, brújula y Bluetooth 5.0.",
+  "description_pt": "O BBC micro:bit v2 é um computador educacional de bolso aprimorado com um processador ARM Cortex-M4 a 64 MHz (Nordic nRF52833) com FPU, display de matriz de 25 LEDs, 2 botões programáveis, alto-falante e microfone integrados, logo sensível ao toque, acelerômetro, bússola e Bluetooth 5.0.",
+  "description_ru": "BBC micro:bit v2 — улучшенный карманный образовательный компьютер с процессором ARM Cortex-M4 на 64 МГц (Nordic nRF52833) с FPU, светодиодной матрицей 25 LED, 2 программируемыми кнопками, встроенным динамиком и микрофоном, сенсорным логотипом, акселерометром, компасом и Bluetooth 5.0.",
+  "description_ar": "BBC micro:bit v2 هو حاسوب تعليمي محسن بحجم الجيب يتميز بمعالج ARM Cortex-M4 بتردد 64 ميغاهرتز (Nordic nRF52833) مع FPU، وشاشة مصفوفة 25 LED، وزرين قابلين للبرمجة، ومكبر صوت وميكروفون مدمجين، وشعار حساس للمس، ومقياس تسارع، وبوصلة، وBluetooth 5.0.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

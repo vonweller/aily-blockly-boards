@@ -3,6 +3,17 @@
   "nickname": "Summer v2",
   "version": "3.3.1",
   "description": "The Summer v2 is a development board supporting encoder motors, TT motors, servos, ultrasonic sensors, Sentry2 obstacle avoidance, IR remote control, buzzer, OLED display, and stepper motor control, suitable for smart hardware and robotics applications.",
+  "description_en": "The Summer v2 is a development board supporting encoder motors, TT motors, servos, ultrasonic sensors, Sentry2 obstacle avoidance, IR remote control, buzzer, OLED display, and stepper motor control, suitable for smart hardware and robotics applications.",
+  "description_zh_cn": "Summer v2 是一款支持编码电机、TT 马达、舵机、超声波传感器、Sentry2 避障、红外遥控、蜂鸣器、OLED 显示和步进电机控制的开发板，适用于智能硬件和机器人应用。",
+  "description_zh_hk": "Summer v2 是一款支援編碼馬達、TT 馬達、伺服馬達、超音波感測器、Sentry2 避障、紅外遙控、蜂鳴器、OLED 顯示和步進馬達控制的開發板，適用於智能硬體和機器人應用。",
+  "description_ja": "Summer v2は、エンコーダーモーター、TTモーター、サーボ、超音波センサー、Sentry2障害物回避、赤外線リモコン、ブザー、OLEDディスプレイ、ステッピングモーター制御に対応した開発ボードで、スマートハードウェアおよびロボティクスアプリケーションに適しています。",
+  "description_ko": "Summer v2는 인코더 모터, TT 모터, 서보, 초음파 센서, Sentry2 장애물 회피, 적외선 리모컨, 부저, OLED 디스플레이 및 스텝 모터 제어를 지원하는 개발 보드로, 스마트 하드웨어 및 로봇공학 애플리케이션에 적합합니다.",
+  "description_de": "Das Summer v2 ist ein Entwicklungsboard, das Encoder-Motoren, TT-Motoren, Servos, Ultraschallsensoren, Sentry2-Hindernisvermeidung, IR-Fernsteuerung, Buzzer, OLED-Display und Schrittmotorsteuerung unterstützt, geeignet für Smart-Hardware- und Robotik-Anwendungen.",
+  "description_fr": "Le Summer v2 est une carte de développement prenant en charge les moteurs à encodeur, les moteurs TT, les servomoteurs, les capteurs ultrasoniques, l'évitement d'obstacles Sentry2, la télécommande infrarouge, le buzzer, l'affichage OLED et le contrôle de moteur pas-à-pas, adaptée aux applications de matériel intelligent et de robotique.",
+  "description_es": "El Summer v2 es una placa de desarrollo compatible con motores con codificador, motores TT, servos, sensores ultrasónicos, evasión de obstáculos Sentry2, control remoto IR, buzzer, pantalla OLED y control de motor paso a paso, adecuada para aplicaciones de hardware inteligente y robótica.",
+  "description_pt": "O Summer v2 é uma placa de desenvolvimento com suporte a motores com encoder, motores TT, servos, sensores ultrassônicos, desvio de obstáculos Sentry2, controle remoto IR, buzzer, display OLED e controle de motor de passo, adequada para aplicações de hardware inteligente e robótica.",
+  "description_ru": "Summer v2 — плата разработки с поддержкой энкодерных двигателей, TT-двигателей, сервоприводов, ультразвуковых датчиков, обхода препятствий Sentry2, ИК-пульта управления, зуммера, OLED-дисплея и управления шаговым двигателем, подходящая для приложений умного оборудования и робототехники.",
+  "description_ar": "Summer v2 هي لوحة تطوير تدعم محركات الترميز، ومحركات TT، والسيرفو، والمستشعرات فوق الصوتية، وتجنب العقبات Sentry2، وجهاز التحكم عن بعد بالأشعة تحت الحمراء، والجرس، وشاشة OLED، والتحكم في المحرك الخطوي، مناسبة لتطبيقات الأجهزة الذكية والروبوتات.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
