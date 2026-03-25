@@ -2,7 +2,7 @@
     "name": "@aily-project/board-stm32f7",
     "nickname": "STM32F7 Series",
     "version": "2.11.0",
-    "description": "STM32F7系列开发板，主频216MHz，64KB-2MB Flash，256-512KB RAM，丰富的外设接口，适合各种嵌入式应用。",
+    "description": "STM32F7 Series development board featuring an Arm Cortex-M7 core at up to 216 MHz, 64 KB - 2 MB Flash, 256-512 KB RAM, with rich peripheral interfaces suitable for advanced embedded applications.",
     "main": "index.js",
     "brand": "STMicroelectronics",
     "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32f7-series.html",

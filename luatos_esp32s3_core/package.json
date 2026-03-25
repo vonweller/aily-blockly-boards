@@ -2,7 +2,7 @@
   "name": "@aily-project/board-luatos-esp32s3-core",
   "nickname": "ESP32S3 Core",
   "version": "3.2.1",
-  "description": "LuatOS ESP32S3 Core开发板配置",
+  "description": "The LuatOS ESP32-S3 Core is a development board by OpenLuat based on the ESP32-S3 dual-core Xtensa LX7 chip, featuring Wi-Fi and BLE 5.0 connectivity, dual SPI, dual I2C interfaces, and enhanced AI computing capabilities.",
   "main": "index.js",
   "disabled": true,
   "scripts": {

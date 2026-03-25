@@ -2,7 +2,7 @@
     "name": "@aily-project/board-xiao_ra4m1",
     "nickname": "XIAO RA4M1",
     "version": "1.5.3",
-    "description": "Seeed Studio XIAO RA4M1采用瑞萨RA4M1微控制器(32位ARM Cortex-M4，最高48MHz)，提供256KB Flash、32KB SRAM、8KB EEPROM。具有19个GPIO引脚(14个模拟，19个数字)、内置RGB LED、低功耗设计(深度睡眠最低45μA)、硬件加密和电池管理功能。",
+    "description": "The Seeed Studio XIAO RA4M1 features the Renesas RA4M1 microcontroller (32-bit ARM Cortex-M4, up to 48 MHz) with 256 KB Flash, 32 KB SRAM, 8 KB EEPROM, 19 GPIO pins, built-in RGB LED, ultra-low-power design (45 uA deep sleep), hardware encryption, and battery management.",
     "main": "index.js",
     "brand": "SeeedStudio",
     "url": "https://www.seeedstudio.com/Seeed-XIAO-RA4M1-p-5943.html",

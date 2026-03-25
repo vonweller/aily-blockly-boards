@@ -2,7 +2,7 @@
   "name": "@aily-project/board-arduino_nano_r4",
   "nickname": "Arduino Nano R4",
   "version": "1.5.3",
-  "description": "Arduino Nano R4 将32位Arm® Cortex-M4® 处理器的强大功能带入深受喜爱的Nano系列板外形尺寸。它基于瑞萨电子RA4M1微控制器，具有256kB闪存、32kB SRAM和8kB EEPROM，均以48MHz运行，内置实时时钟（RTC）、14位ADC和12位DAC。",
+  "description": "The Arduino Nano R4 brings the power of a 32-bit Arm Cortex-M4 processor to the beloved Nano form factor. Based on the Renesas RA4M1 microcontroller, it features 256 KB Flash, 32 KB SRAM, and 8 KB EEPROM running at 48 MHz, with a built-in real-time clock (RTC), 14-bit ADC, and 12-bit DAC.",
   "main": "index.js",
   "url": "https://arduino.me/s/board?aid=698",
   "brand": "Arduino",

@@ -2,7 +2,7 @@
   "name": "@aily-project/board-luatos-esp32c3-core",
   "nickname": "ESP32C3 Core",
   "version": "3.3.1",
-  "description": "LuatOS ESP32C3 Core开发板配置",
+  "description": "The LuatOS ESP32-C3 Core is a compact development board by OpenLuat based on the ESP32-C3 RISC-V chip, featuring Wi-Fi and BLE 5.0 connectivity, dual onboard LEDs, and a breadboard-friendly form factor for IoT application development.",
   "main": "index.js",
   "disabled": true,
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32c3mini",
   "nickname": "ESP32C3Mini",
   "version": "3.3.1",
-  "description": "ESP32C3Mini开发板通用配置",
+  "description": "The ESP32-C3 Mini is a compact development board based on the ESP32-C3 RISC-V chip with Wi-Fi and Bluetooth 5.0 LE connectivity, suitable for IoT applications and rapid prototyping.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

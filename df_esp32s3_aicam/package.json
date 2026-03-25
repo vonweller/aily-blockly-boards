@@ -2,7 +2,7 @@
     "name": "@aily-project/board-df_esp32s3_aicam",
     "nickname": "ESP32-S3 AI CAM",
     "version": "3.3.1",
-    "description": "DFRobot ESP32-S3 AI CAM Board",
+    "description": "The DFRobot ESP32-S3 AI CAM is a compact camera development board based on the ESP32-S3 chip, integrating an OV3660 camera module, LED, microphone, speaker, and infrared, designed for AI vision applications such as image recognition, object detection, and video streaming over Wi-Fi.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

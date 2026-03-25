@@ -2,7 +2,7 @@
     "name": "@aily-project/board-stm32f2",
     "nickname": "STM32F2 Series",
     "version": "2.11.0",
-    "description": "STM32F2系列开发板，主频120MHz，128KB-1MB Flash，64-128KB RAM，丰富的外设接口，适合各种嵌入式应用。",
+    "description": "STM32F2 Series development board featuring an Arm Cortex-M3 core at up to 120 MHz, 128 KB - 1 MB Flash, 64-128 KB RAM, with rich peripheral interfaces suitable for various embedded applications.",
     "main": "index.js",
     "brand": "STMicroelectronics",
     "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32f2-series.html",

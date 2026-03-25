@@ -2,7 +2,7 @@
   "name": "@aily-project/board-microbit-v2",
   "nickname": "micro:bit v2",
   "version": "0.8.0",
-  "description": "BBC micro:bit v2",
+  "description": "The BBC micro:bit v2 is an enhanced pocket-sized educational computer featuring a 64 MHz ARM Cortex-M4 processor (Nordic nRF52833) with FPU, 25 LED matrix display, 2 programmable buttons, built-in speaker and microphone, touch-sensitive logo, accelerometer, compass, and Bluetooth 5.0.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

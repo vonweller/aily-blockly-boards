@@ -2,7 +2,7 @@
   "name": "@aily-project/board-xiao_rp2350",
   "nickname": "XIAO RP2350",
   "version": "5.1.0",
-  "description": "XIAO RP2350",
+  "description": "The Seeed Studio XIAO RP2350 is a compact microcontroller board based on the Raspberry Pi RP2350 chip, featuring dual-core ARM Cortex-M33 / RISC-V Hazard3 processors at up to 150 MHz, 520 KB SRAM, 2 MB Flash, USB-C, and enhanced security features in Seeed Studio's tiny XIAO form factor.",
   "main": "index.js",
   "url": "https://wiki.seeedstudio.com/cn/xiao_rp2350_arduino/",
   "scripts": {

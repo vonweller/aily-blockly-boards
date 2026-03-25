@@ -2,7 +2,7 @@
     "name": "@aily-project/board-stm32wb",
     "nickname": "STM32WB Series",
     "version": "2.11.0",
-    "description": "STM32WB系列开发板，主频64MHz，320KB-1MB Flash，48-256KB RAM，丰富的外设接口，适合各种嵌入式应用。双核多协议无线STM32WB微控制器，支持Bluetooth低功耗、Zigbee、Thread和Matter连接。",
+    "description": "STM32WB Series development board featuring a dual-core architecture with Arm Cortex-M4 (up to 64 MHz) and Cortex-M0+ cores, 320 KB - 1 MB Flash, 48-256 KB RAM. Supports Bluetooth Low Energy, Zigbee, Thread, and Matter wireless connectivity protocols.",
     "main": "index.js",
     "brand": "STMicroelectronics",
     "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32wb-series.html",

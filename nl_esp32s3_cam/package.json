@@ -2,7 +2,7 @@
   "name": "@aily-project/board-nl_esp32s3_cam",
   "nickname": "NL-ESP32S3-CAM",
   "version": "3.2.1",
-  "description": "ESP32S3 Camera Board configuration.",
+  "description": "The NL-ESP32S3-CAM is an ESP32-S3-based camera development board with integrated camera module, Wi-Fi and Bluetooth connectivity, suitable for image capture, video streaming, and AI vision applications.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

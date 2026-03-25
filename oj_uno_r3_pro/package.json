@@ -2,7 +2,7 @@
   "name": "@aily-project/board-arduino_uno_r3_pro",
   "nickname": "UNO R3 增强版",
   "version": "1.8.6",
-  "description": "Arduino UNO R3 增强版是基于ATmega328P的开源电子原型平台，包含数字I/O口14个（其中6个支持PWM输出），模拟输入口6个，16MHz晶振，USB接口，电源接口，ICSP接口等。",
+  "description": "The UNO R3 Pro is an enhanced Arduino UNO-compatible board based on the ATmega328P, featuring 14 digital I/O pins (6 with PWM output), 6 analog inputs, a 16 MHz crystal oscillator, USB connection, power jack, and ICSP header.",
   "main": "index.js",
   "url": "https://arduino.me/s/board?aid=698",
   "brand": "OpenJumper",

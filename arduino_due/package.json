@@ -2,7 +2,7 @@
   "name": "@aily-project/board-arduino_due",
   "nickname": "Arduino DUE",
   "version": "1.6.12",
-  "description": "Arduino DUE开发板(Native USB Port)，使用原生USB口进行烧录",
+  "description": "The Arduino Due is the first Arduino board based on a 32-bit ARM core microcontroller (Atmel SAM3X8E), featuring 54 digital I/O pins, 12 analog inputs, 4 UARTs, an 84 MHz clock, USB OTG, 2 DAC, 2 TWI, SPI, and JTAG. This configuration uses the Native USB port for programming.",
   "main": "index.js",
   "url": "https://docs.arduino.cc/hardware/due/",
   "scripts": {

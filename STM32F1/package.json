@@ -2,7 +2,7 @@
     "name": "@aily-project/board-stm32f1",
     "nickname": "STM32F1 Series",
     "version": "2.11.0",
-    "description": "STM32F1系列开发板，主频24-72MHz，16KB-1MB Flash，4-96KB RAM，丰富的外设接口，适合各种嵌入式应用。",
+    "description": "STM32F1 Series development board featuring an Arm Cortex-M3 core at 24-72 MHz, 16 KB - 1 MB Flash, 4-96 KB RAM, with rich peripheral interfaces suitable for general-purpose embedded applications.",
     "main": "index.js",
     "brand": "STMicroelectronics",
     "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32f1-series.html",

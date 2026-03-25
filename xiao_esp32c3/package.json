@@ -2,7 +2,7 @@
   "name": "@aily-project/board-xiao_esp32c3",
   "nickname": "XIAO ESP32C3",
   "version": "3.3.1",
-  "description": "This is the pre-soldered version of Seeed Studio XIAO ESP32C3, which adopts new RISC-V architecture, supporting both Wi-Fi and BLE wireless connectivities. For Internet of Things applications, you will find it is flexible and suitable for all kinds of IoT scenarios.",
+  "description": "The Seeed Studio XIAO ESP32C3 is an ultra-compact board based on the ESP32-C3 RISC-V single-core processor at 160 MHz, with 4 MB Flash, 400 KB SRAM, Wi-Fi 802.11 b/g/n and Bluetooth 5.0 LE, 11 GPIO pins, battery charging support, and deep sleep as low as 44 uA, in the tiny XIAO form factor (21x17.8 mm).",
   "main": "index.js",
   "brand": "SeeedStudio",
   "url": "https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html",

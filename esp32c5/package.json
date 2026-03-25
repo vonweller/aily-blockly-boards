@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32c5",
   "nickname": "ESP32C5 board",
   "version": "3.3.1",
-  "description": "ESP32C5开发板通用配置，具备完整的 Wi-Fi、低功耗蓝牙、Zigbee 及 Thread 功能。",
+  "description": "Generic ESP32-C5 development board configuration. The ESP32-C5 features full Wi-Fi 6, Bluetooth Low Energy, Zigbee, and Thread capabilities for versatile wireless connectivity.",
   "main": "index.js",
   "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32c5/esp32-c5-devkitc-1/index.html",
   "scripts": {

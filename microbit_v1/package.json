@@ -2,7 +2,7 @@
   "name": "@aily-project/board-microbit",
   "nickname": "micro:bit",
   "version": "0.8.0",
-  "description": "BBC micro:bit v1",
+  "description": "The BBC micro:bit v1 is a pocket-sized educational computer featuring a 32-bit ARM Cortex-M0 processor (Nordic nRF51822), 25 LED matrix display, 2 programmable buttons, accelerometer, compass, Bluetooth Low Energy, and edge connector for expansion.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

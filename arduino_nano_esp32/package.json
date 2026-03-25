@@ -2,7 +2,7 @@
   "name": "@aily-project/board-arduino_nano_esp32",
   "nickname": "Arduino Nano ESP32",
   "version": "3.2.1",
-  "description": "The new member to our iconic Nano family, the Nano ESP32. This board brings all the power of the well-known ESP32-S3 with the full support of the Arduino ecosystem, allowing makers to explore the world of Arduino and MicroPython without any blocker. Just unleash your creativity and start building for the next IoT project.",
+  "description": "The Arduino Nano ESP32 is based on the ESP32-S3 (Xtensa LX7 dual-core at 240 MHz) in the compact Nano form factor, featuring Wi-Fi 802.11 b/g/n and Bluetooth 5.0 LE connectivity, 8 MB Flash, 512 KB SRAM, up to 16 MB PSRAM, 14 digital I/O pins, 8 analog inputs, and USB-C. It is fully supported by the Arduino ecosystem and MicroPython.",
   "main": "index.js",
   "disabled": true,
   "scripts": {

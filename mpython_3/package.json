@@ -2,7 +2,7 @@
   "name": "@aily-project/board-mpython3",
   "nickname": "掌控板3.0",
   "version": "3.2.1",
-  "description": "掌控板3.0开发板配置 - 基于ESP32S3的教育开发板",
+  "description": "The mPython Board 3.0 is an ESP32-S3-based educational development board with enhanced processing power, RGB LEDs, programmable buttons, touch pins, dual SPI/I2C interfaces, designed for STEAM education and AI/IoT projects.",
   "main": "index.js",
   "brand": "mpython",
   "disabled": false,

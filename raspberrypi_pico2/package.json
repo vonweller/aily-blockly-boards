@@ -2,7 +2,7 @@
   "name": "@aily-project/board-raspberrypi_pico2",
   "nickname": "Raspberry Pi Pico 2",
   "version": "5.1.0",
-  "description": "The Raspberry Pi Pico 2 is a high-performance, low-cost microcontroller board built around the RP2350 chip, featuring a dual-core Arm Cortex-M33 processor clocked at up to 150 MHz, 520 KB of SRAM, and 4 MB of onboard flash memory. It also includes dual-core RISC-V Hazard3 processors as an alternative architecture. With 26 multi-function GPIO pins, support for SPI, I2C, UART, ADC, and PWM, along with enhanced security features and improved performance over its predecessor, the Pico 2 is ideal for a wide range of embedded and IoT applications in a compact, breadboard-friendly form factor.",
+  "description": "The Raspberry Pi Pico 2 is based on the RP2350 chip with dual-core Arm Cortex-M33 or RISC-V Hazard3 processors at up to 150 MHz, 520 KB SRAM, 4 MB onboard Flash, 26 multi-function GPIO pins, SPI, I2C, UART, ADC, PWM, and enhanced security features over its predecessor.",
   "main": "index.js",
   "url": "https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html",
   "scripts": {

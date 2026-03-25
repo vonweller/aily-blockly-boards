@@ -2,7 +2,7 @@
   "name": "@aily-project/board-mpython2",
   "nickname": "掌控板2.0",
   "version": "3.3.1",
-  "description": "掌控板2.0 - 基于ESP32的教育开发板，集成OLED显示屏、蜂鸣器、光线传感器、加速度计等功能",
+  "description": "The mPython Board 2.0 is an ESP32-based educational development board featuring a built-in OLED display, buzzer, light sensor, accelerometer, and various other sensors, designed for STEAM education and IoT projects.",
   "main": "index.js",
   "brand": "mpython",
   "scripts": {

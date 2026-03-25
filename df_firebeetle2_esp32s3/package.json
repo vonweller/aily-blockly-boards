@@ -2,7 +2,7 @@
     "name": "@aily-project/board-df_firebeetle2_esp32s3",
     "nickname": "FireBeetle 2 ESP32-S3",
     "version": "3.3.1",
-    "description": "DFRobot FireBeetle 2 ESP32-S3 Board Support",
+    "description": "The DFRobot FireBeetle 2 ESP32-S3 is a low-power IoT development board based on the ESP32-S3 dual-core processor, featuring Wi-Fi and Bluetooth 5.0 connectivity, onboard charging circuit, and GDI display interface, suitable for IoT and AI edge computing applications.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

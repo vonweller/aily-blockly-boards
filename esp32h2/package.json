@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32h2",
   "nickname": "ESP32H2 board",
   "version": "3.3.1",
-  "description": "ESP32H2开发板通用配置，集成 2.4 GHz 接收器兼容低功耗蓝牙和 IEEE 802.15.4 技术，支持 Bluetooth 5（LE）, Bluetooth mesh, Zigbee, Thread 和 Matter 等协议，适用于多种低功耗物联网应用场景。",
+  "description": "Generic ESP32-H2 development board configuration. The ESP32-H2 integrates a 2.4 GHz receiver compatible with Bluetooth Low Energy and IEEE 802.15.4, supporting Bluetooth 5 (LE), Bluetooth Mesh, Zigbee, Thread, and Matter protocols for low-power IoT applications.",
   "main": "index.js",
   "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32h2/esp32-h2-devkitm-1/index.html",
   "scripts": {

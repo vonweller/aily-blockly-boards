@@ -2,7 +2,7 @@
   "name": "@aily-project/board-arduino_micro",
   "nickname": "Arduino Micro",
   "version": "1.8.6",
-  "description": "Arduino Micro开发板",
+  "description": "The Arduino Micro is a compact microcontroller board based on the ATmega32U4 with built-in USB, featuring 20 digital I/O pins, 12 analog inputs, and a 16 MHz crystal oscillator in a breadboard-friendly form factor.",
   "main": "index.js",
   "url": "https://docs.arduino.cc/hardware/micro/",
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32s3_ai_board",
   "nickname": "ESP32S3-AI",
   "version": "3.2.1",
-  "description": "ESP32S3-AI是一款基于ESP32-S3的AI开发板，适用于人工智能和物联网应用开发。",
+  "description": "The ESP32-S3 AI is a development board based on the ESP32-S3 chip, designed for artificial intelligence and IoT application development with Wi-Fi and Bluetooth 5.0 connectivity.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

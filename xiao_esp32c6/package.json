@@ -2,7 +2,7 @@
   "name": "@aily-project/board-xiao_esp32c6",
   "nickname": "XIAO ESP32C6",
   "version": "3.3.1",
-  "description": "Seeed Studio XIAO ESP32C6 leverages 240MHz Xtensa 32-bit LX7 dual-core processor, supporting both WiFi and BLE 5.0 wireless connectivities, a 2.4GHz Rod antenna, allows for deep sleep mode with power consumption as low as 14μA while supporting lithium battery charging management. Ideal for the Internet of Things, Smart Homes, Wireless wearable devices, Robotics, etc. ",
+  "description": "The Seeed Studio XIAO ESP32C6 is based on the ESP32-C6 RISC-V single-core processor at up to 160 MHz, supporting Wi-Fi 6 (2.4 GHz), Bluetooth 5.0 LE, Zigbee 3.0, and Thread 1.3 (IEEE 802.15.4) protocols, with 4 MB Flash, low-power deep sleep mode (as low as 15 uA), lithium battery charge management, and a compact XIAO form factor (21x17.8 mm).",
   "main": "index.js",
   "brand": "SeeedStudio",
   "url": "https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/",

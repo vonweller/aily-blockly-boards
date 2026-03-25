@@ -2,7 +2,7 @@
     "name": "@aily-project/board-stm32l0",
     "nickname": "STM32L0 Series",
     "version": "2.11.0",
-    "description": "STM32L0系列开发板，主频32MHz，16-192KB Flash，2-20KB RAM，丰富的外设接口，适合各种嵌入式应用。",
+    "description": "STM32L0 Series development board featuring an ultra-low-power Arm Cortex-M0+ core at up to 32 MHz, 16-192 KB Flash, 2-20 KB RAM, with rich peripheral interfaces suitable for battery-powered and low-power embedded applications.",
     "main": "index.js",
     "brand": "STMicroelectronics",
     "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32l0-series.html",

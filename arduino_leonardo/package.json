@@ -2,7 +2,7 @@
   "name": "@aily-project/board-arduino_leonardo",
   "nickname": "Arduino Leonardo",
   "version": "1.8.6",
-  "description": "Arduino Leonardo开发板",
+  "description": "The Arduino Leonardo is a microcontroller board based on the ATmega32U4 with built-in USB communication, featuring 20 digital I/O pins (7 as PWM outputs), 12 analog inputs, a 16 MHz crystal oscillator, micro USB connection, ICSP header, and reset button.",
   "main": "index.js",
   "url": "https://docs.arduino.cc/hardware/leonardo/",
   "scripts": {

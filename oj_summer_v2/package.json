@@ -2,7 +2,7 @@
   "name": "@aily-project/board-summer-v2",
   "nickname": "Summer v2",
   "version": "3.3.1",
-  "description": "Summer v2开发板支持编码电机、TT马达、舵机、超声波传感器、Sentry2避障、红外遥控、蜂鸣器、OLED显示和步进电机控制，适用于多种智能硬件和机器人应用。",
+  "description": "The Summer v2 is a development board supporting encoder motors, TT motors, servos, ultrasonic sensors, Sentry2 obstacle avoidance, IR remote control, buzzer, OLED display, and stepper motor control, suitable for smart hardware and robotics applications.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

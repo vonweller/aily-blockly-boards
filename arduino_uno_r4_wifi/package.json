@@ -2,7 +2,7 @@
   "name": "@aily-project/board-arduino_uno_r4_wifi",
   "nickname": "Arduino UNO R4 Wifi",
   "version": "1.5.3",
-  "description": "Arduino UNO R4 WiFi 将 Renesas 的 RA4M1 微控制器的处理能力和激动人心的新外设与 Espressif 的 ESP32-S3 无线连接能力相结合。此外，UNO R4 WiFi 还提供了一个12x8 LED 矩阵、Qwiic 连接器、VRTC 和 OFF 引脚，满足创客们在下一个项目中可能遇到的所有需求。",
+  "description": "The Arduino UNO R4 WiFi combines the processing power and new peripherals of the Renesas RA4M1 microcontroller with the wireless connectivity of the Espressif ESP32-S3. It also features a 12x8 LED matrix, Qwiic connector, VRTC, and OFF pin, meeting all the needs makers may encounter in their next project.",
   "main": "index.js",
   "brand": "Arduino",
   "url": "https://arduino.me/s/board?aid=1462",

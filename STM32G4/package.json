@@ -2,7 +2,7 @@
     "name": "@aily-project/board-stm32g4",
     "nickname": "STM32G4 Series",
     "version": "2.11.0",
-    "description": "STM32G4系列开发板，主频170MHz，32-512KB Flash，32-128KB RAM，丰富的外设接口，适合各种嵌入式应用。",
+    "description": "STM32G4 Series development board featuring an Arm Cortex-M4 core with FPU at up to 170 MHz, 32-512 KB Flash, 32-128 KB RAM, with advanced analog features suitable for mixed-signal and motor control applications.",
     "main": "index.js",
     "brand": "STMicroelectronics",
     "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32g4-series.html",

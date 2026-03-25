@@ -2,7 +2,7 @@
   "name": "@aily-project/board-esp32s3dev",
   "nickname": "ESP32S3Dev board",
   "version": "3.2.1",
-  "description": "ESP32S3Dev开发板通用配置",
+  "description": "Generic ESP32-S3 development board configuration with default pin mappings and settings for standard ESP32-S3-based development boards.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
