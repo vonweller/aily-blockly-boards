@@ -1,29 +1,40 @@
 {
-    "name": "@aily-project/board-stm32l1",
-    "nickname": "STM32L1 Series",
-    "version": "2.11.0",
-    "description": "STM32L1系列开发板，主频32MHz，32-512KB Flash，4-80KB RAM，丰富的外设接口，适合各种嵌入式应用。",
-    "main": "index.js",
-    "brand": "STMicroelectronics",
-    "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32l1-series.html",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "STM32",
-        "Cortex-M3",
-        "ARM"
-    ],
-    "author": "STMicroelectronics",
-    "state": "alpha",
-    "license": "ISC",
-    "boardDependencies": {
-        "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
-        "@aily-project/tool-STM32Tools": "2.3.1",
-        "@aily-project/sdk-stm32": "2.11.0",
-        "@aily-project/tool-STM32_SVD": "1.18.1",
-        "@aily-project/tool-stm32flash": "0.7.0",
-        "@aily-project/tool-CMSIS": "5.9.0",
-        "@aily-project/tool-ctags": "5.8.0"
-    }
+  "name": "@aily-project/board-stm32l1",
+  "nickname": "STM32L1 Series",
+  "version": "2.11.0",
+  "description": "STM32L1 Series development board featuring an ultra-low-power Arm Cortex-M3 core at up to 32 MHz, 32-512 KB Flash, 4-80 KB RAM, with rich peripheral interfaces suitable for energy-efficient embedded applications.",
+  "description_en": "STM32L1 Series development board featuring an ultra-low-power Arm Cortex-M3 core at up to 32 MHz, 32-512 KB Flash, 4-80 KB RAM, with rich peripheral interfaces suitable for energy-efficient embedded applications.",
+  "description_zh_cn": "STM32L1 系列开发板，搭载超低功耗 Arm Cortex-M3 内核，主频高达 32 MHz，32-512 KB Flash，4-80 KB RAM，丰富的外设接口，适用于节能型嵌入式应用。",
+  "description_zh_hk": "STM32L1 系列開發板，搭載超低功耗 Arm Cortex-M3 核心，主頻高達 32 MHz，32-512 KB Flash，4-80 KB RAM，豐富的外設介面，適用於節能型嵌入式應用。",
+  "description_ja": "STM32L1シリーズ開発ボード。最大32MHzの超低消費電力Arm Cortex-M3コア、32-512KB Flash、4-80KB RAM、豊富なペリフェラルインターフェースを備え、省エネルギー組込みアプリケーションに適しています。",
+  "description_ko": "STM32L1 시리즈 개발 보드. 최대 32MHz의 초저전력 Arm Cortex-M3 코어, 32-512KB Flash, 4-80KB RAM, 풍부한 주변장치 인터페이스를 갖추어 에너지 효율적인 임베디드 애플리케이션에 적합합니다.",
+  "description_de": "STM32L1-Serie Entwicklungsboard mit einem ultra-stromsparenden Arm Cortex-M3 Kern bei bis zu 32 MHz, 32-512 KB Flash, 4-80 KB RAM, umfangreichen Peripherieschnittstellen, geeignet für energieeffiziente eingebettete Anwendungen.",
+  "description_fr": "Carte de développement série STM32L1 dotée d'un cœur Arm Cortex-M3 ultra basse consommation cadencé jusqu'à 32 MHz, 32-512 Ko de Flash, 4-80 Ko de RAM, avec des interfaces périphériques riches adaptées aux applications embarquées à haute efficacité énergétique.",
+  "description_es": "Placa de desarrollo de la serie STM32L1 con un núcleo Arm Cortex-M3 de ultra bajo consumo de hasta 32 MHz, 32-512 KB de Flash, 4-80 KB de RAM, con interfaces periféricas ricas adecuadas para aplicaciones embebidas de alta eficiencia energética.",
+  "description_pt": "Placa de desenvolvimento da série STM32L1 com um núcleo Arm Cortex-M3 de ultra baixo consumo de até 32 MHz, 32-512 KB de Flash, 4-80 KB de RAM, com interfaces periféricas ricas adequadas para aplicações embarcadas de alta eficiência energética.",
+  "description_ru": "Плата разработки серии STM32L1 с ультранизким энергопотреблением, ядром Arm Cortex-M3 до 32 МГц, 32-512 КБ Flash, 4-80 КБ ОЗУ, с богатыми периферийными интерфейсами, подходящая для энергоэффективных встроенных приложений.",
+  "description_ar": "لوحة تطوير سلسلة STM32L1 تتميز بنواة Arm Cortex-M3 منخفضة الطاقة للغاية بتردد يصل إلى 32 ميغاهرتز، و32-512 كيلوبايت فلاش، و4-80 كيلوبايت RAM، مع واجهات طرفية غنية مناسبة للتطبيقات المدمجة الموفرة للطاقة.",
+  "main": "index.js",
+  "brand": "STMicroelectronics",
+  "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32l1-series.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "STM32",
+    "Cortex-M3",
+    "ARM"
+  ],
+  "author": "STMicroelectronics",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
+    "@aily-project/tool-STM32Tools": "2.3.1",
+    "@aily-project/sdk-stm32": "2.11.0",
+    "@aily-project/tool-STM32_SVD": "1.18.1",
+    "@aily-project/tool-stm32flash": "0.7.0",
+    "@aily-project/tool-CMSIS": "5.9.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
 }

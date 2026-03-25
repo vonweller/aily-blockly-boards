@@ -1,29 +1,40 @@
 {
-    "name": "@aily-project/board-stm32wb",
-    "nickname": "STM32WB Series",
-    "version": "2.11.0",
-    "description": "STM32WB系列开发板，主频64MHz，320KB-1MB Flash，48-256KB RAM，丰富的外设接口，适合各种嵌入式应用。双核多协议无线STM32WB微控制器，支持Bluetooth低功耗、Zigbee、Thread和Matter连接。",
-    "main": "index.js",
-    "brand": "STMicroelectronics",
-    "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32wb-series.html",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "STM32",
-        "Cortex-M3",
-        "ARM"
-    ],
-    "author": "STMicroelectronics",
-    "state": "alpha",
-    "license": "ISC",
-    "boardDependencies": {
-        "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
-        "@aily-project/tool-STM32Tools": "2.3.1",
-        "@aily-project/sdk-stm32": "2.11.0",
-        "@aily-project/tool-STM32_SVD": "1.18.1",
-        "@aily-project/tool-stm32flash": "0.7.0",
-        "@aily-project/tool-CMSIS": "5.9.0",
-        "@aily-project/tool-ctags": "5.8.0"
-    }
+  "name": "@aily-project/board-stm32wb",
+  "nickname": "STM32WB Series",
+  "version": "2.11.0",
+  "description": "STM32WB Series development board featuring a dual-core architecture with Arm Cortex-M4 (up to 64 MHz) and Cortex-M0+ cores, 320 KB - 1 MB Flash, 48-256 KB RAM. Supports Bluetooth Low Energy, Zigbee, Thread, and Matter wireless connectivity protocols.",
+  "description_en": "STM32WB Series development board featuring a dual-core architecture with Arm Cortex-M4 (up to 64 MHz) and Cortex-M0+ cores, 320 KB - 1 MB Flash, 48-256 KB RAM. Supports Bluetooth Low Energy, Zigbee, Thread, and Matter wireless connectivity protocols.",
+  "description_zh_cn": "STM32WB 系列开发板，采用双核架构，包含 Arm Cortex-M4（主频高达 64 MHz）和 Cortex-M0+ 内核，320 KB - 1 MB Flash，48-256 KB RAM。支持低功耗蓝牙、Zigbee、Thread 和 Matter 无线连接协议。",
+  "description_zh_hk": "STM32WB 系列開發板，採用雙核架構，包含 Arm Cortex-M4（主頻高達 64 MHz）和 Cortex-M0+ 核心，320 KB - 1 MB Flash，48-256 KB RAM。支援低功耗藍牙、Zigbee、Thread 和 Matter 無線連接協議。",
+  "description_ja": "STM32WBシリーズ開発ボード。Arm Cortex-M4（最大64MHz）およびCortex-M0+コアのデュアルコアアーキテクチャ、320KB-1MB Flash、48-256KB RAM。Bluetooth Low Energy、Zigbee、Thread、Matterワイヤレス接続プロトコルに対応しています。",
+  "description_ko": "STM32WB 시리즈 개발 보드. Arm Cortex-M4(최대 64MHz) 및 Cortex-M0+ 코어의 듀얼코어 아키텍처, 320KB-1MB Flash, 48-256KB RAM. Bluetooth Low Energy, Zigbee, Thread 및 Matter 무선 연결 프로토콜을 지원합니다.",
+  "description_de": "STM32WB-Serie Entwicklungsboard mit einer Dual-Core-Architektur aus Arm Cortex-M4 (bis zu 64 MHz) und Cortex-M0+ Kernen, 320 KB - 1 MB Flash, 48-256 KB RAM. Unterstützt Bluetooth Low Energy, Zigbee, Thread und Matter drahtlose Konnektivitätsprotokolle.",
+  "description_fr": "Carte de développement série STM32WB dotée d'une architecture double cœur avec Arm Cortex-M4 (jusqu'à 64 MHz) et Cortex-M0+, 320 Ko - 1 Mo de Flash, 48-256 Ko de RAM. Prend en charge les protocoles de connectivité sans fil Bluetooth Low Energy, Zigbee, Thread et Matter.",
+  "description_es": "Placa de desarrollo de la serie STM32WB con una arquitectura de doble núcleo con Arm Cortex-M4 (hasta 64 MHz) y Cortex-M0+, 320 KB - 1 MB de Flash, 48-256 KB de RAM. Compatible con los protocolos de conectividad inalámbrica Bluetooth Low Energy, Zigbee, Thread y Matter.",
+  "description_pt": "Placa de desenvolvimento da série STM32WB com uma arquitetura de duplo núcleo com Arm Cortex-M4 (até 64 MHz) e Cortex-M0+, 320 KB - 1 MB de Flash, 48-256 KB de RAM. Suporta os protocolos de conectividade sem fio Bluetooth Low Energy, Zigbee, Thread e Matter.",
+  "description_ru": "Плата разработки серии STM32WB с двухъядерной архитектурой: Arm Cortex-M4 (до 64 МГц) и Cortex-M0+, 320 КБ - 1 МБ Flash, 48-256 КБ ОЗУ. Поддерживает беспроводные протоколы Bluetooth Low Energy, Zigbee, Thread и Matter.",
+  "description_ar": "لوحة تطوير سلسلة STM32WB تتميز ببنية ثنائية النواة مع Arm Cortex-M4 (حتى 64 ميغاهرتز) وCortex-M0+، و320 كيلوبايت - 1 ميغابايت فلاش، و48-256 كيلوبايت RAM. تدعم بروتوكولات الاتصال اللاسلكي Bluetooth Low Energy، وZigbee، وThread، وMatter.",
+  "main": "index.js",
+  "brand": "STMicroelectronics",
+  "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32wb-series.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "STM32",
+    "Cortex-M3",
+    "ARM"
+  ],
+  "author": "STMicroelectronics",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
+    "@aily-project/tool-STM32Tools": "2.3.1",
+    "@aily-project/sdk-stm32": "2.11.0",
+    "@aily-project/tool-STM32_SVD": "1.18.1",
+    "@aily-project/tool-stm32flash": "0.7.0",
+    "@aily-project/tool-CMSIS": "5.9.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
 }

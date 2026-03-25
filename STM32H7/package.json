@@ -1,29 +1,40 @@
 {
-    "name": "@aily-project/board-stm32h7",
-    "nickname": "STM32H7 Series",
-    "version": "2.11.0",
-    "description": "STM32H7系列开发板，主频80-480MHz，128KB-2MB Flash，32KB-1MB RAM，丰富的外设接口，适合各种嵌入式应用。",
-    "main": "index.js",
-    "brand": "STMicroelectronics",
-    "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32h7-series.html",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "STM32",
-        "Cortex-M3",
-        "ARM"
-    ],
-    "author": "STMicroelectronics",
-    "state": "alpha",
-    "license": "ISC",
-    "boardDependencies": {
-        "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
-        "@aily-project/tool-STM32Tools": "2.3.1",
-        "@aily-project/sdk-stm32": "2.11.0",
-        "@aily-project/tool-STM32_SVD": "1.18.1",
-        "@aily-project/tool-stm32flash": "0.7.0",
-        "@aily-project/tool-CMSIS": "5.9.0",
-        "@aily-project/tool-ctags": "5.8.0"
-    }
+  "name": "@aily-project/board-stm32h7",
+  "nickname": "STM32H7 Series",
+  "version": "2.11.0",
+  "description": "STM32H7 Series development board featuring an Arm Cortex-M7 core at up to 480 MHz, 128 KB - 2 MB Flash, 32 KB - 1 MB RAM, with rich peripheral interfaces suitable for compute-intensive embedded applications.",
+  "description_en": "STM32H7 Series development board featuring an Arm Cortex-M7 core at up to 480 MHz, 128 KB - 2 MB Flash, 32 KB - 1 MB RAM, with rich peripheral interfaces suitable for compute-intensive embedded applications.",
+  "description_zh_cn": "STM32H7 系列开发板，搭载 Arm Cortex-M7 内核，主频高达 480 MHz，128 KB - 2 MB Flash，32 KB - 1 MB RAM，丰富的外设接口，适用于计算密集型嵌入式应用。",
+  "description_zh_hk": "STM32H7 系列開發板，搭載 Arm Cortex-M7 核心，主頻高達 480 MHz，128 KB - 2 MB Flash，32 KB - 1 MB RAM，豐富的外設介面，適用於運算密集型嵌入式應用。",
+  "description_ja": "STM32H7シリーズ開発ボード。最大480MHzのArm Cortex-M7コア、128KB-2MB Flash、32KB-1MB RAM、豊富なペリフェラルインターフェースを備え、コンピュート集約型組込みアプリケーションに適しています。",
+  "description_ko": "STM32H7 시리즈 개발 보드. 최대 480MHz의 Arm Cortex-M7 코어, 128KB-2MB Flash, 32KB-1MB RAM, 풍부한 주변장치 인터페이스를 갖추어 컴퓨팅 집약적 임베디드 애플리케이션에 적합합니다.",
+  "description_de": "STM32H7-Serie Entwicklungsboard mit einem Arm Cortex-M7 Kern bei bis zu 480 MHz, 128 KB - 2 MB Flash, 32 KB - 1 MB RAM, umfangreichen Peripherieschnittstellen, geeignet für rechenintensive eingebettete Anwendungen.",
+  "description_fr": "Carte de développement série STM32H7 dotée d'un cœur Arm Cortex-M7 cadencé jusqu'à 480 MHz, 128 Ko - 2 Mo de Flash, 32 Ko - 1 Mo de RAM, avec des interfaces périphériques riches adaptées aux applications embarquées à forte intensité de calcul.",
+  "description_es": "Placa de desarrollo de la serie STM32H7 con un núcleo Arm Cortex-M7 de hasta 480 MHz, 128 KB - 2 MB de Flash, 32 KB - 1 MB de RAM, con interfaces periféricas ricas adecuadas para aplicaciones embebidas de uso intensivo de cómputo.",
+  "description_pt": "Placa de desenvolvimento da série STM32H7 com um núcleo Arm Cortex-M7 de até 480 MHz, 128 KB - 2 MB de Flash, 32 KB - 1 MB de RAM, com interfaces periféricas ricas adequadas para aplicações embarcadas de uso intensivo de computação.",
+  "description_ru": "Плата разработки серии STM32H7 с ядром Arm Cortex-M7 до 480 МГц, 128 КБ - 2 МБ Flash, 32 КБ - 1 МБ ОЗУ, с богатыми периферийными интерфейсами, подходящая для вычислительно-интенсивных встроенных приложений.",
+  "description_ar": "لوحة تطوير سلسلة STM32H7 تتميز بنواة Arm Cortex-M7 بتردد يصل إلى 480 ميغاهرتز، و128 كيلوبايت - 2 ميغابايت فلاش، و32 كيلوبايت - 1 ميغابايت RAM، مع واجهات طرفية غنية مناسبة للتطبيقات المدمجة كثيفة الحوسبة.",
+  "main": "index.js",
+  "brand": "STMicroelectronics",
+  "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32h7-series.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "STM32",
+    "Cortex-M3",
+    "ARM"
+  ],
+  "author": "STMicroelectronics",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
+    "@aily-project/tool-STM32Tools": "2.3.1",
+    "@aily-project/sdk-stm32": "2.11.0",
+    "@aily-project/tool-STM32_SVD": "1.18.1",
+    "@aily-project/tool-stm32flash": "0.7.0",
+    "@aily-project/tool-CMSIS": "5.9.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
 }

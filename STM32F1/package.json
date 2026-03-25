@@ -1,29 +1,40 @@
 {
-    "name": "@aily-project/board-stm32f1",
-    "nickname": "STM32F1 Series",
-    "version": "2.11.0",
-    "description": "STM32F1系列开发板，主频24-72MHz，16KB-1MB Flash，4-96KB RAM，丰富的外设接口，适合各种嵌入式应用。",
-    "main": "index.js",
-    "brand": "STMicroelectronics",
-    "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32f1-series.html",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "STM32",
-        "Cortex-M3",
-        "ARM"
-    ],
-    "author": "STMicroelectronics",
-    "state": "alpha",
-    "license": "ISC",
-    "boardDependencies": {
-        "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
-        "@aily-project/tool-STM32Tools": "2.3.1",
-        "@aily-project/sdk-stm32": "2.11.0",
-        "@aily-project/tool-STM32_SVD": "1.18.1",
-        "@aily-project/tool-stm32flash": "0.7.0",
-        "@aily-project/tool-CMSIS": "5.9.0",
-        "@aily-project/tool-ctags": "5.8.0"
-    }
+  "name": "@aily-project/board-stm32f1",
+  "nickname": "STM32F1 Series",
+  "version": "2.11.0",
+  "description": "STM32F1 Series development board featuring an Arm Cortex-M3 core at 24-72 MHz, 16 KB - 1 MB Flash, 4-96 KB RAM, with rich peripheral interfaces suitable for general-purpose embedded applications.",
+  "description_en": "STM32F1 Series development board featuring an Arm Cortex-M3 core at 24-72 MHz, 16 KB - 1 MB Flash, 4-96 KB RAM, with rich peripheral interfaces suitable for general-purpose embedded applications.",
+  "description_zh_cn": "STM32F1 系列开发板，搭载 Arm Cortex-M3 内核，主频 24-72 MHz，16 KB - 1 MB Flash，4-96 KB RAM，丰富的外设接口，适用于通用嵌入式应用。",
+  "description_zh_hk": "STM32F1 系列開發板，搭載 Arm Cortex-M3 核心，主頻 24-72 MHz，16 KB - 1 MB Flash，4-96 KB RAM，豐富的外設介面，適用於通用嵌入式應用。",
+  "description_ja": "STM32F1シリーズ開発ボード。24-72MHzのArm Cortex-M3コア、16KB-1MB Flash、4-96KB RAM、豊富なペリフェラルインターフェースを備え、汎用組込みアプリケーションに適しています。",
+  "description_ko": "STM32F1 시리즈 개발 보드. 24-72MHz의 Arm Cortex-M3 코어, 16KB-1MB Flash, 4-96KB RAM, 풍부한 주변장치 인터페이스를 갖추어 범용 임베디드 애플리케이션에 적합합니다.",
+  "description_de": "STM32F1-Serie Entwicklungsboard mit einem Arm Cortex-M3 Kern bei 24-72 MHz, 16 KB - 1 MB Flash, 4-96 KB RAM, umfangreichen Peripherieschnittstellen, geeignet für allgemeine eingebettete Anwendungen.",
+  "description_fr": "Carte de développement série STM32F1 dotée d'un cœur Arm Cortex-M3 cadencé à 24-72 MHz, 16 Ko - 1 Mo de Flash, 4-96 Ko de RAM, avec des interfaces périphériques riches adaptées aux applications embarquées à usage général.",
+  "description_es": "Placa de desarrollo de la serie STM32F1 con un núcleo Arm Cortex-M3 a 24-72 MHz, 16 KB - 1 MB de Flash, 4-96 KB de RAM, con interfaces periféricas ricas adecuadas para aplicaciones embebidas de propósito general.",
+  "description_pt": "Placa de desenvolvimento da série STM32F1 com um núcleo Arm Cortex-M3 a 24-72 MHz, 16 KB - 1 MB de Flash, 4-96 KB de RAM, com interfaces periféricas ricas adequadas para aplicações embarcadas de uso geral.",
+  "description_ru": "Плата разработки серии STM32F1 с ядром Arm Cortex-M3 на частоте 24-72 МГц, 16 КБ - 1 МБ Flash, 4-96 КБ ОЗУ, с богатыми периферийными интерфейсами, подходящая для встроенных приложений общего назначения.",
+  "description_ar": "لوحة تطوير سلسلة STM32F1 تتميز بنواة Arm Cortex-M3 بتردد 24-72 ميغاهرتز، و16 كيلوبايت - 1 ميغابايت فلاش، و4-96 كيلوبايت RAM، مع واجهات طرفية غنية مناسبة للتطبيقات المدمجة ذات الأغراض العامة.",
+  "main": "index.js",
+  "brand": "STMicroelectronics",
+  "url": "https://www.st.com.cn/zh/microcontrollers-microprocessors/stm32f1-series.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "STM32",
+    "Cortex-M3",
+    "ARM"
+  ],
+  "author": "STMicroelectronics",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
+    "@aily-project/tool-STM32Tools": "2.3.1",
+    "@aily-project/sdk-stm32": "2.11.0",
+    "@aily-project/tool-STM32_SVD": "1.18.1",
+    "@aily-project/tool-stm32flash": "0.7.0",
+    "@aily-project/tool-CMSIS": "5.9.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
 }
