@@ -1,0 +1,30 @@
+{
+  "name": "@aily-project/board-metro_esp32s3",
+  "nickname": "Adafruit Metro ESP32-S3",
+  "version": "3.3.1",
+  "description": "The Adafruit Metro ESP32-S3 is a Metro-form-factor development board based on the ESP32-S3 with dual-core 240 MHz processor, 16 MB Flash, 8 MB PSRAM, native USB, Wi-Fi, BLE 5.0, LiPoly battery charging, microSD slot, and STEMMA QT connector.",
+  "description_en": "The Adafruit Metro ESP32-S3 is a Metro-form-factor development board based on the ESP32-S3 with dual-core 240 MHz processor, 16 MB Flash, 8 MB PSRAM, native USB, Wi-Fi, BLE 5.0, LiPoly battery charging, microSD slot, and STEMMA QT connector.",
+  "description_zh_cn": "Adafruit Metro ESP32-S3 是一款基于 ESP32-S3 的 Metro 外形开发板，搭载双核 240 MHz 处理器、16 MB Flash、8 MB PSRAM、原生 USB、Wi-Fi、BLE 5.0、锂电池充电、microSD 卡槽和 STEMMA QT 连接器。",
+  "main": "index.js",
+  "url": "https://learn.adafruit.com/adafruit-metro-esp32-s3",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ESP32-S3",
+    "WiFi",
+    "Bluetooth",
+    "Adafruit",
+    "Metro"
+  ],
+  "author": "Adafruit",
+  "brand": "Adafruit",
+  "license": "MIT",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-esptool_py": "5.1.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32s3": "5.5.1",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

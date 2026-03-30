@@ -1,0 +1,31 @@
+{
+  "name": "@aily-project/board-metro_m4_airlift",
+  "nickname": "Adafruit Metro M4 AirLift",
+  "version": "1.7.16",
+  "description": "The Adafruit Metro M4 AirLift is based on the ATSAMD51J19 (ARM Cortex-M4 @ 120 MHz) with an onboard ESP32 co-processor for WiFi/BLE, 2 MB QSPI Flash, NeoPixel, microSD slot, and STEMMA QT connector in a classic Metro form factor.",
+  "description_en": "The Adafruit Metro M4 AirLift is based on the ATSAMD51J19 (ARM Cortex-M4 @ 120 MHz) with an onboard ESP32 co-processor for WiFi/BLE, 2 MB QSPI Flash, NeoPixel, microSD slot, and STEMMA QT connector in a classic Metro form factor.",
+  "description_zh_cn": "Adafruit Metro M4 AirLift 基于 ATSAMD51J19（ARM Cortex-M4 @ 120 MHz），板载 ESP32 协处理器支持 WiFi/BLE，2 MB QSPI Flash、NeoPixel、microSD 卡槽和 STEMMA QT 连接器，采用经典 Metro 外形。",
+  "main": "index.js",
+  "url": "https://learn.adafruit.com/adafruit-metro-m4-express-airlift-wifi",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SAMD51",
+    "WiFi",
+    "Bluetooth",
+    "Adafruit",
+    "Metro",
+    "AirLift"
+  ],
+  "author": "Adafruit",
+  "brand": "Adafruit",
+  "license": "MIT",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "7.2.1",
+    "@aily-project/tool-bossac": "1.9.1",
+    "@aily-project/sdk-adafruit_samd": "1.7.16",
+    "@aily-project/tool-ctags": "5.8.0"
+  },
+  "state": "todo"
+}
