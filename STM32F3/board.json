@@ -795,7 +795,7 @@
       "PF1"
     ]
   ],
-  "interruptModes": [
+  "interruptMode": [
     [
       "RISING",
       "RISING"
