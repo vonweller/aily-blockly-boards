@@ -241,5 +241,11 @@
         ["20", "20"],
         ["19", "19"],
         ["18", "18"]
+    ],
+    "interruptMode": [
+        ["LOW", "LOW"],
+        ["RISING", "RISING"],
+        ["FALLING", "FALLING"],
+        ["CHANGE", "CHANGE"]
     ]
 }

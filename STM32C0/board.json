@@ -499,7 +499,7 @@
       "PF2"
     ]
   ],
-  "interruptModes": [
+  "interruptMode": [
     [
       "RISING",
       "RISING"
