@@ -1,0 +1,153 @@
+{
+    "name": "Adafruit Metro M4 AirLift",
+    "version": "1.0.0",
+    "description": "Adafruit Metro M4 AirLift with ATSAMD51 and ESP32 WiFi co-processor",
+    "compilerTool": "aily-builder",
+    "core": "adafruit:samd",
+    "type": "adafruit:samd:adafruit_metro_m4_airliftlite",
+    "compilerParam": "compile -v -b adafruit:samd:adafruit_metro_m4_airliftlite",
+    "uploadParam": "[--use_1200bps_touch, --wait_for_upload] bossac -d --port=${serial} -a -U -e -w ${'*.bin'} -R",
+    "analogPins": [
+        ["A0", "A0"],
+        ["A1", "A1"],
+        ["A2", "A2"],
+        ["A3", "A3"],
+        ["A4", "A4"],
+        ["A5", "A5"]
+    ],
+    "digitalPins": [
+        ["0", "0"],
+        ["1", "1"],
+        ["2", "2"],
+        ["3", "3"],
+        ["4", "4"],
+        ["5", "5"],
+        ["6", "6"],
+        ["7", "7"],
+        ["8", "8"],
+        ["9", "9"],
+        ["10", "10"],
+        ["11", "11"],
+        ["12", "12"],
+        ["13", "13"],
+        ["A0", "A0"],
+        ["A1", "A1"],
+        ["A2", "A2"],
+        ["A3", "A3"],
+        ["A4", "A4"],
+        ["A5", "A5"],
+        ["SDA", "SDA"],
+        ["SCL", "SCL"]
+    ],
+    "pwmPins": [
+        ["0", "0"],
+        ["1", "1"],
+        ["2", "2"],
+        ["3", "3"],
+        ["4", "4"],
+        ["5", "5"],
+        ["6", "6"],
+        ["7", "7"],
+        ["8", "8"],
+        ["9", "9"],
+        ["10", "10"],
+        ["11", "11"],
+        ["12", "12"],
+        ["13", "13"]
+    ],
+    "servoPins": [
+        ["0", "0"],
+        ["1", "1"],
+        ["2", "2"],
+        ["3", "3"],
+        ["4", "4"],
+        ["5", "5"],
+        ["6", "6"],
+        ["7", "7"],
+        ["8", "8"],
+        ["9", "9"],
+        ["10", "10"],
+        ["11", "11"],
+        ["12", "12"],
+        ["13", "13"]
+    ],
+    "serialPort": [
+        ["Serial", "Serial"],
+        ["Serial1", "Serial1"]
+    ],
+    "serialSpeed": [
+        ["1200", "1200"],
+        ["9600", "9600"],
+        ["14400", "14400"],
+        ["19200", "19200"],
+        ["38400", "38400"],
+        ["57600", "57600"],
+        ["115200", "115200"],
+        ["230400", "230400"]
+    ],
+    "spi": [
+        ["SPI", "SPI"]
+    ],
+    "spiPins": {
+        "SPI": [
+            ["MOSI", "MOSI"],
+            ["MISO", "MISO"],
+            ["SCK", "SCK"]
+        ]
+    },
+    "spiClockDivide": [
+        ["2 (8MHz)", "SPI_CLOCK_DIV2"],
+        ["4 (4MHz)", "SPI_CLOCK_DIV4"],
+        ["8 (2MHz)", "SPI_CLOCK_DIV8"],
+        ["16 (1MHz)", "SPI_CLOCK_DIV16"],
+        ["32 (500KHz)", "SPI_CLOCK_DIV32"],
+        ["64 (250KHz)", "SPI_CLOCK_DIV64"],
+        ["128 (125KHz)", "SPI_CLOCK_DIV128"]
+    ],
+    "i2c": [
+        ["I2C", "Wire"]
+    ],
+    "i2cPins": {
+        "Wire": [
+            ["SDA", "SDA"],
+            ["SCL", "SCL"]
+        ]
+    },
+    "i2cSpeed": [
+        ["100kHz", "100000L"],
+        ["400kHz", "400000L"],
+        ["1MHz", "1000000L"]
+    ],
+    "builtinLed": [
+        ["LED", "13"]
+    ],
+    "interruptPins": [
+        ["0", "0"],
+        ["1", "1"],
+        ["2", "2"],
+        ["3", "3"],
+        ["4", "4"],
+        ["5", "5"],
+        ["6", "6"],
+        ["7", "7"],
+        ["8", "8"],
+        ["9", "9"],
+        ["10", "10"],
+        ["11", "11"],
+        ["12", "12"],
+        ["13", "13"],
+        ["A0", "A0"],
+        ["A1", "A1"],
+        ["A2", "A2"],
+        ["A3", "A3"],
+        ["A4", "A4"],
+        ["A5", "A5"]
+    ],
+    "interruptMode": [
+        ["LOW", "LOW"],
+        ["RISING", "RISING"],
+        ["FALLING", "FALLING"],
+        ["CHANGE", "CHANGE"],
+        ["HIGH", "HIGH"]
+    ]
+}

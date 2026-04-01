@@ -1,5 +1,5 @@
 {
-    "name": "Arduino MEGA Pro",
+    "name": "MEGA Pro",
     "version":"1.0.1",
     "description": "Arduino MEGA Pro board",
     "compilerTool": "aily-builder",
@@ -241,5 +241,11 @@
         ["20", "20"],
         ["19", "19"],
         ["18", "18"]
+    ],
+    "interruptMode": [
+        ["LOW", "LOW"],
+        ["RISING", "RISING"],
+        ["FALLING", "FALLING"],
+        ["CHANGE", "CHANGE"]
     ]
 }

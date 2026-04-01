@@ -1919,7 +1919,7 @@
       "PH3"
     ]
   ],
-  "interruptModes": [
+  "interruptMode": [
     [
       "RISING",
       "RISING"

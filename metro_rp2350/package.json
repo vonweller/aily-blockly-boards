@@ -1,0 +1,29 @@
+{
+  "name": "@aily-project/board-metro_rp2350",
+  "nickname": "Adafruit Metro RP2350",
+  "version": "5.1.0",
+  "description": "The Adafruit Metro RP2350 is based on the RP2350 chip with dual-core Arm Cortex-M33 processor at up to 150 MHz, 520 KB SRAM, 16 MB QSPI Flash, 6 ADC inputs, microSD slot, NeoPixel, STEMMA QT connector, HSTX port, and Metro Uno form factor.",
+  "description_en": "The Adafruit Metro RP2350 is based on the RP2350 chip with dual-core Arm Cortex-M33 processor at up to 150 MHz, 520 KB SRAM, 16 MB QSPI Flash, 6 ADC inputs, microSD slot, NeoPixel, STEMMA QT connector, HSTX port, and Metro Uno form factor.",
+  "description_zh_cn": "Adafruit Metro RP2350 基于 RP2350 芯片，搭载双核 Arm Cortex-M33 处理器（最高 150 MHz）、520 KB SRAM、16 MB QSPI Flash、6 个 ADC 输入，配备 microSD 卡槽、NeoPixel、STEMMA QT 连接器、HSTX 端口，采用 Metro Uno 外形。",
+  "main": "index.js",
+  "url": "https://learn.adafruit.com/adafruit-metro-rp2350",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RP2350",
+    "Adafruit",
+    "Metro"
+  ],
+  "author": "Adafruit",
+  "brand": "Adafruit",
+  "license": "MIT",
+  "boardDependencies": {
+    "@aily-project/compiler-pqt-gcc": "4.1.0",
+    "@aily-project/sdk-rp2040": "5.1.0",
+    "@aily-project/tool-pqt-picotool": "4.1.0",
+    "@aily-project/tool-pqt-pioasm": "4.1.0",
+    "@aily-project/tool-pqt-python3": "1.0.1",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

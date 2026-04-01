@@ -823,7 +823,7 @@
       "PF7"
     ]
   ],
-  "interruptModes": [
+  "interruptMode": [
     [
       "RISING",
       "RISING"
