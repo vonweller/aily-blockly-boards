@@ -1,5 +1,5 @@
 {
-    "name": "Arduino MEGA Pro",
+    "name": "MEGA Pro",
     "version":"1.0.1",
     "description": "Arduino MEGA Pro board",
     "compilerTool": "aily-builder",
