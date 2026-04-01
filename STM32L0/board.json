@@ -807,7 +807,7 @@
       "PH1"
     ]
   ],
-  "interruptModes": [
+  "interruptMode": [
     [
       "RISING",
       "RISING"

@@ -1,0 +1,28 @@
+{
+  "name": "@aily-project/board-metro_m4_feat",
+  "nickname": "Adafruit Metro M4 Express",
+  "version": "1.7.16",
+  "description": "The Adafruit Metro M4 Express featuring ATSAMD51J19 (ARM Cortex-M4 @ 120 MHz) with 2 MB QSPI Flash, NeoPixel, 2 DAC outputs, microSD slot, and full Arduino Uno R3 header layout.",
+  "description_en": "The Adafruit Metro M4 Express featuring ATSAMD51J19 (ARM Cortex-M4 @ 120 MHz) with 2 MB QSPI Flash, NeoPixel, 2 DAC outputs, microSD slot, and full Arduino Uno R3 header layout.",
+  "description_zh_cn": "Adafruit Metro M4 Express 搭载 ATSAMD51J19（ARM Cortex-M4 @ 120 MHz），配备 2 MB QSPI Flash、NeoPixel、2 个 DAC 输出、microSD 卡槽，兼容 Arduino Uno R3 排针布局。",
+  "main": "index.js",
+  "url": "https://learn.adafruit.com/adafruit-metro-m4-express-featuring-atsamd51",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SAMD51",
+    "Adafruit",
+    "Metro"
+  ],
+  "author": "Adafruit",
+  "brand": "Adafruit",
+  "license": "MIT",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "7.2.1",
+    "@aily-project/tool-bossac": "1.9.1",
+    "@aily-project/sdk-adafruit_samd": "1.7.16",
+    "@aily-project/tool-ctags": "5.8.0"
+  },
+  "state": "todo"
+}

@@ -1,17 +1,17 @@
 {
-  "id": "component_1772690049753",
-  "name": "ESP32C3",
+  "id": "component_1772690063589",
+  "name": "ESP32S3",
   "width": 300,
-  "height": 300,
+  "height": 500,
   "images": [
     {
-      "id": "img_1772690049754",
-      "name": "Image_1772690049754",
+      "id": "img_1772690063590",
+      "name": "Image_1772690063590",
       "width": 300,
-      "height": 300,
+      "height": 500,
       "x": 0,
       "y": 0,
-      "aspectRatio": 1,
+      "aspectRatio": 0.6,
       "visible": true,
       "disabled": false,
       "locked": true
@@ -103,14 +103,8 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO0",
+          "name": "0",
           "type": "digital",
-          "visible": true,
-          "disabled": false
-        },
-        {
-          "name": "GPIO0",
-          "type": "analog",
           "visible": true,
           "disabled": false
         },
@@ -134,13 +128,13 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO1",
+          "name": "1",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "GPIO1",
+          "name": "1",
           "type": "analog",
           "visible": true,
           "disabled": false
@@ -148,6 +142,12 @@
         {
           "name": "GPIO1",
           "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH1",
+          "type": "touch",
           "visible": true,
           "disabled": false
         }
@@ -165,13 +165,13 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO2",
+          "name": "2",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "GPIO2",
+          "name": "2",
           "type": "analog",
           "visible": true,
           "disabled": false
@@ -179,6 +179,12 @@
         {
           "name": "GPIO2",
           "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH2",
+          "type": "touch",
           "visible": true,
           "disabled": false
         }
@@ -196,14 +202,26 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO3",
+          "name": "3",
           "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "3",
+          "type": "analog",
           "visible": true,
           "disabled": false
         },
         {
           "name": "GPIO3",
           "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH3",
+          "type": "touch",
           "visible": true,
           "disabled": false
         }
@@ -221,20 +239,26 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO4",
+          "name": "4",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "SCK",
-          "type": "spi",
+          "name": "4",
+          "type": "analog",
           "visible": true,
           "disabled": false
         },
         {
           "name": "GPIO4",
           "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH4",
+          "type": "touch",
           "visible": true,
           "disabled": false
         }
@@ -252,20 +276,26 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO5",
+          "name": "5",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "MISO",
-          "type": "spi",
+          "name": "5",
+          "type": "analog",
           "visible": true,
           "disabled": false
         },
         {
           "name": "GPIO5",
           "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH5",
+          "type": "touch",
           "visible": true,
           "disabled": false
         }
@@ -283,20 +313,26 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO6",
+          "name": "6",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "MOSI",
-          "type": "spi",
+          "name": "6",
+          "type": "analog",
           "visible": true,
           "disabled": false
         },
         {
           "name": "GPIO6",
           "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH6",
+          "type": "touch",
           "visible": true,
           "disabled": false
         }
@@ -314,20 +350,26 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO7",
+          "name": "7",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "SDA",
-          "type": "i2c",
+          "name": "7",
+          "type": "analog",
           "visible": true,
           "disabled": false
         },
         {
           "name": "GPIO7",
           "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH7",
+          "type": "touch",
           "visible": true,
           "disabled": false
         }
@@ -338,15 +380,64 @@
     },
     {
       "id": "pin_13",
-      "x": 285,
-      "y": 30,
-      "labelX": 315,
-      "labelY": 23,
+      "x": 15,
+      "y": 270,
+      "labelX": -15,
+      "labelY": 263,
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO8",
+          "name": "8",
           "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "8",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "SDA",
+          "type": "i2c",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO8",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH8",
+          "type": "touch",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_14",
+      "x": 15,
+      "y": 290,
+      "labelX": -15,
+      "labelY": 283,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "9",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "9",
+          "type": "analog",
           "visible": true,
           "disabled": false
         },
@@ -357,7 +448,316 @@
           "disabled": false
         },
         {
-          "name": "GPIO8",
+          "name": "GPIO9",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH9",
+          "type": "touch",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_15",
+      "x": 15,
+      "y": 310,
+      "labelX": -15,
+      "labelY": 303,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "10",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "10",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO10",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH10",
+          "type": "touch",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_16",
+      "x": 15,
+      "y": 330,
+      "labelX": -15,
+      "labelY": 323,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "11",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "11",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "MOSI",
+          "type": "spi",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO11",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH11",
+          "type": "touch",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_17",
+      "x": 15,
+      "y": 350,
+      "labelX": -15,
+      "labelY": 343,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "12",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "12",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "SCK",
+          "type": "spi",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO12",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH12",
+          "type": "touch",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_18",
+      "x": 15,
+      "y": 370,
+      "labelX": -15,
+      "labelY": 363,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "13",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "13",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "MISO",
+          "type": "spi",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO13",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH13",
+          "type": "touch",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_19",
+      "x": 15,
+      "y": 390,
+      "labelX": -15,
+      "labelY": 383,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "14",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "14",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO14",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "TOUCH14",
+          "type": "touch",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_20",
+      "x": 15,
+      "y": 410,
+      "labelX": -15,
+      "labelY": 403,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "15",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO15",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_21",
+      "x": 15,
+      "y": 430,
+      "labelX": -15,
+      "labelY": 423,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "16",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO16",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_22",
+      "x": 15,
+      "y": 450,
+      "labelX": -15,
+      "labelY": 443,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "17",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO17",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "right"
+    },
+    {
+      "id": "pin_23",
+      "x": 285,
+      "y": 30,
+      "labelX": 315,
+      "labelY": 23,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "18",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO18",
           "type": "gpio",
           "visible": true,
           "disabled": false
@@ -367,7 +767,7 @@
       "disabled": false
     },
     {
-      "id": "pin_14",
+      "id": "pin_24",
       "x": 285,
       "y": 50,
       "labelX": 315,
@@ -375,13 +775,13 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO9",
+          "name": "19",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "GPIO9",
+          "name": "GPIO19",
           "type": "gpio",
           "visible": true,
           "disabled": false
@@ -391,7 +791,7 @@
       "disabled": false
     },
     {
-      "id": "pin_15",
+      "id": "pin_25",
       "x": 285,
       "y": 70,
       "labelX": 315,
@@ -399,13 +799,13 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO10",
+          "name": "20",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "GPIO10",
+          "name": "GPIO20",
           "type": "gpio",
           "visible": true,
           "disabled": false
@@ -415,7 +815,7 @@
       "disabled": false
     },
     {
-      "id": "pin_16",
+      "id": "pin_26",
       "x": 285,
       "y": 90,
       "labelX": 315,
@@ -423,13 +823,13 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO18",
+          "name": "21",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "GPIO18",
+          "name": "GPIO21",
           "type": "gpio",
           "visible": true,
           "disabled": false
@@ -439,7 +839,7 @@
       "disabled": false
     },
     {
-      "id": "pin_17",
+      "id": "pin_27",
       "x": 285,
       "y": 110,
       "labelX": 315,
@@ -447,13 +847,19 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO19",
+          "name": "35",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "GPIO19",
+          "name": "MOSI",
+          "type": "spi",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO35",
           "type": "gpio",
           "visible": true,
           "disabled": false
@@ -463,7 +869,7 @@
       "disabled": false
     },
     {
-      "id": "pin_18",
+      "id": "pin_28",
       "x": 285,
       "y": 130,
       "labelX": 315,
@@ -471,19 +877,19 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO20",
+          "name": "36",
           "type": "digital",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "RX",
-          "type": "uart",
+          "name": "SCK",
+          "type": "spi",
           "visible": true,
           "disabled": false
         },
         {
-          "name": "GPIO20",
+          "name": "GPIO36",
           "type": "gpio",
           "visible": true,
           "disabled": false
@@ -493,7 +899,7 @@
       "disabled": false
     },
     {
-      "id": "pin_19",
+      "id": "pin_29",
       "x": 285,
       "y": 150,
       "labelX": 315,
@@ -501,7 +907,169 @@
       "layout": "horizontal",
       "functions": [
         {
-          "name": "GPIO21",
+          "name": "37",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "SDA1",
+          "type": "i2c",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "MISO",
+          "type": "spi",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO37",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_30",
+      "x": 285,
+      "y": 170,
+      "labelX": 315,
+      "labelY": 163,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "38",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "SCL1",
+          "type": "i2c",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO38",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_31",
+      "x": 285,
+      "y": 190,
+      "labelX": 315,
+      "labelY": 183,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "39",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO39",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_32",
+      "x": 285,
+      "y": 210,
+      "labelX": 315,
+      "labelY": 203,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "40",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO40",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_33",
+      "x": 285,
+      "y": 230,
+      "labelX": 315,
+      "labelY": 223,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "41",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO41",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_34",
+      "x": 285,
+      "y": 250,
+      "labelX": 315,
+      "labelY": 243,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "42",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO42",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_35",
+      "x": 285,
+      "y": 270,
+      "labelX": 315,
+      "labelY": 263,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "43",
           "type": "digital",
           "visible": true,
           "disabled": false
@@ -513,7 +1081,133 @@
           "disabled": false
         },
         {
-          "name": "GPIO21",
+          "name": "GPIO43",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_36",
+      "x": 285,
+      "y": 290,
+      "labelX": 315,
+      "labelY": 283,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "44",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "RX",
+          "type": "uart",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO44",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_37",
+      "x": 285,
+      "y": 310,
+      "labelX": 315,
+      "labelY": 303,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "45",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO45",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_38",
+      "x": 285,
+      "y": 330,
+      "labelX": 315,
+      "labelY": 323,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "46",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO46",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_39",
+      "x": 285,
+      "y": 350,
+      "labelX": 315,
+      "labelY": 343,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "47",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO47",
+          "type": "gpio",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false
+    },
+    {
+      "id": "pin_40",
+      "x": 285,
+      "y": 370,
+      "labelX": 315,
+      "labelY": 363,
+      "layout": "horizontal",
+      "functions": [
+        {
+          "name": "48",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "GPIO48",
           "type": "gpio",
           "visible": true,
           "disabled": false
@@ -587,9 +1281,15 @@
       "label": "GPIO",
       "color": "#e6d200",
       "textColor": "#FFFFFF"
+    },
+    {
+      "value": "touch",
+      "label": "TOUCH",
+      "color": "#f98062",
+      "textColor": "#FFFFFF"
     }
   ],
   "visible": true,
   "disabled": false,
-  "board": "@aily-project/board-seekfree-bot"
+  "board": "@aily-project/board-esp32s3"
 }

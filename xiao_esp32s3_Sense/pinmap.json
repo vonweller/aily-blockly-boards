@@ -467,7 +467,7 @@
           "disabled": false
         },
         {
-          "name": "MISO",
+          "name": "SCK",
           "type": "spi",
           "visible": true,
           "disabled": false
@@ -491,7 +491,7 @@
           "disabled": false
         },
         {
-          "name": "SCK",
+          "name": "MISO",
           "type": "spi",
           "visible": true,
           "disabled": false

@@ -835,7 +835,7 @@
       "PG10"
     ]
   ],
-  "interruptModes": [
+  "interruptMode": [
     [
       "RISING",
       "RISING"
