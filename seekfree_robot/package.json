@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-seekfree-bot",
   "nickname": "Seekfree Robot B1",
-  "version": "3.3.1",
+  "version": "3.2.1",
   "description": "The Seekfree Robot B1 is an ESP32-S3-based smart robot car kit designed for robotics education and competition, with motor control, sensor integration, Wi-Fi/BLE connectivity, and programmable capabilities.",
   "description_en": "The Seekfree Robot B1 is an ESP32-S3-based smart robot car kit designed for robotics education and competition, with motor control, sensor integration, Wi-Fi/BLE connectivity, and programmable capabilities.",
   "description_zh_cn": "逐飞 Robot B1 是一款基于 ESP32-S3 的智能机器人小车套件，专为机器人教育和竞赛设计，支持电机控制、传感器集成、Wi-Fi/BLE 连接和可编程功能。",
