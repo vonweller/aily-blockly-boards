@@ -7,6 +7,7 @@
   "type": "STMicroelectronics:stm32:GenL0",
   "compilerParam": "compile -v -b STMicroelectronics:stm32:GenL0",
   "uploadParam": "stm32flash -w ${'*.bin'} -v -g 0x0 ${serial}",
+  "swdUploadParam": "openocd -f interface/${linkType}.cfg -c \"transport select swd\" -c \"adapter serial ${linkSerial}\" -f target/stm32l0x.cfg -c \"program ${'*.bin'} 0x08000000 verify reset exit\"",
   "analogPins": [
     [
       "PIN_A0",
