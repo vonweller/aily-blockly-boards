@@ -7,7 +7,7 @@
   "type": "STMicroelectronics:stm32:GenF2",
   "compilerParam": "compile -v -b STMicroelectronics:stm32:GenF2",
   "uploadParam": "stm32flash -w ${'*.bin'} -v -g 0x0 ${serial}",
-  "swdUploadParam": "openocd -f interface/${linkType}.cfg -c \"transport select swd\" -c \"adapter serial ${linkSerial}\" -f target/stm32f2x.cfg -c \"program ${'*.bin'} 0x08000000 verify reset exit\"",
+  "linkUploadParam": "probe-rs download --chip ${pnum} --verify ${'*.elf'}",
   "analogPins": [
     [
       "PIN_A0",
