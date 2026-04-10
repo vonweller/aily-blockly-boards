@@ -1,0 +1,344 @@
+{
+  "id": "component_nrf52840_dongle",
+  "name": "nRF52840Dongle",
+  "width": 580,
+  "height": 200,
+  "images": [
+    {
+      "id": "img_nrf52840_dongle",
+      "name": "Image_nrf52840_dongle",
+      "width": 580,
+      "height": 200,
+      "x": 0,
+      "y": 0,
+      "aspectRatio": 2.9,
+      "visible": true,
+      "disabled": false,
+      "locked": true
+    }
+  ],
+  "pins": [
+    {
+      "id": "pin_1",
+      "x": 180,
+      "y": 15,
+      "labelX": 180,
+      "labelY": -5,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "GND",
+          "type": "gnd",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "bottom"
+    },
+    {
+      "id": "pin_2",
+      "x": 210,
+      "y": 15,
+      "labelX": 210,
+      "labelY": -5,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P0.13",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "bottom"
+    },
+    {
+      "id": "pin_3",
+      "x": 240,
+      "y": 15,
+      "labelX": 240,
+      "labelY": -5,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P0.15",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "bottom"
+    },
+    {
+      "id": "pin_4",
+      "x": 270,
+      "y": 15,
+      "labelX": 270,
+      "labelY": -5,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P0.17",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "bottom"
+    },
+    {
+      "id": "pin_5",
+      "x": 300,
+      "y": 15,
+      "labelX": 300,
+      "labelY": -5,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P0.20",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "bottom"
+    },
+    {
+      "id": "pin_6",
+      "x": 330,
+      "y": 15,
+      "labelX": 330,
+      "labelY": -5,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P0.22",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "bottom"
+    },
+    {
+      "id": "pin_7",
+      "x": 360,
+      "y": 15,
+      "labelX": 360,
+      "labelY": -5,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P0.24",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "bottom"
+    },
+    {
+      "id": "pin_8",
+      "x": 390,
+      "y": 15,
+      "labelX": 390,
+      "labelY": -5,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "VDD OUT",
+          "type": "power",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "bottom"
+    },
+    {
+      "id": "pin_9",
+      "x": 420,
+      "y": 15,
+      "labelX": 420,
+      "labelY": -5,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "GND",
+          "type": "gnd",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "bottom"
+    },
+    {
+      "id": "pin_10",
+      "x": 180,
+      "y": 185,
+      "labelX": 180,
+      "labelY": 205,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P0.31",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "P0.31-AIN7",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "top"
+    },
+    {
+      "id": "pin_11",
+      "x": 210,
+      "y": 185,
+      "labelX": 210,
+      "labelY": 205,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P0.29",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "P0.29-AIN5",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "top"
+    },
+    {
+      "id": "pin_12",
+      "x": 240,
+      "y": 185,
+      "labelX": 240,
+      "labelY": 205,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P0.02",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "name": "P0.02-AIN0",
+          "type": "analog",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "top"
+    },
+    {
+      "id": "pin_13",
+      "x": 270,
+      "y": 185,
+      "labelX": 270,
+      "labelY": 205,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P1.15",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "top"
+    },
+    {
+      "id": "pin_14",
+      "x": 300,
+      "y": 185,
+      "labelX": 300,
+      "labelY": 205,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P1.13",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "top"
+    },
+    {
+      "id": "pin_15",
+      "x": 330,
+      "y": 185,
+      "labelX": 330,
+      "labelY": 205,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "P1.10",
+          "type": "digital",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "top"
+    },
+    {
+      "id": "pin_16",
+      "x": 360,
+      "y": 185,
+      "labelX": 360,
+      "labelY": 205,
+      "layout": "vertical",
+      "functions": [
+        {
+          "name": "GND",
+          "type": "gnd",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "visible": true,
+      "disabled": false,
+      "labelAnchor": "top"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@aily-project/board-nrf52840_dongle",
+  "nickname": "nRF52840 Dongle",
+  "version": "1.7.0",
+  "description": "The nRF52840 Dongle is a small, low-cost USB dongle that supports Bluetooth 5.4, Bluetooth mesh, Thread, Zigbee, 802.15.4, ANT and 2.4 GHz proprietary protocols. It is the perfect target hardware for use with nRF Connect for Desktop.",
+  "description_en": "The nRF52840 Dongle is a small, low-cost USB dongle that supports Bluetooth 5.4, Bluetooth mesh, Thread, Zigbee, 802.15.4, ANT and 2.4 GHz proprietary protocols. It is the perfect target hardware for use with nRF Connect for Desktop.",
+  "description_zh_cn": "nRF52840 Dongle 是一款小巧、低成本的 USB 加密狗，支持蓝牙 5.4、蓝牙 Mesh、Thread、Zigbee、802.15.4、ANT 和 2.4 GHz 专有协议。它具有用户可编程的 RGB LED、绿色 LED、用户可配置按钮以及沿边缘的 15 个 GPIO 引脚。",
+  "description_zh_hk": "nRF52840 Dongle 是一款小巧、低成本的 USB 加密狗，支援藍牙 5.4、藍牙 Mesh、Thread、Zigbee、802.15.4、ANT 和 2.4 GHz 專有協議。它具有用戶可編程的 RGB LED、綠色 LED、用戶可配置按鈕以及沿邊緣的 15 個 GPIO 引腳。",
+  "description_ja": "nRF52840 Dongleは、Bluetooth 5.4、Bluetooth Mesh、Thread、Zigbee、802.15.4、ANT、2.4GHz独自プロトコルをサポートする小型、低コストのUSBドングルです。ユーザープログラマブルなRGB LED、緑色LED、ユーザー設定可能なボタン、およびエッジに沿った15個のGPIOピンを備えています。",
+  "description_ko": "nRF52840 Dongle은 Bluetooth 5.4, Bluetooth Mesh, Thread, Zigbee, 802.15.4, ANT 및 2.4GHz 독점 프로토콜을 지원하는 소형 저비용 USB 동글입니다. 사용자 프로그래밍 가능한 RGB LED, 녹색 LED, 사용자 설정 가능한 버튼 및 가장자리를 따라 15개의 GPIO 핀이 있습니다.",
+  "description_de": "Der nRF52840 Dongle ist ein kleiner, kostengünstiger USB-Dongle, der Bluetooth 5.4, Bluetooth Mesh, Thread, Zigbee, 802.15.4, ANT und 2,4-GHz-proprietäre Protokolle unterstützt. Er verfügt über eine vom Benutzer programmierbare RGB-LED, eine grüne LED, eine konfigurierbare Taste und 15 GPIO-Pins entlang der Kanten.",
+  "description_fr": "Le nRF52840 Dongle est un petit dongle USB à faible coût prenant en charge Bluetooth 5.4, Bluetooth Mesh, Thread, Zigbee, 802.15.4, ANT et les protocoles propriétaires 2,4 GHz. Il dispose d'une LED RGB programmable, d'une LED verte, d'un bouton configurable et de 15 GPIO le long des bords.",
+  "description_es": "El nRF52840 Dongle es un dongle USB pequeño y de bajo costo que soporta Bluetooth 5.4, Bluetooth Mesh, Thread, Zigbee, 802.15.4, ANT y protocolos propietarios de 2,4 GHz. Cuenta con un LED RGB programable, un LED verde, un botón configurable y 15 GPIO a lo largo de los bordes.",
+  "description_pt": "O nRF52840 Dongle é um dongle USB pequeno e de baixo custo que suporta Bluetooth 5.4, Bluetooth Mesh, Thread, Zigbee, 802.15.4, ANT e protocolos proprietários de 2,4 GHz. Possui um LED RGB programável, um LED verde, um botão configurável e 15 GPIOs ao longo das bordas.",
+  "description_ru": "nRF52840 Dongle — компактный недорогой USB-донгл с поддержкой Bluetooth 5.4, Bluetooth Mesh, Thread, Zigbee, 802.15.4, ANT и проприетарных протоколов 2,4 ГГц. Оснащён программируемым RGB-светодиодом, зелёным светодиодом, настраиваемой кнопкой и 15 GPIO на краях платы.",
+  "description_ar": "nRF52840 Dongle هو دونجل USB صغير ومنخفض التكلفة يدعم Bluetooth 5.4 وBluetooth Mesh وThread وZigbee و802.15.4 وANT والبروتوكولات الخاصة 2.4 جيجاهرتز. يحتوي على LED RGB قابل للبرمجة وLED أخضر وزر قابل للتكوين و15 منفذ GPIO على طول الحواف.",
+  "main": "index.js",
+  "brand": "Nordic Semiconductor",
+  "url": "https://www.nordicsemi.com/Products/Development-hardware/nRF52840-Dongle",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aily-project",
+  "state": "todo",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "9.0.0",
+    "@aily-project/tool-adafruit-nrfutil": "1.7.0",
+    "@aily-project/sdk-nrf52": "1.7.0",
+    "@aily-project/tool-CMSIS": "5.7.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
