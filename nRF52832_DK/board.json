@@ -1,7 +1,7 @@
 {
-    "name": "nRF52DevKit",
+    "name": "nRF52832 DK",
     "version": "1.0.0",
-    "description": "nRF52开发板 - 基于nRF52832的编程开发板",
+    "description": "nRF52832 DK开发板 - 基于nRF52832的编程开发板",
     "compilerTool": "aily-builder",
     "core": "adafruit:nrf52",
     "type": "adafruit:nrf52:pca10040",
