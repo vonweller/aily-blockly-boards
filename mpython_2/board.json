@@ -72,7 +72,18 @@
         ["P16", "23"]
     ],
     "serialPort": [
-        ["Serial", "Serial"]
+        [
+            "Serial",
+            "Serial"
+        ],
+        [
+            "Serial1",
+            "Serial1"
+        ],
+        [
+            "Serial2",
+            "Serial2"
+        ]
     ],
     "serialSpeed": [
         ["1200", "1200"],

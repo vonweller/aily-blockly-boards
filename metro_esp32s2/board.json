@@ -78,7 +78,14 @@
         ["D13", "42"]
     ],
     "serialPort": [
-        ["Serial", "Serial"]
+        [
+            "Serial",
+            "Serial"
+        ],
+        [
+            "Serial1",
+            "Serial1"
+        ]
     ],
     "serialSpeed": [
         ["1200", "1200"],
