@@ -52,7 +52,14 @@
         ["D10","D10"]
     ],
     "serialPort": [
-        ["Serial","Serial"]
+        [
+            "Serial",
+            "Serial"
+        ],
+        [
+            "Serial1",
+            "Serial1"
+        ]
     ],
     "serialSpeed": [
         ["1200","1200"],

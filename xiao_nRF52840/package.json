@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-xiao_nrf52840",
   "nickname": "XIAO nRF52840",
-  "version": "1.0.0",
+  "version": "1.7.0",
   "description": "The Seeed Studio XIAO nRF52840 features the powerful Nordic nRF52840 MCU with Bluetooth 5.0 connectivity in an ultra-compact 21x17.8 mm form factor, suitable for wearable devices and IoT projects.",
   "description_en": "The Seeed Studio XIAO nRF52840 features the powerful Nordic nRF52840 MCU with Bluetooth 5.0 connectivity in an ultra-compact 21x17.8 mm form factor, suitable for wearable devices and IoT projects.",
   "description_zh_cn": "Seeed Studio XIAO nRF52840 搭载强大的 Nordic nRF52840 MCU，支持蓝牙 5.0 连接，采用超紧凑的 21x17.8 mm 外形，适用于可穿戴设备和物联网项目。",

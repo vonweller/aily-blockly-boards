@@ -8,6 +8,7 @@
     "mode": ["arduino"],
     "compilerParam": "compile -v -b adafruit:nrf52:pca10056",
     "uploadParam": "adafruit-nrfutil --verbose dfu serial -pkg ${'*.bin.zip'} -p ${serial} -b 115200 --singlebank",
+    "linkUploadParam": "probe-rs download --chip nRF52840_xxAA --verify ${'*.elf'};probe-rs reset --chip nRF52840_xxAA",
     "analogPins": [
         [
             "P0.03-A0",

@@ -1,0 +1,31 @@
+{
+  "name": "@aily-project/board-xiao_nrf54l15",
+  "nickname": "XIAO nRF54L15",
+  "version": "0.6.7",
+  "description": "The Seeed Studio XIAO nRF54L15 features the Nordic nRF54L15 MCU with Arm Cortex-M33 at 128 MHz and RISC-V coprocessor, supporting Bluetooth LE 6.0, Thread, Zigbee, Matter, and NFC in an ultra-compact 21x17.8 mm form factor.",
+  "description_en": "The Seeed Studio XIAO nRF54L15 features the Nordic nRF54L15 MCU with Arm Cortex-M33 at 128 MHz and RISC-V coprocessor, supporting Bluetooth LE 6.0, Thread, Zigbee, Matter, and NFC in an ultra-compact 21x17.8 mm form factor.",
+  "description_zh_cn": "Seeed Studio XIAO nRF54L15 搭载 Nordic nRF54L15 MCU，采用 128 MHz Arm Cortex-M33 处理器和 RISC-V 协处理器，支持蓝牙 LE 6.0、Thread、Zigbee、Matter 和 NFC，采用超紧凑的 21x17.8 mm 外形，适用于可穿戴设备和物联网项目。",
+  "description_zh_hk": "Seeed Studio XIAO nRF54L15 搭載 Nordic nRF54L15 MCU，採用 128 MHz Arm Cortex-M33 處理器和 RISC-V 協處理器，支援藍牙 LE 6.0、Thread、Zigbee、Matter 和 NFC，採用超緊湊的 21x17.8 mm 外形，適用於穿戴式裝置和物聯網項目。",
+  "description_ja": "Seeed Studio XIAO nRF54L15は、128 MHz Arm Cortex-M33プロセッサとRISC-Vコプロセッサを搭載したNordic nRF54L15 MCU搭載で、Bluetooth LE 6.0、Thread、Zigbee、Matter、NFCに対応し、超コンパクトな21x17.8mmフォームファクタでウェアラブルデバイスおよびIoTプロジェクトに適しています。",
+  "description_ko": "Seeed Studio XIAO nRF54L15는 128MHz Arm Cortex-M33 프로세서와 RISC-V 코프로세서를 탑재한 Nordic nRF54L15 MCU를 사용하여 Bluetooth LE 6.0, Thread, Zigbee, Matter, NFC를 지원하며, 초소형 21x17.8mm 폼 팩터로 웨어러블 기기 및 IoT 프로젝트에 적합합니다.",
+  "description_de": "Das Seeed Studio XIAO nRF54L15 verfügt über den Nordic nRF54L15 MCU mit Arm Cortex-M33 bei 128 MHz und RISC-V-Coprozessor und unterstützt Bluetooth LE 6.0, Thread, Zigbee, Matter und NFC im ultrakompakten 21x17,8 mm Formfaktor.",
+  "description_fr": "Le Seeed Studio XIAO nRF54L15 dispose du MCU Nordic nRF54L15 avec Arm Cortex-M33 à 128 MHz et coprocesseur RISC-V, prenant en charge Bluetooth LE 6.0, Thread, Zigbee, Matter et NFC dans un format ultra-compact de 21x17,8 mm.",
+  "description_es": "El Seeed Studio XIAO nRF54L15 cuenta con el MCU Nordic nRF54L15 con Arm Cortex-M33 a 128 MHz y coprocesador RISC-V, compatible con Bluetooth LE 6.0, Thread, Zigbee, Matter y NFC en un formato ultra compacto de 21x17,8 mm.",
+  "description_pt": "O Seeed Studio XIAO nRF54L15 possui o MCU Nordic nRF54L15 com Arm Cortex-M33 a 128 MHz e coprocessador RISC-V, suportando Bluetooth LE 6.0, Thread, Zigbee, Matter e NFC em um formato ultra compacto de 21x17,8 mm.",
+  "description_ru": "Seeed Studio XIAO nRF54L15 оснащён МК Nordic nRF54L15 с Arm Cortex-M33 на 128 МГц и сопроцессором RISC-V, поддерживает Bluetooth LE 6.0, Thread, Zigbee, Matter и NFC в ультракомпактном форм-факторе 21x17,8 мм.",
+  "description_ar": "Seeed Studio XIAO nRF54L15 يتميز بمتحكم Nordic nRF54L15 مع معالج Arm Cortex-M33 بتردد 128 ميغاهرتز ومعالج مساعد RISC-V، يدعم Bluetooth LE 6.0 وThread وZigbee وMatter وNFC في شكل فائق الدمج بحجم 21x17.8 مم.",
+  "main": "index.js",
+  "brand": "SeeedStudio",
+  "url": "https://www.seeedstudio.com/Seeed-XIAO-nRF54L15-p-6414.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seeed",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "9.0.0",
+    "@aily-project/sdk-nrf54l15clean": "0.6.7",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
