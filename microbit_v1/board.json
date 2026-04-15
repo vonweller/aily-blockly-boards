@@ -7,7 +7,7 @@
     "type": "nRF5:nRF5:BBCmicrobit",
     "mode": ["arduino", "micropython"],
     "compilerParam": "compile -v -b nRF5:nRF5:BBCmicrobit",
-    "uploadParam": "openocd -d2 -f interface/cmsis-dap.cfg -c \"transport select swd;\" -f target/nrf51.cfg -c \"program {{${'*.hex'}}} verify reset; shutdown;\"",
+    "linkUploadParam": "probe-rs download --chip nRF51822_xxAA --verify ${'*.elf'};probe-rs reset --chip nRF51822_xxAA",
     "analogPins": [
         ["P0", "A0"],
         ["P1", "A1"],
