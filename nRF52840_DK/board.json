@@ -1,5 +1,5 @@
 {
-    "name": "nRF52840DevKit",
+    "name": "nRF52840 DK",
     "version": "1.0.0",
     "description": "nRF52840开发板 - 基于nRF52840的编程开发板",
     "compilerTool": "aily-builder",
