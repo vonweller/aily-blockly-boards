@@ -24,7 +24,7 @@
   "state": "alpha",
   "license": "ISC",
   "boardDependencies": {
-    "@aily-project/compiler-arm-none-eabi-gcc": "9.0.0",
+    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
     "@aily-project/tool-nrfjprog": "9.4.0",
     "@aily-project/tool-adafruit-nrfutil": "1.7.0",
     "@aily-project/sdk-nrf52": "1.7.0",

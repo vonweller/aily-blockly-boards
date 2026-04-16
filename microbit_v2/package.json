@@ -22,7 +22,7 @@
   "license": "ISC",
   "brand": "microbit",
   "boardDependencies": {
-    "@aily-project/compiler-arm-none-eabi-gcc": "5.2.0",
+    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
     "@aily-project/sdk-nrf5": "0.8.0",
     "@aily-project/tool-ctags": "5.8.0"
   },
