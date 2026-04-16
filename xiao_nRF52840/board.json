@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "Seeed Studio XIAO nRF52840 - 基于nRF52840的超小型蓝牙开发板",
     "compilerTool": "aily-builder",
-    "core": "Seeeduino:nrf52",
-    "type": "Seeeduino:nrf52:xiaonRF52840",
+    "core": "adafruit:nrf52:",
+    "type": "adafruit:nrf52:xiao_nrf52840",
     "mode": ["arduino"],
-    "compilerParam": "compile -v -b Seeeduino:nrf52:xiaonRF52840",
+    "compilerParam": "compile -v -b adafruit:nrf52:xiao_nrf52840",
     "uploadParam": "adafruit-nrfutil --verbose dfu serial -pkg ${'*.bin.zip'} -p ${serial} -b 115200 --singlebank",
     "analogPins": [
         ["A0(D0)", "D0"],
