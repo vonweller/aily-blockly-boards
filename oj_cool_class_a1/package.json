@@ -1,0 +1,31 @@
+{
+  "name": "@aily-project/board-oj_cool_class_a1",
+  "nickname": "Cool Class A1",
+  "version": "3.3.1",
+  "description": "Cool Class A1 - ESP32-based development board with built-in WS2812 RGB LED, programmable buttons, and voice recognition module for creative and interactive projects.",
+  "description_en": "Cool Class A1 - ESP32-based development board with built-in WS2812 RGB LED, programmable buttons, and voice recognition module for creative and interactive projects.",
+  "description_zh_cn": "Cool Class A1 开发板，基于 ESP32，集成 WS2812 彩灯、可编程按键与语音识别模块，适用于创客教育与智能交互项目。",
+  "description_zh_hk": "Cool Class A1 開發板，基於 ESP32，集成 WS2812 彩燈、可編程按鍵與語音識別模組，適用於創客教育與智能交互項目。",
+  "description_ja": "Cool Class A1 開発ボード。ESP32搭載、WS2812カラーLED・プログラマブルボタン・音声認識モジュールを内蔵し、クリエイティブ教育やインタラクティブプロジェクトに最適です。",
+  "description_ko": "Cool Class A1 개발 보드. ESP32 기반으로 WS2812 컬러 LED, 프로그래밍 가능한 버튼, 음성 인식 모듈을 내장하여 메이커 교육 및 스마트 인터랙티브 프로젝트에 적합합니다.",
+  "description_de": "Cool Class A1 Entwicklungsboard auf ESP32-Basis mit integrierter WS2812 RGB-LED, programmierbaren Tasten und Spracherkennungsmodul für kreative und interaktive Projekte.",
+  "description_fr": "Cool Class A1 - carte de développement ESP32 avec LED RGB WS2812, boutons programmables et module de reconnaissance vocale intégrés, idéale pour les projets créatifs et interactifs.",
+  "description_es": "Cool Class A1 - placa de desarrollo ESP32 con LED RGB WS2812, botones programables y módulo de reconocimiento de voz integrados, ideal para proyectos creativos e interactivos.",
+  "description_pt": "Cool Class A1 - placa de desenvolvimento ESP32 com LED RGB WS2812, botões programáveis e módulo de reconhecimento de voz integrados, ideal para projetos criativos e interativos.",
+  "description_ru": "Cool Class A1 — плата разработки на базе ESP32 со встроенным RGB-светодиодом WS2812, программируемыми кнопками и модулем распознавания голоса для творческих и интерактивных проектов.",
+  "description_ar": "Cool Class A1 - لوحة تطوير ESP32 مع إضاءة WS2812 RGB وأزرار قابلة للبرمجة ووحدة التعرف على الصوت، مثالية للمشاريع الإبداعية والتفاعلية.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "brand": "Other",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-esptool_py": "5.1.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32": "5.5.1",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
