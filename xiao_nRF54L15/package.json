@@ -25,7 +25,7 @@
   "license": "ISC",
   "boardDependencies": {
     "@aily-project/compiler-arm-none-eabi-gcc": "9.0.0",
-    "@aily-project/sdk-nrf54l15clean": "0.6.9",
+    "@aily-project/sdk-nrf54l15clean": "0.6.15",
     "@aily-project/tool-ctags": "5.8.0"
   }
 }
