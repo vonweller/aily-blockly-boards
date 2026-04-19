@@ -168,6 +168,34 @@
     "description_ar": "Arduino Due هي أول لوحة Arduino تعتمد على متحكم دقيق بنواة ARM 32 بت (Atmel SAM3X8E)، تتميز بـ 54 منفذ إدخال/إخراج رقمي، و12 مدخل تناظري، و4 منافذ UART، وساعة 84 ميغاهرتز، وUSB OTG، و2 DAC، و2 TWI، وSPI، وJTAG. يستخدم هذا التكوين منفذ USB الأصلي للبرمجة."
   },
   {
+    "name": "@aily-project/board-arduino_zero",
+    "nickname": "Arduino Zero",
+    "version": "1.8.14",
+    "description": "The Arduino Zero is a simple and powerful 32-bit extension of the platform established by the UNO, based on the Atmel ATSAMD21G18A microcontroller, featuring 14 digital I/O pins (12 with PWM output), 6 analog inputs, a 48 MHz clock, native USB, 1 DAC, 1 UART, 1 SPI, 1 I2C, and an Atmel Embedded Debugger (EDBG). This configuration uses the Native USB port for programming.",
+    "author": "",
+    "brand": "Arduino",
+    "url": "https://docs.arduino.cc/hardware/zero/",
+    "compatibility": "",
+    "img": "arduino_zero/board.webp",
+    "pinmap": "arduino_zero/pinmap.webp",
+    "state": "alpha",
+    "type": "arduino:samd:arduino_zero_native",
+    "mode": [
+      "arduino"
+    ],
+    "description_en": "The Arduino Zero is a simple and powerful 32-bit extension of the platform established by the UNO, based on the Atmel ATSAMD21G18A microcontroller, featuring 14 digital I/O pins (12 with PWM output), 6 analog inputs, a 48 MHz clock, native USB, 1 DAC, 1 UART, 1 SPI, 1 I2C, and an Atmel Embedded Debugger (EDBG). This configuration uses the Native USB port for programming.",
+    "description_zh_cn": "Arduino Zero 是基于 Atmel ATSAMD21G18A 微控制器的强大 32 位开发板，是 UNO 平台的扩展，具有 14 个数字 I/O 引脚（12 个支持 PWM 输出）、6 个模拟输入、48 MHz 时钟、原生 USB、1 个 DAC、1 个 UART、1 个 SPI、1 个 I2C 和 Atmel 嵌入式调试器（EDBG）。此配置使用原生 USB 端口进行编程。",
+    "description_zh_hk": "Arduino Zero 是基於 Atmel ATSAMD21G18A 微控制器的強大 32 位元開發板，是 UNO 平台的擴展，具有 14 個數位 I/O 引腳（12 個支援 PWM 輸出）、6 個類比輸入、48 MHz 時脈、原生 USB、1 個 DAC、1 個 UART、1 個 SPI、1 個 I2C 和 Atmel 嵌入式除錯器（EDBG）。此配置使用原生 USB 埠進行程式設計。",
+    "description_ja": "Arduino Zeroは、Atmel ATSAMD21G18Aマイクロコントローラを搭載した強力な32ビット開発ボードで、UNOプラットフォームの拡張版です。14本のデジタルI/Oピン（12本がPWM出力）、6本のアナログ入力、48MHzクロック、ネイティブUSB、1つのDAC、1つのUART、1つのSPI、1つのI2C、Atmel組み込みデバッガ（EDBG）を備えています。この設定ではネイティブUSBポートを使用してプログラミングします。",
+    "description_ko": "Arduino Zero는 Atmel ATSAMD21G18A 마이크로컨트롤러를 탑재한 강력한 32비트 개발 보드로, UNO 플랫폼의 확장판입니다. 14개의 디지털 I/O 핀(12개 PWM 출력), 6개의 아날로그 입력, 48MHz 클럭, 네이티브 USB, 1개의 DAC, 1개의 UART, 1개의 SPI, 1개의 I2C 및 Atmel 임베디드 디버거(EDBG)를 갖추고 있습니다. 이 구성은 네이티브 USB 포트를 사용하여 프로그래밍합니다.",
+    "description_de": "Der Arduino Zero ist eine leistungsstarke 32-Bit-Erweiterung der vom UNO etablierten Plattform, basierend auf dem Atmel ATSAMD21G18A-Mikrocontroller, ausgestattet mit 14 digitalen I/O-Pins (12 mit PWM-Ausgang), 6 Analogeingängen, einem 48-MHz-Takt, nativem USB, 1 DAC, 1 UART, 1 SPI, 1 I2C und einem Atmel Embedded Debugger (EDBG). Diese Konfiguration verwendet den nativen USB-Port zur Programmierung.",
+    "description_fr": "L'Arduino Zero est une extension 32 bits puissante de la plateforme établie par l'UNO, basée sur le microcontrôleur Atmel ATSAMD21G18A, disposant de 14 broches d'E/S numériques (12 avec sortie PWM), 6 entrées analogiques, une horloge à 48 MHz, USB natif, 1 DAC, 1 UART, 1 SPI, 1 I2C et un débogueur intégré Atmel (EDBG). Cette configuration utilise le port USB natif pour la programmation.",
+    "description_es": "El Arduino Zero es una potente extensión de 32 bits de la plataforma establecida por el UNO, basada en el microcontrolador Atmel ATSAMD21G18A, con 14 pines de E/S digitales (12 con salida PWM), 6 entradas analógicas, un reloj de 48 MHz, USB nativo, 1 DAC, 1 UART, 1 SPI, 1 I2C y un depurador integrado Atmel (EDBG). Esta configuración utiliza el puerto USB nativo para la programación.",
+    "description_pt": "O Arduino Zero é uma extensão poderosa de 32 bits da plataforma estabelecida pelo UNO, baseada no microcontrolador Atmel ATSAMD21G18A, com 14 pinos de E/S digitais (12 com saída PWM), 6 entradas analógicas, um relógio de 48 MHz, USB nativo, 1 DAC, 1 UART, 1 SPI, 1 I2C e um depurador integrado Atmel (EDBG). Esta configuração utiliza a porta USB nativa para programação.",
+    "description_ru": "Arduino Zero — мощная 32-битная плата расширения платформы UNO на базе микроконтроллера Atmel ATSAMD21G18A, с 14 цифровыми выводами ввода/вывода (12 с выходом ШИМ), 6 аналоговыми входами, тактовой частотой 48 МГц, встроенным USB, 1 ЦАП, 1 UART, 1 SPI, 1 I2C и встроенным отладчиком Atmel (EDBG). Эта конфигурация использует встроенный USB-порт для программирования.",
+    "description_ar": "Arduino Zero هي لوحة 32 بت قوية تمثل امتداداً لمنصة UNO، تعتمد على متحكم Atmel ATSAMD21G18A الدقيق، وتتميز بـ 14 منفذ إدخال/إخراج رقمي (12 مع مخرج PWM)، و6 مداخل تناظرية، وساعة 48 ميغاهرتز، وUSB أصلي، و1 DAC، و1 UART، و1 SPI، و1 I2C، ومصحح أخطاء مدمج من Atmel (EDBG). يستخدم هذا التكوين منفذ USB الأصلي للبرمجة."
+  },
+  {
     "name": "@aily-project/board-arduino_due_dbg",
     "nickname": "Arduino DUE(dbg)",
     "version": "1.6.12",
