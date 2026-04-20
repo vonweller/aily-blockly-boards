@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-xiao_samd21",
   "nickname": "XIAO SAMD21",
-  "version": "1.8.5",
+  "version": "1.8.14",
   "description": "The Seeed Studio XIAO SAMD21 (Seeeduino XIAO) is an ultra-compact microcontroller board based on the Atmel ATSAMD21G18A ARM Cortex-M0+ at 48 MHz, featuring 11 digital/analog GPIO pins, 256 KB Flash, 32 KB SRAM, native USB, 1 DAC, 1 UART, 1 SPI, 1 I2C, in the tiny 21x17.8 mm XIAO form factor.",
   "description_en": "The Seeed Studio XIAO SAMD21 (Seeeduino XIAO) is an ultra-compact microcontroller board based on the Atmel ATSAMD21G18A ARM Cortex-M0+ at 48 MHz, featuring 11 digital/analog GPIO pins, 256 KB Flash, 32 KB SRAM, native USB, 1 DAC, 1 UART, 1 SPI, 1 I2C, in the tiny 21x17.8 mm XIAO form factor.",
   "description_zh_cn": "Seeed Studio XIAO SAMD21（Seeeduino XIAO）是一款基于 Atmel ATSAMD21G18A 的超紧凑型微控制器开发板，采用 ARM Cortex-M0+ 内核，主频 48 MHz，具有 11 个数字/模拟 GPIO 引脚、256 KB Flash、32 KB SRAM、原生 USB、1 个 DAC、1 个 UART、1 个 SPI、1 个 I2C，采用超小 21x17.8 mm XIAO 外形。",
@@ -26,7 +26,7 @@
   "boardDependencies": {
     "@aily-project/compiler-arm-none-eabi-gcc": "7.2.1",
     "@aily-project/tool-bossac": "1.9.1",
-    "@aily-project/sdk-seeed-samd": "1.8.5",
+    "@aily-project/sdk-samd": "1.8.14",
     "@aily-project/tool-CMSIS-Atmel": "1.2.0",
     "@aily-project/tool-CMSIS": "4.5.0",
     "@aily-project/tool-ctags": "5.8.0"
