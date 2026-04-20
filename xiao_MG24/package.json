@@ -24,7 +24,7 @@
   "state": "alpha",
   "license": "ISC",
   "boardDependencies": {
-    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
+    "@aily-project/compiler-gcc-arm-none-eabi": "12.2.0",
     "@aily-project/sdk-silabs": "3.0.0",
     "@aily-project/tool-simplicitycommander": "1.16.4",
     "@aily-project/tool-ctags": "5.8.0"
