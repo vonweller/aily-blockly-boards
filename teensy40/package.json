@@ -1,0 +1,32 @@
+{
+    "name": "@aily-project/board-teensy40",
+    "nickname": "Teensy 4.0",
+    "version": "1.60.0",
+    "description": "The Teensy 4.0 is a development board featuring the NXP iMXRT1062 ARM Cortex-M7 processor running at 600 MHz, with 1024 KB RAM, 2048 KB Flash, 40 digital I/O pins (31 PWM-capable), 14 analog inputs, 7 serial ports, 3 SPI, 3 I2C, 2 I2S, and native USB. Designed by PJRC, the Teensy 4.0 offers exceptional performance in a compact 1.4 x 0.7 inch USB-C form factor.",
+    "description_en": "The Teensy 4.0 is a development board featuring the NXP iMXRT1062 ARM Cortex-M7 processor running at 600 MHz, with 1024 KB RAM, 2048 KB Flash, 40 digital I/O pins (31 PWM-capable), 14 analog inputs, 7 serial ports, 3 SPI, 3 I2C, 2 I2S, and native USB. Designed by PJRC, the Teensy 4.0 offers exceptional performance in a compact 1.4 x 0.7 inch USB-C form factor.",
+    "description_zh_cn": "Teensy 4.0 是一款由 PJRC 设计的高性能开发板，搭载 NXP iMXRT1062 ARM Cortex-M7 处理器，主频高达 600 MHz，配备 1024 KB RAM、2048 KB Flash、40 个数字 I/O 引脚（其中 31 个支持 PWM）、14 个模拟输入、7 个串口、3 个 SPI、3 个 I2C、2 个 I2S 接口和原生 USB。整体尺寸仅 1.4 x 0.7 英寸，采用 USB-C 接口，性能强劲。",
+    "description_zh_hk": "Teensy 4.0 是一款由 PJRC 設計的高效能開發板，搭載 NXP iMXRT1062 ARM Cortex-M7 處理器，主頻高達 600 MHz，配備 1024 KB RAM、2048 KB Flash、40 個數位 I/O 引腳（其中 31 個支援 PWM）、14 個類比輸入、7 個串口、3 個 SPI、3 個 I2C、2 個 I2S 介面和原生 USB。整體尺寸僅 1.4 x 0.7 英吋，採用 USB-C 介面，效能強勁。",
+    "description_ja": "Teensy 4.0は、PJRCによって設計された高性能開発ボードで、600 MHzで動作するNXP iMXRT1062 ARM Cortex-M7プロセッサを搭載し、1024 KB RAM、2048 KB Flash、40個のデジタルI/Oピン（うち31個がPWM対応）、14個のアナログ入力、7つのシリアルポート、3つのSPI、3つのI2C、2つのI2S、ネイティブUSBを備えています。1.4 x 0.7インチのコンパクトなUSB-C形状で優れた性能を発揮します。",
+    "description_ko": "Teensy 4.0는 PJRC가 설계한 고성능 개발 보드로, 600 MHz로 동작하는 NXP iMXRT1062 ARM Cortex-M7 프로세서, 1024 KB RAM, 2048 KB Flash, 40개의 디지털 I/O 핀(31개 PWM 지원), 14개의 아날로그 입력, 7개의 시리얼 포트, 3개의 SPI, 3개의 I2C, 2개의 I2S 및 네이티브 USB를 탑재하고 있습니다. 1.4 x 0.7 인치의 소형 USB-C 폼 팩터입니다.",
+    "description_de": "Das Teensy 4.0 ist ein von PJRC entwickeltes Hochleistungs-Entwicklungsboard mit NXP iMXRT1062 ARM Cortex-M7 Prozessor mit 600 MHz, 1024 KB RAM, 2048 KB Flash, 40 digitalen I/O-Pins (31 davon PWM-fähig), 14 analogen Eingängen, 7 seriellen Ports, 3 SPI, 3 I2C, 2 I2S und nativem USB. Im kompakten USB-C-Formfaktor von 1,4 x 0,7 Zoll.",
+    "description_fr": "Le Teensy 4.0 est une carte de développement haute performance conçue par PJRC, équipée d'un processeur NXP iMXRT1062 ARM Cortex-M7 à 600 MHz, 1024 Ko de RAM, 2048 Ko de Flash, 40 broches d'E/S numériques (31 compatibles PWM), 14 entrées analogiques, 7 ports série, 3 SPI, 3 I2C, 2 I2S et USB natif. Format compact USB-C de 1,4 x 0,7 pouce.",
+    "description_es": "Teensy 4.0 es una placa de desarrollo de alto rendimiento diseñada por PJRC, con procesador NXP iMXRT1062 ARM Cortex-M7 a 600 MHz, 1024 KB de RAM, 2048 KB de Flash, 40 pines de E/S digitales (31 con PWM), 14 entradas analógicas, 7 puertos serie, 3 SPI, 3 I2C, 2 I2S y USB nativo. Factor de forma compacto USB-C de 1,4 x 0,7 pulgadas.",
+    "description_pt": "O Teensy 4.0 é uma placa de desenvolvimento de alto desempenho projetada pela PJRC, com processador NXP iMXRT1062 ARM Cortex-M7 a 600 MHz, 1024 KB de RAM, 2048 KB de Flash, 40 pinos de E/S digitais (31 com PWM), 14 entradas analógicas, 7 portas seriais, 3 SPI, 3 I2C, 2 I2S e USB nativo. Formato compacto USB-C de 1,4 x 0,7 polegadas.",
+    "description_ru": "Teensy 4.0 — высокопроизводительная плата разработки от PJRC на базе процессора NXP iMXRT1062 ARM Cortex-M7 с тактовой частотой 600 МГц, 1024 КБ ОЗУ, 2048 КБ Flash, 40 цифровых выводов ввода/вывода (31 с поддержкой ШИМ), 14 аналоговых входов, 7 последовательных портов, 3 SPI, 3 I2C, 2 I2S и нативный USB. Компактный USB-C форм-фактор 1,4 x 0,7 дюйма.",
+    "description_ar": "Teensy 4.0 هي لوحة تطوير عالية الأداء من تصميم PJRC، تحتوي على معالج NXP iMXRT1062 ARM Cortex-M7 بتردد 600 ميغاهرتز، و1024 كيلوبايت RAM، و2048 كيلوبايت Flash، و40 منفذ إدخال/إخراج رقمي (31 منها يدعم PWM)، و14 مدخل تناظري، و7 منافذ تسلسلية، و3 SPI، و3 I2C، و2 I2S، وUSB أصلي. بحجم مدمج USB-C يبلغ 1.4 × 0.7 بوصة.",
+    "main": "index.js",
+    "url": "https://www.pjrc.com/store/teensy40.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "PJRC",
+    "license": "ISC",
+    "brand": "PJRC",
+    "state": "todo",
+    "boardDependencies": {
+        "@aily-project/compiler-arm-none-eabi-gcc": "11.3.1",
+        "@aily-project/tool-teensy_tools": "1.60.0",
+        "@aily-project/sdk-teensy": "1.60.0",
+        "@aily-project/tool-ctags": "5.8.0"
+    }
+}

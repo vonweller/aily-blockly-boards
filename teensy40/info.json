@@ -1,0 +1,48 @@
+{
+  "$schema": "board-info-schema",
+  "name": "board-teensy40",
+  "displayName": "Teensy 4.0",
+  "brand": "PJRC",
+  "type": "board",
+  "mcu": {
+    "model": "",
+    "architecture": "",
+    "cores": 1,
+    "frequency": {
+      "value": 0,
+      "unit": "MHz"
+    }
+  },
+  "memory": {
+    "flash": {
+      "value": 2048,
+      "unit": "KB"
+    },
+    "sram": {
+      "value": 1024,
+      "unit": "KB"
+    }
+  },
+  "connectivity": [],
+  "gpio": {
+    "digital": 54,
+    "analog": 14,
+    "pwm": 31
+  },
+  "interfaces": [
+    "uart",
+    "i2c",
+    "spi"
+  ],
+  "voltage": {
+    "operating": 3.3,
+    "io": [
+      3.3
+    ]
+  },
+  "features": [],
+  "core": "teensy:avr:teensy40",
+  "tags": [
+    "蓝牙"
+  ]
+}

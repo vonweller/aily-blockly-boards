@@ -1,0 +1,32 @@
+{
+  "name": "@aily-project/board-teensy41",
+  "nickname": "Teensy 4.1",
+  "version": "1.60.0",
+  "description": "The Teensy 4.1 is a high-performance development board featuring the NXP iMXRT1062 ARM Cortex-M7 processor at 600 MHz, with 1024 KB RAM, 8 MB Flash, 55 digital I/O pins (35 PWM-capable), 18 analog inputs, 8 hardware serial ports, 3 SPI, 3 I2C, built-in 10/100 Mbit Ethernet PHY, micro SD card socket, USB host port, and pads for optional PSRAM/Flash. Designed by PJRC in a 2.4 x 0.7 inch form factor with USB-C connector.",
+  "description_en": "The Teensy 4.1 is a high-performance development board featuring the NXP iMXRT1062 ARM Cortex-M7 processor at 600 MHz, with 1024 KB RAM, 8 MB Flash, 55 digital I/O pins (35 PWM-capable), 18 analog inputs, 8 hardware serial ports, 3 SPI, 3 I2C, built-in 10/100 Mbit Ethernet PHY, micro SD card socket, USB host port, and pads for optional PSRAM/Flash. Designed by PJRC in a 2.4 x 0.7 inch form factor with USB-C connector.",
+  "description_zh_cn": "Teensy 4.1 是 PJRC 设计的高性能开发板，搭载 NXP iMXRT1062 ARM Cortex-M7 处理器，主频 600 MHz，配备 1024 KB RAM、8 MB Flash、55 个数字 I/O 引脚（其中 35 个支持 PWM）、18 个模拟输入、8 个硬件串口、3 个 SPI、3 个 I2C，板载 10/100 Mbit 以太网 PHY、Micro SD 卡座、USB Host 接口，以及可选 PSRAM/Flash 焊盘。整体尺寸 2.4 x 0.7 英寸，配 USB-C 接口。",
+  "description_zh_hk": "Teensy 4.1 是 PJRC 設計的高效能開發板，搭載 NXP iMXRT1062 ARM Cortex-M7 處理器，主頻 600 MHz，配備 1024 KB RAM、8 MB Flash、55 個數位 I/O 引腳（其中 35 個支援 PWM）、18 個類比輸入、8 個硬體串口、3 個 SPI、3 個 I2C，板載 10/100 Mbit 乙太網 PHY、Micro SD 卡座、USB Host 介面，以及可選 PSRAM/Flash 焊盤。整體尺寸 2.4 x 0.7 英吋，配 USB-C 介面。",
+  "description_ja": "Teensy 4.1は、PJRCが設計した高性能開発ボードで、600 MHzで動作するNXP iMXRT1062 ARM Cortex-M7プロセッサ、1024 KB RAM、8 MB Flash、55個のデジタルI/Oピン（うち35個がPWM対応）、18個のアナログ入力、8つのハードウェアシリアルポート、3つのSPI、3つのI2C、内蔵10/100 Mbit Ethernet PHY、Micro SDカードソケット、USBホストポート、オプションのPSRAM/Flashパッドを備えています。2.4 x 0.7インチサイズでUSB-Cコネクタ付き。",
+  "description_ko": "Teensy 4.1은 PJRC가 설계한 고성능 개발 보드로, 600 MHz NXP iMXRT1062 ARM Cortex-M7 프로세서, 1024 KB RAM, 8 MB Flash, 55개의 디지털 I/O 핀(35개 PWM 지원), 18개의 아날로그 입력, 8개의 하드웨어 시리얼 포트, 3개의 SPI, 3개의 I2C, 내장 10/100 Mbit Ethernet PHY, Micro SD 카드 소켓, USB 호스트 포트, 선택형 PSRAM/Flash 패드를 갖추고 있습니다. 크기는 2.4 x 0.7 인치이며 USB-C 커넥터를 사용합니다.",
+  "description_de": "Das Teensy 4.1 ist ein leistungsstarkes Entwicklungsboard von PJRC mit NXP iMXRT1062 ARM Cortex-M7 Prozessor (600 MHz), 1024 KB RAM, 8 MB Flash, 55 digitalen I/O-Pins (35 davon PWM-fähig), 18 analogen Eingängen, 8 Hardware-Serial-Ports, 3 SPI, 3 I2C, integriertem 10/100 Mbit Ethernet-PHY, Micro-SD-Kartenslot, USB-Host-Port und Pads für optionalen PSRAM/Flash. Formfaktor 2,4 x 0,7 Zoll mit USB-C-Anschluss.",
+  "description_fr": "Le Teensy 4.1 est une carte de développement haute performance de PJRC, équipée d'un processeur NXP iMXRT1062 ARM Cortex-M7 à 600 MHz, 1024 Ko de RAM, 8 Mo de Flash, 55 broches d'E/S numériques (35 compatibles PWM), 18 entrées analogiques, 8 ports série matériels, 3 SPI, 3 I2C, PHY Ethernet 10/100 Mbit intégré, lecteur micro SD, port USB Host et pastilles pour PSRAM/Flash optionnels. Format 2,4 x 0,7 pouce avec connecteur USB-C.",
+  "description_es": "Teensy 4.1 es una placa de desarrollo de alto rendimiento de PJRC con procesador NXP iMXRT1062 ARM Cortex-M7 a 600 MHz, 1024 KB de RAM, 8 MB de Flash, 55 pines de E/S digitales (35 con PWM), 18 entradas analógicas, 8 puertos serie por hardware, 3 SPI, 3 I2C, PHY Ethernet 10/100 Mbit integrado, ranura para micro SD, puerto USB Host y almohadillas para PSRAM/Flash opcionales. Factor de forma 2,4 x 0,7 pulgadas con conector USB-C.",
+  "description_pt": "O Teensy 4.1 é uma placa de desenvolvimento de alto desempenho da PJRC, com processador NXP iMXRT1062 ARM Cortex-M7 a 600 MHz, 1024 KB de RAM, 8 MB de Flash, 55 pinos de E/S digitais (35 com PWM), 18 entradas analógicas, 8 portas seriais por hardware, 3 SPI, 3 I2C, PHY Ethernet 10/100 Mbit integrado, soquete micro SD, porta USB Host e pads para PSRAM/Flash opcionais. Formato 2,4 x 0,7 polegadas com conector USB-C.",
+  "description_ru": "Teensy 4.1 — высокопроизводительная плата разработки от PJRC с процессором NXP iMXRT1062 ARM Cortex-M7 на 600 МГц, 1024 КБ ОЗУ, 8 МБ Flash, 55 цифровых выводов ввода/вывода (35 с поддержкой ШИМ), 18 аналоговых входов, 8 аппаратных последовательных портов, 3 SPI, 3 I2C, встроенным PHY 10/100 Мбит Ethernet, разъёмом micro SD, USB Host и площадками под опциональные PSRAM/Flash. Форм-фактор 2,4 x 0,7 дюйма с разъёмом USB-C.",
+  "description_ar": "Teensy 4.1 هي لوحة تطوير عالية الأداء من PJRC، تحتوي على معالج NXP iMXRT1062 ARM Cortex-M7 بتردد 600 ميغاهرتز، و1024 كيلوبايت RAM، و8 ميغابايت Flash، و55 منفذ إدخال/إخراج رقمي (35 يدعم PWM)، و18 مدخل تناظري، و8 منافذ تسلسلية أجهزة، و3 SPI، و3 I2C، وPHY إيثرنت 10/100 ميجابت مدمج، ومقبس Micro SD، ومنفذ USB Host، ولوحات لـ PSRAM/Flash اختيارية. بحجم 2.4 × 0.7 بوصة مع موصل USB-C.",
+  "main": "index.js",
+  "url": "https://www.pjrc.com/store/teensy41.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PJRC",
+  "license": "ISC",
+  "brand": "PJRC",
+  "state": "todo",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "11.3.1",
+    "@aily-project/tool-teensy_tools": "1.60.0",
+    "@aily-project/sdk-teensy": "1.60.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

@@ -14,5 +14,3 @@
 - [sd_wio_terminal](./sd_wio_terminal)
 - [sparkfun_thing_plus_esp32s3](./sparkfun_thing_plus_esp32s3)
 - [sparkfun_thing_plus_stm32](./sparkfun_thing_plus_stm32)
-- [teensy40](./teensy40)
-- [teensy41](./teensy41)
