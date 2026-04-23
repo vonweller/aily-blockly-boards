@@ -16,6 +16,5 @@
     "@aily-project/lib-core-variables": "1.0.1",
     "@aily-project/lib-fastled": "^1.0.2",
     "@aily-project/lib-onebutton": "^0.0.2"
-  },
-  "codeHash": "19d4ffe9902f6e172df78c6062613d1267591f96b7a9e76443a5373561f1958f"
+  }
 }
