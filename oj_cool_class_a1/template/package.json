@@ -5,13 +5,16 @@
   "board": "Cool Class A1",
   "dependencies": {
     "@aily-project/board-oj_cool_class_a1": "3.3.1",
+    "@aily-project/lib-asr": "^0.0.1",
     "@aily-project/lib-core-io": "1.0.0",
     "@aily-project/lib-core-logic": "0.0.1",
     "@aily-project/lib-core-loop": "0.0.1",
-    "@aily-project/lib-core-math":"0.0.1",
-    "@aily-project/lib-core-text": "1.0.0",
+    "@aily-project/lib-core-math": "0.0.1",
     "@aily-project/lib-core-serial": "0.0.1",
+    "@aily-project/lib-core-text": "1.0.0",
     "@aily-project/lib-core-time": "0.0.1",
-    "@aily-project/lib-core-variables": "1.0.1"
+    "@aily-project/lib-core-variables": "1.0.1",
+    "@aily-project/lib-fastled": "^1.0.2",
+    "@aily-project/lib-onebutton": "^0.0.2"
   }
 }
