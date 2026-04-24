@@ -1,6 +1,6 @@
 {
     "name": "Arduino Nano R4",
-    "version":"1.0.1",
+    "version": "1.0.1",
     "description": "Arduino Nano R4 standard compatible board",
     "compilerTool": "aily-builder",
     "core": "arduino:renesas_uno",
@@ -315,6 +315,10 @@
         [
             "Serial",
             "Serial"
+        ],
+        [
+            "Serial1",
+            "Serial1"
         ]
     ],
     "serialSpeed": [
