@@ -1,7 +1,7 @@
 {
-    "name": "UNO R3 Pro",
-    "version":"1.0.1",
-    "description": "Arduino UNO R3 Pro standard compatible board",
+    "name": "Zduino unoR3 Pro",
+    "version": "1.8.6",
+    "description": "Zduino unoR3 Pro standard compatible board",
     "compilerTool": "aily-builder",
     "core": "arduino:avr",
     "type": "arduino:avr:uno",
