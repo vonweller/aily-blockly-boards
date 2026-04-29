@@ -36,5 +36,6 @@
     "@aily-project/tool-stm32flash": "0.7.0",
     "@aily-project/tool-CMSIS": "5.9.0",
     "@aily-project/tool-ctags": "5.8.0"
-  }
+  },
+  "hide": true
 }
