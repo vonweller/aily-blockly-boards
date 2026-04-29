@@ -1,7 +1,7 @@
 {
-    "name": "ESP32S3Dev",
+    "name": "Wifiduino ESP32S3dev",
     "version": "1.0.1",
-    "description": "ESP32S3Dev compatible board",
+    "description": "Wifiduino ESP32S3dev compatible board",
     "compilerTool": "aily-builder",
     "core": "esp32:esp32",
     "type": "esp32:esp32:esp32s3",
