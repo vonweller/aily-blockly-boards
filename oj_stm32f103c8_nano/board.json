@@ -1,13 +1,13 @@
 {
-  "name": "OJ STM32F103C8T6 Nano",
+  "name": "OJ STM32F103C8 Nano",
   "version": "1.0.0",
-  "description": "OpenJumper STM32F103C8T6 Nano development board",
+  "description": "OpenJumper STM32F103C8 Nano development board",
   "compilerTool": "aily-builder",
   "core": "STMicroelectronics:stm32",
   "type": "STMicroelectronics:stm32:GenF1",
   "compilerParam": "compile -v -b STMicroelectronics:stm32:GenF1",
   "uploadParam": "stm32flash -w ${'*.bin'} -v -g 0x0 ${serial}",
-  "linkUploadParam": "probe-rs download --chip GENERIC_F103C8TX --verify ${'*.elf'};probe-rs reset --chip GENERIC_F103C8TX",
+  "linkUploadParam": "probe-rs download --chip STM32F103C8 --verify ${'*.elf'};probe-rs reset --chip STM32F103C8",
   "analogPins": [
     [
       "PIN_A0",
@@ -504,8 +504,48 @@
     [
       "Serial",
       "Serial"
+    ],
+    [
+      "Serial1",
+      "Serial1"
+    ],
+    [
+      "Serial2",
+      "Serial2"
     ]
   ],
+  "serialPins": {
+    "Serial": [
+      [
+        "RX",
+        "PA10"
+      ],
+      [
+        "TX",
+        "PA9"
+      ]
+    ],
+    "Serial1": [
+      [
+        "RX",
+        "PA3"
+      ],
+      [
+        "TX",
+        "PA2"
+      ]
+    ],
+    "Serial2": [
+      [
+        "RX",
+        "PB11"
+      ],
+      [
+        "TX",
+        "PB10"
+      ]
+    ]
+  },
   "serialSpeed": [
     [
       "1200",
