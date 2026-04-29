@@ -2,6 +2,7 @@
   "name": "project_",
   "version": "1.0.0",
   "description": "",
+  "board": "Zduino MEGA2560 Pro",
   "dependencies": {
     "@aily-project/board-arduino_mega_pro": "^1.8.6",
     "@aily-project/lib-core-io": "1.0.0",
