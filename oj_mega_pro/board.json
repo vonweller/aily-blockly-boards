@@ -1,7 +1,7 @@
 {
-    "name": "MEGA Pro",
+    "name": "Zduino MEGA2560 Pro",
     "version":"1.0.1",
-    "description": "Arduino MEGA Pro board",
+    "description": "Zduino MEGA2560 Pro board",
     "compilerTool": "aily-builder",
     "core": "arduino:avr",
     "type": "arduino:avr:mega",
