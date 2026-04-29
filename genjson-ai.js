@@ -100,6 +100,12 @@ async function main() {
         const data = await fs.readFile(packageJsonPath, 'utf8');
         const packageJson = JSON.parse(data);
 
+        // 如果package.json中hide为true，跳过该项
+        if (packageJson.hide === true) {
+          console.log(`${subdir}/package.json 设置了 hide:true，跳过`);
+          continue;
+        }
+
         // 根据配置过滤package.json
         const filteredJson = keysToExtract ? filterPackageJson(packageJson, keysToExtract, subdir) : packageJson;
 
