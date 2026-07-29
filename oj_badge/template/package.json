@@ -18,7 +18,7 @@
     "@aily-project/lib-cst816s": "^1.0.0",
     "@aily-project/lib-es8311": "^1.0.0",
     "@aily-project/lib-lvgl": "^1.0.1",
-    "@aily-project/lib-tft-espi": "^2.5.43"
+    "@aily-project/lib-tft-espi": "^2.5.46"
   },
    "projectConfig": {
     "FlashSize": "16M",
