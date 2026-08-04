@@ -9,7 +9,6 @@
     "arduino"
   ],
   "compilerParam": "compile -v -b chipintelli:ci13xx:ci1303",
-  "uploadParam": "upload -v -b chipintelli:ci13xx:ci1303 -p ${serial}",
   "analogPins": [
     ["A0", "A0"]
   ],
