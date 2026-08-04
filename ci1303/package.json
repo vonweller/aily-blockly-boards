@@ -1,0 +1,32 @@
+{
+  "name": "@aily-project/board-ci1303",
+  "nickname": "CI1303",
+  "version": "1.0.5",
+  "description": "ChipIntelli CI1303 is a CI130X offline ASR board configuration for the SSOP24, 4 MB Flash device. It provides up to 10 GPIO pins, 1 analog input, 3 UART interfaces, I2C, and software SPI.",
+  "description_en": "ChipIntelli CI1303 is a CI130X offline ASR board configuration for the SSOP24, 4 MB Flash device. It provides up to 10 GPIO pins, 1 analog input, 3 UART interfaces, I2C, and software SPI.",
+  "description_zh_cn": "ChipIntelli CI1303 是适用于 SSOP24、4 MB Flash 器件的 CI130X 离线语音识别（ASR）开发板配置，提供最多 10 个 GPIO 引脚、1 个模拟输入、3 路 UART、I2C 和软件 SPI。",
+  "description_zh_hk": "ChipIntelli CI1303 是適用於 SSOP24、4 MB Flash 元件的 CI130X 離線語音識別（ASR）開發板設定，提供最多 10 個 GPIO 腳位、1 個類比輸入、3 組 UART、I2C 和軟體 SPI。",
+  "description_ja": "ChipIntelli CI1303 は、SSOP24、4 MB Flash デバイス向けの CI130X オフライン音声認識（ASR）ボード構成です。最大 10 本の GPIO、1 つのアナログ入力、3 つの UART、I2C、およびソフトウェア SPI を提供します。",
+  "description_ko": "ChipIntelli CI1303는 SSOP24, 4 MB Flash 장치용 CI130X 오프라인 음성 인식(ASR) 보드 구성입니다. 최대 10개의 GPIO 핀, 1개의 아날로그 입력, 3개의 UART, I2C 및 소프트웨어 SPI를 제공합니다.",
+  "description_de": "ChipIntelli CI1303 ist eine CI130X-Konfiguration für Offline-Spracherkennung (ASR) für das SSOP24-Gerät mit 4 MB Flash. Sie bietet bis zu 10 GPIO-Pins, 1 Analogeingang, 3 UART-Schnittstellen, I2C und Software-SPI.",
+  "description_fr": "ChipIntelli CI1303 est une configuration CI130X de reconnaissance vocale hors ligne (ASR) pour le composant SSOP24 avec 4 MB de Flash. Elle fournit jusqu'à 10 broches GPIO, 1 entrée analogique, 3 interfaces UART, I2C et SPI logiciel.",
+  "description_es": "ChipIntelli CI1303 es una configuración CI130X de reconocimiento de voz sin conexión (ASR) para el dispositivo SSOP24 con 4 MB de Flash. Proporciona hasta 10 pines GPIO, 1 entrada analógica, 3 interfaces UART, I2C y SPI por software.",
+  "description_pt": "ChipIntelli CI1303 é uma configuração CI130X de reconhecimento de voz off-line (ASR) para o dispositivo SSOP24 com 4 MB de Flash. Ela oferece até 10 pinos GPIO, 1 entrada analógica, 3 interfaces UART, I2C e SPI por software.",
+  "description_ru": "ChipIntelli CI1303 — конфигурация CI130X для автономного распознавания речи (ASR) для устройства SSOP24 с 4 MB Flash. Она предоставляет до 10 выводов GPIO, 1 аналоговый вход, 3 интерфейса UART, I2C и программный SPI.",
+  "description_ar": "ChipIntelli CI1303 هو تكوين لوحة CI130X للتعرف على الكلام دون اتصال (ASR) لجهاز SSOP24 بذاكرة Flash سعة 4 MB. يوفر ما يصل إلى 10 أرجل GPIO ومدخلاً تناظرياً واحداً و3 واجهات UART وI2C وSPI برمجي.",
+  "main": "index.js",
+  "url": "https://github.com/coloz/arduino-ci130x",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ChipIntelli",
+  "license": "ISC",
+  "brand": "ChipIntelli",
+  "state": "alpha",
+  "boardDependencies": {
+    "@aily-project/compiler-riscv-nuclei-elf-gcc": "9.2.0",
+    "@aily-project/tool-citool-cli": "1.1.2",
+    "@aily-project/sdk-ci130x": "1.0.5",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

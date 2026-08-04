@@ -1,0 +1,32 @@
+{
+  "name": "@aily-project/board-ci1306",
+  "nickname": "CI1306",
+  "version": "1.0.5",
+  "description": "ChipIntelli CI1306 is a CI130X offline ASR board configuration for the QFN40, 4 MB Flash device. It provides 24 GPIO pins, 4 analog inputs, 3 UART interfaces, I2C, and software SPI.",
+  "description_en": "ChipIntelli CI1306 is a CI130X offline ASR board configuration for the QFN40, 4 MB Flash device. It provides 24 GPIO pins, 4 analog inputs, 3 UART interfaces, I2C, and software SPI.",
+  "description_zh_cn": "ChipIntelli CI1306 是适用于 QFN40、4 MB Flash 器件的 CI130X 离线语音识别（ASR）开发板配置，提供 24 个 GPIO 引脚、4 个模拟输入、3 路 UART、I2C 和软件 SPI。",
+  "description_zh_hk": "ChipIntelli CI1306 是適用於 QFN40、4 MB Flash 元件的 CI130X 離線語音識別（ASR）開發板設定，提供 24 個 GPIO 腳位、4 個類比輸入、3 組 UART、I2C 和軟體 SPI。",
+  "description_ja": "ChipIntelli CI1306 は、QFN40、4 MB Flash デバイス向けの CI130X オフライン音声認識（ASR）ボード構成です。24 本の GPIO、4 つのアナログ入力、3 つの UART、I2C、およびソフトウェア SPI を提供します。",
+  "description_ko": "ChipIntelli CI1306는 QFN40, 4 MB Flash 장치용 CI130X 오프라인 음성 인식(ASR) 보드 구성입니다. 24개의 GPIO 핀, 4개의 아날로그 입력, 3개의 UART, I2C 및 소프트웨어 SPI를 제공합니다.",
+  "description_de": "ChipIntelli CI1306 ist eine CI130X-Konfiguration für Offline-Spracherkennung (ASR) für das QFN40-Gerät mit 4 MB Flash. Sie bietet 24 GPIO-Pins, 4 Analogeingänge, 3 UART-Schnittstellen, I2C und Software-SPI.",
+  "description_fr": "ChipIntelli CI1306 est une configuration CI130X de reconnaissance vocale hors ligne (ASR) pour le composant QFN40 avec 4 MB de Flash. Elle fournit 24 broches GPIO, 4 entrées analogiques, 3 interfaces UART, I2C et SPI logiciel.",
+  "description_es": "ChipIntelli CI1306 es una configuración CI130X de reconocimiento de voz sin conexión (ASR) para el dispositivo QFN40 con 4 MB de Flash. Proporciona 24 pines GPIO, 4 entradas analógicas, 3 interfaces UART, I2C y SPI por software.",
+  "description_pt": "ChipIntelli CI1306 é uma configuração CI130X de reconhecimento de voz off-line (ASR) para o dispositivo QFN40 com 4 MB de Flash. Ela oferece 24 pinos GPIO, 4 entradas analógicas, 3 interfaces UART, I2C e SPI por software.",
+  "description_ru": "ChipIntelli CI1306 — конфигурация CI130X для автономного распознавания речи (ASR) для устройства QFN40 с 4 MB Flash. Она предоставляет 24 вывода GPIO, 4 аналоговых входа, 3 интерфейса UART, I2C и программный SPI.",
+  "description_ar": "ChipIntelli CI1306 هو تكوين لوحة CI130X للتعرف على الكلام دون اتصال (ASR) لجهاز QFN40 بذاكرة Flash سعة 4 MB. يوفر 24 رجل GPIO و4 مداخل تناظرية و3 واجهات UART وI2C وSPI برمجي.",
+  "main": "index.js",
+  "url": "https://github.com/coloz/arduino-ci130x",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ChipIntelli",
+  "license": "ISC",
+  "brand": "ChipIntelli",
+  "state": "alpha",
+  "boardDependencies": {
+    "@aily-project/compiler-riscv-nuclei-elf-gcc": "9.2.0",
+    "@aily-project/tool-citool-cli": "1.1.2",
+    "@aily-project/sdk-ci130x": "1.0.5",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
