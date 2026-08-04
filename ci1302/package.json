@@ -24,7 +24,7 @@
   "brand": "ChipIntelli",
   "state": "alpha",
   "boardDependencies": {
-    "@aily-project/compiler-riscv-nuclei-elf-gcc": "9.2.0",
+    "@aily-project/compiler-riscv-gcc": "9.2.0",
     "@aily-project/tool-citool-cli": "1.1.2",
     "@aily-project/sdk-ci130x": "1.0.5",
     "@aily-project/tool-ctags": "5.8.0"
