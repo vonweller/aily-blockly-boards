@@ -4,7 +4,7 @@
   "description": "",
   "board": "金牛创翼板",
   "dependencies": {
-    "@aily-project/board-jinniu_board": "^1.8.6",
+    "@aily-project/board-jinniu_board": "1.8.6",
     "@aily-project/lib-core-io": "1.0.0",
     "@aily-project/lib-core-logic": "0.0.1",
     "@aily-project/lib-core-loop": "0.0.1",
@@ -12,12 +12,12 @@
     "@aily-project/lib-core-serial": "0.0.1",
     "@aily-project/lib-core-text": "1.0.0",
     "@aily-project/lib-core-time": "0.0.1",
-    "@aily-project/lib-core-tone": "^0.0.2",
+    "@aily-project/lib-core-tone": "0.0.2",
     "@aily-project/lib-core-variables": "1.0.1",
-    "@aily-project/lib-dht": "^1.0.0",
-    "@aily-project/lib-fastled": "^1.0.1",
-    "@aily-project/lib-servo": "^1.0.0",
-    "@aily-project/lib-tts": "^0.0.1",
-    "@aily-project/lib-ultrasonic": "^0.0.1"
+    "@aily-project/lib-dht": "1.0.0",
+    "@aily-project/lib-fastled": "1.0.1",
+    "@aily-project/lib-servo": "1.0.0",
+    "@aily-project/lib-tts": "0.0.1",
+    "@aily-project/lib-ultrasonic": "0.0.1"
   }
 }
