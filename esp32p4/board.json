@@ -1,6 +1,6 @@
 {
     "name": "ESP32P4",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "ESP32P4 compatible board",
     "compilerTool": "aily-builder",
     "core": "esp32:esp32",
