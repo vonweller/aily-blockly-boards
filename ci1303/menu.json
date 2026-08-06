@@ -1,0 +1,17 @@
+[
+  {
+    "sep": true
+  },
+  {
+    "name": "CHIPINTELLI.ALGORITHM",
+    "icon": "fa-light fa-wave-square",
+    "children": [],
+    "key": "Algorithm"
+  },
+  {
+    "name": "CHIPINTELLI.CLOCK_SOURCE",
+    "icon": "fa-light fa-clock",
+    "children": [],
+    "key": "Clock"
+  }
+]
