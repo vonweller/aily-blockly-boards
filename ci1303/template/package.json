@@ -2,9 +2,9 @@
   "name": "project_",
   "version": "1.0.0",
   "description": "",
-  "board": "ChipIntelli CI1303 (SSOP24, 4 MB)",
+  "board": "ChipIntelli CI1303",
   "dependencies": {
-    "@aily-project/board-ci1303": "1.0.6",
+    "@aily-project/board-ci1303": "1.0.7",
     "@aily-project/lib-chipintelli-audio": "1.0.1",
     "@aily-project/lib-chipintelli-asr": "2.2.0",
     "@aily-project/lib-core-io": "1.0.0",
