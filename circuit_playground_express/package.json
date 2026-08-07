@@ -1,0 +1,25 @@
+{
+  "name": "@aily-project/board-circuit_playground_express",
+  "nickname": "Adafruit Circuit Playground Express",
+  "version": "1.7.16",
+  "description": "Adafruit Circuit Playground Express is a SAMD21 learning board with ten NeoPixels, sensors, buttons, speaker and alligator-clip pads.",
+  "description_en": "Adafruit Circuit Playground Express is a SAMD21 learning board with ten NeoPixels, sensors, buttons, speaker and alligator-clip pads.",
+  "description_zh_cn": "Adafruit Circuit Playground Express 是一款 SAMD21 教学开发板，集成 10 颗 NeoPixel、传感器、按键、扬声器和鳄鱼夹焊盘。",
+  "main": "index.js",
+  "url": "https://learn.adafruit.com/adafruit-circuit-playground-express",
+  "keywords": [
+    "Adafruit",
+    "Adafruit Circuit Playground Express",
+    "adafruit_circuitplayground_m0"
+  ],
+  "author": "Adafruit",
+  "brand": "Adafruit",
+  "license": "ISC",
+  "state": "todo",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "7.2.1",
+    "@aily-project/tool-bossac": "1.9.1",
+    "@aily-project/sdk-adafruit_samd": "1.7.16",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

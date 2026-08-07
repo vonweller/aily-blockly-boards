@@ -1,0 +1,391 @@
+{
+  "name": "AI Thinker ESP32-CAM",
+  "version": "1.0.0",
+  "description": "ESP32 camera board with OV2640 camera connector, microSD slot and PSRAM",
+  "compilerTool": "aily-builder",
+  "core": "esp32:esp32",
+  "type": "esp32:esp32:esp32cam",
+  "compilerParam": "compile -v -b esp32:esp32:esp32cam",
+  "serialSpeed": [
+    [
+      "1200",
+      "1200"
+    ],
+    [
+      "9600",
+      "9600"
+    ],
+    [
+      "14400",
+      "14400"
+    ],
+    [
+      "19200",
+      "19200"
+    ],
+    [
+      "38400",
+      "38400"
+    ],
+    [
+      "57600",
+      "57600"
+    ],
+    [
+      "115200",
+      "115200"
+    ],
+    [
+      "230400",
+      "230400"
+    ],
+    [
+      "460800",
+      "460800"
+    ],
+    [
+      "921600",
+      "921600"
+    ]
+  ],
+  "spiClockDivide": [
+    [
+      "2 (8MHz)",
+      "SPI_CLOCK_DIV2"
+    ],
+    [
+      "4 (4MHz)",
+      "SPI_CLOCK_DIV4"
+    ],
+    [
+      "8 (2MHz)",
+      "SPI_CLOCK_DIV8"
+    ],
+    [
+      "16 (1MHz)",
+      "SPI_CLOCK_DIV16"
+    ],
+    [
+      "32 (500KHz)",
+      "SPI_CLOCK_DIV32"
+    ],
+    [
+      "64 (250KHz)",
+      "SPI_CLOCK_DIV64"
+    ],
+    [
+      "128 (125KHz)",
+      "SPI_CLOCK_DIV128"
+    ]
+  ],
+  "i2cSpeed": [
+    [
+      "100kHz",
+      "100000L"
+    ],
+    [
+      "400kHz",
+      "400000L"
+    ],
+    [
+      "1MHz",
+      "1000000L"
+    ]
+  ],
+  "interruptMode": [
+    [
+      "RISING",
+      "RISING"
+    ],
+    [
+      "FALLING",
+      "FALLING"
+    ],
+    [
+      "CHANGE",
+      "CHANGE"
+    ],
+    [
+      "ONLOW",
+      "ONLOW"
+    ],
+    [
+      "ONHIGH",
+      "ONHIGH"
+    ],
+    [
+      "ONLOW_WE",
+      "ONLOW_WE"
+    ],
+    [
+      "ONHIGH_WE",
+      "ONHIGH_WE"
+    ]
+  ],
+  "uploadParam": "esptool --chip esp32 --port ${serial} --baud ${baud} --before default_reset --after hard_reset write_flash -z --flash_mode keep --flash_freq keep --flash_size keep 0x1000 ${bootloader} 0x8000 ${partitions} 0xe000 ${boot_app0} 0x10000 ${'*.bin'}",
+  "analogPins": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "2",
+      "2"
+    ],
+    [
+      "4",
+      "4"
+    ],
+    [
+      "12",
+      "12"
+    ],
+    [
+      "13",
+      "13"
+    ],
+    [
+      "14",
+      "14"
+    ],
+    [
+      "15",
+      "15"
+    ]
+  ],
+  "digitalPins": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "2",
+      "2"
+    ],
+    [
+      "3",
+      "3"
+    ],
+    [
+      "4",
+      "4"
+    ],
+    [
+      "12",
+      "12"
+    ],
+    [
+      "13",
+      "13"
+    ],
+    [
+      "14",
+      "14"
+    ],
+    [
+      "15",
+      "15"
+    ]
+  ],
+  "pwmPins": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "2",
+      "2"
+    ],
+    [
+      "3",
+      "3"
+    ],
+    [
+      "4",
+      "4"
+    ],
+    [
+      "12",
+      "12"
+    ],
+    [
+      "13",
+      "13"
+    ],
+    [
+      "14",
+      "14"
+    ],
+    [
+      "15",
+      "15"
+    ]
+  ],
+  "servoPins": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "2",
+      "2"
+    ],
+    [
+      "3",
+      "3"
+    ],
+    [
+      "4",
+      "4"
+    ],
+    [
+      "12",
+      "12"
+    ],
+    [
+      "13",
+      "13"
+    ],
+    [
+      "14",
+      "14"
+    ],
+    [
+      "15",
+      "15"
+    ]
+  ],
+  "serialPort": [
+    [
+      "Serial",
+      "Serial"
+    ]
+  ],
+  "serialPins": {
+    "Serial": [
+      [
+        "RX",
+        "3"
+      ],
+      [
+        "TX",
+        "1"
+      ]
+    ]
+  },
+  "spi": [
+    [
+      "SPI",
+      "SPI"
+    ]
+  ],
+  "spiPins": {
+    "SPI": [
+      [
+        "MOSI",
+        "15"
+      ],
+      [
+        "MISO",
+        "2"
+      ],
+      [
+        "SCK",
+        "14"
+      ],
+      [
+        "SS",
+        "13"
+      ]
+    ]
+  },
+  "builtinLed": [
+    [
+      "FLASH_LED",
+      "4"
+    ]
+  ],
+  "interruptPins": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "2",
+      "2"
+    ],
+    [
+      "3",
+      "3"
+    ],
+    [
+      "4",
+      "4"
+    ],
+    [
+      "12",
+      "12"
+    ],
+    [
+      "13",
+      "13"
+    ],
+    [
+      "14",
+      "14"
+    ],
+    [
+      "15",
+      "15"
+    ]
+  ],
+  "cameraConfig": {
+    "interface": "dvp",
+    "supportedModels": [
+      "ov2640"
+    ],
+    "pins": {
+      "pwdn": "32",
+      "rst": "-1",
+      "xclk": "0",
+      "sda": "26",
+      "scl": "27",
+      "y9": "35",
+      "y8": "34",
+      "y7": "39",
+      "y6": "36",
+      "y5": "21",
+      "y4": "19",
+      "y3": "18",
+      "y2": "5",
+      "vsync": "25",
+      "href": "23",
+      "pclk": "22"
+    }
+  },
+  "sdCardPins": {
+    "clk": "14",
+    "cmd": "15",
+    "d0": "2",
+    "d1": "4",
+    "d2": "12",
+    "d3": "13"
+  },
+  "flashLedPin": "4"
+}

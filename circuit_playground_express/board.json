@@ -1,0 +1,538 @@
+{
+  "name": "Adafruit Circuit Playground Express",
+  "version": "1.0.0",
+  "description": "SAMD21 learning board with NeoPixels, sensors, buttons, speaker and alligator-clip pads",
+  "compilerTool": "aily-builder",
+  "core": "adafruit:samd",
+  "type": "adafruit:samd:adafruit_circuitplayground_m0",
+  "compilerParam": "compile -v -b adafruit:samd:adafruit_circuitplayground_m0",
+  "serialSpeed": [
+    [
+      "1200",
+      "1200"
+    ],
+    [
+      "9600",
+      "9600"
+    ],
+    [
+      "14400",
+      "14400"
+    ],
+    [
+      "19200",
+      "19200"
+    ],
+    [
+      "38400",
+      "38400"
+    ],
+    [
+      "57600",
+      "57600"
+    ],
+    [
+      "115200",
+      "115200"
+    ],
+    [
+      "230400",
+      "230400"
+    ],
+    [
+      "460800",
+      "460800"
+    ],
+    [
+      "921600",
+      "921600"
+    ]
+  ],
+  "spiClockDivide": [
+    [
+      "2 (8MHz)",
+      "SPI_CLOCK_DIV2"
+    ],
+    [
+      "4 (4MHz)",
+      "SPI_CLOCK_DIV4"
+    ],
+    [
+      "8 (2MHz)",
+      "SPI_CLOCK_DIV8"
+    ],
+    [
+      "16 (1MHz)",
+      "SPI_CLOCK_DIV16"
+    ],
+    [
+      "32 (500KHz)",
+      "SPI_CLOCK_DIV32"
+    ],
+    [
+      "64 (250KHz)",
+      "SPI_CLOCK_DIV64"
+    ],
+    [
+      "128 (125KHz)",
+      "SPI_CLOCK_DIV128"
+    ]
+  ],
+  "i2cSpeed": [
+    [
+      "100kHz",
+      "100000L"
+    ],
+    [
+      "400kHz",
+      "400000L"
+    ],
+    [
+      "1MHz",
+      "1000000L"
+    ]
+  ],
+  "interruptMode": [
+    [
+      "LOW",
+      "LOW"
+    ],
+    [
+      "RISING",
+      "RISING"
+    ],
+    [
+      "FALLING",
+      "FALLING"
+    ],
+    [
+      "CHANGE",
+      "CHANGE"
+    ],
+    [
+      "HIGH",
+      "HIGH"
+    ]
+  ],
+  "uploadParam": "[--use_1200bps_touch,--wait_for_upload_port] bossac -d --port=${serial} -a -U -e -w ${'*.bin'} -R",
+  "analogPins": [
+    [
+      "A0",
+      "A0"
+    ],
+    [
+      "A1",
+      "A1"
+    ],
+    [
+      "A2",
+      "A2"
+    ],
+    [
+      "A3",
+      "A3"
+    ],
+    [
+      "A4",
+      "A4"
+    ],
+    [
+      "A5",
+      "A5"
+    ],
+    [
+      "A6",
+      "A6"
+    ],
+    [
+      "A7",
+      "A7"
+    ],
+    [
+      "A8",
+      "A8"
+    ],
+    [
+      "A9",
+      "A9"
+    ],
+    [
+      "A10",
+      "A10"
+    ]
+  ],
+  "digitalPins": [
+    [
+      "D0",
+      "0"
+    ],
+    [
+      "D1",
+      "1"
+    ],
+    [
+      "D2",
+      "2"
+    ],
+    [
+      "D3",
+      "3"
+    ],
+    [
+      "D4",
+      "4"
+    ],
+    [
+      "D5",
+      "5"
+    ],
+    [
+      "D6",
+      "6"
+    ],
+    [
+      "D7",
+      "7"
+    ],
+    [
+      "D8",
+      "8"
+    ],
+    [
+      "D9",
+      "9"
+    ],
+    [
+      "D10",
+      "10"
+    ],
+    [
+      "D11",
+      "11"
+    ],
+    [
+      "D12",
+      "12"
+    ],
+    [
+      "D13",
+      "13"
+    ],
+    [
+      "A0",
+      "A0"
+    ],
+    [
+      "A1",
+      "A1"
+    ],
+    [
+      "A2",
+      "A2"
+    ],
+    [
+      "A3",
+      "A3"
+    ],
+    [
+      "A4",
+      "A4"
+    ],
+    [
+      "A5",
+      "A5"
+    ],
+    [
+      "A6",
+      "A6"
+    ],
+    [
+      "A7",
+      "A7"
+    ],
+    [
+      "A8",
+      "A8"
+    ],
+    [
+      "A9",
+      "A9"
+    ],
+    [
+      "A10",
+      "A10"
+    ]
+  ],
+  "pwmPins": [
+    [
+      "D0",
+      "0"
+    ],
+    [
+      "D1",
+      "1"
+    ],
+    [
+      "D6",
+      "6"
+    ],
+    [
+      "D7",
+      "7"
+    ],
+    [
+      "D9",
+      "9"
+    ],
+    [
+      "D10",
+      "10"
+    ],
+    [
+      "D13",
+      "13"
+    ],
+    [
+      "A2",
+      "A2"
+    ],
+    [
+      "A3",
+      "A3"
+    ],
+    [
+      "A6",
+      "A6"
+    ],
+    [
+      "A7",
+      "A7"
+    ]
+  ],
+  "servoPins": [
+    [
+      "D0",
+      "0"
+    ],
+    [
+      "D1",
+      "1"
+    ],
+    [
+      "D6",
+      "6"
+    ],
+    [
+      "D9",
+      "9"
+    ],
+    [
+      "D10",
+      "10"
+    ]
+  ],
+  "serialPort": [
+    [
+      "Serial",
+      "Serial"
+    ],
+    [
+      "Serial1",
+      "Serial1"
+    ]
+  ],
+  "serialPins": {
+    "Serial1": [
+      [
+        "RX",
+        "0"
+      ],
+      [
+        "TX",
+        "1"
+      ]
+    ]
+  },
+  "spi": [
+    [
+      "SPI",
+      "SPI"
+    ]
+  ],
+  "spiPins": {
+    "SPI": [
+      [
+        "MOSI",
+        "32"
+      ],
+      [
+        "MISO",
+        "30"
+      ],
+      [
+        "SCK",
+        "31"
+      ],
+      [
+        "SS",
+        "33"
+      ]
+    ]
+  },
+  "i2c": [
+    [
+      "External I2C",
+      "Wire"
+    ],
+    [
+      "Internal I2C",
+      "Wire1"
+    ]
+  ],
+  "i2cPins": {
+    "Wire": [
+      [
+        "SDA",
+        "2"
+      ],
+      [
+        "SCL",
+        "3"
+      ]
+    ],
+    "Wire1": [
+      [
+        "SDA",
+        "28"
+      ],
+      [
+        "SCL",
+        "29"
+      ]
+    ]
+  },
+  "builtinLed": [
+    [
+      "LED_BUILTIN",
+      "13"
+    ]
+  ],
+  "interruptPins": [
+    [
+      "D0",
+      "0"
+    ],
+    [
+      "D1",
+      "1"
+    ],
+    [
+      "D2",
+      "2"
+    ],
+    [
+      "D3",
+      "3"
+    ],
+    [
+      "D4",
+      "4"
+    ],
+    [
+      "D5",
+      "5"
+    ],
+    [
+      "D6",
+      "6"
+    ],
+    [
+      "D7",
+      "7"
+    ],
+    [
+      "D8",
+      "8"
+    ],
+    [
+      "D9",
+      "9"
+    ],
+    [
+      "D10",
+      "10"
+    ],
+    [
+      "D11",
+      "11"
+    ],
+    [
+      "D12",
+      "12"
+    ],
+    [
+      "D13",
+      "13"
+    ],
+    [
+      "A0",
+      "A0"
+    ],
+    [
+      "A1",
+      "A1"
+    ],
+    [
+      "A2",
+      "A2"
+    ],
+    [
+      "A3",
+      "A3"
+    ],
+    [
+      "A4",
+      "A4"
+    ],
+    [
+      "A5",
+      "A5"
+    ],
+    [
+      "A6",
+      "A6"
+    ],
+    [
+      "A7",
+      "A7"
+    ],
+    [
+      "A8",
+      "A8"
+    ],
+    [
+      "A9",
+      "A9"
+    ],
+    [
+      "A10",
+      "A10"
+    ]
+  ],
+  "ws2812Pin": "8",
+  "buttonPins": {
+    "buttonA": "4",
+    "buttonB": "5"
+  },
+  "slideSwitchPin": "7",
+  "speakerPin": "12",
+  "speakerEnablePin": "11",
+  "lightSensorPin": "A8",
+  "temperatureSensorPin": "A9",
+  "proximitySensorPin": "A10",
+  "irPins": {
+    "tx": "25",
+    "rx": "26"
+  },
+  "accelerometerInterruptPin": "27"
+}

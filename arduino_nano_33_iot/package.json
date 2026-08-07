@@ -1,0 +1,27 @@
+{
+  "name": "@aily-project/board-arduino_nano_33_iot",
+  "nickname": "Arduino Nano 33 IoT",
+  "version": "1.8.14",
+  "description": "Arduino Nano 33 IoT is a compact SAMD21 board with Wi-Fi, Bluetooth, a secure element and a six-axis IMU.",
+  "description_en": "Arduino Nano 33 IoT is a compact SAMD21 board with Wi-Fi, Bluetooth, a secure element and a six-axis IMU.",
+  "description_zh_cn": "Arduino Nano 33 IoT 是一款紧凑的 SAMD21 开发板，集成 Wi-Fi、蓝牙、安全芯片和六轴 IMU。",
+  "main": "index.js",
+  "url": "https://docs.arduino.cc/hardware/nano-33-iot/",
+  "keywords": [
+    "Arduino",
+    "Arduino Nano 33 IoT",
+    "nano_33_iot"
+  ],
+  "author": "Arduino",
+  "brand": "Arduino",
+  "license": "ISC",
+  "state": "todo",
+  "boardDependencies": {
+    "@aily-project/compiler-arm-none-eabi-gcc": "7.2.1",
+    "@aily-project/tool-bossac": "1.9.1",
+    "@aily-project/sdk-samd": "1.8.14",
+    "@aily-project/tool-CMSIS-Atmel": "1.2.0",
+    "@aily-project/tool-CMSIS": "4.5.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

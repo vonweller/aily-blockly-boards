@@ -1,0 +1,26 @@
+{
+  "name": "@aily-project/board-esp32_cam",
+  "nickname": "AI Thinker ESP32-CAM",
+  "version": "3.3.10",
+  "description": "AI Thinker ESP32-CAM combines an ESP32, PSRAM, OV2640 camera connector, microSD slot and flash LED for compact vision and IoT projects.",
+  "description_en": "AI Thinker ESP32-CAM combines an ESP32, PSRAM, OV2640 camera connector, microSD slot and flash LED for compact vision and IoT projects.",
+  "description_zh_cn": "AI Thinker ESP32-CAM 集成 ESP32、PSRAM、OV2640 摄像头接口、microSD 卡槽和补光灯，适合紧凑型视觉与物联网项目。",
+  "main": "index.js",
+  "url": "https://docs.ai-thinker.com/en/esp32-cam",
+  "keywords": [
+    "AI-Thinker",
+    "AI Thinker ESP32-CAM",
+    "esp32cam"
+  ],
+  "author": "AI-Thinker",
+  "brand": "AI-Thinker",
+  "license": "ISC",
+  "state": "todo",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-esptool_py": "5.3.0",
+    "@aily-project/sdk-esp32": "3.3.10",
+    "@aily-project/tool-esp32-libs": "3.3.10",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@aily-project/board-lilygo_t_display_s3",
+  "nickname": "LilyGO T-Display-S3",
+  "version": "3.3.10",
+  "description": "LilyGO T-Display-S3 combines an ESP32-S3 with a built-in 1.9-inch 170 x 320 ST7789 color display, buttons and battery support.",
+  "description_en": "LilyGO T-Display-S3 combines an ESP32-S3 with a built-in 1.9-inch 170 x 320 ST7789 color display, buttons and battery support.",
+  "description_zh_cn": "LilyGO T-Display-S3 集成 ESP32-S3、1.9 英寸 170 x 320 ST7789 彩屏、按键和电池供电支持。",
+  "main": "index.js",
+  "url": "https://lilygo.cc/products/t-display-s3",
+  "keywords": [
+    "LilyGO",
+    "LilyGO T-Display-S3",
+    "lilygo_t_display_s3"
+  ],
+  "author": "LilyGO",
+  "brand": "LilyGO",
+  "license": "ISC",
+  "state": "todo",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-esptool_py": "5.3.0",
+    "@aily-project/sdk-esp32": "3.3.10",
+    "@aily-project/tool-esp32s3-libs": "3.3.10",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
