@@ -1,0 +1,25 @@
+{
+  "name": "@aily-project/board-esp32p4_core_board",
+  "nickname": "ESP32P4 Core Board",
+  "version": "3.3.11",
+  "description": "ESP32-P4 Core Board configuration with 16 MB flash, PSRAM, and an integrated ESP32-C6 Wi-Fi/Bluetooth coprocessor over ESP-Hosted SDIO.",
+  "description_en": "ESP32-P4 Core Board configuration with 16 MB flash, PSRAM, and an integrated ESP32-C6 Wi-Fi/Bluetooth coprocessor over ESP-Hosted SDIO.",
+  "description_zh_cn": "ESP32P4 Core Board 的 aily blockly 开发板配置，带有 16 MB Flash、PSRAM，并通过 ESP-Hosted SDIO 使用板载 ESP32-C6 Wi-Fi/蓝牙协处理器。",
+  "description_zh_hk": "ESP32P4 Core Board 的 aily blockly 開發板設定，帶有 16 MB Flash、PSRAM，並透過 ESP-Hosted SDIO 使用板載 ESP32-C6 Wi-Fi/藍牙協處理器。",
+  "main": "index.js",
+  "url": "https://github.com/espressif/arduino-esp32",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Espressif Systems",
+  "license": "ISC",
+  "brand": "Espressif",
+  "state": "alpha",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-rv32": "14.2.0",
+    "@aily-project/tool-esptool_py": "5.3.1",
+    "@aily-project/sdk-esp32": "3.3.11",
+    "@aily-project/tool-esp32p4-libs": "3.3.11",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
