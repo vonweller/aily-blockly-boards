@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "description": "ChipIntelli CI1302 CI130X offline ASR board",
   "compilerTool": "aily-builder",
-  "core": "chipintelli:ci13xx@1.0.5",
+  "core": "chipintelli:ci13xx",
   "type": "chipintelli:ci13xx:ci1302",
   "mode": [
     "arduino"
