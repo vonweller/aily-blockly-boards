@@ -102,6 +102,11 @@ async function filterPackageJson(packageJson, keysToExtract, subdir) {
     }
   }
 
+  // auth 是可选布尔字段，仅在开发板明确要求鉴权时输出
+  if (packageJson.auth === true) {
+    filteredJson.auth = true;
+  }
+
   return filteredJson;
 }
 
