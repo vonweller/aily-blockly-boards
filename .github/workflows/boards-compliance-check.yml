@@ -7,14 +7,20 @@ on:
       - '*/package.json'
       - '*/template/package.json'
       - '*/board.json'
+      - '*/board.webp'
+      - '*/LICENSE.image.txt'
       - '*/readme.md'
+      - '.scripts/validate-cybercam-package-contract.js'
   push:
     branches: [ main, deploy, develop ]
     paths:
       - '*/package.json'
       - '*/template/package.json'
       - '*/board.json'
+      - '*/board.webp'
+      - '*/LICENSE.image.txt'
       - '*/readme.md'
+      - '.scripts/validate-cybercam-package-contract.js'
 
 # GitHub Actions权限配置
 permissions:

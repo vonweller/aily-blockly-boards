@@ -18,7 +18,7 @@
   "brand": "01Studio",
   "url": "https://github.com/01studio-lab/01studio_wiki/tree/main/docs/cybercam",
   "scripts": {
-    "test": "node ../.scripts/validate-boards-compliance.js ."
+    "test": "node ../.scripts/validate-cybercam-package-contract.js . && node ../.scripts/validate-boards-compliance.js ."
   },
   "keywords": [
     "aily",

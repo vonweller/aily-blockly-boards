@@ -19,6 +19,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const { validateCyberCamPackageContract } = require('./validate-cybercam-package-contract.js');
 
 class BoardValidator {
   constructor() {
@@ -97,6 +98,12 @@ class BoardValidator {
     const boards = new Set();
     
     for (const file of changedFiles) {
+      const normalizedFile = file.replace(/\\/g, '/');
+      if (normalizedFile === '.scripts/validate-cybercam-package-contract.js') {
+        boards.add('cybercam');
+        continue;
+      }
+
       // 跳过根目录文件
       if (!file.includes('/') && !file.includes('\\')) {
         continue;
@@ -207,6 +214,9 @@ class BoardValidator {
       // 4. 检测template中的dependencies（包括版本一致性检测）
       await this.checkTemplateDependencies(boardName, boardPackage, templatePackage);
 
+      // 5. 检测板卡专用契约
+      await this.checkCyberCamPackageContract(boardName, boardPath, boardPackage);
+
     } catch (error) {
       this.addFailure();
       this.addIssue('error', 'JSON格式', boardName, `JSON解析失败: ${error.message}`, '修复JSON语法错误');
@@ -260,6 +270,29 @@ class BoardValidator {
       this.addFailure();
       this.addIssue('info', 'SDK版本', boardName, '未找到SDK依赖', '确认是否需要添加对应的SDK依赖');
       console.log(`  💡 未找到SDK依赖`);
+    }
+  }
+
+  async checkCyberCamPackageContract(boardName, boardPath, boardPackage) {
+    if (boardPackage.name !== '@aily-project/board-cybercam') {
+      return;
+    }
+
+    console.log(`\n📷 检测CyberCAM包契约...`);
+    try {
+      validateCyberCamPackageContract(path.resolve(boardPath));
+      this.addSuccess();
+      console.log(`  ✅ CyberCAM详细契约通过`);
+    } catch (error) {
+      this.addFailure();
+      this.addIssue(
+        'error',
+        'CyberCAM契约',
+        boardName,
+        error.message,
+        '运行 npm test --prefix cybercam 查看详细契约失败信息',
+      );
+      console.log(`  ❌ CyberCAM详细契约失败: ${error.message}`);
     }
   }
 

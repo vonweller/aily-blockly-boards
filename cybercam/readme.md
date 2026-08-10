@@ -30,7 +30,7 @@ CyberCAM remains a board package and is not exposed as a separate project type.
 
 - `cameraConfig`: MIPI CSI camera interface; GC2093 and OV5647 are explicitly supported by the official camera documentation.
 - `displayConfig`: ST7701S controller over the 2-lane MIPI display interface at 640 × 480.
-- `audioConfig`: the onboard `inno` codec shown by the official ALSA hardware listing for the dual microphones and right-channel speaker. The same listing names the ALSA card `K230I2SINNO`.
+- `audioConfig`: an empty fixed-pin map for the internal audio path. The official documentation names the ALSA card `K230I2SINNO` and device `Audio 9140e000.inno codec-0`, but does not identify a codec chip model, so `board.json` deliberately does not claim one.
 
 The camera, display, and audio connections are fixed internal interfaces. 01Studio does not publish selectable GPIO mappings for those signals, so their standard `pins` objects are intentionally empty rather than containing guessed values.
 
@@ -40,7 +40,7 @@ The official CyberCAM VS Code extension detects supported CanMV boards through U
 
 | Capability | Assignment |
 | --- | --- |
-| General GPIO | GPIO11, GPIO12, GPIO14, GPIO15, GPIO16, GPIO17 |
+| General GPIO | GPIO11, GPIO12, GPIO14, GPIO15, GPIO16, GPIO17, GPIO60, GPIO61 |
 | User LED | GPIO52 |
 | User key | GPIO21 |
 | Fill light | GPIO46 / PWM2 |
@@ -54,7 +54,7 @@ The official CyberCAM VS Code extension detects supported CanMV boards through U
 
 GPIO11 and GPIO12 are shared by UART2 and I2C2. GPIO14–GPIO17 are shared with SPI0. Configure only one conflicting peripheral function at a time. The onboard IMU bus is listed separately from the exposed I2C2 connector.
 
-GPIO60 and GPIO61 are dedicated PWM selections in this board package and therefore appear only in `pwmPins`, not in the general digital or interrupt pin lists.
+The official GPIO documentation states that every IO pin except power and the two ADC pads can be configured for ordinary input/output. GPIO60 and GPIO61 therefore appear in both `digitalPins` and `pwmPins`. They are not included in `interruptPins` because the official documentation does not establish interrupt support for them.
 
 The official documentation identifies ADC0 and ADC1 as 0–3.6 V solder pads but does not assign GPIO numbers to them, so they are intentionally not exposed as selectable analog pins in this package.
 
@@ -67,4 +67,4 @@ The official documentation identifies ADC0 and ADC1 as 0–3.6 V solder pads but
 - [01Studio CyberCAM audio documentation](https://github.com/01studio-lab/01studio_wiki/blob/main/docs/cybercam/os_software/audio.md)
 - [Official CyberCAM VS Code extension](https://marketplace.visualstudio.com/items?itemName=01Studio.cybercam-vscode)
 
-`board.webp` is cropped and resized from the official CyberCAM product imagery in the 01Studio documentation repository.
+`board.webp` is cropped and resized from the official CyberCAM product image `docs/cybercam/intro/img/product/intro2.png`. The image is distributed separately under the upstream MIT License; attribution and the complete license text are included in `LICENSE.image.txt`. The package's ISC declaration does not replace that image license.
