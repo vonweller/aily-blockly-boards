@@ -166,6 +166,7 @@ class BoardValidator {
 
     // 检查必需文件存在性
     const boardPackagePath = path.join(boardPath, 'package.json');
+    const boardConfigPath = path.join(boardPath, 'board.json');
     const templatePackagePath = path.join(boardPath, 'template', 'package.json');
 
     if (!fs.existsSync(boardPackagePath)) {
@@ -184,6 +185,9 @@ class BoardValidator {
 
     try {
       const boardPackage = JSON.parse(fs.readFileSync(boardPackagePath, 'utf8'));
+      const boardConfig = fs.existsSync(boardConfigPath)
+        ? JSON.parse(fs.readFileSync(boardConfigPath, 'utf8'))
+        : null;
       const templatePackage = JSON.parse(fs.readFileSync(templatePackagePath, 'utf8'));
 
       console.log(`\n📦 开发板信息:`);
@@ -192,12 +196,15 @@ class BoardValidator {
       console.log(`  昵称: ${boardPackage.nickname || 'N/A'}`);
 
       // 1. 检测SDK版本一致性
-      await this.checkSDKVersionConsistency(boardName, boardPackage);
+      await this.checkSDKVersionConsistency(boardName, boardPackage, boardConfig);
 
       // 2. 检测基础字段完整性
       await this.checkBasicFields(boardName, boardPackage);
 
-      // 3. 检测template中的dependencies（包括版本一致性检测）
+      // 3. 检测Python运行时配置
+      await this.checkPythonRuntime(boardName, boardConfig, templatePackage);
+
+      // 4. 检测template中的dependencies（包括版本一致性检测）
       await this.checkTemplateDependencies(boardName, boardPackage, templatePackage);
 
     } catch (error) {
@@ -211,8 +218,14 @@ class BoardValidator {
   }
 
   // 1. 检测SDK版本一致性
-  async checkSDKVersionConsistency(boardName, boardPackage) {
+  async checkSDKVersionConsistency(boardName, boardPackage, boardConfig) {
     console.log(`\n🛠️  检测SDK版本一致性...`);
+
+    if (this.isPythonOnlyBoard(boardConfig)) {
+      this.addSuccess();
+      console.log(`  ✅ Python运行时开发板无需SDK依赖`);
+      return;
+    }
     
     if (!boardPackage.boardDependencies) {
       this.addFailure();
@@ -247,6 +260,62 @@ class BoardValidator {
       this.addFailure();
       this.addIssue('info', 'SDK版本', boardName, '未找到SDK依赖', '确认是否需要添加对应的SDK依赖');
       console.log(`  💡 未找到SDK依赖`);
+    }
+  }
+
+  isPythonOnlyBoard(boardConfig) {
+    return Boolean(
+      boardConfig
+      && Array.isArray(boardConfig.mode)
+      && boardConfig.mode.length === 1
+      && boardConfig.mode[0] === 'python'
+    );
+  }
+
+  async checkPythonRuntime(boardName, boardConfig, templatePackage) {
+    if (!this.isPythonOnlyBoard(boardConfig)) {
+      return;
+    }
+
+    console.log(`\n🐍 检测Python运行时配置...`);
+    const runtime = boardConfig.runtime;
+    const runtimeValid = runtime
+      && typeof runtime === 'object'
+      && !Array.isArray(runtime)
+      && runtime.kind === 'python'
+      && typeof runtime.adapter === 'string'
+      && runtime.adapter.trim().length > 0
+      && typeof runtime.entry === 'string'
+      && runtime.entry.trim().length > 0;
+
+    if (!runtimeValid) {
+      this.addFailure();
+      this.addIssue(
+        'error',
+        'Python运行时',
+        boardName,
+        'Python开发板的runtime配置不完整',
+        '设置runtime.kind为python，并提供非空的adapter和entry',
+      );
+      console.log(`  ❌ runtime配置不完整`);
+    } else {
+      this.addSuccess();
+      console.log(`  ✅ runtime: ${runtime.adapter} -> ${runtime.entry}`);
+    }
+
+    if (templatePackage.devmode !== 'python') {
+      this.addFailure();
+      this.addIssue(
+        'error',
+        'Python运行时',
+        boardName,
+        `template devmode必须为python，当前为${templatePackage.devmode || '未设置'}`,
+        '在template/package.json中设置"devmode": "python"',
+      );
+      console.log(`  ❌ template devmode不是python`);
+    } else {
+      this.addSuccess();
+      console.log(`  ✅ template devmode: python`);
     }
   }
 
@@ -496,6 +565,7 @@ async function main() {
   ✅ Board依赖名称匹配（必须小写）
   ✅ Board依赖版本一致性
   ✅ SDK版本匹配检测
+  ✅ Python运行时配置检测
   ✅ 基础字段完整性
   ✅ Template依赖配置
 `);
