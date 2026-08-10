@@ -1,0 +1,31 @@
+{
+  "name": "@aily-project/board-cubic_core_car",
+  "nickname": "Cubic Core Car",
+  "version": "3.3.10",
+  "description": "Cubic Core LEGO car mainboard. ESP32-based robotics car board with an on-board HC32L110 I2C 4-channel motor slave, PS3 wireless controller support, encoder motors, servo outputs, OLED display, buttons and battery monitoring. Use with the lib-cubic_core_car block library.",
+  "description_en": "Cubic Core LEGO car mainboard. ESP32-based robotics car board with an on-board HC32L110 I2C 4-channel motor slave, PS3 wireless controller support, encoder motors, servo outputs, OLED display, buttons and battery monitoring. Use with the lib-cubic_core_car block library.",
+  "description_zh_cn": "Cubic Core 乐高小车主板。基于 ESP32 的机器人小车板，板载 HC32L110 I2C 四路电机从机，支持 PS3 无线手柄、编码电机、舵机输出、OLED 显示、按键与电量检测。配合 lib-cubic_core_car 积木库使用。",
+  "description_zh_hk": "Cubic Core 樂高小車主板。基於 ESP32 的機器人小車板，板載 HC32L110 I2C 四路電機從機，支援 PS3 無線手掣、編碼電機、舵機輸出、OLED 顯示、按鍵與電量檢測。配合 lib-cubic_core_car 積木庫使用。",
+  "description_ja": "Cubic Core レゴカー用メインボード。ESP32ベースのロボットカーボードで、オンボードのHC32L110 I2C 4chモータースレーブ、PS3ワイヤレスコントローラー、エンコーダーモーター、サーボ出力、OLEDディスプレイ、ボタン、電池監視に対応。lib-cubic_core_carブロックライブラリと併用します。",
+  "description_ko": "Cubic Core 레고 자동차 메인보드. ESP32 기반 로봇 자동차 보드로 온보드 HC32L110 I2C 4채널 모터 슬레이브, PS3 무선 컨트롤러, 엔코더 모터, 서보 출력, OLED 디스플레이, 버튼 및 배터리 모니터링을 지원합니다. lib-cubic_core_car 블록 라이브러리와 함께 사용하세요.",
+  "description_de": "Cubic Core LEGO-Auto-Hauptplatine. ESP32-basiertes Roboterauto-Board mit integriertem HC32L110 I2C-4-Kanal-Motor-Slave, PS3-Funkcontroller-Unterstützung, Encoder-Motoren, Servo-Ausgängen, OLED-Display, Tasten und Batterieüberwachung. Zur Verwendung mit der Blockbibliothek lib-cubic_core_car.",
+  "description_fr": "Carte mère du véhicule LEGO Cubic Core. Carte robotique basée sur ESP32 avec un esclave moteur I2C 4 canaux HC32L110 intégré, prise en charge de la manette sans fil PS3, moteurs à encodeur, sorties servo, écran OLED, boutons et surveillance de la batterie. À utiliser avec la bibliothèque de blocs lib-cubic_core_car.",
+  "description_es": "Placa base del coche LEGO Cubic Core. Placa de coche robótico basada en ESP32 con un esclavo de motor I2C de 4 canales HC32L110 integrado, compatibilidad con mando inalámbrico PS3, motores con encoder, salidas de servo, pantalla OLED, botones y monitorización de batería. Para usar con la biblioteca de bloques lib-cubic_core_car.",
+  "description_pt": "Placa principal do carro LEGO Cubic Core. Placa de carro robótico baseada em ESP32 com um escravo de motor I2C de 4 canais HC32L110 integrado, suporte a comando sem fios PS3, motores com encoder, saídas de servo, ecrã OLED, botões e monitorização de bateria. Para usar com a biblioteca de blocos lib-cubic_core_car.",
+  "description_ru": "Материнская плата LEGO-машины Cubic Core. Плата робота-машины на базе ESP32 со встроенным I2C-ведомым 4-канальным драйвером моторов HC32L110, поддержкой беспроводного контроллера PS3, энкодерными моторами, выходами сервоприводов, OLED-дисплеем, кнопками и мониторингом батареи. Используется с библиотекой блоков lib-cubic_core_car.",
+  "description_ar": "اللوحة الرئيسية لسيارة LEGO من Cubic Core. لوحة سيارة روبوتية قائمة على ESP32 مع رقاقة تابعة HC32L110 I2C لأربع قنوات للمحركات مدمجة، ودعم وحدة تحكم PS3 اللاسلكية، ومحركات بمُشفّر، ومخارج سيرفو، وشاشة OLED، وأزرار، ومراقبة البطارية. تُستخدم مع مكتبة الكتل lib-cubic_core_car.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MZF",
+  "license": "MIT",
+  "brand": "Cubic Core",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-esptool_py": "5.3.0",
+    "@aily-project/sdk-esp32": "3.3.10",
+    "@aily-project/tool-esp32-libs": "3.3.10",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
