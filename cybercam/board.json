@@ -10,6 +10,23 @@
     "adapter": "canmv-k230",
     "entry": "main.py"
   },
+  "capabilities": {
+    "camera": true,
+    "display": true,
+    "touch": true,
+    "audioInput": true,
+    "audioOutput": true,
+    "imu": true,
+    "wifi": true,
+    "bluetooth": true,
+    "gpio": true,
+    "pwm": true,
+    "uart": true,
+    "i2c": true,
+    "spi": true
+  },
+  "usbVid": "1209",
+  "usbPid": "abd1",
   "analogPins": [],
   "digitalPins": [
     [
@@ -35,14 +52,6 @@
     [
       "GPIO17 (SPI0 MISO)",
       "17"
-    ],
-    [
-      "GPIO60 (PWM0)",
-      "60"
-    ],
-    [
-      "GPIO61 (PWM1)",
-      "61"
     ],
     [
       "LED (GPIO52)",
@@ -215,18 +224,29 @@
       "17"
     ],
     [
-      "GPIO60",
-      "60"
-    ],
-    [
-      "GPIO61",
-      "61"
-    ],
-    [
       "KEY (GPIO21)",
       "21"
     ]
   ],
+  "cameraConfig": {
+    "interface": "mipi-csi",
+    "supportedModels": [
+      "gc2093",
+      "ov5647"
+    ],
+    "pins": {}
+  },
+  "displayConfig": {
+    "controller": "st7701s",
+    "interface": "mipi-dsi",
+    "width": 640,
+    "height": 480,
+    "pins": {}
+  },
+  "audioConfig": {
+    "codec": "inno",
+    "pins": {}
+  },
   "specialPins": {
     "led": "52",
     "key": "21",
