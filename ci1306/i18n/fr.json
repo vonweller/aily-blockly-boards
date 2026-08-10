@@ -1,5 +1,6 @@
 {
   "CHIPINTELLI": {
-    "ALGORITHM": "Configuration de l’algorithme"
+    "ALGORITHM": "Configuration de l’algorithme",
+    "MICROPHONE_INPUT": "Entrée microphone"
   }
 }
