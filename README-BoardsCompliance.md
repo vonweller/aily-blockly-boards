@@ -38,12 +38,7 @@ node validate-boards-compliance.js --all
 node validate-boards-compliance.js --changed
 ```
 
-#### 4. 快速测试
-```bash
-node test-boards-compliance.js
-```
-
-#### 5. 显示帮助
+#### 4. 显示帮助
 ```bash
 node validate-boards-compliance.js --help
 ```
@@ -239,7 +234,6 @@ GitHub Actions工作流文件位于: `.github/workflows/board-compliance-check.y
 ```
 aily-blockly-boards/
 ├── validate-boards-compliance.js     # 主检测脚本
-├── test-boards-compliance.js         # 测试脚本
 ├── .github/workflows/
 │   └── board-compliance-check.yml    # GitHub Actions工作流
 ├── arduino_uno/
