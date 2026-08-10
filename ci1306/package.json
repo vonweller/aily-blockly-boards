@@ -23,6 +23,7 @@
   "license": "ISC",
   "brand": "ChipIntelli",
   "state": "alpha",
+  "auth": true,
   "boardDependencies": {
     "@aily-project/compiler-riscv-gcc": "9.2.0",
     "@aily-project/tool-citool-cli": "1.2.2",
