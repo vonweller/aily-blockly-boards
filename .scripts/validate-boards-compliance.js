@@ -203,6 +203,7 @@ class BoardValidator {
       console.log(`  昵称: ${boardPackage.nickname || 'N/A'}`);
 
       // 1. 检测SDK版本一致性
+      await this.checkRuntimeModeConsistency(boardName, boardConfig);
       await this.checkSDKVersionConsistency(boardName, boardPackage, boardConfig);
 
       // 2. 检测基础字段完整性
@@ -231,7 +232,7 @@ class BoardValidator {
   async checkSDKVersionConsistency(boardName, boardPackage, boardConfig) {
     console.log(`\n🛠️  检测SDK版本一致性...`);
 
-    if (this.isPythonOnlyBoard(boardConfig)) {
+    if (this.isPythonRuntimeBoard(boardConfig)) {
       this.addSuccess();
       console.log(`  ✅ Python运行时开发板无需SDK依赖`);
       return;
@@ -296,7 +297,7 @@ class BoardValidator {
     }
   }
 
-  isPythonOnlyBoard(boardConfig) {
+  isPythonModeBoard(boardConfig) {
     return Boolean(
       boardConfig
       && Array.isArray(boardConfig.mode)
@@ -305,8 +306,30 @@ class BoardValidator {
     );
   }
 
+  isPythonRuntimeBoard(boardConfig) {
+    return boardConfig?.runtime?.kind === 'python';
+  }
+
+  async checkRuntimeModeConsistency(boardName, boardConfig) {
+    const pythonMode = this.isPythonModeBoard(boardConfig);
+    const pythonRuntime = this.isPythonRuntimeBoard(boardConfig);
+    if (pythonMode === pythonRuntime) {
+      return;
+    }
+
+    this.addFailure();
+    this.addIssue(
+      'error',
+      'Runtime configuration',
+      boardName,
+      `Python mode and runtime kind disagree: mode=${JSON.stringify(boardConfig?.mode)} runtime.kind=${boardConfig?.runtime?.kind || 'unset'}`,
+      'Keep mode and runtime.kind consistent: use mode ["python"] with runtime.kind "python"',
+    );
+    console.log(`  ❌ mode and runtime.kind disagree`);
+  }
+
   async checkPythonRuntime(boardName, boardConfig, templatePackage) {
-    if (!this.isPythonOnlyBoard(boardConfig)) {
+    if (!this.isPythonRuntimeBoard(boardConfig)) {
       return;
     }
 
@@ -455,7 +478,7 @@ class BoardValidator {
     
     const coreLibs = Object.keys(deps).filter(dep => dep.startsWith('@aily-project/lib-core-'));
     
-    const isPythonRuntimeBoard = boardConfig?.runtime?.kind === 'python';
+    const isPythonRuntimeBoard = this.isPythonRuntimeBoard(boardConfig);
     if (coreLibs.length > 0) {
       this.addSuccess();
       console.log(`  ✅ 包含 ${coreLibs.length} 个核心库依赖`);
