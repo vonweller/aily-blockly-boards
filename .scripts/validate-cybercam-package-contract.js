@@ -108,6 +108,11 @@ function validateCyberCamPackageContract(boardRoot = path.resolve(__dirname, '..
     'node ../.scripts/validate-cybercam-package-contract.js . && node ../.scripts/validate-boards-compliance.js .',
   );
 
+  assert.strictEqual(
+    boardJson.version,
+    packageJson.version,
+    'board.json version must match package.json version',
+  );
   assert.deepStrictEqual(boardJson.mode, ['python']);
   assert.deepStrictEqual(boardJson.runtime, {
     kind: 'python',
@@ -208,9 +213,12 @@ function validateCyberCamPackageContract(boardRoot = path.resolve(__dirname, '..
   assert.strictEqual(templateJson.devmode, 'python');
   const boardDependencies = Object.entries(templateJson.dependencies)
     .filter(([name]) => name.startsWith('@aily-project/board-'));
-  assert.deepStrictEqual(boardDependencies, [['@aily-project/board-cybercam', '1.1.0']]);
+  assert.deepStrictEqual(
+    boardDependencies,
+    [['@aily-project/board-cybercam', packageJson.version]],
+  );
   assert.deepStrictEqual(templateJson.dependencies, {
-    '@aily-project/board-cybercam': '1.1.0',
+    '@aily-project/board-cybercam': packageJson.version,
     '@aily-project/lib-cybercam': '1.0.0',
   });
 

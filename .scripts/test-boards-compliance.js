@@ -52,6 +52,26 @@ async function testCoreLibraryDependencyRequirement() {
   );
 }
 
+function testCyberCamVersionConsistency() {
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'aily-cybercam-version-'));
+  const fixturePath = path.join(fixtureRoot, 'cybercam');
+  try {
+    fs.cpSync(path.resolve(__dirname, '..', 'cybercam'), fixturePath, { recursive: true });
+    const boardPath = path.join(fixturePath, 'board.json');
+    const boardJson = JSON.parse(fs.readFileSync(boardPath, 'utf8'));
+    boardJson.version = '9.9.9';
+    fs.writeFileSync(boardPath, `${JSON.stringify(boardJson, null, 2)}\n`);
+
+    assert.throws(
+      () => validateCyberCamPackageContract(fixturePath),
+      /board\.json version must match package\.json version/,
+      'CyberCAM contract must reject a board.json version that drifts from package.json',
+    );
+  } finally {
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+}
+
 async function testBoards() {
   const validator = new BoardValidator();
 
@@ -80,6 +100,7 @@ async function testBoards() {
   }
 
   validateCyberCamPackageContract();
+  testCyberCamVersionConsistency();
 
   const automaticPathValidator = new BoardValidator();
   let cyberCamContractInvoked = false;
