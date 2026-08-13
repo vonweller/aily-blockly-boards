@@ -12,6 +12,46 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 
+async function testCoreLibraryDependencyRequirement() {
+  const boardPackage = {
+    name: '@aily-project/board-runtime-fixture',
+    version: '1.0.0',
+  };
+  const templatePackage = {
+    dependencies: {
+      '@aily-project/board-runtime-fixture': '1.0.0',
+      '@aily-project/lib-runtime-fixture': '1.0.0',
+    },
+  };
+
+  const nonPythonValidator = new BoardValidator();
+  await nonPythonValidator.checkTemplateDependencies(
+    'cybercam',
+    boardPackage,
+    { runtime: { kind: 'arduino' } },
+    templatePackage,
+  );
+  assert(
+    nonPythonValidator.issues.some(issue => (
+      issue.type === 'warning'
+      && issue.suggestion.includes('@aily-project/lib-core-*')
+    )),
+    'a non-Python board without core libraries must still warn, regardless of board name',
+  );
+
+  const pythonValidator = new BoardValidator();
+  await pythonValidator.checkTemplateDependencies(
+    'runtime_fixture',
+    boardPackage,
+    { runtime: { kind: 'python' } },
+    templatePackage,
+  );
+  assert(
+    !pythonValidator.issues.some(issue => issue.suggestion.includes('@aily-project/lib-core-*')),
+    'a Python runtime board may use a self-contained Python library without core libraries',
+  );
+}
+
 async function testBoards() {
   const validator = new BoardValidator();
 
@@ -64,8 +104,13 @@ async function testBoards() {
   );
   assert.match(workflow, /- '\*\/board\.webp'/);
   assert.match(workflow, /- '\*\/LICENSE\.image\.txt'/);
+  assert.match(workflow, /- '\.scripts\/validate-boards-compliance\.js'/);
+  assert.match(workflow, /- '\.scripts\/test-boards-compliance\.js'/);
   assert.match(workflow, /- '\.scripts\/validate-cybercam-package-contract\.js'/);
+  assert.match(workflow, /node \.scripts\/test-boards-compliance\.js/);
   assert.match(workflow, /node \.scripts\/validate-boards-compliance\.js --changed/);
+
+  await testCoreLibraryDependencyRequirement();
 
   const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'aily-python-board-'));
   const fixturePath = path.join(fixtureRoot, 'invalid_python_board');

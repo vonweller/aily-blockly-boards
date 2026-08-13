@@ -212,7 +212,7 @@ class BoardValidator {
       await this.checkPythonRuntime(boardName, boardConfig, templatePackage);
 
       // 4. 检测template中的dependencies（包括版本一致性检测）
-      await this.checkTemplateDependencies(boardName, boardPackage, templatePackage);
+      await this.checkTemplateDependencies(boardName, boardPackage, boardConfig, templatePackage);
 
       // 5. 检测板卡专用契约
       await this.checkCyberCamPackageContract(boardName, boardPath, boardPackage);
@@ -383,7 +383,7 @@ class BoardValidator {
   }
 
   // 4. 检测template依赖
-  async checkTemplateDependencies(boardName, boardPackage, templatePackage) {
+  async checkTemplateDependencies(boardName, boardPackage, boardConfig, templatePackage) {
     console.log(`\n📦 检测template依赖...`);
     
     if (!templatePackage.dependencies) {
@@ -455,9 +455,13 @@ class BoardValidator {
     
     const coreLibs = Object.keys(deps).filter(dep => dep.startsWith('@aily-project/lib-core-'));
     
+    const isPythonRuntimeBoard = boardConfig?.runtime?.kind === 'python';
     if (coreLibs.length > 0) {
       this.addSuccess();
       console.log(`  ✅ 包含 ${coreLibs.length} 个核心库依赖`);
+    } else if (isPythonRuntimeBoard) {
+      this.addSuccess();
+      console.log(`  ✅ Python运行时开发板可使用自包含Python积木库`);
     } else {
       this.addFailure();
       this.addIssue('warning', 'Template依赖', boardName, '缺少核心库依赖', '添加必要的@aily-project/lib-core-*依赖');

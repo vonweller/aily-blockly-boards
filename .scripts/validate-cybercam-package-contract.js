@@ -19,17 +19,6 @@ const EXPECTED_LOCALES = [
   'zh_hk.json',
 ];
 
-const EXPECTED_CORE_DEPENDENCIES = {
-  '@aily-project/lib-core-io': '1.0.0',
-  '@aily-project/lib-core-logic': '0.0.1',
-  '@aily-project/lib-core-loop': '0.0.1',
-  '@aily-project/lib-core-math': '0.0.1',
-  '@aily-project/lib-core-serial': '0.0.1',
-  '@aily-project/lib-core-text': '1.0.0',
-  '@aily-project/lib-core-time': '0.0.1',
-  '@aily-project/lib-core-variables': '1.0.1',
-};
-
 const UPSTREAM_MIT_LICENSE = `MIT License
 
 Copyright (c) 2023 Walnut Pi
@@ -222,7 +211,6 @@ function validateCyberCamPackageContract(boardRoot = path.resolve(__dirname, '..
   assert.deepStrictEqual(boardDependencies, [['@aily-project/board-cybercam', '1.1.0']]);
   assert.deepStrictEqual(templateJson.dependencies, {
     '@aily-project/board-cybercam': '1.1.0',
-    ...EXPECTED_CORE_DEPENDENCIES,
     '@aily-project/lib-cybercam': '1.0.0',
   });
 

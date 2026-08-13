@@ -10,6 +10,8 @@ on:
       - '*/board.webp'
       - '*/LICENSE.image.txt'
       - '*/readme.md'
+      - '.scripts/validate-boards-compliance.js'
+      - '.scripts/test-boards-compliance.js'
       - '.scripts/validate-cybercam-package-contract.js'
   push:
     branches: [ main, deploy, develop ]
@@ -20,6 +22,8 @@ on:
       - '*/board.webp'
       - '*/LICENSE.image.txt'
       - '*/readme.md'
+      - '.scripts/validate-boards-compliance.js'
+      - '.scripts/test-boards-compliance.js'
       - '.scripts/validate-cybercam-package-contract.js'
 
 # GitHub Actions权限配置
@@ -53,6 +57,9 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+
+    - name: 运行开发板合规冒烟测试
+      run: node .scripts/test-boards-compliance.js
 
     - name: 验证变更的开发板
       id: validation
