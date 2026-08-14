@@ -14,7 +14,6 @@
   "description_pt": "A 01Studio CyberCAM é uma câmera de IA K230 programável em Python com KPU de 6 TOPS, tela sensível ao toque articulada de 2,4 polegadas, Wi-Fi 6 de banda dupla, Bluetooth 5.0, câmera, microfones, alto-falante, IMU, GPIO e periféricos integrados.",
   "description_ru": "01Studio CyberCAM — программируемая на Python ИИ-камера K230 с KPU производительностью 6 TOPS, поворотным сенсорным экраном 2,4 дюйма, двухдиапазонным Wi-Fi 6, Bluetooth 5.0, камерой, микрофонами, динамиком, IMU, GPIO и встроенной периферией.",
   "description_ar": "01Studio CyberCAM هي كاميرا ذكاء اصطناعي K230 قابلة للبرمجة بلغة Python، وتضم وحدة KPU بأداء 6 TOPS وشاشة لمس قابلة للطي مقاس 2.4 بوصة وWi-Fi 6 ثنائي النطاق وBluetooth 5.0 وكاميرا وميكروفونات ومكبر صوت ووحدة IMU ومنافذ GPIO وملحقات مدمجة.",
-  "main": "index.js",
   "brand": "01Studio",
   "url": "https://github.com/01studio-lab/01studio_wiki/tree/main/docs/cybercam",
   "scripts": {

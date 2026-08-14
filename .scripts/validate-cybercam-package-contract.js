@@ -103,6 +103,13 @@ function validateCyberCamPackageContract(boardRoot = path.resolve(__dirname, '..
   assert.strictEqual(packageJson.version, '1.1.0');
   assert.strictEqual(packageJson.nickname, 'CyberCAM');
   assert.strictEqual(packageJson.brand, '01Studio');
+  if (packageJson.main !== undefined) {
+    assert.strictEqual(typeof packageJson.main, 'string', 'package main must be a string');
+    assert(
+      fs.existsSync(path.join(boardRoot, packageJson.main)),
+      `package main entry is missing: ${packageJson.main}`,
+    );
+  }
   assert.strictEqual(
     packageJson.scripts.test,
     'node ../.scripts/validate-cybercam-package-contract.js . && node ../.scripts/validate-boards-compliance.js .',
@@ -118,6 +125,21 @@ function validateCyberCamPackageContract(boardRoot = path.resolve(__dirname, '..
     kind: 'python',
     adapter: 'canmv-k230',
     entry: 'main.py',
+    execution: {
+      transport: 'canmv-usbdbg',
+      output: 'event-stream',
+      input: 'repl',
+      stop: 'device-interrupt',
+      files: 'canmv-io',
+      temporaryRun: true,
+    },
+    deployment: {
+      autostart: {
+        kind: 'boot-start-sh',
+        directory: '/boot/start',
+        backgroundRequired: true,
+      },
+    },
   });
   assert.deepStrictEqual(boardJson.capabilities, {
     camera: true,

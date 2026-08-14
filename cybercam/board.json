@@ -8,7 +8,22 @@
   "runtime": {
     "kind": "python",
     "adapter": "canmv-k230",
-    "entry": "main.py"
+    "entry": "main.py",
+    "execution": {
+      "transport": "canmv-usbdbg",
+      "output": "event-stream",
+      "input": "repl",
+      "stop": "device-interrupt",
+      "files": "canmv-io",
+      "temporaryRun": true
+    },
+    "deployment": {
+      "autostart": {
+        "kind": "boot-start-sh",
+        "directory": "/boot/start",
+        "backgroundRequired": true
+      }
+    }
   },
   "capabilities": {
     "camera": true,
