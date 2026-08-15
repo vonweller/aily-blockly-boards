@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-esp32s31",
   "nickname": "ESP32S31 chip",
-  "version": "3.3.10",
+  "version": "3.3.11",
   "description": "Generic ESP32-S31-WROOM-3 module configuration. The ESP32-S31 is a dual-core 32-bit RISC-V MCU running up to 320 MHz with 2.4 GHz Wi-Fi 6, Bluetooth 5.4, Bluetooth Classic, Zigbee, Thread, USB 2.0 HS OTG, USB Serial/JTAG, Ethernet MAC, 54 GPIO, touch, ADC, and DAC peripherals.",
   "description_en": "Generic ESP32-S31-WROOM-3 module configuration. The ESP32-S31 is a dual-core 32-bit RISC-V MCU running up to 320 MHz with 2.4 GHz Wi-Fi 6, Bluetooth 5.4, Bluetooth Classic, Zigbee, Thread, USB 2.0 HS OTG, USB Serial/JTAG, Ethernet MAC, 54 GPIO, touch, ADC, and DAC peripherals.",
   "description_zh_cn": "ESP32-S31-WROOM-3 模组通用配置。ESP32-S31 采用双核 32 位 RISC-V MCU，主频最高 320 MHz，集成 2.4 GHz Wi-Fi 6、Bluetooth 5.4、经典蓝牙、Zigbee、Thread、USB 2.0 高速 OTG、USB 串口/JTAG、以太网 MAC、54 个 GPIO、触摸、ADC 和 DAC 外设。",
@@ -25,8 +25,8 @@
   "state": "todo",
   "boardDependencies": {
     "@aily-project/compiler-esp-rv32": "14.2.0",
-    "@aily-project/tool-esptool_py": "5.3.0",
-    "@aily-project/sdk-esp32": "3.3.10",
+    "@aily-project/tool-esptool_py": "5.3.1",
+    "@aily-project/sdk-esp32": "3.3.11",
     "@aily-project/tool-ctags": "5.8.0"
   }
 }
