@@ -9,7 +9,6 @@
     "arduino"
   ],
   "compilerParam": "compile -v -b realtek:AmebaD:Ameba_AMB23",
-  "uploadParam": "upload -v -b realtek:AmebaD:Ameba_AMB23 -p ${serial}",
   "analogPins": [
     [
       "A0",

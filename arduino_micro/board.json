@@ -6,7 +6,6 @@
     "core": "arduino:avr",
     "type": "arduino:avr:micro",
     "compilerParam": "compile -v -b arduino:avr:micro",
-    "uploadParam": "[--use_1200bps_touch,--wait_for_upload_port] avrdude -C${'avrdude.conf'} -v -V -patmega32u4 -cavr109 -P${serial} -b57600 -D -Uflash:w:${'*.hex'}:i",
     "analogPins": [
         [
             "A0",

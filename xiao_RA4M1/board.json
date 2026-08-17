@@ -6,7 +6,6 @@
     "core": "Seeeduino:renesas_uno",
     "type": "Seeeduino:renesas_uno:XIAO_RA4M1",
     "compilerParam": "compile -v -b Seeeduino:renesas_uno:XIAO_RA4M1",
-    "uploadParam": "dfu-util --device 0x2886:0x0049,:0x8049 -D ${'*.bin'} -a0 -Q",
     "analogPins": [
         ["A0", "A0"],
         ["A1", "A1"],

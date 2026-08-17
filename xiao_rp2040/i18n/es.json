@@ -1,0 +1,18 @@
+{
+  "RP2040": {
+    "FLASH_SIZE": "Tamaño de flash",
+    "CPU_ARCHITECTURE": "Arquitectura de CPU",
+    "CPU_SPEED": "Frecuencia de CPU",
+    "OPTIMIZATION": "Optimización",
+    "OPERATING_SYSTEM": "Sistema operativo",
+    "PROFILING": "Perfilado",
+    "RTTI": "RTTI",
+    "STACK_PROTECTOR": "Protección de pila",
+    "CPP_EXCEPTIONS": "Excepciones de C++",
+    "DEBUG_PORT": "Puerto de depuración",
+    "DEBUG_LEVEL": "Nivel de depuración",
+    "USB_STACK": "Pila USB",
+    "IP_BLUETOOTH_STACK": "Pila IP/Bluetooth",
+    "UPLOAD_METHOD": "Método de carga"
+  }
+}

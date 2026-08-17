@@ -9,7 +9,6 @@
     "arduino"
   ],
   "compilerParam": "compile -v -b realtek:AmebaD:Ameba_AMB26",
-  "uploadParam": "upload -v -b realtek:AmebaD:Ameba_AMB26 -p ${serial}",
   "analogPins": [
     [
       "A4",

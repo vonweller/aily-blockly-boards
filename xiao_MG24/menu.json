@@ -1,0 +1,11 @@
+[
+  {
+    "sep": true
+  },
+  {
+    "name": "SILABS.PROTOCOL_STACK",
+    "icon": "fa-light fa-network-wired",
+    "children": [],
+    "key": "protocol_stack"
+  }
+]

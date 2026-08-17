@@ -1,0 +1,18 @@
+{
+  "RP2040": {
+    "FLASH_SIZE": "フラッシュサイズ",
+    "CPU_ARCHITECTURE": "CPU アーキテクチャ",
+    "CPU_SPEED": "CPU 周波数",
+    "OPTIMIZATION": "最適化",
+    "OPERATING_SYSTEM": "オペレーティングシステム",
+    "PROFILING": "プロファイリング",
+    "RTTI": "RTTI",
+    "STACK_PROTECTOR": "スタック保護",
+    "CPP_EXCEPTIONS": "C++ 例外",
+    "DEBUG_PORT": "デバッグポート",
+    "DEBUG_LEVEL": "デバッグレベル",
+    "USB_STACK": "USB スタック",
+    "IP_BLUETOOTH_STACK": "IP/Bluetooth スタック",
+    "UPLOAD_METHOD": "書き込み方法"
+  }
+}

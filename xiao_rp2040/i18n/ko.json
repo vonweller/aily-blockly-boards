@@ -1,0 +1,18 @@
+{
+  "RP2040": {
+    "FLASH_SIZE": "플래시 크기",
+    "CPU_ARCHITECTURE": "CPU 아키텍처",
+    "CPU_SPEED": "CPU 주파수",
+    "OPTIMIZATION": "최적화",
+    "OPERATING_SYSTEM": "운영 체제",
+    "PROFILING": "프로파일링",
+    "RTTI": "RTTI",
+    "STACK_PROTECTOR": "스택 보호",
+    "CPP_EXCEPTIONS": "C++ 예외",
+    "DEBUG_PORT": "디버그 포트",
+    "DEBUG_LEVEL": "디버그 수준",
+    "USB_STACK": "USB 스택",
+    "IP_BLUETOOTH_STACK": "IP/블루투스 스택",
+    "UPLOAD_METHOD": "업로드 방식"
+  }
+}

@@ -9,7 +9,6 @@
     "arduino"
   ],
   "compilerParam": "compile -v -b realtek:AmebaPro2:Ameba_AMB82-MINI",
-  "uploadParam": "upload -v -b realtek:AmebaPro2:Ameba_AMB82-MINI -p ${serial}",
   "analogPins": [
     [
       "A0",

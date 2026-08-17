@@ -1,0 +1,18 @@
+{
+  "RP2040": {
+    "FLASH_SIZE": "Размер Flash",
+    "CPU_ARCHITECTURE": "Архитектура процессора",
+    "CPU_SPEED": "Частота процессора",
+    "OPTIMIZATION": "Оптимизация",
+    "OPERATING_SYSTEM": "Операционная система",
+    "PROFILING": "Профилирование",
+    "RTTI": "RTTI",
+    "STACK_PROTECTOR": "Защита стека",
+    "CPP_EXCEPTIONS": "Исключения C++",
+    "DEBUG_PORT": "Порт отладки",
+    "DEBUG_LEVEL": "Уровень отладки",
+    "USB_STACK": "Стек USB",
+    "IP_BLUETOOTH_STACK": "Стек IP/Bluetooth",
+    "UPLOAD_METHOD": "Метод загрузки"
+  }
+}

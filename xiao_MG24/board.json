@@ -7,7 +7,7 @@
     "type": "SiliconLabs:silabs:xiao_mg24",
     "mode": ["arduino"],
     "compilerParam": "compile -v -b SiliconLabs:silabs:xiao_mg24",
-    "uploadParam": "commander flash ${'*.hex'} --identifybyserialport ${serial}",
+    "linkUploadParam": "probe-rs download --chip EFR32MG24B220F1536IM48 --verify ${'*.elf'};probe-rs reset --chip EFR32MG24B220F1536IM48",
     "analogPins": [
         ["A0(D0)", "D0"],
         ["A1(D1)", "D1"],

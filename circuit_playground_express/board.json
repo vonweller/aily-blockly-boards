@@ -114,7 +114,6 @@
       "HIGH"
     ]
   ],
-  "uploadParam": "[--use_1200bps_touch,--wait_for_upload_port] bossac -d --port=${serial} -a -U -e -w ${'*.bin'} -R",
   "analogPins": [
     [
       "A0",

@@ -6,7 +6,6 @@
     "core": "arduino:samd",
     "type": "arduino:samd:arduino_zero_native",
     "compilerParam": "compile -v -b arduino:samd:arduino_zero_native",
-    "uploadParam": "[--use_1200bps_touch,--wait_for_upload_port] bossac -i -d --port=${serial} -U true -e -w -b ${'*.bin'} -R",
     "analogPins": [
         ["A0", "0"],
         ["A1", "1"],

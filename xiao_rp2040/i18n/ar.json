@@ -1,0 +1,18 @@
+{
+  "RP2040": {
+    "FLASH_SIZE": "حجم ذاكرة الفلاش",
+    "CPU_ARCHITECTURE": "بنية وحدة المعالجة المركزية",
+    "CPU_SPEED": "تردد وحدة المعالجة المركزية",
+    "OPTIMIZATION": "التحسين",
+    "OPERATING_SYSTEM": "نظام التشغيل",
+    "PROFILING": "تحليل الأداء",
+    "RTTI": "RTTI",
+    "STACK_PROTECTOR": "حماية المكدس",
+    "CPP_EXCEPTIONS": "استثناءات C++",
+    "DEBUG_PORT": "منفذ التصحيح",
+    "DEBUG_LEVEL": "مستوى التصحيح",
+    "USB_STACK": "مكدس USB",
+    "IP_BLUETOOTH_STACK": "مكدس IP/البلوتوث",
+    "UPLOAD_METHOD": "طريقة الرفع"
+  }
+}

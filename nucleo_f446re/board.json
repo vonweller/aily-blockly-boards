@@ -114,7 +114,6 @@
       "HIGH"
     ]
   ],
-  "uploadParam": "stm32flash -w ${'*.bin'} -v -g 0x0 ${serial}",
   "linkUploadParam": "probe-rs download --chip STM32F446RETx --verify ${'*.elf'};probe-rs reset --chip STM32F446RETx",
   "analogPins": [
     [

@@ -7,7 +7,6 @@
     "type": "nrf54l15clean:nrf54l15clean:xiao_nrf54l15",
     "mode": ["arduino"],
     "compilerParam": "compile -v -b nrf54l15clean:nrf54l15clean:xiao_nrf54l15",
-    "uploadParam": "adafruit-nrfutil --verbose dfu serial -pkg ${'*.bin.zip'} -p ${serial} -b 115200 --singlebank",
     "linkUploadParam":"probe-rs download --chip nRF54L15 --verify ${'*.elf'};probe-rs reset --chip nRF54L15",
     "analogPins": [
         ["A0(D0)", "0"],

@@ -1,0 +1,83 @@
+[
+  {
+    "sep": true
+  },
+  {
+    "name": "RP2040.FLASH_SIZE",
+    "icon": "fa-light fa-database",
+    "children": [],
+    "key": "flash"
+  },
+  {
+    "name": "RP2040.CPU_SPEED",
+    "icon": "fa-light fa-gauge-high",
+    "children": [],
+    "key": "freq"
+  },
+  {
+    "name": "RP2040.OPTIMIZATION",
+    "icon": "fa-light fa-screwdriver-wrench",
+    "children": [],
+    "key": "opt"
+  },
+  {
+    "name": "RP2040.OPERATING_SYSTEM",
+    "icon": "fa-light fa-cubes",
+    "children": [],
+    "key": "os"
+  },
+  {
+    "name": "RP2040.PROFILING",
+    "icon": "fa-light fa-wave-square",
+    "children": [],
+    "key": "profile"
+  },
+  {
+    "name": "RP2040.RTTI",
+    "icon": "fa-light fa-code-branch",
+    "children": [],
+    "key": "rtti"
+  },
+  {
+    "name": "RP2040.STACK_PROTECTOR",
+    "icon": "fa-light fa-shield-halved",
+    "children": [],
+    "key": "stackprotect"
+  },
+  {
+    "name": "RP2040.CPP_EXCEPTIONS",
+    "icon": "fa-light fa-triangle-exclamation",
+    "children": [],
+    "key": "exceptions"
+  },
+  {
+    "name": "RP2040.DEBUG_PORT",
+    "icon": "fa-light fa-plug",
+    "children": [],
+    "key": "dbgport"
+  },
+  {
+    "name": "RP2040.DEBUG_LEVEL",
+    "icon": "fa-light fa-bug",
+    "children": [],
+    "key": "dbglvl"
+  },
+  {
+    "name": "RP2040.USB_STACK",
+    "icon": "fa-brands fa-usb",
+    "children": [],
+    "key": "usbstack"
+  },
+  {
+    "name": "RP2040.IP_BLUETOOTH_STACK",
+    "icon": "fa-light fa-network-wired",
+    "children": [],
+    "key": "ipbtstack"
+  },
+  {
+    "name": "RP2040.UPLOAD_METHOD",
+    "icon": "fa-light fa-cloud-arrow-up",
+    "children": [],
+    "key": "uploadmethod"
+  }
+]

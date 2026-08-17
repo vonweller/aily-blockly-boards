@@ -25,6 +25,7 @@
   "license": "ISC",
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
+    "@aily-project/tool-dfu-util": "0.11.0",
     "@aily-project/tool-esptool_py": "5.1.0",
     "@aily-project/sdk-esp32": "3.3.1",
     "@aily-project/tool-idf_esp32s3": "5.5.1",

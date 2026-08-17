@@ -9,7 +9,6 @@
     "arduino"
   ],
   "compilerParam": "compile -v -b realtek:Ameba1:ameba_rtl8195a",
-  "uploadParam": "upload -v -b realtek:Ameba1:ameba_rtl8195a -p ${serial}",
   "analogPins": [
     [
       "A0",
