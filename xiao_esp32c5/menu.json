@@ -10,13 +10,6 @@
     "key": "UploadSpeed"
   },
   {
-    "name": "ESP32.UPLOAD_MODE",
-    "data": {},
-    "icon": "fa-light fa-cloud-arrow-up",
-    "children": [],
-    "key": "UploadMode"
-  },
-  {
     "name": "ESP32.FLASH_MODE",
     "data": {},
     "icon": "fa-light fa-tablet-rugged",

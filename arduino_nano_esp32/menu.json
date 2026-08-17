@@ -15,12 +15,6 @@
     "key": "PartitionScheme"
   },
   {
-    "name": "ESP32.DEBUG_LEVEL",
-    "icon": "fa-light fa-bug",
-    "children": [],
-    "key": "DebugLevel"
-  },
-  {
     "name": "ESP32.PIN_NUMBERS",
     "icon": "fa-light fa-hashtag",
     "children": [],

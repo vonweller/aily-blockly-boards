@@ -10,13 +10,6 @@
     "key": "UploadSpeed"
   },
   {
-    "name": "ESP32.UPLOAD_MODE",
-    "data": {},
-    "icon": "fa-light fa-cloud-arrow-up",
-    "children": [],
-    "key": "UploadMode"
-  },
-  {
     "name": "ESP32.FLASH_MODE",
     "data": {},
     "icon": "fa-light fa-tablet-rugged",
@@ -36,16 +29,6 @@
     "icon": "fa-light fa-hard-drive",
     "children": [],
     "key": "PartitionScheme"
-  },
-  {
-    "name": "ESP32.CDC_ON_BOOT",
-    "data": {},
-    "icon": "fa-brands fa-usb",
-    "children": [],
-    "key": "CDCOnBoot",
-    "extra": {
-      "refreshRuntimeBoardConfig": true
-    }
   },
   {
     "name": "ESP32.PSRAM",

@@ -1,5 +1,14 @@
 {
-  "NRF5": {
-    "SOFTDEVICE": "SoftDevice"
+  "NRF54": {
+    "CPU_FREQUENCY": "Frecuencia de CPU",
+    "BLUETOOTH": "Bluetooth",
+    "BLUETOOTH_TRACE": "Seguimiento de Bluetooth",
+    "VPR": "VPR",
+    "ZIGBEE": "Zigbee",
+    "OPENTHREAD": "OpenThread",
+    "MATTER": "Matter",
+    "ANTENNA": "Antena",
+    "SERIAL_ROUTING": "Enrutamiento serie",
+    "UPLOAD_METHOD": "Método de carga"
   }
 }

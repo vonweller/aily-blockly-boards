@@ -3,13 +3,63 @@
     "sep": true
   },
   {
-    "name": "NRF5.SOFTDEVICE",
+    "name": "NRF54.CPU_FREQUENCY",
+    "icon": "fa-light fa-gauge-high",
+    "children": [],
+    "key": "cpu_freq"
+  },
+  {
+    "name": "NRF54.BLUETOOTH",
+    "icon": "fa-brands fa-bluetooth-b",
+    "children": [],
+    "key": "clean_ble"
+  },
+  {
+    "name": "NRF54.BLUETOOTH_TRACE",
+    "icon": "fa-light fa-bug",
+    "children": [],
+    "key": "clean_ble_trace"
+  },
+  {
+    "name": "NRF54.VPR",
     "icon": "fa-light fa-microchip",
     "children": [],
-    "key": "softdevice",
-    "extra": {
-      "selectAction": "flash-softdevice",
-      "selectPortMessage": "SERIAL.SELECT_PORT_FIRST"
-    }
+    "key": "clean_vpr"
+  },
+  {
+    "name": "NRF54.ZIGBEE",
+    "icon": "fa-light fa-wifi",
+    "children": [],
+    "key": "clean_zigbee"
+  },
+  {
+    "name": "NRF54.OPENTHREAD",
+    "icon": "fa-light fa-network-wired",
+    "children": [],
+    "key": "clean_thread"
+  },
+  {
+    "name": "NRF54.MATTER",
+    "icon": "fa-light fa-house",
+    "children": [],
+    "key": "clean_matter"
+  },
+  {
+    "name": "NRF54.ANTENNA",
+    "icon": "fa-light fa-signal",
+    "children": [],
+    "key": "clean_antenna"
+  },
+  {
+    "name": "NRF54.SERIAL_ROUTING",
+    "icon": "fa-brands fa-usb",
+    "children": [],
+    "key": "clean_serial"
+  },
+  {
+    "name": "NRF54.UPLOAD_METHOD",
+    "icon": "fa-light fa-cloud-arrow-up",
+    "children": [],
+    "key": "clean_upload"
   }
 ]

@@ -1,5 +1,14 @@
 {
-  "NRF5": {
-    "SOFTDEVICE": "SoftDevice"
+  "NRF54": {
+    "CPU_FREQUENCY": "Частота процессора",
+    "BLUETOOTH": "Bluetooth",
+    "BLUETOOTH_TRACE": "Трассировка Bluetooth",
+    "VPR": "VPR",
+    "ZIGBEE": "Zigbee",
+    "OPENTHREAD": "OpenThread",
+    "MATTER": "Matter",
+    "ANTENNA": "Антенна",
+    "SERIAL_ROUTING": "Маршрутизация последовательного порта",
+    "UPLOAD_METHOD": "Метод загрузки"
   }
 }

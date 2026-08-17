@@ -1,5 +1,14 @@
 {
-  "NRF5": {
-    "SOFTDEVICE": "SoftDevice"
+  "NRF54": {
+    "CPU_FREQUENCY": "CPU 频率",
+    "BLUETOOTH": "蓝牙",
+    "BLUETOOTH_TRACE": "蓝牙跟踪",
+    "VPR": "VPR",
+    "ZIGBEE": "Zigbee",
+    "OPENTHREAD": "OpenThread",
+    "MATTER": "Matter",
+    "ANTENNA": "天线",
+    "SERIAL_ROUTING": "串口路由",
+    "UPLOAD_METHOD": "上传方式"
   }
 }

@@ -25,11 +25,5 @@
     "icon": "fa-light fa-hard-drive",
     "children": [],
     "key": "PartitionScheme"
-  },
-  {
-    "name": "ESP32.PSRAM",
-    "icon": "fa-light fa-memory",
-    "children": [],
-    "key": "PSRAM"
   }
 ]

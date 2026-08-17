@@ -1,5 +1,14 @@
 {
-  "NRF5": {
-    "SOFTDEVICE": "SoftDevice"
+  "NRF54": {
+    "CPU_FREQUENCY": "CPU 주파수",
+    "BLUETOOTH": "Bluetooth",
+    "BLUETOOTH_TRACE": "Bluetooth 추적",
+    "VPR": "VPR",
+    "ZIGBEE": "Zigbee",
+    "OPENTHREAD": "OpenThread",
+    "MATTER": "Matter",
+    "ANTENNA": "안테나",
+    "SERIAL_ROUTING": "시리얼 라우팅",
+    "UPLOAD_METHOD": "업로드 방식"
   }
 }
