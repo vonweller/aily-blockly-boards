@@ -6,7 +6,6 @@
     "core": "adafruit:samd",
     "type": "adafruit:samd:adafruit_metro_m4",
     "compilerParam": "compile -v -b adafruit:samd:adafruit_metro_m4",
-    "uploadParam": "[--use_1200bps_touch, --wait_for_upload] bossac -d --port=${serial} -a -U -e -w ${'*.bin'} -R",
     "analogPins": [
         ["A0", "A0"],
         ["A1", "A1"],

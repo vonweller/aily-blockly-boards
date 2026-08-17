@@ -9,7 +9,6 @@
     "arduino"
   ],
   "compilerParam": "compile -v -b realtek:AmebaD:SparkFun_ThingPlus-AWCU488",
-  "uploadParam": "upload -v -b realtek:AmebaD:SparkFun_ThingPlus-AWCU488 -p ${serial}",
   "analogPins": [
     [
       "A0",
