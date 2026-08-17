@@ -5,7 +5,7 @@
   "dependencies": {
     "@aily-project/board-esp32_aiot_kit": "3.2.1",
     "@aily-project/lib-adafruit-ina219": "0.0.1",
-    "@aily-project/lib-adafruit-gfx": "1.0.2",
+    "@aily-project/lib-tft-espi": "2.5.52",
     "@aily-project/lib-adafruit-vl53l0x": "1.0.0",
     "@aily-project/lib-core-io": "1.0.0",
     "@aily-project/lib-core-logic": "0.0.1",

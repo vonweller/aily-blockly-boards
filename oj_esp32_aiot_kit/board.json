@@ -757,5 +757,18 @@
             "ONHIGH_WE",
             "ONHIGH_WE"
         ]
-    ]
+    ],
+    "displayConfig": {
+        "controller": "st7789",
+        "interface": "spi",
+        "width": 240,
+        "height": 240,
+        "frequency": 40000000,
+        "pins": {
+            "sclk": "21",
+            "mosi": "47",
+            "dc": "43",
+            "cs": "44"
+        }
+    }
 }
