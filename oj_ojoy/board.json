@@ -745,5 +745,21 @@
             "ONHIGH_WE",
             "ONHIGH_WE"
         ]
-    ]
+    ],
+    "displayConfig": {
+        "controller": "ch13613",
+        "interface": "qspi",
+        "width": 480,
+        "height": 480,
+        "pins": {
+            "cs": "45",
+            "sclk": "17",
+            "d0": "8",
+            "d1": "16",
+            "d2": "15",
+            "d3": "18",
+            "rst": "7",
+            "te": "38"
+        }
+    }
 }

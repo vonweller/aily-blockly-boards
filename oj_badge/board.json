@@ -481,5 +481,21 @@
             "ONHIGH_WE",
             "ONHIGH_WE"
         ]
-    ]
+    ],
+    "displayConfig": {
+        "controller": "gc9a01",
+        "interface": "spi",
+        "width": 240,
+        "height": 240,
+        "pins": {
+            "mosi": "10",
+            "sclk": "12",
+            "cs": "13",
+            "dc": "14",
+            "rst": "11",
+            "bl": "16",
+            "sda": "6",
+            "scl": "7"
+        }
+    }
 }
