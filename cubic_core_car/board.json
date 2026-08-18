@@ -1,7 +1,7 @@
 {
-    "name": "cubic_core_car",
+    "name": "Cubic",
     "version": "1.0.0",
-    "description": "Cubic Core LEGO car mainboard (ESP32-based)",
+    "description": "Cubic — LEGO-compatible ESP32 robotics controller",
     "compilerTool": "aily-builder",
     "core": "esp32:esp32",
     "type": "esp32:esp32:esp32",
