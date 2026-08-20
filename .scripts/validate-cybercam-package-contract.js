@@ -120,6 +120,8 @@ function validateCyberCamPackageContract(boardRoot = path.resolve(__dirname, '..
     packageJson.version,
     'board.json version must match package.json version',
   );
+  assert.strictEqual(boardJson.core, 'python:k230');
+  assert.strictEqual(boardJson.type, 'python:k230:cybercam');
   assert.deepStrictEqual(boardJson.mode, ['python']);
   assert.deepStrictEqual(boardJson.runtime, {
     kind: 'python',

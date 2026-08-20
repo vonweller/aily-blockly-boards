@@ -1,0 +1,5 @@
+WalnutPi Serial Linux board image attribution
+
+Asset: board.webp
+Source: temporary placeholder copied from the CyberCAM board package until an official independent WalnutPi product photo is added.
+This package is not CyberCAM K230. Only the placeholder image is reused.

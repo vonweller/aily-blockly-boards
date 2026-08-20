@@ -2,6 +2,8 @@
   "name": "CyberCAM",
   "version": "1.1.0",
   "description": "01Studio CyberCAM K230 Python AI camera",
+  "core": "python:k230",
+  "type": "python:k230:cybercam",
   "mode": [
     "python"
   ],

@@ -1,0 +1,5 @@
+Raspberry Pi Linux board image attribution
+
+Asset: board.webp
+Source: copied from the existing @aily-project/board-raspberrypi_pico package as a temporary placeholder until an official Raspberry Pi Linux product photo is added.
+This package is not the RP2040 Pico Arduino board; only the placeholder image is reused.
