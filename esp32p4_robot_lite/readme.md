@@ -1,4 +1,4 @@
-# ESP32P4 Robot-Lite V1.1
+# ESP32P4 Robot-Lite
 
 本包使用 Arduino-ESP32 3.3.11 的通用目标：
 
@@ -21,5 +21,3 @@ esp32:esp32:esp32p4
 - 通用 P4 FQBN 的基础、WiFi、BLE、ES8311、I2S 以及 Blockly 生成代码均已编译通过。
 - 尚未在 Robot-Lite V1.1 实机上传或验证 C6 固件、SDIO 信号、电源时序和音频链路。
 - 现有库没有 ES7243E 初始化和声学回声消除实现，这两项未宣称支持。
-
-开发板图片使用项目已有的 ESP32-P4 + C6 通用图标，没有使用来源不明的实物图片。

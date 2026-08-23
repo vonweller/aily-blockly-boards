@@ -2,7 +2,7 @@
   "name": "project_",
   "version": "1.0.0",
   "description": "",
-  "board": "ESP32P4 Robot-Lite V1.1",
+  "board": "ESP32P4 Robot-Lite",
   "dependencies": {
     "@aily-project/board-esp32p4_robot_lite": "3.3.11",
     "@aily-project/lib-esp32p4-robot-lite": "0.0.1",
