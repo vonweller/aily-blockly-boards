@@ -1,0 +1,33 @@
+{
+  "name": "@aily-project/board-easyvoice_1306_dev",
+  "nickname": "EasyVoice 1306 Dev",
+  "version": "1.0.14",
+  "description": "EasyVoice 1306 Dev is a ChipIntelli CI1306-based offline voice development board with 22 exposed GPIOs, four ADC inputs, three UARTs, I2C, PWM, USB-C programming through onboard USB-UART, and dedicated MIC and speaker connectors.",
+  "description_en": "EasyVoice 1306 Dev is a ChipIntelli CI1306-based offline voice development board with 22 exposed GPIOs, four ADC inputs, three UARTs, I2C, PWM, USB-C programming through onboard USB-UART, and dedicated MIC and speaker connectors.",
+  "description_zh_cn": "EasyVoice 1306 Dev 是一款基于启英泰伦 CI1306 的离线语音开发板，提供 22 个引出的 GPIO、4 路 ADC、3 路 UART、I2C、PWM、经板载 USB-UART 实现的 USB-C 下载，以及独立的麦克风和扬声器接口。",
+  "description_zh_hk": "EasyVoice 1306 Dev 是一款基於啟英泰倫 CI1306 的離線語音開發板，提供 22 個引出的 GPIO、4 路 ADC、3 路 UART、I2C、PWM、經板載 USB-UART 實現的 USB-C 下載，以及獨立的麥克風和揚聲器介面。",
+  "description_ja": "EasyVoice 1306 Dev は ChipIntelli CI1306 を搭載したオフライン音声開発ボードです。22 本の GPIO、4 系統の ADC、3 系統の UART、I2C、PWM、オンボード USB-UART 経由の USB-C 書き込み、専用マイクおよびスピーカー端子を備えます。",
+  "description_ko": "EasyVoice 1306 Dev는 ChipIntelli CI1306 기반 오프라인 음성 개발 보드입니다. 22개의 GPIO, 4개의 ADC 입력, 3개의 UART, I2C, PWM, 온보드 USB-UART를 통한 USB-C 프로그래밍, 전용 마이크 및 스피커 커넥터를 제공합니다.",
+  "description_de": "EasyVoice 1306 Dev ist ein Offline-Sprachentwicklungsboard auf Basis des ChipIntelli CI1306 mit 22 herausgeführten GPIOs, vier ADC-Eingängen, drei UARTs, I2C, PWM, USB-C-Programmierung über den integrierten USB-UART sowie separaten Mikrofon- und Lautsprecheranschlüssen.",
+  "description_fr": "EasyVoice 1306 Dev est une carte de développement vocal hors ligne basée sur le ChipIntelli CI1306, avec 22 GPIO accessibles, quatre entrées ADC, trois UART, I2C, PWM, une programmation USB-C via l'USB-UART intégré et des connecteurs dédiés pour microphone et haut-parleur.",
+  "description_es": "EasyVoice 1306 Dev es una placa de desarrollo de voz sin conexión basada en ChipIntelli CI1306, con 22 GPIO expuestos, cuatro entradas ADC, tres UART, I2C, PWM, programación USB-C mediante USB-UART integrado y conectores dedicados para micrófono y altavoz.",
+  "description_pt": "EasyVoice 1306 Dev é uma placa de desenvolvimento de voz offline baseada no ChipIntelli CI1306, com 22 GPIO expostos, quatro entradas ADC, três UART, I2C, PWM, programação USB-C através do USB-UART integrado e conectores dedicados para microfone e altifalante.",
+  "description_ru": "EasyVoice 1306 Dev — плата автономной голосовой разработки на базе ChipIntelli CI1306 с 22 выведенными GPIO, четырьмя входами ADC, тремя UART, I2C, PWM, программированием через USB-C и встроенный USB-UART, а также отдельными разъёмами микрофона и динамика.",
+  "description_ar": "EasyVoice 1306 Dev هي لوحة تطوير صوتي دون اتصال مبنية على ChipIntelli CI1306، وتوفر 22 منفذ GPIO مكشوفًا وأربعة مداخل ADC وثلاث واجهات UART وI2C وPWM وبرمجة USB-C عبر محول USB-UART المدمج وموصلين مخصصين للميكروفون ومكبر الصوت.",
+  "main": "index.js",
+  "url": "https://arduino.me/s/55?aid=3362",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EasyVoice",
+  "license": "ISC",
+  "brand": "EasyVoice",
+  "state": "alpha",
+  "auth": true,
+  "boardDependencies": {
+    "@aily-project/compiler-riscv-gcc": "9.2.0",
+    "@aily-project/tool-citool-cli": "1.2.2",
+    "@aily-project/sdk-ci13xx": "1.0.14",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

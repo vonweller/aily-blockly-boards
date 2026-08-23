@@ -1,0 +1,139 @@
+{
+  "name": "EasyVoice 1306 Dev",
+  "version": "1.0.14",
+  "description": "EasyVoice 1306 Dev offline voice development board based on ChipIntelli CI1306",
+  "compilerTool": "aily-builder",
+  "core": "chipintelli:ci13xx",
+  "type": "chipintelli:ci13xx:ci1306",
+  "mode": [
+    "arduino"
+  ],
+  "compilerParam": "compile -v -b chipintelli:ci13xx:ci1306",
+  "analogPins": [
+    ["PC4 / A0 (ADC2)", "A0"],
+    ["PC3 / A1 (ADC3)", "A1"],
+    ["PC2 / A2 (ADC4)", "A2"],
+    ["PC1 / A3 (ADC5)", "A3"]
+  ],
+  "digitalPins": [
+    ["PA2", "2"],
+    ["PA3", "3"],
+    ["PA5", "5"],
+    ["PA6", "6"],
+    ["PA7", "7"],
+    ["PB0", "8"],
+    ["PB1", "9"],
+    ["PB2", "10"],
+    ["PB3", "11"],
+    ["PB4", "12"],
+    ["PB5 / USB-UART TX", "13"],
+    ["PB6 / USB-UART RX", "14"],
+    ["PB7", "15"],
+    ["PC0", "16"],
+    ["PC1", "17"],
+    ["PC2", "18"],
+    ["PC3", "19"],
+    ["PC4 / MUTE", "20"],
+    ["PD0", "22"],
+    ["PD1", "23"],
+    ["PD3", "25"],
+    ["PD4 / onboard LED", "26"],
+    ["PC4 / A0", "A0"],
+    ["PC3 / A1", "A1"],
+    ["PC2 / A2", "A2"],
+    ["PC1 / A3", "A3"]
+  ],
+  "pwmPins": [
+    ["PA2", "2"],
+    ["PA3", "3"],
+    ["PA5", "5"],
+    ["PA6", "6"],
+    ["PA7", "7"],
+    ["PB0", "8"],
+    ["PB1", "9"],
+    ["PB2", "10"],
+    ["PB3", "11"],
+    ["PB4", "12"],
+    ["PB5", "13"],
+    ["PB6", "14"],
+    ["PB7", "15"],
+    ["PC0", "16"],
+    ["PC1", "17"],
+    ["PC2", "18"],
+    ["PC3", "19"],
+    ["PC4", "20"]
+  ],
+  "serialPort": [
+    ["Serial (USB-UART)", "Serial"],
+    ["Serial1", "Serial1"],
+    ["Serial2", "Serial2"]
+  ],
+  "serialPins": {
+    "Serial": [
+      ["RX", "14"],
+      ["TX", "13"]
+    ],
+    "Serial1": [
+      ["RX", "16"],
+      ["TX", "15"]
+    ],
+    "Serial2": [
+      ["RX", "10"],
+      ["TX", "9"]
+    ]
+  },
+  "serialSpeed": [
+    ["1200", "1200"],
+    ["9600", "9600"],
+    ["14400", "14400"],
+    ["19200", "19200"],
+    ["38400", "38400"],
+    ["57600", "57600"],
+    ["115200", "115200"],
+    ["230400", "230400"],
+    ["460800", "460800"],
+    ["921600", "921600"]
+  ],
+  "i2c": [
+    ["I2C", "Wire"]
+  ],
+  "i2cPins": {
+    "Wire": [
+      ["SDA", "15"],
+      ["SCL", "16"]
+    ]
+  },
+  "i2cSpeed": [
+    ["100kHz", "100000L"],
+    ["400kHz", "400000L"]
+  ],
+  "builtinLed": [
+    ["PD4 (onboard LED)", "26"]
+  ],
+  "interruptPins": [
+    ["PA2", "2"],
+    ["PA3", "3"],
+    ["PA5", "5"],
+    ["PA6", "6"],
+    ["PA7", "7"],
+    ["PB0", "8"],
+    ["PB1", "9"],
+    ["PB2", "10"],
+    ["PB3", "11"],
+    ["PB4", "12"],
+    ["PB5", "13"],
+    ["PB6", "14"],
+    ["PB7", "15"],
+    ["PC0", "16"],
+    ["PC1", "17"],
+    ["PC2", "18"],
+    ["PC3", "19"],
+    ["PC4", "20"]
+  ],
+  "interruptMode": [
+    ["LOW", "LOW"],
+    ["RISING", "RISING"],
+    ["FALLING", "FALLING"],
+    ["CHANGE", "CHANGE"]
+  ]
+}

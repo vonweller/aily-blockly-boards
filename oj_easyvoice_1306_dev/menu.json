@@ -1,0 +1,17 @@
+[
+  {
+    "sep": true
+  },
+  {
+    "name": "CHIPINTELLI.ALGORITHM",
+    "icon": "fa-light fa-wave-square",
+    "children": [],
+    "key": "Algorithm"
+  },
+  {
+    "name": "CHIPINTELLI.MICROPHONE_INPUT",
+    "icon": "fa-light fa-microphone",
+    "children": [],
+    "key": "Microphone"
+  }
+]
