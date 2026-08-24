@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-cubic_core_car",
   "nickname": "Cubic",
-  "version": "3.3.10",
+  "version": "3.3.1",
   "description": "Cubic is a LEGO-compatible robotics controller based on the ESP32. It offers 4 DC motor outputs, 2 encoder-motor channels and 4 servo outputs, plus an on-board OLED, buttons, a 16340 Li-ion battery with battery-level monitoring, and PS3 wireless gamepad control. Several PH2.0 3P/4P connectors let you add more sensors and AI devices for fast robot building and control.",
   "description_en": "Cubic is a LEGO-compatible robotics controller based on the ESP32. It offers 4 DC motor outputs, 2 encoder-motor channels and 4 servo outputs, plus an on-board OLED, buttons, a 16340 Li-ion battery with battery-level monitoring, and PS3 wireless gamepad control. Several PH2.0 3P/4P connectors let you add more sensors and AI devices for fast robot building and control.",
   "description_zh_cn": "Cubic 是兼容乐高积木的机器人控制器，基于 ESP32，提供 4 路直流电机、2 路编码器电机、4 路舵机驱动输出；板载 OLED、按键、16340 锂电池及电量检测，支持 PS3 手柄无线遥控，并提供若干 PH2.0 3P/4P 接口，可接入更多传感器及 AI 设备，实现机器人的快速控制。",
@@ -23,9 +23,9 @@
   "brand": "OpenJumper",
   "boardDependencies": {
     "@aily-project/compiler-esp-x32": "14.2.0",
-    "@aily-project/tool-esptool_py": "5.3.0",
-    "@aily-project/sdk-esp32": "3.3.10",
-    "@aily-project/tool-esp32-libs": "3.3.10",
+    "@aily-project/tool-esptool_py": "5.1.0",
+    "@aily-project/sdk-esp32": "3.3.1",
+    "@aily-project/tool-idf_esp32": "5.5.1",
     "@aily-project/tool-ctags": "5.8.0"
   }
 }
