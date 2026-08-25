@@ -12,8 +12,8 @@
     "AI Thinker ESP32-CAM",
     "esp32cam"
   ],
-  "author": "AI-Thinker",
-  "brand": "AI-Thinker",
+  "author": "Ai-Thinker",
+  "brand": "Ai-Thinker",
   "license": "ISC",
   "state": "todo",
   "boardDependencies": {
