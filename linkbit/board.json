@@ -42,7 +42,7 @@
             "1"
         ],
         [
-            "KEY_A",
+            "EPD_CS",
             "2"
         ],
         [
@@ -66,19 +66,19 @@
             "7"
         ],
         [
-            "RGB",
+            "KEY_C",
             "8"
         ],
         [
-            "BOOT",
+            "BOOT/I2C_SEL",
             "9"
         ],
         [
-            "EPD_CS",
+            "KEY_A",
             "10"
         ],
         [
-            "KEY_C",
+            "RGB",
             "4"
         ],
         [
@@ -245,7 +245,7 @@
     "builtinLed": [
         [
             "RGB",
-            "8"
+            "4"
         ]
     ],
     "interruptPins": [
