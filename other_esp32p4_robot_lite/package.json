@@ -20,6 +20,7 @@
     "@aily-project/tool-esptool_py": "5.3.1",
     "@aily-project/sdk-esp32": "3.3.11",
     "@aily-project/tool-esp32p4-libs": "3.3.11",
+    "@aily-project/tool-esp32p4_es-libs": "3.3.11",
     "@aily-project/tool-ctags": "5.8.0"
   }
 }
