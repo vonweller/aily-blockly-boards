@@ -19,9 +19,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "EasyVoice",
   "license": "ISC",
-  "brand": "EasyVoice",
+  "author": "OpenJumper",
+  "brand": "OpenJumper",
   "state": "alpha",
   "auth": true,
   "boardDependencies": {
