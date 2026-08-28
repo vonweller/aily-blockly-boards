@@ -14,6 +14,7 @@
     "@aily-project/lib-core-time": "0.0.1",
     "@aily-project/lib-core-variables": "1.0.1",
     "@aily-project/lib-core-tone": "0.0.1",
-    "@aily-project/lib-microbit-matrix": "1.0.0"
+    "@aily-project/lib-microbit-matrix": "1.0.0",
+    "@aily-project/lib-microbit-builtins": "1.0.0"
   }
 }
