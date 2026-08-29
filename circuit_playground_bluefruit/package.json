@@ -1,6 +1,6 @@
 {
   "name": "@aily-project/board-circuit_playground_bluefruit",
-  "nickname": "Adafruit Circuit Playground Bluefruit",
+  "nickname": "Circuit Playground Bluefruit",
   "version": "1.7.0",
   "description": "Adafruit Circuit Playground Bluefruit is an nRF52840 learning board with Bluetooth LE, ten NeoPixels, sensors, buttons and speaker.",
   "description_en": "Adafruit Circuit Playground Bluefruit is an nRF52840 learning board with Bluetooth LE, ten NeoPixels, sensors, buttons and speaker.",

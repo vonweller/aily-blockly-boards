@@ -1,6 +1,6 @@
 {
   "name": "@aily-project/board-circuit_playground_express",
-  "nickname": "Adafruit Circuit Playground Express",
+  "nickname": "Circuit Playground Express",
   "version": "1.7.16",
   "description": "Adafruit Circuit Playground Express is a SAMD21 learning board with ten NeoPixels, sensors, buttons, speaker and alligator-clip pads.",
   "description_en": "Adafruit Circuit Playground Express is a SAMD21 learning board with ten NeoPixels, sensors, buttons, speaker and alligator-clip pads.",
