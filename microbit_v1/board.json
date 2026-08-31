@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "BBC micro:bit v1",
     "compilerTool": "aily-builder",
-    "core": "nRF5:BBCmicrobit",
-    "type": "nRF5:nRF5:BBCmicrobit",
+    "core": "n-able-Arduino:arm-ble",
+    "type": "n-able-Arduino:arm-ble:BBCmicrobit",
     "mode": ["arduino", "micropython"],
-    "compilerParam": "compile -v -b nRF5:nRF5:BBCmicrobit",
+    "compilerParam": "compile --verbose -b n-able-Arduino:arm-ble:BBCmicrobit --build-property build.dfu_pattern=",
     "linkUploadParam": "probe-rs download --chip nRF51822_xxAA --verify ${'*.elf'};probe-rs reset --chip nRF51822_xxAA",
     "analogPins": [
         ["P0", "A0"],

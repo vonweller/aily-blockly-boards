@@ -4,7 +4,8 @@
   "description": "",
   "board": "micro:bit v2",
   "dependencies": {
-    "@aily-project/board-microbit-v2": "0.8.0",
+    "@aily-project/board-microbit-v2": "0.4.0",
+    "@aily-project/lib-nimble": "1.0.1",
     "@aily-project/lib-core-io": "1.0.0",
     "@aily-project/lib-core-logic": "0.0.1",
     "@aily-project/lib-core-loop": "0.0.1",
@@ -14,7 +15,12 @@
     "@aily-project/lib-core-time": "0.0.1",
     "@aily-project/lib-core-variables": "1.0.1",
     "@aily-project/lib-core-tone": "0.0.1",
-    "@aily-project/lib-microbit-matrix": "1.0.0",
-    "@aily-project/lib-microbit-builtins": "1.0.0"
+    "@aily-project/lib-microbit-matrix": "1.0.1",
+    "@aily-project/lib-microbit-builtins": "1.0.1"
+  },
+  "projectConfig": {
+    "role": "all",
+    "cppDbgLvl": "none",
+    "bootloader": "none"
   }
 }

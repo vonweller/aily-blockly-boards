@@ -1,5 +1,7 @@
 {
-  "NRF5": {
-    "SOFTDEVICE": "SoftDevice"
+  "NABLE": {
+    "BLE_ROLE": "دور Bluetooth LE",
+    "CPP_DEBUG_LEVEL": "مستوى تصحيح C++",
+    "BOOTLOADER": "محمّل الإقلاع"
   }
 }

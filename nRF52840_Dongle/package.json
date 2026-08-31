@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-nrf52840_dongle",
   "nickname": "nRF52840 Dongle",
-  "version": "1.7.0",
+  "version": "0.4.0",
   "description": "The nRF52840 Dongle is a small, low-cost USB dongle that supports Bluetooth 5.4, Bluetooth mesh, Thread, Zigbee, 802.15.4, ANT and 2.4 GHz proprietary protocols. It is the perfect target hardware for use with nRF Connect for Desktop.",
   "description_en": "The nRF52840 Dongle is a small, low-cost USB dongle that supports Bluetooth 5.4, Bluetooth mesh, Thread, Zigbee, 802.15.4, ANT and 2.4 GHz proprietary protocols. It is the perfect target hardware for use with nRF Connect for Desktop.",
   "description_zh_cn": "nRF52840 Dongle 是一款小巧、低成本的 USB 加密狗，支持蓝牙 5.4、蓝牙 Mesh、Thread、Zigbee、802.15.4、ANT 和 2.4 GHz 专有协议。它具有用户可编程的 RGB LED、绿色 LED、用户可配置按钮以及沿边缘的 15 个 GPIO 引脚。",
@@ -24,10 +24,8 @@
   "state": "todo",
   "license": "ISC",
   "boardDependencies": {
-    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
-    "@aily-project/tool-adafruit-nrfutil": "1.7.0",
-    "@aily-project/sdk-nrf52": "1.7.0",
-    "@aily-project/tool-CMSIS": "5.7.0",
+    "@aily-project/compiler-gcc-arm-none-eabi": "10.3.1",
+    "@aily-project/sdk-arm-ble": "0.4.0",
     "@aily-project/tool-ctags": "5.8.0"
   }
 }

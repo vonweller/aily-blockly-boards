@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "Seeed Studio XIAO nRF52840 - 基于nRF52840的超小型蓝牙开发板",
     "compilerTool": "aily-builder",
-    "core": "adafruit:nrf52:",
-    "type": "adafruit:nrf52:xiao_nrf52840",
+    "core": "n-able-Arduino:arm-ble",
+    "type": "n-able-Arduino:arm-ble:seeed52840sense",
     "mode": ["arduino"],
-    "compilerParam": "compile -v -b adafruit:nrf52:xiao_nrf52840",
+    "compilerParam": "compile --verbose -b n-able-Arduino:arm-ble:seeed52840sense --build-property upload.protocol=cmsis-dap --build-property upload.setup_command= --build-property build.dfu_pattern=",
     "linkUploadParam": "probe-rs download --chip nRF52840_xxAA --verify ${'*.elf'};probe-rs reset --chip nRF52840_xxAA",
     "analogPins": [
         ["A0(D0)", "D0"],
@@ -83,13 +83,26 @@
         ]
     },
     "spiClockDivide": [
-        ["2 (8MHz)", "SPI_CLOCK_DIV2"],
-        ["4 (4MHz)", "SPI_CLOCK_DIV4"],
-        ["8 (2MHz)", "SPI_CLOCK_DIV8"],
-        ["16 (1MHz)", "SPI_CLOCK_DIV16"],
-        ["32 (500KHz)", "SPI_CLOCK_DIV32"],
-        ["64 (250KHz)", "SPI_CLOCK_DIV64"],
-        ["128 (125KHz)", "SPI_CLOCK_DIV128"]
+        [
+            "2 (8MHz)",
+            "SPI_CLOCK_DIV2"
+        ],
+        [
+            "4 (4MHz)",
+            "SPI_CLOCK_DIV4"
+        ],
+        [
+            "8 (2MHz)",
+            "SPI_CLOCK_DIV8"
+        ],
+        [
+            "16 (1MHz)",
+            "SPI_CLOCK_DIV16"
+        ],
+        [
+            "32 (500KHz)",
+            "SPI_CLOCK_DIV32"
+        ]
     ],
     "i2c": [
         ["I2C", "Wire"]
@@ -101,9 +114,18 @@
         ]
     },
     "i2cSpeed": [
-        ["100kHz", "100000L"],
-        ["400kHz", "400000L"],
-        ["1MHz", "1000000L"]
+        [
+            "100kHz",
+            "100000L"
+        ],
+        [
+            "250kHz",
+            "250000L"
+        ],
+        [
+            "400kHz",
+            "400000L"
+        ]
     ],
     "builtinLed": [
         ["LED_BUILTIN", "LED_BUILTIN"],
@@ -112,17 +134,30 @@
         ["LED_BLUE", "LED_BLUE"]
     ],
     "interruptPins": [
-        ["D0", "D0"],
-        ["D1", "D1"],
-        ["D2", "D2"],
-        ["D3", "D3"],
-        ["D4", "D4"],
-        ["D5", "D5"],
-        ["D6", "D6"],
-        ["D7", "D7"],
-        ["D8", "D8"],
-        ["D9", "D9"],
-        ["D10", "D10"]
+        [
+            "D0",
+            "D0"
+        ],
+        [
+            "D1",
+            "D1"
+        ],
+        [
+            "D2",
+            "D2"
+        ],
+        [
+            "D3",
+            "D3"
+        ],
+        [
+            "D4",
+            "D4"
+        ],
+        [
+            "D5",
+            "D5"
+        ]
     ],
     "interruptMode": [
         ["RISING", "RISING"],

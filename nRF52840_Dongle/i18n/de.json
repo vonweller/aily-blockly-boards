@@ -1,5 +1,7 @@
 {
-  "NRF5": {
-    "SOFTDEVICE": "SoftDevice"
+  "NABLE": {
+    "BLE_ROLE": "Bluetooth-LE-Rolle",
+    "CPP_DEBUG_LEVEL": "C++-Debugstufe",
+    "BOOTLOADER": "Bootloader"
   }
 }

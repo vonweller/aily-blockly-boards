@@ -3,13 +3,21 @@
     "sep": true
   },
   {
-    "name": "NRF5.SOFTDEVICE",
+    "name": "NABLE.BLE_ROLE",
+    "icon": "fa-brands fa-bluetooth-b",
+    "children": [],
+    "key": "role"
+  },
+  {
+    "name": "NABLE.CPP_DEBUG_LEVEL",
+    "icon": "fa-light fa-bug",
+    "children": [],
+    "key": "cppDbgLvl"
+  },
+  {
+    "name": "NABLE.BOOTLOADER",
     "icon": "fa-light fa-microchip",
     "children": [],
-    "key": "softdevice",
-    "extra": {
-      "selectAction": "flash-softdevice",
-      "selectPortMessage": "SERIAL.SELECT_PORT_FIRST"
-    }
+    "key": "bootloader"
   }
 ]

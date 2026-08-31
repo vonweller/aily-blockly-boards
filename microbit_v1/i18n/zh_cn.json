@@ -1,5 +1,7 @@
 {
-  "NRF5": {
-    "SOFTDEVICE": "SoftDevice"
+  "NABLE": {
+    "BLE_ROLE": "蓝牙 LE 角色",
+    "CPP_DEBUG_LEVEL": "C++ 调试级别",
+    "BOOTLOADER": "引导程序"
   }
 }

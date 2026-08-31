@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "nRF52840开发板 - 基于nRF52840的编程开发板",
     "compilerTool": "aily-builder",
-    "core": "adafruit:nrf52",
-    "type": "adafruit:nrf52:pca10056",
+    "core": "n-able-Arduino:arm-ble",
+    "type": "n-able-Arduino:arm-ble:nRF52840_DK",
     "mode": ["arduino"],
-    "compilerParam": "compile -v -b adafruit:nrf52:pca10056",
+    "compilerParam": "compile --verbose -b n-able-Arduino:arm-ble:nRF52840_DK --build-property build.dfu_pattern=",
     "linkUploadParam": "probe-rs download --chip nRF52840_xxAA --verify ${'*.elf'};probe-rs reset --chip nRF52840_xxAA",
     "analogPins": [
         [
@@ -608,14 +608,6 @@
         [
             "Serial",
             "Serial"
-        ],
-        [
-            "Serial1",
-            "Serial1"
-        ],
-        [
-            "Serial2",
-            "Serial2"
         ]
     ],
     "serialSpeed": [
@@ -706,14 +698,6 @@
         [
             "32 (500KHz)",
             "SPI_CLOCK_DIV32"
-        ],
-        [
-            "64 (250KHz)",
-            "SPI_CLOCK_DIV64"
-        ],
-        [
-            "128 (125KHz)",
-            "SPI_CLOCK_DIV128"
         ]
     ],
     "i2c": [
@@ -740,12 +724,12 @@
             "100000L"
         ],
         [
-            "400kHz",
-            "400000L"
+            "250kHz",
+            "250000L"
         ],
         [
-            "1MHz",
-            "1000000L"
+            "400kHz",
+            "400000L"
         ]
     ],
     "builtinLed": [
@@ -878,70 +862,6 @@
         [
             "P0.31",
             "31"
-        ],
-        [
-            "P1.00",
-            "32"
-        ],
-        [
-            "P1.01",
-            "33"
-        ],
-        [
-            "P1.02",
-            "34"
-        ],
-        [
-            "P1.03",
-            "35"
-        ],
-        [
-            "P1.04",
-            "36"
-        ],
-        [
-            "P1.05",
-            "37"
-        ],
-        [
-            "P1.06",
-            "38"
-        ],
-        [
-            "P1.07",
-            "39"
-        ],
-        [
-            "P1.08",
-            "40"
-        ],
-        [
-            "P1.09",
-            "41"
-        ],
-        [
-            "P1.10",
-            "42"
-        ],
-        [
-            "P1.11",
-            "43"
-        ],
-        [
-            "P1.12",
-            "44"
-        ],
-        [
-            "P1.13",
-            "45"
-        ],
-        [
-            "P1.14",
-            "46"
-        ],
-        [
-            "P1.15",
-            "47"
         ]
     ],
     "interruptMode": [

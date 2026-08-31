@@ -1,7 +1,7 @@
 {
   "name": "@aily-project/board-microbit-v2",
   "nickname": "micro:bit v2",
-  "version": "0.8.0",
+  "version": "0.4.0",
   "description": "The BBC micro:bit v2 is an enhanced pocket-sized educational computer featuring a 64 MHz ARM Cortex-M4 processor (Nordic nRF52833) with FPU, 25 LED matrix display, 2 programmable buttons, built-in speaker and microphone, touch-sensitive logo, accelerometer, compass, and Bluetooth 5.0.",
   "description_en": "The BBC micro:bit v2 is an enhanced pocket-sized educational computer featuring a 64 MHz ARM Cortex-M4 processor (Nordic nRF52833) with FPU, 25 LED matrix display, 2 programmable buttons, built-in speaker and microphone, touch-sensitive logo, accelerometer, compass, and Bluetooth 5.0.",
   "description_zh_cn": "BBC micro:bit v2 是一款增强版口袋大小的教育计算机，搭载 64 MHz ARM Cortex-M4 处理器（Nordic nRF52833），带 FPU、25 个 LED 矩阵显示屏、2 个可编程按钮、内置扬声器和麦克风、触摸感应标志、加速度计、指南针和蓝牙 5.0。",
@@ -22,8 +22,8 @@
   "license": "ISC",
   "brand": "microbit",
   "boardDependencies": {
-    "@aily-project/compiler-xpack-arm-none-eabi-gcc": "14.2.1",
-    "@aily-project/sdk-nrf5": "0.8.0",
+    "@aily-project/compiler-gcc-arm-none-eabi": "10.3.1",
+    "@aily-project/sdk-arm-ble": "0.4.0",
     "@aily-project/tool-ctags": "5.8.0"
   },
   "pinmap": false

@@ -3,12 +3,11 @@
     "version": "1.0.0",
     "description": "nRF52840 Dongle - 基于nRF52840的USB无线开发工具",
     "compilerTool": "aily-builder",
-    "core": "adafruit:nrf52",
-    "type": "adafruit:nrf52:pca10059",
+    "core": "n-able-Arduino:arm-ble",
+    "type": "n-able-Arduino:arm-ble:nRF52840_dongle",
     "mode": ["arduino"],
-    "compilerParam": "compile -v -b adafruit:nrf52:pca10059",
+    "compilerParam": "compile --verbose -b n-able-Arduino:arm-ble:nRF52840_dongle --build-property build.dfu_pattern=",
     "linkUploadParam": "probe-rs download --chip nRF52840_xxAA --verify ${'*.elf'}",
-    "dfuUploadParam": "nrfutil nrf5sdk-tools dfu usb-serial --package ${'*.bin.zip'} --port ${serial}",
     "analogPins": [
         [
             "P0.02-AIN0",
@@ -419,19 +418,19 @@
         "SPI": [
             [
                 "MOSI",
-                "45"
+                "MOSI"
             ],
             [
                 "MISO",
-                "42"
+                "MISO"
             ],
             [
                 "SCK",
-                "47"
+                "SCK"
             ],
             [
                 "SS",
-                "43"
+                "SS"
             ]
         ]
     },
@@ -455,14 +454,6 @@
         [
             "32 (500KHz)",
             "SPI_CLOCK_DIV32"
-        ],
-        [
-            "64 (250KHz)",
-            "SPI_CLOCK_DIV64"
-        ],
-        [
-            "128 (125KHz)",
-            "SPI_CLOCK_DIV128"
         ]
     ],
     "i2c": [
@@ -475,11 +466,11 @@
         "Wire": [
             [
                 "SDA",
-                "29"
+                "26"
             ],
             [
                 "SCL",
-                "31"
+                "27"
             ]
         ]
     },
@@ -489,12 +480,12 @@
             "100000L"
         ],
         [
-            "400kHz",
-            "400000L"
+            "250kHz",
+            "250000L"
         ],
         [
-            "1MHz",
-            "1000000L"
+            "400kHz",
+            "400000L"
         ]
     ],
     "builtinLed": [
@@ -579,34 +570,6 @@
         [
             "P0.31",
             "31"
-        ],
-        [
-            "P1.06",
-            "38"
-        ],
-        [
-            "P1.09",
-            "41"
-        ],
-        [
-            "P1.10",
-            "42"
-        ],
-        [
-            "P1.11",
-            "43"
-        ],
-        [
-            "P1.13",
-            "45"
-        ],
-        [
-            "P1.14",
-            "46"
-        ],
-        [
-            "P1.15",
-            "47"
         ]
     ],
     "interruptMode": [
