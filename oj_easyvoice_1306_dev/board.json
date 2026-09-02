@@ -99,8 +99,8 @@
   ],
   "i2cPins": {
     "Wire": [
-      ["SDA", "15"],
-      ["SCL", "16"]
+      ["SDA", "11"],
+      ["SCL", "12"]
     ]
   },
   "i2cSpeed": [
@@ -131,7 +131,8 @@
     ["PC4", "20"]
   ],
   "interruptMode": [
-    ["LOW", "LOW"],
+    ["ONLOW", "ONLOW"],
+    ["ONHIGH", "ONHIGH"],
     ["RISING", "RISING"],
     ["FALLING", "FALLING"],
     ["CHANGE", "CHANGE"]
