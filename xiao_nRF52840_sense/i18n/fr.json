@@ -1,0 +1,8 @@
+{
+  "NABLE": {
+    "LF_CLOCK_SOURCE": "Source d’horloge basse fréquence",
+    "BLE_ROLE": "Rôle Bluetooth LE",
+    "CPP_DEBUG_LEVEL": "Niveau de débogage C++",
+    "BOOTLOADER": "Chargeur de démarrage"
+  }
+}

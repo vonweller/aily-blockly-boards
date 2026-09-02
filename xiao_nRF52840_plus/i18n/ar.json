@@ -1,0 +1,8 @@
+{
+  "NABLE": {
+    "LF_CLOCK_SOURCE": "مصدر الساعة منخفضة التردد",
+    "BLE_ROLE": "دور Bluetooth LE",
+    "CPP_DEBUG_LEVEL": "مستوى تصحيح C++",
+    "BOOTLOADER": "محمّل الإقلاع"
+  }
+}

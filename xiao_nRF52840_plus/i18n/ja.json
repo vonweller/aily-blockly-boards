@@ -1,0 +1,8 @@
+{
+  "NABLE": {
+    "LF_CLOCK_SOURCE": "低周波クロック源",
+    "BLE_ROLE": "Bluetooth LE ロール",
+    "CPP_DEBUG_LEVEL": "C++ デバッグレベル",
+    "BOOTLOADER": "ブートローダー"
+  }
+}

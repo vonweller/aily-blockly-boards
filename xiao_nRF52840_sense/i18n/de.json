@@ -1,0 +1,8 @@
+{
+  "NABLE": {
+    "LF_CLOCK_SOURCE": "Niederfrequenz-Taktquelle",
+    "BLE_ROLE": "Bluetooth-LE-Rolle",
+    "CPP_DEBUG_LEVEL": "C++-Debugstufe",
+    "BOOTLOADER": "Bootloader"
+  }
+}

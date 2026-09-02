@@ -1,0 +1,8 @@
+{
+  "NABLE": {
+    "LF_CLOCK_SOURCE": "Источник низкочастотного тактирования",
+    "BLE_ROLE": "Роль Bluetooth LE",
+    "CPP_DEBUG_LEVEL": "Уровень отладки C++",
+    "BOOTLOADER": "Загрузчик"
+  }
+}

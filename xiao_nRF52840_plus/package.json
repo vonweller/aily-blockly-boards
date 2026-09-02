@@ -1,0 +1,22 @@
+{
+  "name": "@aily-project/board-xiao_nrf52840_plus",
+  "nickname": "XIAO nRF52840 Plus",
+  "version": "0.1.0",
+  "description": "Seeed Studio XIAO nRF52840 Plus with 20 multifunction pins, Bluetooth LE, NFC, I2S, dual UART and dual SPI support.",
+  "description_en": "Seeed Studio XIAO nRF52840 Plus with 20 multifunction pins, Bluetooth LE, NFC, I2S, dual UART and dual SPI support.",
+  "description_zh_cn": "Seeed Studio XIAO nRF52840 Plus，提供 20 个多功能引脚，并支持蓝牙 LE、NFC、I2S、双 UART 和双 SPI。",
+  "main": "index.js",
+  "brand": "SeeedStudio",
+  "url": "https://wiki.seeedstudio.com/XIAO_BLE/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seeed",
+  "state": "alpha",
+  "license": "ISC",
+  "boardDependencies": {
+    "@aily-project/compiler-gcc-arm-none-eabi": "10.3.1",
+    "@aily-project/sdk-arm-ble": "0.4.0",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
