@@ -1,0 +1,8 @@
+{
+  "STC51": {
+    "CLOCK": "CPU-Takt (muss der ISP-Konfiguration entsprechen)",
+    "MEMORY": "SDCC-Speichermodell",
+    "CPP_CORE": "Arduino-Core-Sprache",
+    "EXECUTION": "Ausführungsmodus"
+  }
+}

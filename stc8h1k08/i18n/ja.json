@@ -1,0 +1,7 @@
+{
+  "STC51": {
+    "CLOCK": "CPU クロック（ISP 設定と一致させる）",
+    "MEMORY": "SDCC メモリモデル",
+    "CPP_CORE": "Arduino コア言語"
+  }
+}

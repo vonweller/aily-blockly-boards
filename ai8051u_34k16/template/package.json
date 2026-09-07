@@ -1,0 +1,20 @@
+{
+  "name": "project_",
+  "version": "0.0.1",
+  "description": "",
+  "board": "AI8051U-34K16",
+  "projectConfig": {
+    "clock": "24m",
+    "memory": "large",
+    "cppcore": "plain",
+    "execution": "mcs51"
+  },
+  "dependencies": {
+    "@aily-project/board-ai8051u_34k16": "0.0.1",
+    "@aily-project/lib-core-io": "1.0.0",
+    "@aily-project/lib-core-logic": "0.0.1",
+    "@aily-project/lib-core-loop": "0.0.1",
+    "@aily-project/lib-core-math": "0.0.1",
+    "@aily-project/lib-core-time": "0.0.1"
+  }
+}

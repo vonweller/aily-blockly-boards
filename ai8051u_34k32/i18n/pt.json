@@ -1,0 +1,8 @@
+{
+  "STC51": {
+    "CLOCK": "Clock da CPU (deve corresponder à configuração ISP)",
+    "MEMORY": "Modelo de memória SDCC",
+    "CPP_CORE": "Linguagem do núcleo Arduino",
+    "EXECUTION": "Modo de execução"
+  }
+}

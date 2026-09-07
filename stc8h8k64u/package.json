@@ -1,0 +1,38 @@
+{
+  "name": "@aily-project/board-stc8h8k64u",
+  "nickname": "STC8H8K64U",
+  "version": "0.0.1",
+  "description": "STC8H8K64U bare-MCU configuration for arduino-stc51. GPIO and ADC mappings follow the variant; available physical pins depend on the package. Plain C is the default; C++ support is experimental.",
+  "description_en": "STC8H8K64U bare-MCU configuration for arduino-stc51. GPIO and ADC mappings follow the variant; available physical pins depend on the package. Plain C is the default; C++ support is experimental.",
+  "description_zh_cn": "STC8H8K64U 裸芯片开发板配置，基于 arduino-stc51。GPIO 与 ADC 映射遵循对应 variant，实际引出引脚取决于封装。默认使用纯 C，C++ 支持处于实验阶段。",
+  "description_zh_hk": "STC8H8K64U 裸晶片開發板設定，基於 arduino-stc51。GPIO 與 ADC 映射遵循對應 variant，實際引出腳位取決於封裝。預設使用純 C，C++ 支援處於實驗階段。",
+  "description_ja": "STC8H8K64U 向け arduino-stc51 ベア MCU 設定。GPIO と ADC の対応は variant に従い、実際の端子はパッケージに依存します。既定はプレーン C で、C++ 対応は実験段階です。",
+  "description_ko": "STC8H8K64U용 arduino-stc51 베어 MCU 설정입니다. GPIO 및 ADC 매핑은 variant를 따르며 실제 핀은 패키지에 따라 달라집니다. 기본 언어는 순수 C이며 C++ 지원은 실험 단계입니다.",
+  "description_de": "STC8H8K64U-Konfiguration für einen unbestückten MCU mit arduino-stc51. GPIO- und ADC-Zuordnungen folgen der Variante; physische Pins hängen vom Gehäuse ab. Standard ist reines C; C++ ist experimentell.",
+  "description_fr": "Configuration du MCU nu STC8H8K64U pour arduino-stc51. Les correspondances GPIO et ADC suivent la variante ; les broches physiques dépendent du boîtier. Le C est utilisé par défaut ; la prise en charge C++ est expérimentale.",
+  "description_es": "Configuración del MCU STC8H8K64U para arduino-stc51. Los mapas GPIO y ADC siguen la variante; los pines físicos dependen del encapsulado. Se usa C por defecto; el soporte de C++ es experimental.",
+  "description_pt": "Configuração do MCU STC8H8K64U para arduino-stc51. Os mapeamentos GPIO e ADC seguem a variante; os pinos físicos dependem do encapsulamento. O padrão é C puro; o suporte a C++ é experimental.",
+  "description_ru": "Конфигурация микроконтроллера STC8H8K64U для arduino-stc51. GPIO и ADC соответствуют варианту; физические выводы зависят от корпуса. По умолчанию используется C; поддержка C++ экспериментальная.",
+  "description_ar": "إعداد المتحكم STC8H8K64U لمنصة arduino-stc51. تتبع تعيينات GPIO وADC ملف variant، وتعتمد الأرجل الفعلية على الحزمة. اللغة الافتراضية هي C، ودعم C++ تجريبي.",
+  "main": "board.json",
+  "url": "https://www.stcmicro.com/cn/stc/stc8h8k64u.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ailyProject/aily-blockly-boards.git",
+    "directory": "stc8h8k64u"
+  },
+  "keywords": [
+    "STC",
+    "STC8H8K64U",
+    "STC8H",
+    "arduino-stc51",
+    "mcs51"
+  ],
+  "author": "ailyProject",
+  "license": "ISC",
+  "brand": "STC",
+  "state": "todo",
+  "boardDependencies": {
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

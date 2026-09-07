@@ -1,0 +1,7 @@
+{
+  "STC51": {
+    "CLOCK": "CPU 时钟（须与 ISP 配置一致）",
+    "MEMORY": "SDCC 内存模型",
+    "CPP_CORE": "Arduino 核心语言"
+  }
+}
