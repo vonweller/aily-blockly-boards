@@ -1,6 +1,7 @@
 {
   "CHIPINTELLI": {
     "ALGORITHM": "Configuración del algoritmo",
-    "MICROPHONE_INPUT": "Entrada de micrófono"
+    "MICROPHONE_INPUT": "Entrada de micrófono",
+    "CLOCK_SOURCE": "Fuente de reloj"
   }
 }

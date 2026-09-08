@@ -1,6 +1,7 @@
 {
   "CHIPINTELLI": {
     "ALGORITHM": "算法配置",
-    "MICROPHONE_INPUT": "麦克风输入"
+    "MICROPHONE_INPUT": "麦克风输入",
+    "CLOCK_SOURCE": "时钟源"
   }
 }

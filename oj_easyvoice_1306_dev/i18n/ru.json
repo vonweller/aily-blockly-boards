@@ -1,6 +1,7 @@
 {
   "CHIPINTELLI": {
     "ALGORITHM": "Настройка алгоритма",
-    "MICROPHONE_INPUT": "Микрофонный вход"
+    "MICROPHONE_INPUT": "Микрофонный вход",
+    "CLOCK_SOURCE": "Источник тактового сигнала"
   }
 }

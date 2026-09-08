@@ -1,6 +1,7 @@
 {
   "CHIPINTELLI": {
     "ALGORITHM": "إعداد الخوارزمية",
-    "MICROPHONE_INPUT": "إدخال الميكروفون"
+    "MICROPHONE_INPUT": "إدخال الميكروفون",
+    "CLOCK_SOURCE": "مصدر الساعة"
   }
 }
