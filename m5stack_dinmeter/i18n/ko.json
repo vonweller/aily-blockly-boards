@@ -1,5 +1,6 @@
 {
   "ESP32": {
+    "USB_MODE": "USB 모드",
     "UPLOAD_SPEED": "업로드 속도",
     "UPLOAD_MODE": "업로드 방법",
     "FLASH_MODE": "플래시 모드",

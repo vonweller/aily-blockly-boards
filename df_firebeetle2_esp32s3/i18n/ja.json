@@ -1,5 +1,6 @@
 {
   "ESP32": {
+    "USB_MODE": "USBモード",
     "UPLOAD_SPEED": "書き込み速度",
     "UPLOAD_MODE": "書き込み方法",
     "FLASH_MODE": "フラッシュモード",

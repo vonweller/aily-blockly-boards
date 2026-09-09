@@ -1,5 +1,6 @@
 {
   "ESP32": {
+    "USB_MODE": "وضع USB",
     "UPLOAD_SPEED": "سرعة الرفع",
     "UPLOAD_MODE": "طريقة الرفع",
     "FLASH_MODE": "وضع الفلاش",

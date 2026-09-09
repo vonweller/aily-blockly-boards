@@ -1,5 +1,6 @@
 {
   "ESP32": {
+    "USB_MODE": "USB 模式",
     "UPLOAD_SPEED": "烧录速度",
     "UPLOAD_MODE": "烧录方式",
     "FLASH_MODE": "闪存模式",

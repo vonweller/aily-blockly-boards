@@ -1,0 +1,11 @@
+[
+  {
+    "sep": true
+  },
+  {
+    "name": "ESP32.USB_MODE",
+    "icon": "fa-brands fa-usb",
+    "children": [],
+    "key": "USBMode"
+  }
+]

@@ -33,6 +33,12 @@
     "key": "PartitionScheme"
   },
   {
+    "name": "ESP32.USB_MODE",
+    "icon": "fa-brands fa-usb",
+    "children": [],
+    "key": "USBMode"
+  },
+  {
     "name": "ESP32.CDC_ON_BOOT",
     "icon": "fa-brands fa-usb",
     "children": [],

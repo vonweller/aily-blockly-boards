@@ -1,5 +1,6 @@
 {
   "ESP32": {
+    "USB_MODE": "Mode USB",
     "UPLOAD_SPEED": "Vitesse de téléchargement",
     "UPLOAD_MODE": "Méthode de Téléversement",
     "FLASH_MODE": "Mode Flash",

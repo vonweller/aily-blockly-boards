@@ -1,5 +1,6 @@
 {
   "ESP32": {
+    "USB_MODE": "Режим USB",
     "UPLOAD_SPEED": "Скорость загрузки",
     "UPLOAD_MODE": "Метод загрузки",
     "FLASH_MODE": "Режим Flash",
