@@ -1,7 +1,7 @@
 {
   "name": "EasyVoiceLab 1306",
   "version": "1.0.14",
-  "description": "EasyVoiceLab 1306 offline voice development board based on ChipIntelli CI1306",
+  "description": "EasyVoiceLab 1306 is a ChipIntelli CI1306-based offline voice development board packed with onboard modules for AIoT and STEM projects: offline wake-up and command-word recognition with voice broadcast, a WS2812 RGB strip, a 0.96-inch I2C OLED, a button, a solid-state relay, 8 servo (PWM) channels, a 2-channel DC motor driver, a DHT11 temperature and humidity sensor, a light sensor, a PIR motion sensor, IR receiver and transmitter, an RTC with battery backup, a microSD card slot (SPI), a WiFi module, and IO expansion headers.",
   "compilerTool": "aily-builder",
   "core": "chipintelli:ci13xx",
   "type": "chipintelli:ci13xx:easyvoice_1306_dev",
