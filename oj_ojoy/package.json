@@ -1,7 +1,7 @@
 {
     "name": "@aily-project/board-ojoy",
     "nickname": "OJoy",
-    "version": "3.3.10",
+    "version": "3.3.11",
     "description": "OJoy 1.6-inch round AMOLED dev board (ESP32-S3 + CH13613)",
     "description_en": "OJoy 1.6-inch round AMOLED dev board (ESP32-S3 + CH13613)",
     "description_zh_cn": "OJoy 1.6\" 圆屏开发板 (ESP32-S3 + CH13613 AMOLED)",
@@ -23,9 +23,9 @@
     "brand": "openjumper",
     "boardDependencies": {
         "@aily-project/compiler-esp-x32": "14.2.0",
-        "@aily-project/tool-esptool_py": "5.3.0",
-        "@aily-project/sdk-esp32": "3.3.10",
-        "@aily-project/tool-esp32s3-libs": "3.3.10",
+        "@aily-project/tool-esptool_py": "5.3.1",
+        "@aily-project/sdk-esp32": "3.3.11",
+        "@aily-project/tool-esp32s3-libs": "3.3.11",
         "@aily-project/tool-ctags": "5.8.0"
     }
 }
