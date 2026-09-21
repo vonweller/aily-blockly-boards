@@ -21,7 +21,8 @@ Aily 开发板包版本 **0.0.1**，状态 **todo**。配置取自 arduino-stc51
 - 只声明 UART1：RX=P3.0、TX=P3.1。串口占用 Timer1；波特率误差超过 3% 时核心会拒绝初始化。
 - Wire 与 SPI 为软件主机，时钟值是请求值，实际总线速率需实测。默认总线引脚可能与外部中断及其他外设冲突。
 - 外部中断仅 P3.2 / INT0、P3.3 / INT1，模式仅 LOW / FALLING。
-- `pwmPins` 为空：`analogWrite` 只有数字阈值回退，未实现 PWM。裸芯片无板载 LED，因此 `builtinLed` 为空。
+- `pwmPins` 按 arduino-stc51 0.0.7 的 `cores/STC/wiring_analog_write.c` 路由表与本型号 GPIO 掩码取交集，列出 28 个 `analogWrite()` 可用引脚（仅正向输出）。同一 PWM 通道的不同映射引脚不能同时独立输出；具体可用引脚仍取决于封装。
+- 裸芯片无板载 LED，因此 `builtinLed` 为空。
 - C++ 需显式选 `cppcore=enabled,clock=12m` 并另外准备受工具锁约束的 stcxx / Clang / LLVM-CBE 环境；Windows 使用 WSL。菜单本身不会安装这些工具。
 - AI8051U 的 execution 菜单只切换编译目标；实际芯片执行模式必须另用官方 ISP 设置一致。
 
