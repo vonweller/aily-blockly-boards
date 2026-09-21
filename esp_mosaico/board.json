@@ -1,0 +1,247 @@
+{
+  "name": "ESP-Mosaico",
+  "version": "1.0.0",
+  "description": "ESP-Mosaico CoreBoard V1.0 with ESP32-S31NRV16; Arduino SDK integration pending",
+  "compilerTool": "aily-builder",
+  "core": "esp32:esp32",
+  "type": "esp32:esp32:esp32s31",
+  "compilerParam": "compile -v -b esp32:esp32:esp32s31",
+  "analogPins": [
+    ["GPIO46", "46"],
+    ["GPIO47", "47"],
+    ["GPIO48", "48"],
+    ["GPIO49 (I2S_WS)", "49"],
+    ["GPIO52 (I2S_DIN)", "52"],
+    ["GPIO53", "53"],
+    ["GPIO54 (I2S_MCLK)", "54"],
+    ["GPIO55", "55"]
+  ],
+  "digitalPins": [
+    ["GPIO0 (SDA)", "0"],
+    ["GPIO1 (SCL)", "1"],
+    ["GPIO3 (LED)", "3"],
+    ["GPIO4", "4"],
+    ["GPIO5", "5"],
+    ["GPIO7 (BUTTON)", "7"],
+    ["GPIO8 (MOTOR)", "8"],
+    ["GPIO10", "10"],
+    ["GPIO11", "11"],
+    ["GPIO12", "12"],
+    ["GPIO13", "13"],
+    ["GPIO14 (EEPROM_LEFT)", "14"],
+    ["GPIO15", "15"],
+    ["GPIO16", "16"],
+    ["GPIO17", "17"],
+    ["GPIO18", "18"],
+    ["GPIO19", "19"],
+    ["GPIO33 (USB_D-)", "33"],
+    ["GPIO34 (USB_D+)", "34"],
+    ["GPIO37 (I2S_BCK)", "37"],
+    ["GPIO38", "38"],
+    ["GPIO39 (EEPROM_RIGHT)", "39"],
+    ["GPIO40 (I2S_DOUT)", "40"],
+    ["GPIO46", "46"],
+    ["GPIO47", "47"],
+    ["GPIO48", "48"],
+    ["GPIO49 (I2S_WS)", "49"],
+    ["GPIO52 (I2S_DIN)", "52"],
+    ["GPIO53", "53"],
+    ["GPIO54 (I2S_MCLK)", "54"],
+    ["GPIO55", "55"],
+    ["GPIO58 (TX0)", "58"],
+    ["GPIO59 (RX0)", "59"]
+  ],
+  "pwmPins": [
+    ["GPIO3 (LED)", "3"],
+    ["GPIO4", "4"],
+    ["GPIO5", "5"],
+    ["GPIO8 (MOTOR)", "8"],
+    ["GPIO10", "10"],
+    ["GPIO11", "11"],
+    ["GPIO12", "12"],
+    ["GPIO13", "13"],
+    ["GPIO15", "15"],
+    ["GPIO16", "16"],
+    ["GPIO17", "17"],
+    ["GPIO18", "18"],
+    ["GPIO19", "19"],
+    ["GPIO38", "38"],
+    ["GPIO46", "46"],
+    ["GPIO47", "47"],
+    ["GPIO48", "48"],
+    ["GPIO53", "53"],
+    ["GPIO55", "55"]
+  ],
+  "servoPins": [
+    ["GPIO4", "4"],
+    ["GPIO5", "5"],
+    ["GPIO10", "10"],
+    ["GPIO11", "11"],
+    ["GPIO12", "12"],
+    ["GPIO13", "13"],
+    ["GPIO15", "15"],
+    ["GPIO16", "16"],
+    ["GPIO17", "17"],
+    ["GPIO18", "18"],
+    ["GPIO19", "19"],
+    ["GPIO38", "38"],
+    ["GPIO46", "46"],
+    ["GPIO47", "47"],
+    ["GPIO48", "48"],
+    ["GPIO53", "53"],
+    ["GPIO55", "55"]
+  ],
+  "serialPort": [
+    ["Serial", "Serial"]
+  ],
+  "cdcSerialPort": [
+    ["Serial(USB CDC)", "Serial"]
+  ],
+  "serialPins": {
+    "Serial": [["RX", "59"], ["TX", "58"]]
+  },
+  "serialSpeed": [
+    ["1200", "1200"],
+    ["9600", "9600"],
+    ["14400", "14400"],
+    ["19200", "19200"],
+    ["38400", "38400"],
+    ["57600", "57600"],
+    ["115200", "115200"],
+    ["230400", "230400"],
+    ["460800", "460800"],
+    ["921600", "921600"]
+  ],
+  "spi": [],
+  "spiPins": {},
+  "spiClockDivide": [],
+  "i2c": [
+    ["I2C", "Wire"]
+  ],
+  "i2cPins": {
+    "Wire": [["SDA", "0"], ["SCL", "1"]]
+  },
+  "i2cSpeed": [
+    ["100kHz", "100000L"],
+    ["400kHz", "400000L"]
+  ],
+  "builtinLed": [
+    ["BUILTIN_LED (LOW=ON)", "3"]
+  ],
+  "interruptPins": [
+    ["GPIO4", "4"],
+    ["GPIO5", "5"],
+    ["GPIO7 (BUTTON)", "7"],
+    ["GPIO10", "10"],
+    ["GPIO11", "11"],
+    ["GPIO12", "12"],
+    ["GPIO13", "13"],
+    ["GPIO15", "15"],
+    ["GPIO16", "16"],
+    ["GPIO17", "17"],
+    ["GPIO18", "18"],
+    ["GPIO19", "19"],
+    ["GPIO38", "38"],
+    ["GPIO46", "46"],
+    ["GPIO47", "47"],
+    ["GPIO48", "48"],
+    ["GPIO53", "53"],
+    ["GPIO55", "55"]
+  ],
+  "interruptMode": [
+    ["RISING", "RISING"],
+    ["FALLING", "FALLING"],
+    ["CHANGE", "CHANGE"],
+    ["ONLOW", "ONLOW"],
+    ["ONHIGH", "ONHIGH"],
+    ["ONLOW_WE", "ONLOW_WE"],
+    ["ONHIGH_WE", "ONHIGH_WE"]
+  ],
+  "displayConfig": {
+    "controller": "co5300",
+    "interface": "qspi",
+    "width": 480,
+    "height": 480,
+    "pins": {
+      "sclk": "44",
+      "cs": "50",
+      "data0": "36",
+      "data1": "51",
+      "data2": "35",
+      "data3": "9",
+      "rst": "42",
+      "te": "43"
+    }
+  },
+  "touchConfig": {
+    "controller": "cst9220",
+    "interface": "i2c",
+    "address": "0x5A",
+    "pins": {"sda": "0", "scl": "1", "int": "6"}
+  },
+  "audioConfig": {
+    "codec": "es8311",
+    "amplifier": "ns4150b",
+    "address": "0x19",
+    "pins": {
+      "sda": "0",
+      "scl": "1",
+      "sclk": "37",
+      "dout": "40",
+      "lrck": "49",
+      "din": "52",
+      "mclk": "54",
+      "pa": "45",
+      "power": "56"
+    }
+  },
+  "imuConfig": {
+    "model": "bmi270",
+    "interface": "i2c",
+    "address": "0x69",
+    "pins": {"sda": "0", "scl": "1"}
+  },
+  "magnetometerConfig": {
+    "model": "bmm150",
+    "interface": "i2c",
+    "addresses": ["0x11", "0x12"],
+    "pins": {"sda": "0", "scl": "1"}
+  },
+  "sensorInterruptPin": "2",
+  "batteryConfig": {
+    "gauge": "bq27220",
+    "charger": "tp4057",
+    "interface": "i2c",
+    "address": "0x55",
+    "capacityMah": 65,
+    "voltage": 3.7,
+    "pins": {"sda": "0", "scl": "1"}
+  },
+  "nandFlashConfig": {
+    "model": "gd5f1gm7ueyigr",
+    "interface": "spi",
+    "capacityBytes": 134217728,
+    "pins": {
+      "sclk": "20",
+      "mosi": "21",
+      "miso": "22",
+      "cs": "23",
+      "hold": "24",
+      "wp": "25"
+    }
+  },
+  "buttonConfig": {
+    "activeLevel": 0,
+    "pins": {"button": "7"}
+  },
+  "motorConfig": {
+    "activeLevel": 1,
+    "pins": {"enable": "8"}
+  },
+  "powerConfig": {
+    "systemActiveLevel": 0,
+    "codecActiveLevel": 1,
+    "shutdownActiveLevel": 0,
+    "pins": {"system": "60", "codec": "56", "shutdown": "57"}
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@aily-project/board-esp_mosaico",
+  "nickname": "ESP-Mosaico",
+  "version": "3.3.10",
+  "description": "Espressif ESP-Mosaico is an ESP32-S31 development kit with 16 MB flash, 16 MB PSRAM, a 480 × 480 QSPI touchscreen, ES8311 audio, BMI270 IMU, dual BMM150 magnetometers, 128 MB SPI NAND and two expansion headers.",
+  "description_en": "Espressif ESP-Mosaico is an ESP32-S31 development kit with 16 MB flash, 16 MB PSRAM, a 480 × 480 QSPI touchscreen, ES8311 audio, BMI270 IMU, dual BMM150 magnetometers, 128 MB SPI NAND and two expansion headers.",
+  "description_zh_cn": "乐鑫 ESP-Mosaico 是基于 ESP32-S31 的开发套件，配备 16 MB flash、16 MB PSRAM、480 × 480 QSPI 触摸屏、ES8311 音频、BMI270 IMU、双 BMM150 磁力计、128 MB SPI NAND 和两组扩展排针。",
+  "description_zh_hk": "樂鑫 ESP-Mosaico 是基於 ESP32-S31 的開發套件，配備 16 MB flash、16 MB PSRAM、480 × 480 QSPI 觸控螢幕、ES8311 音訊、BMI270 IMU、雙 BMM150 磁力計、128 MB SPI NAND 和兩組擴展排針。",
+  "description_ja": "Espressif ESP-Mosaico は ESP32-S31 開発キットで、16 MB flash、16 MB PSRAM、480 × 480 QSPI タッチスクリーン、ES8311 オーディオ、BMI270 IMU、2 個の BMM150 磁力計、128 MB SPI NAND、2 組の拡張ヘッダーを備えます。",
+  "description_ko": "Espressif ESP-Mosaico는 ESP32-S31 개발 키트로, 16 MB flash, 16 MB PSRAM, 480 × 480 QSPI 터치스크린, ES8311 오디오, BMI270 IMU, BMM150 자기 센서 2개, 128 MB SPI NAND 및 확장 헤더 2개를 갖추고 있습니다.",
+  "description_de": "Espressif ESP-Mosaico ist ein ESP32-S31-Entwicklungskit mit 16 MB Flash, 16 MB PSRAM, einem QSPI-Touchscreen mit 480 × 480 Pixeln, ES8311-Audio, BMI270-IMU, zwei BMM150-Magnetometern, 128 MB SPI-NAND und zwei Erweiterungsleisten.",
+  "description_fr": "Espressif ESP-Mosaico est un kit de développement ESP32-S31 avec 16 MB de flash, 16 MB de PSRAM, un écran tactile QSPI de 480 × 480 pixels, un circuit audio ES8311, une IMU BMI270, deux magnétomètres BMM150, 128 MB de SPI NAND et deux connecteurs d’extension.",
+  "description_es": "Espressif ESP-Mosaico es un kit de desarrollo ESP32-S31 con 16 MB de flash, 16 MB de PSRAM, pantalla táctil QSPI de 480 × 480, audio ES8311, IMU BMI270, dos magnetómetros BMM150, 128 MB de SPI NAND y dos conectores de expansión.",
+  "description_pt": "Espressif ESP-Mosaico é um kit de desenvolvimento ESP32-S31 com 16 MB de flash, 16 MB de PSRAM, tela sensível ao toque QSPI de 480 × 480, áudio ES8311, IMU BMI270, dois magnetômetros BMM150, 128 MB de SPI NAND e dois conectores de expansão.",
+  "description_ru": "Espressif ESP-Mosaico — комплект разработки на ESP32-S31 с 16 MB flash, 16 MB PSRAM, сенсорным экраном QSPI 480 × 480, аудиокодеком ES8311, IMU BMI270, двумя магнитометрами BMM150, 128 MB SPI NAND и двумя разъёмами расширения.",
+  "description_ar": "Espressif ESP-Mosaico هي مجموعة تطوير تعتمد على ESP32-S31 وتضم 16 MB من flash و16 MB من PSRAM وشاشة لمس QSPI بدقة 480 × 480 وصوت ES8311 ووحدة BMI270 IMU ومستشعري BMM150 للمجال المغناطيسي و128 MB من SPI NAND وموصلي توسعة.",
+  "main": "index.js",
+  "url": "https://docs.espressif.com/projects/esp-dev-kits/zh_CN/latest/esp32s31/esp-mosaico/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "brand": "Espressif",
+  "state": "todo",
+  "boardDependencies": {
+    "@aily-project/compiler-esp-rv32": "14.2.0",
+    "@aily-project/tool-esptool_py": "5.3.0",
+    "@aily-project/sdk-esp32": "3.3.10",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
