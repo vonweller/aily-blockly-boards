@@ -1,0 +1,25 @@
+{
+  "name": "project_",
+  "version": "0.0.1",
+  "description": "",
+  "board": "Seekfree STC32G144K246",
+  "projectConfig": {
+    "clock": "48m",
+    "memory": "large",
+    "cdc": "enabled",
+    "xram": "high",
+    "uploadtransport": "auto",
+    "uploadcheck": "manual"
+  },
+  "dependencies": {
+    "@aily-project/board-seekfree_stc32g144k246": "0.0.1",
+    "@aily-project/lib-core-io": "1.0.0",
+    "@aily-project/lib-core-logic": "0.0.1",
+    "@aily-project/lib-core-loop": "0.0.1",
+    "@aily-project/lib-core-math": "0.0.1",
+    "@aily-project/lib-core-text": "1.0.0",
+    "@aily-project/lib-core-serial": "0.0.1",
+    "@aily-project/lib-core-time": "0.0.1",
+    "@aily-project/lib-core-variables": "1.0.1"
+  }
+}

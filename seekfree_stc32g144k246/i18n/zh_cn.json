@@ -1,0 +1,10 @@
+{
+  "STC51": {
+    "CLOCK": "CPU 时钟（须与 ISP 配置一致）",
+    "MEMORY": "SDCC 内存模型",
+    "USB_CDC": "启动时启用 USB CDC",
+    "XRAM": "XRAM 布局",
+    "UPLOAD_TRANSPORT": "下载接口",
+    "UPLOAD_CHECK": "烧录型号校验"
+  }
+}

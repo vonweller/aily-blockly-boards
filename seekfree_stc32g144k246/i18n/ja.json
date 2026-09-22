@@ -1,0 +1,10 @@
+{
+  "STC51": {
+    "CLOCK": "CPU クロック（ISP 設定と一致させる）",
+    "MEMORY": "SDCC メモリモデル",
+    "USB_CDC": "起動時の USB CDC",
+    "XRAM": "XRAM レイアウト",
+    "UPLOAD_TRANSPORT": "書き込みインターフェース",
+    "UPLOAD_CHECK": "書き込み時の型番確認"
+  }
+}

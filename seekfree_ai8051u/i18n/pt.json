@@ -1,0 +1,7 @@
+{
+  "STC51": {
+    "CLOCK": "Clock da CPU (deve corresponder à configuração ISP)",
+    "MEMORY": "Modelo de memória SDCC",
+    "UPLOAD_CHECK": "Verificação do modelo ao carregar"
+  }
+}

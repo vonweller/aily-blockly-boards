@@ -1,0 +1,7 @@
+{
+  "STC51": {
+    "CLOCK": "Fréquence CPU (doit correspondre à la configuration ISP)",
+    "MEMORY": "Modèle mémoire SDCC",
+    "UPLOAD_CHECK": "Vérification du modèle au téléversement"
+  }
+}

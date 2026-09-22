@@ -1,0 +1,10 @@
+{
+  "STC51": {
+    "CLOCK": "CPU 클록 (ISP 설정과 일치해야 함)",
+    "MEMORY": "SDCC 메모리 모델",
+    "USB_CDC": "부팅 시 USB CDC",
+    "XRAM": "XRAM 배치",
+    "UPLOAD_TRANSPORT": "업로드 인터페이스",
+    "UPLOAD_CHECK": "업로드 모델 확인"
+  }
+}

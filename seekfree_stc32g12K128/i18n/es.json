@@ -1,0 +1,6 @@
+{
+  "STC51": {
+    "CLOCK": "Reloj de CPU (debe coincidir con la configuración ISP)",
+    "MEMORY": "Modelo de memoria SDCC"
+  }
+}

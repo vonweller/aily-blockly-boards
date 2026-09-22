@@ -1,0 +1,10 @@
+{
+  "STC51": {
+    "CLOCK": "تردد CPU (يجب أن يطابق إعداد ISP)",
+    "MEMORY": "نموذج ذاكرة SDCC",
+    "USB_CDC": "USB CDC عند الإقلاع",
+    "XRAM": "تخطيط XRAM",
+    "UPLOAD_TRANSPORT": "واجهة الرفع",
+    "UPLOAD_CHECK": "التحقق من الطراز عند الرفع"
+  }
+}

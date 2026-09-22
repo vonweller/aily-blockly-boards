@@ -1,0 +1,10 @@
+{
+  "STC51": {
+    "CLOCK": "Clock da CPU (deve corresponder à configuração ISP)",
+    "MEMORY": "Modelo de memória SDCC",
+    "USB_CDC": "USB CDC ao iniciar",
+    "XRAM": "Organização da XRAM",
+    "UPLOAD_TRANSPORT": "Interface de envio",
+    "UPLOAD_CHECK": "Verificação do modelo ao carregar"
+  }
+}

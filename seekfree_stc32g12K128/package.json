@@ -1,0 +1,41 @@
+{
+  "name": "@aily-project/board-seekfree_stc32g12k128",
+  "nickname": "Seekfree STC32G12K128",
+  "version": "0.0.1",
+  "description": "Seekfree core board based on STC32G12K128, with USB-to-UART programming and a blue LED on P5.2. Uses the experimental arduino-stc51 MCS251 C++ core.",
+  "description_en": "Seekfree core board based on STC32G12K128, with USB-to-UART programming and a blue LED on P5.2. Uses the experimental arduino-stc51 MCS251 C++ core.",
+  "description_zh_cn": "逐飞 STC32G12K128 核心板，板载 USB 转串口下载电路及 P5.2 蓝色 LED，使用实验性的 arduino-stc51 MCS251 C++ 核心。",
+  "description_zh_hk": "逐飛 STC32G12K128 核心板，板載 USB 轉串口下載電路及 P5.2 藍色 LED，使用實驗性的 arduino-stc51 MCS251 C++ 核心。",
+  "description_ja": "STC32G12K128 を搭載した Seekfree コアボード。USB-UART 書き込み回路と P5.2 の青色 LED を備え、実験段階の arduino-stc51 MCS251 C++ コアを使用します。",
+  "description_ko": "STC32G12K128 기반 Seekfree 코어 보드입니다. USB-UART 업로드 회로와 P5.2의 파란색 LED를 갖추고 실험 단계의 arduino-stc51 MCS251 C++ 코어를 사용합니다.",
+  "description_de": "Seekfree-Entwicklungsboard mit STC32G12K128, USB-UART-Programmierschnittstelle und blauer LED an P5.2. Verwendet den experimentellen MCS251-C++-Kern von arduino-stc51.",
+  "description_fr": "Carte Seekfree basée sur STC32G12K128, avec programmation USB-UART et LED bleue sur P5.2. Utilise le cœur C++ MCS251 expérimental d'arduino-stc51.",
+  "description_es": "Placa Seekfree basada en STC32G12K128, con programación USB-UART y LED azul en P5.2. Utiliza el núcleo C++ MCS251 experimental de arduino-stc51.",
+  "description_pt": "Placa Seekfree baseada em STC32G12K128, com programação USB-UART e LED azul em P5.2. Usa o núcleo C++ MCS251 experimental do arduino-stc51.",
+  "description_ru": "Плата Seekfree на базе STC32G12K128 с загрузкой через USB-UART и синим светодиодом на P5.2. Использует экспериментальное ядро C++ MCS251 arduino-stc51.",
+  "description_ar": "لوحة Seekfree تعتمد على STC32G12K128، مع برمجة عبر USB-UART ومؤشر LED أزرق على P5.2. تستخدم نواة arduino-stc51 MCS251 C++ التجريبية.",
+  "main": "board.json",
+  "url": "https://www.seekfree.com.cn/产品资料/核心板/stc系列/stc32g核心板/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ailyProject/aily-blockly-boards.git",
+    "directory": "seekfree_stc32g12K128"
+  },
+  "keywords": [
+    "Seekfree",
+    "STC",
+    "STC32G12K128",
+    "arduino-stc51",
+    "MCS251"
+  ],
+  "author": "ailyProject",
+  "license": "ISC",
+  "brand": "Seekfree",
+  "state": "alpha",
+  "boardDependencies": {
+    "@aily-project/compiler-stcxx-toolchain": "0.3.0",
+    "@aily-project/tool-stc-cli": "0.1.0",
+    "@aily-project/sdk-mcs251": "0.0.1",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}

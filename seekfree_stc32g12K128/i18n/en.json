@@ -1,0 +1,6 @@
+{
+  "STC51": {
+    "CLOCK": "CPU clock (must match ISP configuration)",
+    "MEMORY": "SDCC memory model"
+  }
+}

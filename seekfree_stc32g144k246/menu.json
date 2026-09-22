@@ -1,0 +1,41 @@
+[
+  {
+    "sep": true
+  },
+  {
+    "name": "STC51.CLOCK",
+    "icon": "fa-light fa-gauge-high",
+    "children": [],
+    "key": "clock"
+  },
+  {
+    "name": "STC51.MEMORY",
+    "icon": "fa-light fa-memory",
+    "children": [],
+    "key": "memory"
+  },
+  {
+    "name": "STC51.USB_CDC",
+    "icon": "fa-light fa-usb",
+    "children": [],
+    "key": "cdc"
+  },
+  {
+    "name": "STC51.XRAM",
+    "icon": "fa-light fa-memory",
+    "children": [],
+    "key": "xram"
+  },
+  {
+    "name": "STC51.UPLOAD_TRANSPORT",
+    "icon": "fa-light fa-upload",
+    "children": [],
+    "key": "uploadtransport"
+  },
+  {
+    "name": "STC51.UPLOAD_CHECK",
+    "icon": "fa-light fa-shield-check",
+    "children": [],
+    "key": "uploadcheck"
+  }
+]

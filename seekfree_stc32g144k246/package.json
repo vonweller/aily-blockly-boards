@@ -1,0 +1,42 @@
+{
+  "name": "@aily-project/board-seekfree_stc32g144k246",
+  "nickname": "Seekfree STC32G144K246",
+  "version": "0.0.1",
+  "description": "Seekfree STC32G144K246 LQFP100 core board with native USB, a P3.2 boot button and an active-low LED on P5.2. Uses the experimental MCS251 C++ core.",
+  "description_en": "Seekfree STC32G144K246 LQFP100 core board with native USB, a P3.2 boot button and an active-low LED on P5.2. Uses the experimental MCS251 C++ core.",
+  "description_zh_cn": "逐飞 STC32G144K246 LQFP100 核心板，带原生 USB、P3.2 下载按键和 P5.2 低电平点亮 LED，使用实验性的 MCS251 C++ 核心。",
+  "description_zh_hk": "逐飛 STC32G144K246 LQFP100 核心板，配備原生 USB、P3.2 下載按鍵及 P5.2 低電平點亮 LED，使用實驗性的 MCS251 C++ 核心。",
+  "description_ja": "Seekfree STC32G144K246 LQFP100 コアボード。ネイティブ USB、P3.2 の書き込みボタン、P5.2 のアクティブ LOW LED を備え、実験段階の MCS251 C++ コアを使用します。",
+  "description_ko": "네이티브 USB, P3.2 부트 버튼, P5.2 액티브 LOW LED를 갖춘 Seekfree STC32G144K246 LQFP100 코어 보드입니다. 실험 단계의 MCS251 C++ 코어를 사용합니다.",
+  "description_de": "Seekfree STC32G144K246 LQFP100 mit nativem USB, Boot-Taste an P3.2 und aktiv niedriger LED an P5.2. Verwendet den experimentellen MCS251-C++-Kern.",
+  "description_fr": "Carte Seekfree STC32G144K246 LQFP100 avec USB natif, bouton de démarrage sur P3.2 et LED active à l’état bas sur P5.2. Utilise le cœur C++ MCS251 expérimental.",
+  "description_es": "Placa Seekfree STC32G144K246 LQFP100 con USB nativo, botón de arranque en P3.2 y LED activo en nivel bajo en P5.2. Usa el núcleo C++ MCS251 experimental.",
+  "description_pt": "Placa Seekfree STC32G144K246 LQFP100 com USB nativo, botão de inicialização em P3.2 e LED ativo em nível baixo em P5.2. Usa o núcleo C++ MCS251 experimental.",
+  "description_ru": "Плата Seekfree STC32G144K246 LQFP100 с USB, кнопкой загрузки на P3.2 и светодиодом на P5.2, активным при низком уровне. Использует экспериментальное ядро C++ MCS251.",
+  "description_ar": "لوحة Seekfree STC32G144K246 LQFP100 مع USB أصلي وزر إقلاع على P3.2 ومؤشر LED يعمل بالمستوى المنخفض على P5.2. تستخدم نواة MCS251 C++ التجريبية.",
+  "main": "board.json",
+  "url": "https://gitee.com/seekfree/STC32G144K246_100Pin_Library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ailyProject/aily-blockly-boards.git",
+    "directory": "seekfree_stc32g144k246"
+  },
+  "keywords": [
+    "Seekfree",
+    "STC",
+    "STC32G144K246",
+    "LQFP100",
+    "MCS251",
+    "USB"
+  ],
+  "author": "ailyProject",
+  "license": "ISC",
+  "brand": "Seekfree",
+  "state": "alpha",
+  "boardDependencies": {
+    "@aily-project/compiler-stcxx-toolchain": "0.3.0",
+    "@aily-project/tool-stc-cli": "0.1.0",
+    "@aily-project/sdk-mcs251": "0.0.1",
+    "@aily-project/tool-ctags": "5.8.0"
+  }
+}
