@@ -1,7 +1,7 @@
 {
   "name": "ESP-Mosaico",
   "version": "1.0.0",
-  "description": "ESP-Mosaico CoreBoard V1.0 with ESP32-S31NRV16; Arduino SDK integration pending",
+  "description": "ESP-Mosaico CoreBoard V1.0 with ESP32-S31NRV16, 16 MB flash and 16 MB OPI PSRAM; Arduino ESP32 4.0.0-RC1",
   "compilerTool": "aily-builder",
   "core": "esp32:esp32",
   "type": "esp32:esp32:esp32s31",
